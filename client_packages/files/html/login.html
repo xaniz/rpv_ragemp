@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aufrp.ru</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../new_hud/css/noty.css">
+    <link rel="stylesheet" href="../new_hud/css/theme.css">
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/nex-style.css">
+	<script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body class="login-body">
+    <div class="switch-content authDiv">
+	
+        <main class="gta-acount  authorization  auth-page  show">
+		
+            <div class="gta-acount__content">
+                <div class="flex"  id="LoginPage">
+                   
+                    <div class="right">
+                        <img src="img/auth-pic.png" alt="" class="right-logo">
+                        <div class="right-box">
+                            
+                        <div class="right-box__top">
+								
+												<a href="#"  class="right-box__top-a "  ></a>
+											</div>
+                        
+                        
+										<form id="reg-form" action="" class="form" method="POST">
+													   
+
+											
+											<input type="email" name="new-user__email" id="user__email-id" placeholder="Email" required>
+											<br> 
+											<input type="password" class="reg_pass" name="new-user__pw" id="-user__pw-id" placeholder="Sifra" required>
+											<br>
+											<input type="password" class="reg_pass" name="new-user__pw-repeat" id="user_pw_repeat" placeholder="Potvrdi sifru" required>
+                                            <br>
+                                            <input type="text" class="reg_promo" name="new-user__pw-repeat" id="user_refferal" placeholder="Promo (opcionalno)">
+											<br>
+
+                                            <br>
+                                            
+                                           
+                                              <input class="btn-register-end btn-reg" type="submit" onclick="sendAccountInfo(1);" value="Registracija">
+                                               
+                                           
+                                       </form>
+									   </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </main>
+        <main class="gta-acount  restorepass  rest-page">
+		
+            <div class="gta-acount__content">
+
+                <div class="flex"  id="ResetPasswordPage">
+                    <div class="left">
+                        <div class="left-box">
+                        <div class="left-box__text">
+						
+                            <div class="left-box__text-title">.فاز اول بتا تست شروع شد</div>
+                            <div class="left-box__text-subtitle">
+                                <div class="left-box__text-subtitle">
+                                <p dir="rtl">С помощью команды /myhouse вы сможете найти свой дом</p>
+								<p dir="rtl"></p>
+								<p dir="rtl"></p>
+                            </div>
+                        </div>
+                        <img src="https://i.imgur.com/40bhYq4.png" alt="" class="left-box__img">
+                    </div>
+                    <div class="left-box">
+                        <div class="left-box__text">
+                            <div class="left-box__text-title">AUF</div>
+                            <div class="left-box__text-subtitle">
+                                  ‍<p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ.</p>
+								  <p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ.</p>
+                            </div>
+                        </div>
+						
+                        <img src="https://i.imgur.com/40bhYq4.png" alt="" class="left-box__img">
+					
+                    </div>
+                    <div class="left-box">
+                        <div class="left-box__text">
+                            <div class="left-box__text-title">AUF</div>
+                            <div class="left-box__text-subtitle">
+                               <p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ.</p>
+							   
+							   
+                            </div>
+                        </div>
+						
+                        <img src="img/box1.png" alt="" class="left-box__img">
+						
+                    </div></div>
+                    <div class="right">
+                        <img src="img/IMPIRE.png" alt="" class="right-logo">
+                        <div class="right-box">
+                            <div class="right-box__top">
+                                <a  class="right-box__top-a  js-btn-back" href="index.html">Авторизация</a>
+                                <a href="registration.html"  class="right-box__top-a js-btn-register">Регистрация</a>
+                            </div>
+                            <div class="right-box__bottom">
+                                <hr class="right-box__bottom-hr right-box__bottom-hr__red">
+                                <hr class="right-box__bottom-hr" >
+                            </div>
+                        </div>
+                        <form id="auth-form" action="" class="right-form" method="POST">
+                                           
+
+                                           <div class="input-cont">
+                                            
+                                                <input type="text" class="entry-login entry-login2" name="entry-login" id="entry-login-id" placeholder="آدرس ایمیل" required>
+                                           </div>
+
+                                     
+
+                                           <div class="btn-cont">
+                                               <input class="btn-restore-end" type="submit" onclick="sendAccountInfo(2);" value="ارسال درخواست">
+                                               
+                                           </div>
+                                       </form>
+                    </div>
+                </div>
+
+        </main>
+        <main class="gta-acount  registration  reg-page">
+            <div class="gta-acount__content">
+
+
+
+
+
+                <div class="flex">
+                    <div class="left">
+                        <div class="left-box">
+                        <div class="left-box__text">
+						
+                            <div class="left-box__text-title">         AUF</div>
+                            <div class="left-box__text-subtitle">
+                                <p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ</p>
+								<p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ</p>
+								<p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ</p>
+                            </div>
+                        </div>
+                        <img src="https://i.imgur.com/40bhYq4.png" alt="" class="left-box__img">
+                    </div>
+                    <div class="left-box">
+                        <div class="left-box__text">
+                            <div class="left-box__text-title">AUF</div>
+                            <div class="left-box__text-subtitle">
+                                  ‍<p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ.</p>
+								  <p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ.</p>
+                            </div>
+                        </div>
+						
+                        <img src="https://i.imgur.com/40bhYq4.png" alt="" class="left-box__img">
+					
+                    </div>
+                    <div class="left-box">
+                        <div class="left-box__text">
+                            <div class="left-box__text-title">AUF</div>
+                            <div class="left-box__text-subtitle">
+                               <p dir="rtl">ТУТ ДОЛЖЕН БЫТЬ ТЕКСТ.</p>
+							   
+							   
+                            </div>
+                        </div>
+						
+                        <img src="https://i.imgur.com/40bhYq4.png" alt="" class="left-box__img">
+						
+                    </div></div>
+                    <div class="right" id="RegisterPage">
+                        <img src="img/IMPIRE.png" alt="" class="right-logo">
+                        <div class="right-box">
+                            <div class="right-box__top">
+                                <a  class="right-box__top-a  js-btn-back" href="index.html">Авторизация</a>
+                                <a href="registration.html"  class="right-box__top-a js-btn-register">Регистрация</a>
+                            </div>
+                            <div class="right-box__bottom">
+                                <hr class="right-box__bottom-hr">
+                                <hr class="right-box__bottom-hr  right-box__bottom-hr__red" >
+                            </div>
+                        </div>
+                        <form id="auth-form" action="" class="right-form" method="POST">
+                                           
+
+					<div class="input-cont">
+                        <input type="email" name="new-user__email" id="user__email-id" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="input-cont">
+                        <input type="password" name="new-user__pw" id="-user__pw-id" placeholder="Пароль" required>
+                    </div>
+
+                    <div class="input-cont">
+                        <input type="password" name="new-user__pw-repeat" id="user_pw_repeat" placeholder="Повторить пароль" required>
+                    </div>
+															   
+
+                                          
+                                            <div class="gal">
+                                                <div class="gal-input">
+                                                   <input type="checkbox" name="c1" id="c1" />
+                                                   <label for="c1"></label>
+                                                </div>
+                                                <div class="gal-text">
+                                                    Закончить регистрацию
+                                                </div>
+                                            </div>
+                                           <div class="btn-cont">
+                                              <input class="btn-register-end" type="submit" onclick="sendAccountInfo(1);" value="پایان ثبت نام">
+                                               
+                                           </div>
+                                       </form>
+                    </div>
+                </div>
+
+          </div>
+        </main>
+      
+    </div>
+	<script src="../css/jquery.js"></script>
+   
+    <script src="../new_hud/js/noty.min.js"></script>
+    <script src="../new_hud/js/vue.js"></script>
+    <script src="js/auth.js"></script>
+	<script src="js/reg_auth_forms.js"></script>
+	<script type="text/javascript">
+            
+			
+			function displayerror0() {
+				document.getElementById("ERROR0").innerHTML = "<span style='color: #B22222;'>پسورد را اشتباه وارد کردید و یا حساب کاربری ندارید.</span>";
+			}
+			
+			function displayerror1() {
+				document.getElementById("ERROR1").innerHTML = "<span style='color: #B22222;'>پسورد ها یکسان نیستند.</span>";
+			}
+			
+			function displayerror2() {
+				document.getElementById("ERROR2").innerHTML = "<span style='color: #B22222;'>این ایمیل وجود ندارد.</span>";
+			}
+			function displayerror3() {
+				document.getElementById("ERROR1").innerHTML = "<span style='color: #B22222;'>پسورد شما باید بین 4-30 حروف باشد.</span>";
+			}
+			function displayerror4() {
+				document.getElementById("ERROR1").innerHTML = "<span style='color: #B22222;'>ایمیل را به درستی وارد نکردید.</span>";
+			}
+			function displayerror5() {
+				document.getElementById("ERROR1").innerHTML = "<span style='color: #B22222;'>این ایمیل قبلا ثبت شده است.</span>";
+			}
+			function displayerror6() {
+				document.getElementById("ERROR0").innerHTML = "<span style='color: #B22222;'>شخض دیگری داخل اکانت است.</span>";
+			}
+            function sendAccountInfo(state){
+                $('.alert-danger').hide();
+                if(state === 0){    //Login State
+                    
+                    let entry_password_id = document.getElementById("entry-password-id");
+                    //$("#loginBtn").hide();
+					
+					
+                    mp.trigger("loginUser", entry_password_id.value);
+					
+					//mp.trigger("loginUser", $("#login_email").val(), $("#login_password").val(), $('.ui.checkbox').checkbox('is checked'));
+					
+                } else if(state === 1){    //Register State
+                    
+                    let user__email_id = document.getElementById("user__email-id");
+					
+                    let user__pw_id = document.getElementById("-user__pw-id");
+                    let user_pw_repeat = document.getElementById("user_pw_repeat");
+                    let refferal = document.getElementById("user_refferal");
+					if(user__pw_id.value != user_pw_repeat.value)
+					{
+						document.getElementById("ERROR1").innerHTML = "<span style='color: #B22222;'>Sifre se ne podudaraju</span>";
+					return;
+					}
+                  
+                    mp.trigger("registerUser", user_pw_repeat.value, user__email_id.value,refferal.value);
+                }
+				else if(state === 2)
+				{
+				
+                    let entry_login_id = document.getElementById("entry-login-id");
+                
+
+                    mp.trigger("Recovery_Password", entry_login_id.value);
+				}
+            }
+
+            var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+            elems.forEach(function(html) {
+                var switchery = new Switchery(html, {
+                    color: '#92c755'
+                });
+            });
+            var changeCheckbox = document.querySelector('.js-switch');
+            changeCheckbox.onchange = function() {
+                if(changeCheckbox.checked) {
+                   
+                } else {
+                    
+                }
+            };
+			
+	$(document).ready(function () {
+
+        
+
+        $("#LoginPage").keyup(function (e) {
+            if (e.keyCode == 13) {
+                
+                sendAccountInfo(0);
+            }
+        });
+		$("#RegisterPage").keyup(function (e) {
+            if (e.keyCode == 13) {
+                
+                sendAccountInfo(1);
+            }
+        });
+		$("#ResetPasswordPage").keyup(function (e) {
+            if (e.keyCode == 13) {
+                
+                sendAccountInfo(2);
+            }
+        });
+    });
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>infinityRP_Client</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="rage-sharpN">
+      <HintPath>..\..\..\..\Users\nimae\Desktop\IRWorld-roleplay 1.1\dotnet\runtime\rage-sharpN.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

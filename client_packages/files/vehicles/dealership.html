@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <meta content="width=1300, initial-scale=1 user-scalable=yes" name="viewport" />
+      <!-- Stylesheets (Semantic, Font Awesome, and Fonts -->
+      <link rel="stylesheet" href="../css/semantic.min.css"  />
+      <link rel="stylesheet" href="../css/all.css" >
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css">
+         body {
+         background-color: rgba(0,0,0,0);
+         }
+         .help-main {
+         height: 350px;
+         width: 600px;
+         }
+         .scroll2 {
+         height: 250px;
+         width: 785px;
+         overflow: scroll;
+         overflow-y: display;
+         overflow-x: hidden;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="ui container" style="padding-top: 190px;">
+         <div class="ui stacked segments">
+            <div class="ui segment">
+               <h3 class="ui teal block header">
+                  <center id="label_business_name">Name sherkat</center>
+               </h3>
+            </div>
+            <div class="ui segment help-main">
+               <a class="ui teal ribbon label" id="label_business_type">Motorcycle Dealership Menu</a>
+               <div class="ui grid">
+                  <div class="four wide column">
+                     <div class="ui secondary vertical pointing menu tabular menu">
+                        <a class="ui item active" data-tab="home">
+                        Dashboard
+                        </a>
+                        <a class="ui item" data-tab="change_name">
+                        Change company name
+                        </a>
+                        <a class="ui item" data-tab="business_safe">
+                        Company Funds
+                        </a>
+                        <a class="ui item" data-tab="buy_vehicle">
+                        Buying vehicles
+                        </a>
+                        <a class="ui item" data-tab="manage_vehicles">
+                        Manage vehicles
+                        </a>
+                     </div>
+                  </div>
+                  <div class="twelve wide stretched column">
+                     <div class="ui segment">
+                        <div class="ui active tab" data-tab="home">
+                           <h1>Dashboard</h1>
+                           <table class="ui definition table" id="dashborad_stats">
+                              <thead>
+                                 <tr>
+                                    <th><b>Statistics</b></th>
+                                    <th></th>
+                                    <th>#</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td colspan="2">Vehicles sold in the last 24 hours:</td>
+                                    <td>0</td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2">Vehicles sold this week:</td>
+                                    <td>0</td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2">Vehicles sold this month:</td>
+                                    <td>0</td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2">Top seller:</td>
+                                    <td></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="ui tab" data-tab="change_name">
+                           <center>
+                              <h1>Change company name</h1>
+                              <h4>Current Company Name: <span id="label_change_business_name"></span></h4>
+                              <div class="ui fluid icon input">
+                                 <input id="input_business_name" type="text" placeholder="" value="">
+                              </div>
+                              <br><br>
+                              <div class="fluid black ui button" id="change_business_name">
+                                 Change
+                              </div>
+                           </center>
+                        </div>
+                        <div class="ui tab" data-tab="business_safe">
+                           <center>
+                              <h1>Company Funds</h1>
+                              <h6>Current Balance: $<span id="label_business_safe"></span></h6>
+                              <div class="ui fluid labeled input">
+                                 <label for="amount" class="ui label">$</label>
+                                 <input type="number" placeholder="Ammount" id="input_business_safe">
+                              </div>
+                              <br><br>
+                             
+                              <button id="retirar_fundos" class="ui teal button">
+                              Take
+                              </button>
+							  
+							   <button id="depositar_fundos" class="ui teal button">
+                              To deposit
+                              </button>
+                           </center>
+                        </div>
+                        <div class="ui tab" data-tab="buy_vehicle">
+                           <a class="ui teal ribbon label">Currently <span id="label_vehicle_to_buy"></span> vehicle available for purchase for this dealership !</a>
+						   <br>
+						   <br>
+                           <div class="scroll2">
+						   <table class="ui definition table">
+                              <thead>
+                                 <tr>
+                                    <th class="single line" width="10px;"></th>
+                                    <th class="">
+                                       <center>
+                                       Model
+                                    </th>
+                                    <th class="">
+                                       <center>
+                                       Price
+                                    </th>
+                                    <th>
+                                       <center>
+                                       Stock
+                                    </th>
+                                    <th></th>
+                                 </tr>
+                              </thead>
+                              <tbody id="business_table_vehicles_to_buy">
+
+                              </tbody>
+                           </table>
+                        </div>
+                        </div>
+                        <div class="ui tab" data-tab="manage_vehicles">
+                           <a class="ui teal ribbon label">Currently <span id="label_vehicle_to_list"></span> vehicle for sale at this dealership !</a>
+						   <br>
+						   <br>
+                           <div class="scroll2">
+                           <table class="ui definition table">
+                              <thead>
+                                 <tr>
+                                    <th class="single line" width="10px;"></th>
+                                    <th class="">
+                                       <center>
+                                       Model
+                                    </th>
+                                    <th class="">
+                                       <center>
+                                       Price
+                                    </th>
+                                    <th>
+                                       <center>
+                                       Stock
+                                    </th>
+                                    <th>
+                                       <center>
+                                       Enable
+                                    </th>
+                                    <th></th>
+                                 </tr>
+                              </thead>
+                              <tbody id="vehicles_from_stock">
+
+                              </tbody>
+                           </table>
+                        </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="ui bottom attached segment">
+               <div class="fluid teal ui button" id="fechar_menu">
+                  Khoroj
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Javascript (jQuery, Semantic) -->
+      <script src="../css/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js" integrity="sha256-RKNmL9+6j/3jB72OcIg8OQr91Bi4OgFPnKQOFS1O+fo=" crossorigin="anonymous"></script>
+      <script>
+         $('.tabular.menu .item').tab();
+      </script>
+      <script>
+         $(document).ready(function() {
+		 
+			$("#fechar_menu").click(function() {
+         		mp.trigger("Destroy_Character_Menu");
+         	});
+			
+		 
+         	$("#change_business_name").click(function() {
+         		mp.trigger("Business_Change_Name", document.getElementById("input_business_name").value);
+         	});
+			
+			$("#depositar_fundos").click(function() {
+         		mp.trigger("Business_Depositar_Fundos", document.getElementById("input_business_safe").value);
+         	});
+			
+			$("#retirar_fundos").click(function() {
+         		mp.trigger("Business_Retirar_Fundos", document.getElementById("input_business_safe").value);
+         	});
+			
+			
+         });
+			let global_name = "";
+			let global_type = "";
+			let global_safe = 0;
+			let global_count_vehicles_buy = 0;
+			let global_count_vehicles_list = 0;
+
+			function UpdateBusiness() {
+				document.getElementById("label_business_type").innerHTML = global_type;
+				document.getElementById("label_business_safe").innerHTML = global_safe;
+				document.getElementById("label_business_name").innerHTML = global_name;
+				document.getElementById("label_vehicle_to_list").innerHTML = global_count_vehicles_list;
+				document.getElementById("label_vehicle_to_buy").innerHTML = global_count_vehicles_buy;
+				document.getElementById("label_change_business_name").innerHTML = global_name;
+				document.getElementById("input_business_name").value = global_name;
+
+				
+			}
+			
+			function LoadBusinessManageMenu(name, type, safe, vehicles_stock, vehicles_list) {
+				
+				global_name = name;
+				global_type = type;
+				global_safe = safe;
+				
+				global_count_vehicles_buy = 0;
+				global_count_vehicles_list = 0;
+				
+				// Vehicles From Stock
+				$("#business_table_vehicles_to_buy").empty();
+				veh_stock = JSON.parse(vehicles_stock);
+				if(veh_stock.length <= 0) {
+					$('#business_table_vehicles_to_buy').append("");
+				} else {
+					for(let i = 0; i < veh_stock.length; i++) {
+						$('#business_table_vehicles_to_buy').append('<tr><td><img class="ui tiny rounded image" src="https://alyaska.000webhostapp.com/veh/'+veh_stock[i].Model+'.png"></td><td class="single line"><h4 class="ui green center aligned header">'+veh_stock[i].Model+'</h4></td><td><center><div class="ui tag labels"><a class="ui teal label">$'+veh_stock[i].Price+' by stock</a></div></td><td><div class="ui labeled input"><input type="number" placeholder="" value="1" id="vehicle_stock_'+veh_stock[i].Model+'"></div></td><td><center><button id="'+veh_stock[i].Model+'" class="fluid ui green button">Buy stock</button></td></tr>');
+						
+						
+						$("#" + veh_stock[i].Model).click(function() {
+							
+							
+							if(document.getElementById("vehicle_stock_"+veh_stock[i].Model).value < 1)
+							{
+								alert("Valor negativo não é valido !");
+								return;
+							}
+							
+							let new_price = document.getElementById("vehicle_stock_"+veh_stock[i].Model).value * veh_stock[i].Price;
+
+							mp.trigger("Business_Buy_Vehicle_Stock", veh_stock[i].Model, document.getElementById("vehicle_stock_"+veh_stock[i].Model).value, new_price);
+						});
+						global_count_vehicles_buy++;
+					}
+				}
+				
+				// Vehicles From Business
+				$("#vehicles_from_stock").empty();
+				veh_list = JSON.parse(vehicles_list);
+				if(veh_list.length <= 0) {
+					$('#business_table_vehicles_to_buy').append("");
+				} else {
+					for(let i = 0; i < veh_list.length; i++) {
+						if(veh_list[i].Status == 1) $('#vehicles_from_stock').append('<tr><td><img class="ui tiny rounded image" src="https://alyaska.000webhostapp.com/veh/'+veh_stock[i].Model+'.png"></td><td class="single line"><h4 class="ui teal center aligned header">'+veh_list[i].Model+'</h4></td><td><center><div class="ui labeled input"><label for="amount" class="ui label">$</label><input type="number" placeholder="" id="vehicle_price_'+veh_list[i].Model+'" value="'+veh_list[i].Price+'"></div></td><td><center><a class="ui teal label">'+veh_list[i].Stock+'</a></td><td><div class="ui fitted toggle checkbox"><input id="checkbox_'+veh_list[i].Model+'" type="checkbox" checked><label></label></div></td><td><center><button id="save_'+veh_list[i].Model+'" class="fluid ui teal button">Save edit</button></td></tr>');
+						else $('#vehicles_from_stock').append('<tr><td><img class="ui tiny rounded image" src="https://alyaska.000webhostapp.com/veh/'+veh_stock[i].Model+'.png"></td><td class="single line"><h4 class="ui teal center aligned header">'+veh_list[i].Model+'</h4></td><td><center><div class="ui labeled input"><label for="amount" class="ui label">$</label><input type="number" placeholder="" id="vehicle_price_'+veh_list[i].Model+'" value="'+veh_list[i].Price+'"></div></td><td><center><a class="ui teal label">'+veh_list[i].Stock+'</a></td><td><div class="ui fitted toggle checkbox"><input id="checkbox_'+veh_list[i].Model+'" type="checkbox"><label></label></div></td><td><center><button id="save_'+veh_list[i].Model+'" class="fluid ui teal button">Save edit</button></td></tr>');
+						
+						$("#save_" + veh_list[i].Model).click(function() {
+							if(document.getElementById("vehicle_price_"+veh_list[i].Model).value < 1)
+							{
+								alert("Valor negativo não é valido !");
+								return;
+							}
+							
+							let new_price = document.getElementById("vehicle_price_"+veh_list[i].Model).value;
+							
+							let visibility = 0;
+							
+							if ($('#checkbox_'+veh_list[i].Model).is(":checked"))
+							{
+								visibility = 1;
+							}
+							else
+							{
+								visibility = 0;
+							}
+	
+							mp.trigger("Business_Save_Vehicle", veh_list[i].Model, new_price, visibility);
+						});
+						global_count_vehicles_list++;
+					}
+				}
+				//
+				
+				
+				
+				//
+				UpdateBusiness();
+			}
+      </script>
+   </body>
+</html>

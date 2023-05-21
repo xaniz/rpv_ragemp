@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/police.css"/>
+
+
+</head>
+<style>
+    body {
+        font-size: 12px;
+		}
+    .nav-pills .nav-link{
+        margin-right: 5px;
+    }
+    .nav-item{
+        margin-bottom: 2px;
+    }
+</style>
+<body style="background-color: transparent;">
+<div class="container-fluid">
+    <div class="row">
+
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+
+            <div class="card text-white bg-dark" style="top:20%;">
+                <div class="card-header"><img src="logo.png" width="100%"
+                                              style="margin-left:-30px;margin-top:-65px">
+
+                    <button type="button" class="btn btn-danger btn-sm card-close-button" onclick="CloseMDC();">X
+                    </button>
+
+                </div>
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <!-- Nav pills -->
+                            <ul class="nav nav-pills flex-column">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu1">Trazi osobu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu2">Trazi vozilo</a>
+                                </li>
+                                <li class="nav-item  d-none">
+                                    <a class="nav-link" data-toggle="pill" href="#menu5">Informacije</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-10 creator-scroll">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                               
+                                <div class="tab-pane container fade" id="menu1">
+
+                                    <h5 class="card-title">Pretraga</h5>
+                                    <input class="form-control" id="searchpersons" type="text" placeholder="trazi..">
+                                    <p class="card-text">
+
+                                    <div class="table-responsive-sm online-players">
+                                        <table class="table table-sm table-dark table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>Ime</th>
+                                                <th>Godine</th>
+                                                <th>Akcija</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="persons">
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                    </p>
+
+                                </div>
+                                <div class="tab-pane container fade" id="menu2">
+
+                                    <h5 class="card-title">Pretraga Vozila</h5>
+                                    <input class="form-control" id="searchvehicles" type="text" placeholder="Trazi..">
+                                    <p class="card-text">
+
+
+                                    <div class="table-responsive-sm online-players">
+                                        <table class="table table-sm table-dark table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>Model</th>
+                                                <th>Tablica</th>
+                                                <th>Vlasnik</th>
+                                                <th>Osiguranje</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="vehicles">
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+
+                                    </p>
+
+                                </div>
+
+
+                                <div class="tab-pane container fade" id="menu3">
+
+                                    <h5 class="card-title">Wanted List</h5>
+                                    <button id="searchwanted" class="btn btn-primary">Lista kriminalaca</button>
+                                    <p class="card-text">
+
+
+                                    <div class="table-responsive-sm">
+                                        <table class="table">
+											<thead>
+												<tr>
+													<th>Suspect</th>
+													<th>Poslednji zlocin</th>
+													<th>Trazeni nivo</th>
+												</tr>
+											</thead>
+											<tbody id="mdc_warrants_list">
+												
+																				</tbody>
+											
+										</table>
+										<div id="no_warrant" style="display:none;" >
+											<div class="alert alert-secondary" role="alert">
+											  Trazeni trenutno nije na mrezi !
+											</div>
+										</div>
+
+                                    </div>
+
+
+                                    </p>
+
+                                </div>
+
+                                <div class="tab-pane container fade" id="menu4">
+
+                                    <h5 class="card-title">Pojacanje</h5>
+
+                                    <p class="card-text">
+
+
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-sm table-dark table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>Ime</th>
+                                                <th>Rank</th>
+                                                <th>Jedinica</th>
+                                                <th>Akcija</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Nick Bash</td>
+                                                <td>Cadet</td>
+                                                <td>1-A-2</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-sm">GPS
+                                                    </button>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Jake Taylor</td>
+                                                <td>Cadet</td>
+                                                <td>1-A-2</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-sm">GPS
+                                                    </button>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Leo Imasov</td>
+                                                <td>Cadet</td>
+                                                <td>1-A-2</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-sm">GPS
+                                                    </button>
+                                                </td>
+
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+
+                                    </p>
+
+                                </div>
+
+
+                                <div class="tab-pane container fade" id="menu6">
+
+                                    <p class="card-text">
+
+
+                                    <div class="table-responsive-sm online-players">
+                                        <table class="table table-sm table-dark table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>Model</th>
+                                                <th>Tablica</th>
+                                                <th>Akcija</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="policevehicles">
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+
+                                    </p>
+
+                                </div>
+
+
+                                <div class="tab-pane container fade" id="menu5">
+
+
+                                    <p class="card-text">
+
+
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                               href="#pills-home" role="tab" aria-controls="pills-home"
+                                               aria-selected="true">Informacije</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                               href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                               aria-selected="false">Kazna</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                               href="#pills-notes" role="tab" aria-controls="pills-contact"
+                                               aria-selected="false">Beleske</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                             aria-labelledby="pills-home-tab">
+
+
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    
+
+                                                </div>
+
+                                                <div class="col-md-4">
+
+
+                                                    <div class="table-responsive-sm">
+                                                        <table class="table table-sm table-dark">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>Ime</td>
+                                                                <td id="informationsName"></td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Grupa</td>
+                                                                <td id="informationsSSN"></td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Godine</td>
+                                                                <td id="informationsAge"></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>Pol</td>
+                                                                <td id="informationsSex"></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>Broj telefona</td>
+                                                                <td id="informationsPhone">Nema</td>
+                                                            </tr>
+
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-6">
+
+
+                                                    <div class="table-responsive-sm">
+                                                        <table class="table table-sm table-dark">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Tip</th>
+                                                                <th>Status</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody id="licenses">
+
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                             aria-labelledby="pills-profile-tab">
+
+
+                                            <div class="table-responsive-sm">
+                                                <table class="table table-sm table-dark table-hover">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Datum</th>
+                                                        <th>Ime</th>
+                                                        <th>Opis</th>
+                                                        <th>Kazna</th>
+                                                        <th>Policajac</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="fines">
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                            <button type="button" class="btn btn-danger btn-sm btn-block"
+                                                    data-toggle="modal" data-target="#newfine">Dodaj kaznu
+                                            </button>
+
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                             aria-labelledby="pills-contact-tab">
+
+
+                                            <div class="table-responsive-sm">
+                                                <table class="table table-sm table-dark table-hover">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Datum</th>
+                                                        <th>Ime</th>
+                                                        <th>Opis</th>
+                                                        <th>Zatvor</th>
+                                                        <th>Policajac</th>
+                                                        
+                                                        <th>Status</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="cases">
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                            <button type="button" class="btn btn-danger btn-sm btn-block"
+                                                    data-toggle="modal" data-target="#newcase">Otvori nalog
+                                            </button>
+
+
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="pills-notes" role="tabpanel"
+                                             aria-labelledby="pills-contact-tab">
+
+
+                                            <div class="table-responsive-sm">
+                                                <table class="table table-sm table-dark table-hover">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Datum</th>
+                                                        <th>Ime</th>
+                                                        <th>Opis</th>
+                                                        <th>Policajac</th>
+                                                        <th>Akcija</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="notes">
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                            <button type="button" class="btn btn-danger btn-sm btn-block"
+                                                    data-toggle="modal" data-target="#newnote">Otvori beleske
+                                            </button>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-2"></div>
+
+
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="newfine">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Dodaj kaznu</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="newfineprice">Kazna:</label>
+                        <input type="text" class="form-control" id="newfineprice">
+                    </div>
+                    <div class="form-group">
+                        <label for="newfinereason">Razlog:</label>
+                        <textarea class="form-control" rows="5" id="newfinereason"></textarea>
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="AddCharacterFine();">
+                        Dodaj
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="newcase">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Otvori nalog</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="newcasejailtime">Vreme u zatvoru (Minuti):</label>
+                        <input type="text" class="form-control" id="newcasejailtime">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="newcasereason">Razlog</label>
+                        <textarea class="form-control" rows="5" id="newcasereason"></textarea>
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="AddCharacterCase();">
+                        Otvori nalog
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="newnote">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Dodaj beleske</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+
+                    <div class="form-group">
+                        <label for="newnotereason">Beleske:</label>
+                        <textarea class="form-control" rows="5" id="newnotereason"></textarea>
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="AddCharacterNote();">
+                        Dodaj
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="newdesc">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Descriptions</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div id="modal-description"></div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+<script src="../inventory2/js/jquery.js"></script>
+<script src="../css/bootstrap.js"></script>
+
+
+
+<script>
+
+let PersonName = undefined;
+
+function SearchPersons(name) 
+{
+	mp.trigger('mdcFindPersons', name);
+}
+
+function FindWanteds(data) {
+    var tablewanted = document.getElementById('FindWanteds');
+    tablewanted.appendChild(row);
+}
+
+function CheckWantedList(data) {
+    $("#mdc_warrants_list").empty();
+    reader = JSON.parse(data);
+    if(reader.length > 0) {
+        $('#no_warrant').hide();
+        for(let i = 0; i < reader.length; i++) {
+            //$("#mdc_warrants_list").append('<tr><td>'+reader[i].Suspect+'</td><td>'+reader[i].LastCrime+'</td><td>'+reader[i].Wanted+'</td></tr>');
+            //$("#mdc_warrants_list").append('	<tr><td>'+reader[i].Suspect+'</td><td>'+reader[i].LastCrime+'</td><td>'+reader[i].Wanted+'</td><td>	<div style="color:black"  id="track_wanted_'+reader[i].Suspect+'" class="btn btn-primary btn-sm">Localizar Jogador</div></td></tr>');
+            $("#mdc_warrants_list").append('	<tr><td>'+reader[i].Suspect+'</td><td>'+reader[i].LastCrime+'</td><td>'+reader[i].Wanted+'</td><td></div></td></tr>');
+        
+            $('#track_wanted_'+reader[i].playerid).click(function() {
+
+                mp.trigger('mdc_warrant_list', reader[i].playerid);
+            });
+            
+        }
+    }
+    else {
+        $('#no_warrant').show();
+    }
+}
+	
+function ShowPersons(personnsss) 
+{
+		let persons = JSON.parse(personnsss);
+		
+		var tablepersons = document.getElementById('persons');
+		
+		// Clear the children
+		while(tablepersons.firstChild) {
+			tablepersons.removeChild(tablepersons.firstChild);
+		}
+	
+		for(let i = 0; i < persons.length; i++) 
+		{
+			let item = persons[i];
+			
+			var row = document.createElement('tr');
+			var col1 = document.createElement('td');
+			var col2 = document.createElement('td');
+			var col3 = document.createElement('td');
+
+			
+			col1.textContent = item.Name;
+			col2.textContent = item.age;
+
+			
+
+			let button1 = document.createElement('button');
+			button1.textContent = 'Detalji';
+			button1.className = "btn btn-primary btn-sm";
+			button1.onclick = (function() {
+				mp.trigger('mdcPersonDetails', item.Name);
+				PersonName = item.Name;
+			});
+			
+
+			col3.appendChild(button1);
+
+			row.appendChild(col1);
+			row.appendChild(col2);
+			row.appendChild(col3);
+
+
+			tablepersons.appendChild(row);
+		}	
+	
+}
+function SearchPoliceVehicles() 
+{
+	mp.trigger('mdcFindPoliceVehicles');
+}
+function SearchVehicles(name) 
+{
+	mp.trigger('mdcFindVehicles', name);
+}
+
+function SearchWanted(name) 
+{
+	mp.trigger('mdc_warrant_list', name);
+}
+
+
+function CloseMDC() {
+	mp.trigger('hidePoliceCivilMenu');
+}
+function AddCharacterNote() {
+	
+	var name = PersonName;
+	var reason = document.getElementById('newnotereason').value;
+	
+	mp.trigger('mdcPersonAddNote', name,reason);
+}
+
+
+function AddCharacterFine() {
+	
+	var name = PersonName;
+	var price = document.getElementById('newfineprice').value;
+	var reason = document.getElementById('newfinereason').value;
+	
+	mp.trigger('mdcPersonAddFine', name,reason,price);
+}
+
+function AddCharacterCase() {
+	
+	var name = PersonName;
+	var jailtime = document.getElementById('newcasejailtime').value;
+	var reason = document.getElementById('newcasereason').value;
+	
+	
+	mp.trigger('mdcPersonAddCase', name,reason,jailtime);
+	
+
+}
+function ShowVehicles(personnsss) 
+{
+		let vehicles = JSON.parse(personnsss);
+		
+		var tablepersons = document.getElementById('vehicles');
+		
+		// Clear the children
+		while(tablepersons.firstChild) {
+			tablepersons.removeChild(tablepersons.firstChild);
+		}
+	
+		for(let i = 0; i < vehicles.length; i++) 
+		{
+			let item = vehicles[i];
+			
+			var row = document.createElement('tr');
+			var col1 = document.createElement('td');
+			var col2 = document.createElement('td');
+			var col3 = document.createElement('td');
+			var col4 = document.createElement('td');
+			var col5 = document.createElement('td');
+			
+			col1.textContent = item.Model;
+			col2.textContent = item.Plate;
+			col3.textContent = item.Owner;
+			col4.textContent = item.Ticket;
+			
+
+			let button1 = document.createElement('button');
+			button1.className = "btn btn-primary btn-sm";
+			button1.onclick = (function() {
+				mp.trigger('mdcVehicleDetails', item.id);
+			});
+			
+
+			col5.appendChild(button1);
+
+			row.appendChild(col1);
+			row.appendChild(col2);
+			row.appendChild(col3);
+			row.appendChild(col4);
+			row.appendChild(col5);
+			
+			tablepersons.appendChild(row);
+		}	
+	
+}
+
+function ShowPersonDetails(characterr,notess,finess,warrant) 
+{
+	try {
+  
+		//mp.trigger("SendErrorToChat","Check #0");
+		$('.nav-pills a[href="#menu5"]').tab('show');
+		let character = JSON.parse(characterr);
+		let fines = JSON.parse(finess);
+		//mp.trigger("SendErrorToChat","Check #1");
+		let cases = JSON.parse(warrant);
+		let notes = JSON.parse(notess);
+		
+		var tablefines = document.getElementById('fines');
+		var tablecases = document.getElementById('cases');
+		var tablenotes = document.getElementById('notes');
+		var tablelicenses = document.getElementById('licenses');
+		
+		// Clear the children
+		while(tablefines.firstChild) {
+			tablefines.removeChild(tablefines.firstChild);
+		}
+		
+		// Clear the children
+		while(tablecases.firstChild) {
+			tablecases.removeChild(tablecases.firstChild);
+		}
+		
+		// Clear the children
+		while(tablenotes.firstChild) {
+			tablenotes.removeChild(tablenotes.firstChild);
+		}
+		
+		
+		// Clear the children
+		while(tablelicenses.firstChild) {
+			tablelicenses.removeChild(tablelicenses.firstChild);
+		}
+		
+		//================================================
+		//================================================
+		//================================================
+		//================================================
+		//================================================
+		document.getElementById('informationsName').textContent = character[0].Name;
+		document.getElementById('informationsSSN').textContent = character[0].group;
+		document.getElementById('informationsAge').textContent = character[0].age;
+		
+       // $("#informationsName").text(characterr.Name+' 2');
+
+		document.getElementById('informationsSex').textContent = character[0].gender;
+		document.getElementById('informationsPhone').textContent = character[0].phone;
+		//document.getElementById('informationsPhone').textContent = character.gender;
+
+		//================================================
+		//================================================
+		//================================================
+		//================================================
+		//================================================
+		//================================================
+		
+		var row = document.createElement('tr');
+		var col1 = document.createElement('td');
+		var col2 = document.createElement('td');
+		var col3 = document.createElement('td');
+        var col4 = document.createElement('td');
+        var col5 = document.createElement('td');
+		
+		col1.textContent = "Vozilo";
+		if(character[0].car_lic > "1")
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-success">Ima</span>';
+		}
+		else
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-danger">Nema</span>';
+		}
+
+		row.appendChild(col1);
+		row.appendChild(col2);
+		row.appendChild(col3);
+        row.appendChild(col4);
+        row.appendChild(col5);
+		tablelicenses.appendChild(row);	
+		//-----------------------------------------------------------
+		row = document.createElement('tr');
+		col1 = document.createElement('td');
+		col2 = document.createElement('td');
+		col3 = document.createElement('td');
+        col4 = document.createElement('td');
+		col5 = document.createElement('td');
+		
+		col1.textContent = "Motor";
+		if(character[0].moto_lic > "1")
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-success">Ima</span>';
+		}
+		else
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-danger">Nema</span>';
+		}
+
+		row.appendChild(col1);
+		row.appendChild(col2);
+		row.appendChild(col3);
+        row.appendChild(col4);
+        row.appendChild(col5);
+		tablelicenses.appendChild(row);
+		//-----------------------------------------------------------
+		row = document.createElement('tr');
+		col1 = document.createElement('td');
+		col2 = document.createElement('td');
+		col3 = document.createElement('td');
+        col4 = document.createElement('td');
+		col5 = document.createElement('td');
+
+        col1.textContent = "Letenje";
+		if(character[0].fly_lic > "1")
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-success">Ima</span>';
+		}
+		else
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-danger">Nema</span>';
+		}
+
+		row.appendChild(col1);
+		row.appendChild(col2);
+		row.appendChild(col3);
+        row.appendChild(col4);
+        row.appendChild(col5);
+		tablelicenses.appendChild(row);
+		//-----------------------------------------------------------
+		row = document.createElement('tr');
+		col1 = document.createElement('td');
+		col2 = document.createElement('td');
+		col3 = document.createElement('td');
+        col4 = document.createElement('td');
+		col5 = document.createElement('td');
+
+        col1.textContent = "Pecanje";
+		if(character[0].fish_lic > "1")
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-success">Ima</span>';
+		}
+		else
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-danger">Nema</span>';
+		}
+
+		row.appendChild(col1);
+		row.appendChild(col2);
+		row.appendChild(col3);
+        row.appendChild(col4);
+        row.appendChild(col5);
+		tablelicenses.appendChild(row);
+		//-----------------------------------------------------------
+		row = document.createElement('tr');
+		col1 = document.createElement('td');
+		col2 = document.createElement('td');
+		col3 = document.createElement('td');
+        col4 = document.createElement('td');
+		col5 = document.createElement('td');
+		
+		col1.textContent = "Oruzije";
+		if(character[0].gun_lic > "1")
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-success">Ima</span>';
+		}
+		else
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-danger">Nema</span>';
+		}
+
+		row.appendChild(col1);
+		row.appendChild(col2);
+		row.appendChild(col3);
+        row.appendChild(col4);
+        row.appendChild(col5);
+		tablelicenses.appendChild(row);
+
+
+       
+
+		//-----------------------------------------------------------
+		/*row = document.createElement('tr');
+		col1 = document.createElement('td');
+		col2 = document.createElement('td');
+		col3 = document.createElement('td');
+		
+		col1.textContent = "Boat";
+		if(character.DrivingLicenseD === 1)
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-success">YES</span>';
+			
+			let button1 = document.createElement('button');
+			button1.textContent = 'Take';
+			button1.className = "btn btn-danger btn-sm";
+			button1.onclick = (function() {
+				mp.trigger('mdcTakeLicense', "D", character.Name);
+			});
+			col3.appendChild(button1);
+		}
+		else
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-danger">NO</span>';
+		}
+
+		row.appendChild(col1);
+		row.appendChild(col2);
+		row.appendChild(col3);
+		tablelicenses.appendChild(row);	*/
+
+		//-----------------------------------------------------------
+	/*	row = document.createElement('tr');
+		col1 = document.createElement('td');
+		col2 = document.createElement('td');
+		col3 = document.createElement('td');
+		
+		col1.textContent = "Plane";
+		if(character.car_lic === 1)
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-success">YES</span>';
+			
+			let button1 = document.createElement('button');
+			button1.textContent = 'Take';
+			button1.className = "btn btn-danger btn-sm";
+			button1.onclick = (function() {
+				mp.trigger('mdcTakeLicense', "E", character.Name);
+			});
+			col3.appendChild(button1);
+		}
+		else
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-danger">NO</span>';
+		}
+
+		row.appendChild(col1);
+		row.appendChild(col2);
+		row.appendChild(col3);
+		tablelicenses.appendChild(row);		*/
+
+		//-----------------------------------------------------------
+		/*row = document.createElement('tr');
+		col1 = document.createElement('td');
+		col2 = document.createElement('td');
+		col3 = document.createElement('td');
+		
+		col1.textContent = "Gun License";
+		if(character.gun_lic === 1)
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-success">YES</span>';
+			
+			let button1 = document.createElement('button');
+			button1.textContent = 'Take';
+			button1.className = "btn btn-danger btn-sm";
+			button1.onclick = (function() {
+				mp.trigger('mdcTakeLicense', "G", character.Name);
+			});
+			col3.appendChild(button1);
+		}
+		else
+		{
+			col2.innerHTML = '<span class="badge badge-pill badge-danger">NO</span>';
+		}
+
+		row.appendChild(col1);
+		row.appendChild(col2);
+		row.appendChild(col3);
+		tablelicenses.appendChild(row);	*/	
+								  
+		//================================================
+		//================================================
+		//================================================
+		//================================================
+		//================================================
+		//================================================
+		//================================================		
+				  
+		if(fines.length > 0)
+		{			
+			for(let i = 0; i < fines.length; i++) 
+			{
+				let item = fines[i];
+				
+				var row = document.createElement('tr');
+				var col1 = document.createElement('td');
+				var col2 = document.createElement('td');
+				var col3 = document.createElement('td');
+				var col4 = document.createElement('td');
+				var col5 = document.createElement('td');
+				var col6 = document.createElement('td');
+				
+				col1.textContent = item.datetime;
+				col2.textContent = item.suspect;
+				
+				
+				let button1 = document.createElement('button');
+				button1.textContent = 'Detalji';
+				button1.className = "btn btn-sm";
+				button1.setAttribute("data-toggle", "modal");
+				button1.setAttribute("data-target", "#newdesc");
+				button1.onclick = (function() {
+					document.getElementById('modal-description').textContent = item.description;
+				});
+				col3.appendChild(button1);
+				
+				col4.textContent = "$" + item.price;
+				col5.textContent = item.officer;
+				
+				if(item.ispaid === 1)
+				{
+					col6.innerHTML = '<span class="badge badge-pill badge-success">Placeno</span>';
+					
+				}
+				else
+				{
+					col6.innerHTML = '<span class="badge badge-pill badge-danger">Neplaceno</span>';
+				}
+
+				
+				row.appendChild(col1);
+				row.appendChild(col2);
+				row.appendChild(col3);
+				row.appendChild(col4);
+				row.appendChild(col5);
+				row.appendChild(col6);
+				
+				tablefines.appendChild(row);
+				
+			}	
+		}
+		//---
+		if(cases.length > 0)
+		{			
+			for(let i = 0; i < cases.length; i++) 
+			{
+				let item = cases[i];
+				
+				var row = document.createElement('tr');
+				var col1 = document.createElement('td');
+				var col2 = document.createElement('td');
+				var col3 = document.createElement('td');
+				var col4 = document.createElement('td');
+				var col5 = document.createElement('td');
+				var col6 = document.createElement('td');
+				var col7 = document.createElement('td');
+				
+				col1.textContent = item.datetime;
+				col2.textContent = item.suspect;
+				
+				
+				let button1 = document.createElement('button');
+				button1.textContent = 'Detalji';
+				button1.className = "btn btn-sm";
+				button1.setAttribute("data-toggle", "modal");
+				button1.setAttribute("data-target", "#newdesc");
+				button1.onclick = (function() {
+					document.getElementById('modal-description').textContent = item.description;
+				});
+				col3.appendChild(button1);
+				
+				col4.textContent = item.jailtime + " minuta";
+				col5.textContent = item.officer;
+				
+			/*	if(item.bail === 1)
+				{
+					col6.innerHTML = '<span class="badge badge-pill badge-success">YES</span>';
+					
+				}
+				else
+				{
+					col6.innerHTML = '<span class="badge badge-pill badge-danger">NO</span>';
+				}*/
+				if(item.isopen === 1)
+				{
+					col7.innerHTML = '<span class="badge badge-pill badge-info">Zatvoreno</span>';
+					
+				}
+				else
+				{
+					col7.innerHTML = '<span class="badge badge-pill badge-danger">Otvoreno</span>';
+				}
+
+				
+				row.appendChild(col1);
+				row.appendChild(col2);
+				row.appendChild(col3);
+				row.appendChild(col4);
+				row.appendChild(col5);
+				row.appendChild(col6);
+				row.appendChild(col7);
+				
+				tablecases.appendChild(row);
+			}	
+		}
+		//---
+		//---
+		if(notes.length > 0)
+		{			
+			for(let i = 0; i < notes.length; i++) 
+			{
+				let item = notes[i];
+				
+				var row = document.createElement('tr');
+				var col1 = document.createElement('td');
+				var col2 = document.createElement('td');
+				var col3 = document.createElement('td');
+				var col4 = document.createElement('td');
+				var col5 = document.createElement('td');
+				
+				col1.textContent = item.datetime;
+				col2.textContent = item.suspect;
+				
+				let button1 = document.createElement('button');
+				button1.textContent = 'Detalji';
+				button1.className = "btn btn-sm";
+				button1.setAttribute("data-toggle", "modal");
+				button1.setAttribute("data-target", "#newdesc");
+				button1.onclick = (function() {
+					document.getElementById('modal-description').textContent = item.description;
+				});
+				col3.appendChild(button1);
+				
+				col4.textContent = item.officer;
+				
+				
+				let button2 = document.createElement('button');
+				button2.textContent = 'Obrisi';
+				button2.className = "btn btn-danger btn-sm";
+				button2.onclick = (function() {
+					mp.trigger('mdcPersonNoteDelete',item.id);
+				});
+				
+				
+				col5.appendChild(button2);
+				
+				row.appendChild(col1);
+				row.appendChild(col2);
+				row.appendChild(col3);
+				row.appendChild(col4);
+				row.appendChild(col5);
+				
+				tablenotes.appendChild(row);
+			}	
+		}
+		//---
+
+		} catch (error) {
+		//mp.trigger('SendErrorToChat',error);
+		console.log(error);
+
+        }
+		//---		
+}
+
+function PersonFineAdded(fine) {
+
+let item = JSON.parse(fine);
+
+var row = document.createElement('tr');
+var col1 = document.createElement('td');
+var col2 = document.createElement('td');
+var col3 = document.createElement('td');
+var col4 = document.createElement('td');
+var col5 = document.createElement('td');
+var col6 = document.createElement('td');
+
+col1.textContent = item[0].datetime;
+col2.textContent = item[0].suspect;
+
+let button1 = document.createElement('button');
+button1.textContent = 'Detalji';
+button1.className = "btn btn-sm";
+button1.setAttribute("data-toggle", "modal");
+button1.setAttribute("data-target", "#newdesc");
+button1.onclick = (function() {
+    document.getElementById('modal-description').textContent = item[0].description;
+});
+col3.appendChild(button1);
+
+col4.textContent = "$" + item[0].price;
+col5.textContent = item[0].officer;
+
+if(item[0].ispaid === 1)
+{
+    col6.innerHTML = '<span class="badge badge-pill badge-success">Placeno</span>';
+    
+}
+else
+{
+    col6.innerHTML = '<span class="badge badge-pill badge-danger">Neplaceno</span>';
+}
+
+
+row.appendChild(col1);
+row.appendChild(col2);
+row.appendChild(col3);
+row.appendChild(col4);
+row.appendChild(col5);
+row.appendChild(col6);
+
+var tablefines = document.getElementById('fines');
+tablefines.appendChild(row);
+
+}
+
+
+
+
+function PersonCaseAdded(fine) {
+
+let item = JSON.parse(fine);
+
+var row = document.createElement('tr');
+var col1 = document.createElement('td');
+var col2 = document.createElement('td');
+var col3 = document.createElement('td');
+var col4 = document.createElement('td');
+var col5 = document.createElement('td');
+var col6 = document.createElement('td');
+var col7 = document.createElement('td');
+
+col1.textContent = item[0].datetime;
+col2.textContent = item[0].suspect;
+
+let button1 = document.createElement('button');
+button1.textContent = 'Detalji';
+button1.className = "btn btn-sm";
+button1.setAttribute("data-toggle", "modal");
+button1.setAttribute("data-target", "#newdesc");
+button1.onclick = (function() {
+    document.getElementById('modal-description').textContent = item[0].description;
+});
+col3.appendChild(button1);
+
+col4.textContent = item[0].jailtime +" minuta";
+col5.textContent = item[0].officer;
+
+
+
+if(item[0].isopen === 1)
+{
+    col7.innerHTML = '<span class="badge badge-pill badge-info">Zatvoreno</span>';
+        
+}
+else
+{
+    col7.innerHTML = '<span class="badge badge-pill badge-danger">Otvoreno</span>';
+}
+
+
+
+row.appendChild(col1);
+row.appendChild(col2);
+row.appendChild(col3);
+row.appendChild(col4);
+row.appendChild(col5);
+row.appendChild(col6);
+row.appendChild(col7);
+
+var tablefines = document.getElementById('cases');
+tablefines.appendChild(row);
+
+}
+
+
+
+function PersonNoteAdded(fine) {
+
+    let item = JSON.parse(fine);
+    
+    var row = document.createElement('tr');
+    var col1 = document.createElement('td');
+    var col2 = document.createElement('td');
+    var col3 = document.createElement('td');
+    var col4 = document.createElement('td');
+    var col5 = document.createElement('td');
+    
+    
+    col1.textContent = item[0].datetime;
+    col2.textContent = item[0].suspect;
+    
+    
+    let button1 = document.createElement('button');
+    button1.textContent = 'Detalji';
+    button1.className = "btn btn-sm";
+    button1.setAttribute("data-toggle", "modal");
+    button1.setAttribute("data-target", "#newdesc");
+    button1.onclick = (function() {
+        document.getElementById('modal-description').textContent = item[0].description;
+    });
+    col3.appendChild(button1);
+    
+    col4.textContent = item[0].officer;
+    
+    
+    let button2 = document.createElement('button');
+    button2.textContent = 'Delete';
+    button2.className = "btn btn-danger btn-sm";
+    button2.onclick = (function() {
+        mp.trigger('mdcPersonNoteDelete',item[0].id);
+    });
+    
+    
+    col5.appendChild(button2);
+    
+    row.appendChild(col1);
+    row.appendChild(col2);
+    row.appendChild(col3);
+    row.appendChild(col4);
+    row.appendChild(col5);
+    
+    var tablenotes = document.getElementById('notes');
+    tablenotes.appendChild(row);
+}
+	$(document).ready(function () {
+        $("#searchvehicles").keyup(function (e) {
+            if (e.keyCode == 13) {
+                var value = $(this).val();
+                SearchVehicles(value);
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $("#searchwanted").keyup(function (e) {
+            if (e.keyCode == 13) {
+                var value = $(this).val();
+                SearchWanted(value);
+            }
+        });
+    });
+    
+    $(document).ready(function () {
+
+
+        $("#searchpersons").keyup(function (e) {
+            if (e.keyCode == 13) {
+                var value = $(this).val();
+                SearchPersons(value);
+            }
+        });
+    });
+
+
+    
+
+
+    $("#mdc_warrants").click(function() {
+        HideAllPages();
+        $('#mdc_warrants_page').show();
+        mp.trigger('mdc_warrant_list');
+    });
+	
+	
+	$("#newfinereason").keypress(function(event){
+    var ew = event.which;
+    if(ew == 32)
+        return true;
+    if(48 <= ew && ew <= 57)
+        return true;
+    if(65 <= ew && ew <= 90)
+        return true;
+    if(97 <= ew && ew <= 122)
+        return true;
+    return false;
+	});
+	
+	
+	$("#newcasereason").keypress(function(event){
+    var ew = event.which;
+    if(ew == 32)
+        return true;
+    if(48 <= ew && ew <= 57)
+        return true;
+    if(65 <= ew && ew <= 90)
+        return true;
+    if(97 <= ew && ew <= 122)
+        return true;
+    return false;
+	});
+	
+	
+	
+	$("#newnotereason").keypress(function(event){
+        return /^\d+(\.\d+)?$/.test(input.value.trim());
+    });
+	
+</script>
+
+</html>

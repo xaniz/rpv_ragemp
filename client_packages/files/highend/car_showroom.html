@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Car Showroom</title>
+</head>
+<body>
+    <div class="car-showroom-wrapper">
+        <div class="car-showroom-switcher" id="carShowroomSwitcher">
+           
+        </div>
+        <div class="car-showroom-specs" id="carShowroomSpecs">
+            <div class="container">
+                <div id="businessname" class="header">High End</div>
+                <ul class="specs">
+                    <li class="spec">
+                        <div class="title">
+                            <div class="icon">
+                                <img src="../Tuning/images/roof.png" alt="">
+                            </div>
+                            <div id="vehname" style="color: rgb(47, 179, 255);" class="name">Name</div>
+                        </div>
+                        <div class="title">
+                            <div class="icon">
+                                <img src="../Tuning/images/wallet.png" alt="">
+                            </div>
+                            <div id="price" style="color: rgba(47, 255, 47, 0.678);" class="name">3000$</div>
+                        </div>
+                    </li>
+                    <li class="spec">
+                        <div class="title">
+                            <div class="icon">
+                                <img src="../Tuning/images/engine.png" alt="">
+                            </div>
+                            <div class="name">Engine</div>
+                        </div>
+                        <div class="value">
+                            <ul id="info_engine" class="bars">
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+               
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="spec">
+                        <div class="title">
+                            <div class="icon">
+                                <img src="../Tuning/images/suspention.png" alt="">
+                            </div>
+                            <div class="name">Suspension</div>
+                        </div>
+                        <div class="value">
+                            <ul id="info_suspension" class="bars">
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="spec">
+                        <div class="title">
+                            <div class="icon">
+                                <img src="../Tuning/images/transmission.png" alt="">
+                            </div>
+                            <div class="name">Transmission</div>
+                        </div>
+                        <div class="value">
+                            <ul id="info_transmission" class="bars">
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="spec">
+                        <div class="title">
+                            <div class="icon">
+                                <img src="../Tuning/images/brakes.png" alt="">
+                            </div>
+                            <div class="name">Brakes</div>
+                        </div>
+                        <div class="value">
+                            <ul id="info_brakes" class="bars">
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="spec">
+                        <div class="title">
+                            <div class="icon">
+                                <img src="../Tuning/images/armor.png" alt="">
+                            </div>
+                            <div class="name">Armor</div>
+                        </div>
+                        <div class="value">
+                            <ul id="info_armor" class="bars">
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                <li class="bar"></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+					<li class="spec">
+                        <div class="title">
+                            <div class="icon">
+                                <img src="../Tuning/images/trubo.png" alt="">
+                            </div>
+                            <div class="name">Turbo</div>
+                        </div>
+                        <div class="value">
+                            <ul id="info_turbo" class="bars">
+                                <li class="bar"></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <div id="buybut" class="row">
+                        <div onclick="buyvehicle()" class="button accept">Buy</div>
+                    </div>
+                    <div id="takebut" class="row" style="display: none;">
+                        <div style="background-color: rgb(255, 255, 255);" onclick="takeoutvehicle()" class="button accept">Take Out</div>
+                    </div>
+                    <div class="row">
+                        <div id="close" class="button decline">Exit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="../css/jquery.js"></script>
+    <script>
+
+        let selectedvehicle = undefined;
+        function buyvehicle()
+        {
+            mp.trigger("BuyHighEnd", selectedvehicle);
+        }
+        function takeoutvehicle()
+        {
+            mp.trigger("TakeOutVehicle", selectedvehicle);
+        }
+        function LoadVehicleData(data)
+        {
+            let vehdata = JSON.parse(data);
+
+            if(vehdata[0].isowner == 1)
+            {
+                $("#takebut").show();
+                $("#buybut").hide();
+            }
+            selectedvehicle = vehdata[0].id;
+            $("#vehname").text(vehdata[0].modelname+"");
+            $("#price").text(vehdata[0].price+"$");
+
+            let engineslot = vehdata[0].engine;
+            let engine = Array.from(document.querySelectorAll('#info_engine li'))
+            for (let index = 0; index < engine.length; index++) {
+                engine[index].className = "bar";
+            }
+            for (let index = 0; index < engineslot; index++) {
+                engine[index].className = "bar active";
+            }
+
+            let suspensionslot = vehdata[0].suspension;
+            let suspension = Array.from(document.querySelectorAll('#info_suspension li'))
+            for (let index = 0; index < suspension.length; index++) {
+                suspension[index].className = "bar";
+            }
+            for (let index = 0; index < suspensionslot; index++) {
+                suspension[index].className = "bar active";
+            }
+
+            let transmissionslot = vehdata[0].transmission;
+            let transmission = Array.from(document.querySelectorAll('#info_transmission li'))
+            for (let index = 0; index < transmission.length; index++) {
+                transmission[index].className = "bar";
+            }
+            for (let index = 0; index < transmissionslot; index++) {
+                transmission[index].className = "bar active";
+            }
+
+            let brakesslot = vehdata[0].brakes;
+            let brakes = Array.from(document.querySelectorAll('#info_brakes li'))
+            for (let index = 0; index < brakes.length; index++) {
+                brakes[index].className = "bar";
+            }
+            for (let index = 0; index < brakesslot; index++) {
+                brakes[index].className = "bar active";
+            }
+
+            let armorslot = vehdata[0].armor;
+            let armor = Array.from(document.querySelectorAll('#info_armor li'))
+            for (let index = 0; index < armor.length; index++) {
+                armor[index].className = "bar";
+            }
+            for (let index = 0; index < armorslot; index++) {
+                armor[index].className = "bar active";
+            }
+
+            if(vehdata[0].turbo == 1)
+            {
+                let turboslot = vehdata[0].turbo;
+                let turbo = Array.from(document.querySelectorAll('#info_turbo li'))
+                for (let index = 0; index < turbo.length; index++) {
+                    turbo[index].className = "bar";
+                }
+                for (let index = 0; index < turboslot; index++) {
+                    turbo[index].className = "bar active";
+                }
+            }
+
+
+        }
+        
+		$("#close").click(function () {
+			mp.trigger("CloseHighEnd");
+		});
+
+
+    </script>    
+</body>
+</html>

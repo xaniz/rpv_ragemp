@@ -1,0 +1,112 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="ls_castoms.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="../fonts/PFDinDisplayPro/stylesheet.css" rel="stylesheet">
+    <style>
+      .slidecontainer {
+        width: 90%;
+        margin-left:5%;
+      }
+      
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;
+        background: #ffffff;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      .slider:hover {
+        opacity: 1;
+      }
+      .slider::-moz-range-thumb {
+        width: 23px;
+        height: 24px;
+        border: 0;
+        background: url('contrasticon.png');
+        cursor: pointer;
+      }
+      .demo3{
+        margin-left: 50%;
+      }
+      </style>
+</head>
+<body>
+
+    <div class="win-select2">
+
+       <div class="glname-txt">
+        <div class="slidecontainer">
+          <input type="range" min="0" max="160" value="2" class="slider" id="myRange">
+          <div style="margin-left:15%;">Ime boje: <span id="colorname"></span> <span id="newspan"></span></div>
+        </div>
+
+      </div>
+  <div onclick="mp.trigger('Display_Tunning_home')" id="home" class="go-main-menu"></div>
+  <div class="footer">
+    <div class="container">
+        <div class="text"><div class="icon transmission"></div><p>Smanjuje vreme prenosa brzine</p></div>
+        <div id="price" class="price"><p>0$</p></div>
+        <div id="buy" class="buy-button"><div class="img"></div><p>Kupi</p></div>
+    </div>
+  </div>
+
+    </div>
+
+    <script src="../../css/jquery.js"></script>
+<script >
+var slider = document.getElementById("myRange");
+var output = document.getElementById("newspan");
+var cname = document.getElementById("colorname");
+output.innerHTML = slider.value;
+let selectedmodValue = -1;
+let tempdata;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  cname.innerHTML = tempdata[this.value].name;
+  selectedchange(this.value,tempdata[this.value].price);
+
+}
+function loaddata(data)
+{
+    tempdata = JSON.parse(data);
+    $("#buy").click(function () {
+      mp.trigger("tunning_onindexchange",true,"LSCUSTOM_primarycolor",selectedmodValue);
+    });
+}
+
+function selectedchange(colorid,price)
+{
+   $("#price p").text(price+"$");
+   selectedmodValue = colorid;
+   mp.trigger("tunning_onindexchange",false,"primarycolor",colorid);
+}
+
+
+$('#right-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=160px"
+  }, "slow");
+});
+
+ $('#left-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=160px"
+  }, "slow");
+});</script>
+    
+    <script src="tuning.js"></script>
+</body>
+</html>

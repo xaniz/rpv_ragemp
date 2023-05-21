@@ -1,0 +1,625 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url(../utils/fonts/SFProDisplay-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    user-select: none;
+    -webkit-user-drag: none;
+    font-family: 'ubuntu';
+}
+
+body {
+    /* background-image: url(../utils/img/edit-backgrounds/0.png); */
+    background-size: 100% 100%;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 0, 0.68); */
+    background: linear-gradient(125deg, rgba(48, 48, 48, 0) 0%, rgba(45, 45, 45, 0) 100%);
+    width: 84vh;
+    height: auto;
+    padding-bottom: 5vh;
+    border-radius: 0.3vh;
+}
+
+.container .pin-container .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8.35vh;
+}
+
+.container .pin-container .header img {
+    width: 15vh;
+    height: auto;
+}
+
+.container .pin-container .header span {
+    font-weight: 700;
+    font-size: 1.15vh;
+    color: #343434;
+    width: 3.1vh;
+    height: 2vh;
+    line-height: 1.87vh;
+    display: inline-block;
+    background: #FFFFFF;
+    border-radius: 0.5vh;
+    margin-left: 0.7vh;
+    text-align: center;
+}
+
+.container .pin-container p {
+    color: white;
+}
+
+.container .pin-container p.welcome-text {
+    text-align: center;
+    font-size: 1.35vh;
+    margin-top: 2vh;
+}
+
+.container .pin-container p.info-text-one {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    font-size: 1.875vh;
+    margin-top: 5.5vh;
+}
+
+.container .pin-container p.info-text-two {
+    text-align: center;
+    font-size: 1.35vh;
+    margin-top: 2vh;
+}
+
+.container .pin-container .pincode {
+    display: flex;
+    justify-content: center;
+}
+
+.container .pin-container .pincode input {
+    background-color: white;
+    outline: none;
+    border: none;
+    height: 6.9vh;
+    width: 6.9vh;
+    margin-left: 1.05vh;
+    margin-right: 1.05vh;
+    margin-top: 3.6vh;
+    border-radius: 0.5vh;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.container .pin-container .submit {
+    display: flex;
+    justify-content: center;
+}
+
+.container .pin-container .submit button {
+    background-color: #b3ff00;
+    outline: none;
+    border: none;
+    color: white;
+    width: 34vh;
+    margin-top: 4.55vh;
+    border-radius: 0.75vh;
+    height: 6vh;
+    font-size: 2vh;
+    transition: opacity 250ms;
+}
+
+.container .pin-container .submit button:hover {
+    opacity: .8;
+}
+
+
+/* main page */
+
+.container .main-container .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8.35vh;
+}
+
+.container .main-container .header img {
+    width: 15vh;
+    height: auto;
+}
+
+.container .main-container p {
+    color: white;
+}
+
+.container .main-container p.info-text {
+    text-align: center;
+    font-size: 1.35vh;
+    margin-top: 2vh;
+}
+
+.container .main-container p.info-text-two {
+    font-size: 1.875vh;
+    margin-top: 5.3vh;
+    margin-left: 5vh;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+}
+
+.container .main-container .row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.25vh;
+}
+
+.container .main-container .row-item {
+    background-color: rgba(20, 20, 20, 0.685);
+    width: 34.5vh;
+    height: 47.25vh;
+    border-radius: 1vh;
+}
+
+.container .main-container .row-item img.card {
+    margin-top: 2vh;
+    width: 90%;
+    height: 36%;
+}
+
+.container .main-container .row-item .card-content {
+    position: absolute;
+    top: 24vh;
+    width: 41%;
+}
+
+.container .main-container .row-item .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.75vh;
+}
+
+.container .main-container .row-item .head img.img-logo {
+    width: 10vh;
+    height: auto;
+    margin-left: 13.0vh;
+}
+
+.container .main-container .row-item .head img.img-icon {
+    width: 1.75vh;
+    height: auto;
+    margin-right: 3.4vh;
+}
+
+.container .main-container .row-item p.current-balance-info {
+    text-transform: uppercase;
+    margin-top: 8.3vh;
+    margin-left: 3.4vh;
+    font-size: 1.1vh;
+}
+
+.container .main-container .row-item p.current-balance-text {
+    margin-left: 3.4vh;
+    margin-top: 1vh;
+    font-size: 1.3vh;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+}
+
+.container .main-container .row-item .action-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .main-container .row-item .action-buttons button {
+    width: 90%;
+    height: 4.5vh;
+    border-radius: 0.5vh;
+    outline: none;
+    border: none;
+    margin-top: 2vh;
+    background-color: rgba(196, 196, 196, 0.05);
+    transition: opacity 250ms;
+}
+
+.container .main-container .row-item .action-buttons button:hover {
+    opacity: .8;
+}
+
+.container .main-container .row-item .action-buttons button a {
+    float: left;
+    color: rgb(187, 255, 0);
+    text-shadow: 0px 0px 0.4vh rgba(255, 255, 255, 0);
+    display: flex;
+    font-size: 1.4vh;
+}
+
+.container .main-container .row-item .action-buttons button a i {
+    margin-left: 1.8vh;
+    font-size: 1.5vh;
+    height: auto;
+    margin-right: 1.5vh;
+}
+
+.container .main-container .row-item button:hover {
+    opacity: .8;
+}
+
+
+/* withdraw */
+
+.container .main-container .row-item .withdraw i {
+    margin-left: 3.4vh;
+    margin-top: 3.55vh;
+    font-size: 3vh;
+    height: auto;
+    color: white;
+}
+
+.container .main-container .row-item .withdraw p.info-text-one-withdraw {
+    font-weight: bold;
+    font-size: 1.875vh;
+    letter-spacing: 0.1vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+}
+
+.container .main-container .row-item .withdraw p.info-text-two-withdraw {
+    font-size: 1.35vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+}
+
+.container .main-container .row-item .withdraw p.info-text-three-withdraw {
+    font-size: 1.35vh;
+    margin-left: 3.4vh;
+    margin-top: 3.5vh;
+}
+
+.container .main-container .row-item .withdraw input {
+    background-color: rgba(255, 255, 255, 0.06);
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+    width: 80%;
+    height: 4.5vh;
+    outline: none;
+    border: none;
+    border-radius: 0.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2vh;
+    letter-spacing: 0.225em;
+    color: white;
+}
+
+.container .main-container .row-item .withdraw .slider-container {
+    background-color: rgba(255, 255, 255, 0.06);
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+    width: 80%;
+    height: 4.5vh;
+    outline: none;
+    border: none;
+    border-radius: 0.5vh;
+    font-size: 2vh;
+    letter-spacing: 0.225em;
+    color: white;
+}
+
+.container .main-container .row-item .withdraw button.withdraw-submit {
+    background-color: #b3ff00;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin-top: 3.35vh;
+    border-radius: 0.75vh;
+    height: 6vh;
+    margin-left: 3.4vh;
+    width: 80%;
+    font-size: 2vh;
+    transition: opacity 250ms;
+}
+
+
+/* deposit */
+
+.container .main-container .row-item .deposit {
+    display: none;
+}
+
+.container .main-container .row-item .deposit i {
+    margin-left: 3.4vh;
+    margin-top: 3.55vh;
+    font-size: 3vh;
+    height: auto;
+    color: white;
+}
+
+.container .main-container .row-item .deposit p.info-text-one-withdraw {
+    font-weight: bold;
+    font-size: 1.875vh;
+    letter-spacing: 0.1vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+}
+
+.container .main-container .row-item .deposit p.info-text-two-withdraw {
+    font-size: 1.35vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+}
+
+.container .main-container .row-item .deposit p.info-text-three-withdraw {
+    font-size: 1.35vh;
+    margin-left: 3.4vh;
+    margin-top: 3.5vh;
+}
+
+.container .main-container .row-item .deposit input {
+    background-color: rgba(255, 255, 255, 0.06);
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+    width: 80%;
+    height: 4.5vh;
+    outline: none;
+    border: none;
+    border-radius: 0.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2vh;
+    letter-spacing: 0.225em;
+    color: white;
+}
+
+.container .main-container .row-item .deposit .slider-container {
+    background-color: rgba(255, 255, 255, 0.06);
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+    width: 80%;
+    height: 4.5vh;
+    outline: none;
+    border: none;
+    border-radius: 0.5vh;
+    font-size: 2vh;
+    letter-spacing: 0.225em;
+    color: white;
+}
+
+.container .main-container .row-item .deposit button.withdraw-submit {
+    background-color: #b3ff00;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin-top: 3.35vh;
+    border-radius: 0.75vh;
+    height: 6vh;
+    margin-left: 3.4vh;
+    width: 80%;
+    font-size: 2vh;
+    transition: opacity 250ms;
+    box-shadow: rgb(51, 51, 51) 0px 0px 1vh 0px;
+}
+
+
+/* send */
+
+.container .main-container .row-item .send {
+    display: none;
+}
+
+.container .main-container .row-item .send i {
+    margin-left: 3.4vh;
+    margin-top: 3.55vh;
+    font-size: 3vh;
+    height: auto;
+    color: white;
+}
+
+.container .main-container .row-item .send p.info-text-one-withdraw {
+    font-weight: bold;
+    font-size: 1.875vh;
+    letter-spacing: 0.1vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+}
+
+.container .main-container .row-item .send p.info-text-two-withdraw {
+    font-size: 1.35vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+}
+
+.container .main-container .row-item .send p.info-text-three-withdraw {
+    font-size: 1.35vh;
+    margin-left: 3.4vh;
+    margin-top: 3.5vh;
+}
+
+.container .main-container .row-item .send input {
+    background-color: rgba(255, 255, 255, 0.06);
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+    width: 80%;
+    height: 4.5vh;
+    outline: none;
+    border: none;
+    border-radius: 0.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2vh;
+    letter-spacing: 0.225em;
+    color: white;
+}
+
+.container .main-container .row-item .send button.withdraw-submit {
+    background-color: #b3ff00;
+    outline: none;
+    border: none;
+    color: rgb(8, 8, 8);
+    margin-top: 3.35vh;
+    border-radius: 0.75vh;
+    height: 6vh;
+    margin-left: 3.4vh;
+    width: 80%;
+    font-size: 2vh;
+    transition: opacity 250ms;
+    box-shadow: rgb(49, 49, 49) 0px 0px 1vh 0px;
+}
+
+
+/* activity */
+
+.container .main-container .row-item .activity {
+    display: none;
+}
+
+.container .main-container .row-item .activity i {
+    margin-left: 3.4vh;
+    margin-top: 3.55vh;
+    font-size: 3vh;
+    height: auto;
+    color: white;
+}
+
+.container .main-container .row-item .activity p.info-text-one-withdraw {
+    font-weight: bold;
+    font-size: 1.875vh;
+    letter-spacing: 0.1vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+}
+
+.container .main-container .row-item .activity p.info-text-two-withdraw {
+    font-size: 1.35vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+}
+
+.container .main-container .row-item .activity ul {
+    width: 80%;
+    height: 29.1vh;
+    margin-left: 3.4vh;
+    margin-top: 2vh;
+    overflow-y: scroll;
+    padding-right: 1vh;
+}
+
+.container .main-container .row-item .activity ul::-webkit-scrollbar {
+    background: rgba(79, 79, 79, 0.17);
+    border: 0.1vh solid rgba(255, 255, 255, 0.01);
+    width: 0.5vh;
+    border-radius: 0.3vh;
+}
+
+.container .main-container .row-item .activity ul::-webkit-scrollbar-track {
+    background: rgba(70, 70, 70, 0.35);
+    border-radius: 0.3vh;
+}
+
+.container .main-container .row-item .activity ul::-webkit-scrollbar-thumb {
+    background: rgba(70, 70, 70, 0.35);
+    border-radius: 0.3vh;
+}
+
+.container .main-container .row-item .activity ul li div a {
+    font-weight: 400;
+    font-size: 1.5vh;
+    color: black;
+    text-shadow: 0px 0px 0.4vh rgba(0, 0, 0, 0.2);
+    padding: 1.525vh 1.5vh 1.525vh;
+    background: #FFFFFF;
+    border-radius: 0.5vh;
+    display: inline-block;
+    margin-right: 1.1vh;
+    transition: opacity 250ms;
+}
+
+.container .main-container .row-item .activity ul li div a:hover {
+    opacity: .8;
+}
+
+.container .main-container .row-item .activity ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2vh 0;
+    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.15);
+}
+
+.container .main-container .row-item .activity ul li div.info {
+    display: flex;
+    align-items: center;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.container .main-container .row-item .activity ul li div.money {
+    display: flex;
+    align-items: center;
+    font-size: 1.4vh;
+    color: white;
+}
+
+
+/* hide */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.hat-item2-inner4-slider {
+    position: relative;
+    width: 21vh;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.1);
+    border-radius: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+}
+
+.current-bank-number {
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: 3.5vh;
+    margin-left: 3.4vh;
+    font-size: 1.1vh;
+}
+
+.current-bank-number-inner {
+    position: absolute;
+    margin-left: 3.4vh;
+    margin-top: 5.5vh;
+    font-size: 1.3vh;
+    font-weight: bold;
+    letter-spacing: .15vh;
+}
+
+.container .contaienr-close {
+    position: absolute;
+    width: 5vh;
+    height: 2vh;
+    background-color: #b3ff00;
+    left: 3vh;
+    top: 3vh;
+    border-radius: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .contaienr-close p {
+    position: relative;
+    font-size: 2.5vh;
+    color: #fff;
+}

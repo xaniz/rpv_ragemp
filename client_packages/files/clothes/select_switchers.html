@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Menu</title>
+</head>
+<body>
+	
+    <div class="menu-wrapper" >
+        <div class="menu" id="menu">
+            <div class="container">
+                <div class="header">Odeca</div>
+                <ul class="list" id="clothlist">
+                    
+                    
+                </ul>
+                <div class="buttons">
+                    <div class="row">
+                        <div onclick="buycloth()" class="button accept">Kupi</div>
+
+                    </div>
+                    <div class="row">
+                        <div onclick="backtomainmenu()" class="button decline">Nazad</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="../css/jquery.js"></script>
+    <script>
+	
+    function backtomainmenu()
+    {
+        mp.trigger("BackToMainClothMenu");
+    }
+
+	
+    let items = Array.from(document.querySelectorAll('.list .select-item'));
+                    
+    	let cloths;
+		function LoadList(data)
+		{
+            cloths = JSON.parse(data);
+            let i = 0;
+			cloths.forEach(elm => {
+                let type = "";
+                for (let index = 0; index < elm.clothe_Texture-1; index++) {
+                    console.log(elm.clothe_Texture);
+                    type +="<div class='type'></div>";
+                }
+                i++;
+               // $("#clothlist").append("<li class='select-item'><div class='row'><div class='name'>"+elm.clothe_Name+"</div><div class='price'>"+elm.price+"</div></div><div class='row'><div class='switcher'><div class='arrow left'><div class='icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.5 20'><path d='M.415 10.99l8.674 8.6a1.412 1.4 0 1 0 1.998-1.98l-7.675-7.61 7.674-7.609a1.413 1.401 0 0 0-1.998-1.981l-8.674 8.6a1.412 1.4 0 0 0 0 1.98z'/></svg></div></div><div class='types'><div class='type active'></div>"+type+"</div><div class='arrow right'><div class='icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.5 20'><path d='M11.085 10.99l-8.674 8.6a1.412 1.4 0 1 1-1.998-1.98l7.675-7.61-7.674-7.609a1.413 1.401 0 0 1 1.998-1.981l8.674 8.6a1.412 1.4 0 0 1 0 1.98z'/></svg></div></div></div></div></li>");
+                $("#clothlist").append("<li class='select-item'><div class='row'><div class='name'>"+elm.clothe_class+" "+i+"</div><div class='price'>$"+elm.price+"</div></div><div class='row'><div class='switcher'><div class='arrow left'><div class='icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.5 20'><path d='M.415 10.99l8.674 8.6a1.412 1.4 0 1 0 1.998-1.98l-7.675-7.61 7.674-7.609a1.413 1.401 0 0 0-1.998-1.981l-8.674 8.6a1.412 1.4 0 0 0 0 1.98z'/></svg></div></div><div class='types'><div class='type active'></div>"+type+"</div><div class='arrow right'><div class='icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.5 20'><path d='M11.085 10.99l-8.674 8.6a1.412 1.4 0 1 1-1.998-1.98l7.675-7.61-7.674-7.609a1.413 1.401 0 0 1 1.998-1.981l8.674 8.6a1.412 1.4 0 0 1 0 1.98z'/></svg></div></div></div></div></li>");
+            });
+            items = Array.from(document.querySelectorAll('.list .select-item'));
+
+            items.forEach((node) => {
+            node.addEventListener('click', clickItem);
+            Array.from(document.querySelectorAll('.list .select-item .switcher .arrow')).forEach((node) => {
+            node.addEventListener('click', clickType);
+        });
+        });
+
+
+        }
+        
+        function buycloth()
+        {
+            mp.trigger("Buy_Clothes",cloths[activeIndex].id,cloths[activeIndex].clothe_Id,activeTypeIndex,cloths[activeIndex].price);
+        }
+		
+
+       
+        let activeIndex = 0;
+        let activeTypeIndex = 0;
+		const clickItem = (e) => {
+            e.preventDefault();
+
+            items.forEach((node) => {
+                node.classList.remove('active');
+            });
+			e.currentTarget.classList.add('active');
+			
+			items.forEach((node, index) => {
+                if (node.classList.contains('active')) {
+                    activeIndex = index;
+                }
+				
+            });
+			           
+			 const types = Array.from(items[activeIndex].querySelectorAll('.types .type'));
+
+            types.forEach((node, index) => {
+                if (node.classList.contains('active')) {
+                    activeTypeIndex = index;
+                }
+            });
+			mp.trigger("Preview_Clothes",cloths[activeIndex].id,cloths[activeIndex].clothe_Id,activeTypeIndex);
+        }
+		
+			const clickType = (e) => {
+            e.preventDefault();
+
+            items.forEach((node, index) => {
+                if (node.classList.contains('active')) {
+                    activeIndex = index;
+                }
+				
+            });
+
+            const types = Array.from(items[activeIndex].querySelectorAll('.types .type'));
+
+            types.forEach((node, index) => {
+                if (node.classList.contains('active')) {
+                    activeTypeIndex = index;
+                }
+            });
+
+            if (e.currentTarget.classList.contains('left')) {
+                if (activeTypeIndex > 0) {
+                    types[activeTypeIndex].classList.remove('active');
+                    activeTypeIndex -= 1;
+                    types[activeTypeIndex].classList.add('active');
+                }
+            } else {
+                if (activeTypeIndex < types.length - 1) {
+                    types[activeTypeIndex].classList.remove('active');
+                    activeTypeIndex += 1;
+                    types[activeTypeIndex].classList.add('active');
+                }
+            }
+            mp.trigger("Preview_Clothes",cloths[activeIndex].id,cloths[activeIndex].clothe_Id,activeTypeIndex);
+        }
+
+        const press = (e) => {
+
+            items.forEach((node, index) => {
+                if (node.classList.contains('active')) {
+                    activeIndex = index;
+                }
+            });
+
+            const types = Array.from(items[activeIndex].querySelectorAll('.types .type'));
+
+            types.forEach((node, index) => {
+                if (node.classList.contains('active')) {
+                    activeTypeIndex = index;
+                }
+            });
+
+            switch (e.keyCode) {
+                case 37: // left
+                    e.preventDefault();
+                    
+                    if (activeTypeIndex > 0) {
+                        types[activeTypeIndex].classList.remove('active');
+                        activeTypeIndex -= 1;
+                        types[activeTypeIndex].classList.add('active');
+                    }
+
+                    break;
+                case 38: // up
+                    e.preventDefault();
+
+                    if (activeIndex > 0) { 
+                        items[activeIndex].classList.remove('active');
+                        activeIndex -= 1;
+                        items[activeIndex].classList.add('active');
+                        items[activeIndex].scrollIntoView();
+						activeTypeIndex =0;
+                    }
+
+                    break;
+                case 39: // right
+                    e.preventDefault();
+
+                    if (activeTypeIndex < types.length - 1) {
+                        types[activeTypeIndex].classList.remove('active');
+                        activeTypeIndex += 1;
+                        types[activeTypeIndex].classList.add('active');
+                    }
+
+                    break;
+                case 40: // down
+                    e.preventDefault();
+
+                    if (activeIndex < items.length - 1) {
+                        items[activeIndex].classList.remove('active');
+                        activeIndex += 1;
+                        items[activeIndex].classList.add('active');
+                        items[activeIndex].scrollIntoView();
+						activeTypeIndex =0;
+                    }
+
+                    break;
+            }
+            mp.trigger("Preview_Clothes",cloths[activeIndex].id,cloths[activeIndex].clothe_Id,activeTypeIndex);
+        }
+
+        items.forEach((node) => {
+            node.addEventListener('click', clickItem);
+        });
+
+        Array.from(document.querySelectorAll('.list .select-item .switcher .arrow')).forEach((node) => {
+            node.addEventListener('click', clickType);
+        });
+
+        document.onkeydown = press;
+    </script>    
+</body>
+</html>

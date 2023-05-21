@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta content="width=1300, initial-scale=1 user-scalable=yes" name="viewport" />
+		<!-- Stylesheets (Semantic, Font Awesome, and Fonts -->
+		<link rel="stylesheet" href="../css/semantic.min.css"/>
+		<link rel="stylesheet" href="style.css">
+
+
+
+		<style type="text/css">
+			body {
+				background-color: rgba(0,0,0,0);
+			}
+			.help-main {
+				max-height: 500px;
+				width: 600px;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}.header {
+				font-size: 1.3em !important;
+			}.help-sub p {
+				font-size: 1.2em;
+			}.help-sub ul {
+				font-size: 1.2em !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="ui container" style="padding-top: 190px;">
+		
+			<div class="ui stacked segments">
+				
+				<div class="ui segment" style="background:#303030 !important;">
+					<h3 class="ui block header">
+						<center>Whitelista</center>
+					</h3>
+				</div>		
+				<div class="ui segment help-main">
+					<a class="ui ribbon label">Trenutno <span id="p_vehicle_count">5</span> osoba ceka prihvatanje</a>
+					<table class="ui definition table" id="contracts">
+						<thead>
+							<tr>
+								<th class="single line" width="10px;"></th>
+								<th class=""><center>Socialclub</th>
+								<th class=""><center>Username(nije potrebno)</th>
+								<th class=""><center>E-mail</th>
+								<th class=""><center>#</th>
+
+								<th></th>
+							</tr>
+						</thead>
+						<tbody id="p_vehicle_list">
+						
+						
+						
+						</tbody>
+					</table>
+				</div>
+				<div class="ui bottom attached segment">
+					<center>
+					<div class="fluid black ui button" id="close">
+						Zatvori
+					</div>
+					</center>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Javascript (jQuery, Semantic) -->
+		<script src="../auth/libs/jquery.js"></script>
+		<script src="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.js" integrity="sha256-RKNmL9+6j/3jB72OcIg8OQr91Bi4OgFPnKQOFS1O+fo=" crossorigin="anonymous"></script>
+		<script>
+
+			$(document).ready(function() {
+				$("#close").click(function() {
+					mp.trigger("Destroy_Character_Menu");
+				});
+
+			});
+			
+			
+			/*UPDATE users SET betaAcess = 1 WHERE `id` = "+id+";*/
+			function LoadWhiteList(vehicle_list) {
+				vehicles_count = 0;
+
+				$("#p_vehicle_list").empty();
+				veh_list = JSON.parse(vehicle_list);
+				if(veh_list.length <= 0) {
+					$('#p_vehicle_list').append("");
+				} else {
+					for(let i = 0; i < veh_list.length; i++) {
+						
+						$('#p_vehicle_list').append('<tr><td><center>'+veh_list[i].Index+'</td><td><center>'+veh_list[i].Name+'</td><td><center>'+veh_list[i].SocialName+'</td><td><center>'+veh_list[i].Email+'</a></td><td><center><div class="ui buttons"><button id="track_'+veh_list[i].Index+'" class="ui button active">Prihvati</button><div class="or" data-text="ili"></div><button id="excluir_'+veh_list[i].Index+'" class="ui negative button">Obrisi nalog</button></div></td></tr>');
+						
+						$("#track_" + veh_list[i].Index).click(function() {
+							mp.trigger("Player_Whitelist_Aprove", veh_list[i].Index);
+						});
+						$("#excluir_" + veh_list[i].Index).click(function() {
+							mp.trigger("Player_Whitelist_Remove", veh_list[i].Index);
+						});
+						vehicles_count++;
+					}
+				}
+				
+				document.getElementById("p_vehicle_count").innerHTML = vehicles_count;
+				
+			}
+		</script>
+
+	</body>
+</html>

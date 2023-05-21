@@ -1,0 +1,653 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>CC</title>
+	<meta name="description" content="cc">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../auth/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/circle.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="css/new-style.css">
+
+  <link rel="stylesheet" href="css/noty.css" />
+  <link rel="stylesheet" href="css/notify.css">
+
+	<link rel="stylesheet" href="css/theme.css" />
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+
+	<body class="hud" style="overflow:hidden !important;" id="parent4" >
+
+	<div id="foo" unselectable="on" class="unselectable">
+    <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog" style="padding-top: 200px;">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content card">
+          <div class="modal-header">
+            <h4 class="title" id="defaultModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+            <span id="modal_text"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-red" id="bottom_cancel" onclick="ModalCancel();"></button>
+            <button type="button" class="btn btn-yellow" id="bottom_confirm" onclick="ModalConfirm();"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="right-top">
+        <div class="health-info">
+					<div class="health-info_thirst">
+						<div class="health-info_quantity health-info_thirst-quantity" id="health-info_thirst-quantity">
+							<div class="progress">
+								<svg class="svg">
+									<circle class="path" cx="18" cy="18" r="16" style="stroke-dasharray: 300;">
+								</svg>
+							</div>
+						</div>
+						<div class="health-info_title health-info_thirst-title">
+							
+						</div>
+					</div>
+					<div class="health-info_hunger">
+						<div class="health-info_quantity health-info_hunger-quantity" id="health-info_hunger-quantity">
+							<div class="progress">
+								<svg class="svg">
+									<circle class="path" cx="18" cy="18" r="16" style="stroke-dasharray: 300;">
+								</svg>
+							</div>
+						</div>
+						<div class="health-info_title health-info_hunger-title">
+							
+						</div>
+					</div>
+				</div>
+    </div>
+
+
+
+
+	<div class="circle" @mouseOut="out" v-show="active" style="opacity:0; height:80px; width:80px">
+        <div class="bg"></div>
+        <div id="8" class="center" @mouseOver="over" @click="btn">
+            <div id="8" class="text">X</div>
+        </div>
+        <ul>
+            <li id="0" @mouseOver="over">
+                <div id="0" class="contents" :class="icons[0]" @click="btn"></div>
+            </li>
+            <li id="1" @mouseOver="over">
+                <div id="1" class="contents" :class="icons[1]" @click="btn"></div>
+            </li>
+            <li id="2" @mouseOver="over">
+                <div id="2" class="contents" :class="icons[2]" @click="btn"></div>
+            </li>
+            <li id="3" @mouseOver="over">
+                <div id="3" class="contents" :class="icons[3]" @click="btn"></div>
+            </li>
+            <li id="4" @mouseOver="over">
+                <div id="4" class="contents" :class="icons[4]" @click="btn"></div>
+            </li>
+            <li id="5" @mouseOver="over">
+                <div id="5" class="contents" :class="icons[5]" @click="btn"></div>
+            </li>
+            <li id="6" @mouseOver="over">
+                <div id="6" class="contents" :class="icons[6]" @click="btn"></div>
+            </li>
+            <li id="7" @mouseOver="over">
+                <div id="7" class="contents" :class="icons[7]" @click="btn"></div>
+            </li>
+        </ul>
+    </div>
+
+	<div id="passport_id" class="passport" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <p id="work">{{work}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/move.min.js"></script>
+  <script src='js/notify.js'></script>
+  <script src="js/noty.min.js"></script>
+  <script src='js/vue.js'></script>
+	<script>
+const scaling = () => {
+    const defaultHeight = 1080;
+    const windowHeight = window.innerHeight;
+    const scalingCoeff = windowHeight / defaultHeight;
+
+    const speedo = document.querySelector('#fh');
+    speedo.style.transform = `scale(${scalingCoeff})`;
+
+
+
+}
+
+window.onload = () => {
+    scaling();
+}
+
+
+
+	/*var license = new Vue({
+    el: '.license',
+    data : {
+        active : false,
+        firstname : "Elon",
+        lastname : "Musk",
+        date : "9999.99.99",
+        gender : "Male",
+        lics: "",
+        timer: null
+    },
+    methods : {
+        set : function(json){
+            var data = JSON.parse(json)
+            this.firstname = data[0];
+            this.lastname = data[1];
+            this.date = data[2];
+            this.gender = data[3];
+            this.lics = data[4];
+        },
+        hide : function(){
+
+            this.active = false
+            clearTimeout(this.timer)
+
+
+        },
+        show : function(){
+
+            this.active = true
+
+            this.timer = setTimeout(this.hide,10000);
+        }
+    }
+	});*/
+
+	var passport = new Vue({
+    el: '.passport',
+    data : {
+        active : false,
+        number : "999999",
+        firstname : "Elon",
+        lastname : "Musk",
+        date : "9999.99.99",
+        gender : "Musko",
+        member : "Police",
+        timer: null
+    },
+    methods : {
+        set : function(json){
+            var data = JSON.parse(json)
+            this.number = data[0];
+            this.firstname = data[1];
+            this.lastname = data[2];
+            this.date = data[3];
+            this.gender = data[4];
+            this.member = data[5];
+			$('#passport_id').show();
+        },
+        hide : function(){
+            this.active = false
+            clearTimeout(this.timer)
+			$('#passport_id').hide();
+			mp.gui.cursor.visible = false;
+        },
+        show : function(){
+            this.active = true
+
+			//document.getElementById('passport_id').style.display = 'block';
+
+			$('#passport_id').show();
+
+            this.timer = setTimeout(this.hide,20000);
+        }
+    }
+	});
+    var circleDesc = {
+    "carinv":"Inventory",
+	"carrep":"Use Repair Kit",
+	"refuel":"Use Gas can",
+    "doors":"lock/unlock Doors",
+    "faction":"faction",
+    "hood":"Open / close Hood",
+
+    "Front-Left":"Open / close",
+    "Front-Right":"Open / close",
+    "Behind-Left":"Open / close",
+    "Behind-Right":"Open / close",
+
+    "passportc":"Show Passport",
+    "licensec":"Show License",
+    "trunk":"Open / close Trunk",
+
+    "acancel": "Close Menu",
+
+    "acat1": "Sit / Lie down",
+    "acat2": "Social",
+    "acat3": "exercises",
+    "acat4": "Indecent",
+    "acat5": "Rack",
+    "acat6": "Dancing",
+
+    "anext": "Cancel Menu",
+    "shake": "shake hand",
+
+    "seat1": "Sit down",
+    "seat2": "Squat",
+    "seat3": "Sit on the ground",
+    "seat4": "Lie on the ground",
+    "seat5": "Wallow on the ground",
+    "seat6": "Sit on your knee",
+    "seat7": "Sit relaxed",
+    "seat8": "Sit on the stairs",
+
+    "social1": "Raise your hands",
+    "social2": "Inspect and Burn",
+    "social3": "Like",
+    "social4": "Military greeting",
+    "social5": "Fright",
+    "social6": "Give up",
+    "social7": "Show muscles",
+    "social8": "Raise your hands",
+    "social9": "Clap",
+    "social10": "Facepalm",
+
+    "phis1": "Charging 1",
+    "phis2": "Charging 2",
+    "phis3": "Download press",
+    "phis4": "Flex muscles",
+    "phis5": "Flex muscles 2",
+    "phis6": "Flex muscles 3",
+    "phis7": "Push up",
+
+    "indecent1": "Show middle finger",
+    "indecent2": "Show something else",
+
+    "stay1": "Stand, hands on the belt",
+    "stay2": "Stretch your arms",
+    "stay3": "Fold arms",
+    "stay4": "Lean on something",
+
+    "dance1": "Dance 1",
+    "dance2": "Dance 2",
+    "dance3": "Dance 3",
+    "dance4": "Dance 4",
+    "dance5": "Dance 5",
+    "dance6": "Dance 6",
+    "dance7": "Dance 7",
+    "dance8": "Dance 8",
+    "dance9": "Dance 9",
+    "dance10": "Dance 10",
+    "dance11": "Dance 11",
+    "dance12": "Dance 12",
+    "dance13": "Dance 13",
+    "dance14": "Dance 14",
+    "dance15": "Dance 15",
+
+	"impcar": "Impound Car",
+	"fine": "Write Fine",
+
+	"onehun": "1000",
+	"twohun": "2000",
+	"threehun": "3500",
+	"fourhun": "5000",
+	"fivehun": "7500",
+	"sixhun": "10000",
+
+	"takeout":"Drag Out/Put In Vehicle",
+
+
+	"p2":"Left Behind",
+	"p3":"Right Behind",
+
+	"givemoney":"Give Money",
+	"showpasp":"General Stuff",
+	"vehgeneral":"General Stuff",
+	"pfaction":"Faction",
+	"cufuncuff":"Cuff/Uncuff",
+	"dragdrop":"Drag/Drop",
+	"PutinVehicle":"Put in Vehicle",
+
+	"tools":"Vehicle Stuff",
+
+	"treatment":"treatment",
+	"mrevive":"Modava",
+	"GJF":"Gashtan Jib Fard",
+	"GBF":"Gereftan Aslahe",
+	"Search":"Search",
+	"AC":"Add Crime",
+	"Rob":"Rob",
+
+}
+var circleData = {
+    "player":
+    [
+
+        ["showpasp","pfaction","shake","passportc","givemoney"],
+    ],
+	"showpasp":
+    [
+        ["Search","Rob"],
+    ],
+    "vehicle":
+    [
+        ["vehgeneral","tools","faction"],
+    ],
+	"vehgeneral":
+	[
+		[ "doors","hood", "trunk","Front-Left","Front-Right","Behind-Left","Behind-Right"]
+	],
+	"tools":
+    [
+        ["carrep", "refuel"],
+    ],
+	"fine":
+    [
+        ["onehun", "twohun", "threehun", "fourhun","fivehun","sixhun"],
+    ],
+	"takeout":
+    [
+        ["p2", "p3"],
+    ],
+	"pfaction":
+    [
+        [],
+        ["cufuncuff", "dragdrop","fine","takeout","AC","mrevive"],
+        ["mrevive","treatment", "dragdrop","takeout"],
+        ["rob"],
+        ["rob"],
+        ["rob"],
+        ["leadaway"],
+        ["leadaway", "search", "takegun", "takeillegal", "takemask", "ticket"],
+        ["sellkit", "offerheal"],
+        ["leadaway", "search", "takegun", "takeillegal", "takemask"],
+        ["leadaway", "pocket", "rob"],
+        ["leadaway", "pocket", "rob"],
+        ["leadaway", "pocket", "rob"],
+        ["leadaway", "pocket", "rob"],
+        ["leadaway"],
+    ],
+    "faction":
+    [
+        [],
+        ["impcar","fine","takeout"],
+        ["rob"],
+        ["rob"],
+        ["rob"],
+        ["rob"],
+        ["leadaway"],
+        ["leadaway", "search", "takegun", "takeillegal", "takemask", "ticket"],
+        ["sellkit", "offerheal"],
+        ["leadaway", "search", "takegun", "takeillegal", "takemask"],
+        ["leadaway", "pocket", "rob"],
+        ["leadaway", "pocket", "rob"],
+        ["leadaway", "pocket", "rob"],
+        ["leadaway", "pocket", "rob"],
+        ["leadaway"],
+    ],
+    "animation":
+    [
+        ["acat1", "acat2", "acat3", "acat4", "acat5", "acat6", null, "acancel"],
+    ],
+    "Анимации 1":
+    [
+        ["seat1", "seat2", "seat3", "seat4", "seat5", "seat6", "seat7", "anext"],
+        ["social1", "social2", "social3", "social4", "social5", "social6", "social7", "anext"],
+        ["phis1", "phis2", "phis3", "phis4", "phis5", "phis6", "phis7"],
+        ["indecent1", "indecent2", "indecent3", "indecent4", "indecent5"],
+        ["stay1", "stay2", "stay3", "stay4", "stay5", "stay6", "stay7"],
+        ["dance1", "dance2", "dance3", "dance4", "dance5", "dance6", "dance7", "anext"],
+        [],
+    ],
+    "Анимации 2":
+    [
+        ["seat8"],
+        ["social8", "social9", "social10"],
+        [],
+        [],
+        [],
+        ["dance8", "dance9", "dance10", "dance11", "dance12", "dance13", "dance14", "dance15"],
+        [],
+    ],
+}
+
+	var circle = new Vue({
+    el: '.circle',
+    data: {
+        active: false,
+        icons: [null,null,null,null,null,null,null,null],
+        description: null,
+        title: "title",
+    },
+    methods:{
+        set: function(t,id){
+            this.icons = circleData[t][id]
+            this.description = t
+            this.title = t
+        },
+        over: function(e){
+
+            let id = e.target.id
+            if(id == 8){
+                this.description = "Close"
+                return;
+            }
+            let iname = this.icons[id]
+            //console.log(id, iname)
+            if(iname == null){
+                this.description = this.title
+                return;
+            }
+            this.description = circleDesc[iname]
+
+        },
+        out: function(e){
+            this.description = this.title
+            //console.log('out')
+        },
+        btn: function(e){
+
+            let id = e.target.id
+            if(id == 8){
+                mp.trigger("circleCallback", -1);
+                this.hide();
+                return;
+            }
+            mp.trigger("circleCallback", Number(e.target.id));
+            this.hide();
+        },
+        show: function(t,id){
+            this.active=true
+            this.set(t,id)
+            setTimeout(()=>{move('.circle').set('width', '480px').set('height', '480px').set('opacity', 1).end()}, 150);
+        },
+        hide: function(){
+            //move('.circle').set('width', '80px').set('height', '80px').set('opacity', 0).end(()=>{circle.active=false})
+            circle.active = false;
+
+        }
+    }
+	})
+
+	var infos;
+	function LoadList(title,data)
+	{
+
+    infos = data;
+
+	$("#NewList").show();
+    $("#list").append('<dt>'+title+'</dt>');
+	infos.forEach(item => {
+
+		$("#list").append('<dd onclick="SelectMenu('+item.id+')" ><a  id='+item.id+' href="#">'+item.name+'</a></dd>');
+
+	});
+
+
+
+  }
+
+  function SelectMenu(id)
+  {
+	$("#NewList").hide();
+    mp.trigger("NewMenuSelected",infos[id].id,infos[id].name);
+  }
+  function close()
+  {
+	 $("#NewList").hide();
+
+  }
+    DisplayMenu(true);
+    function DisplayMenu(toggle)
+    {
+      if(toggle == true)
+      {
+        document.getElementById("parent4").style.visibility = "visible";
+      }
+      else
+      {
+        document.getElementById("parent4").style.visibility = "hidden";
+      }
+
+    }
+/*old code
+	function SetPlayerHealth(heal, armor){
+		var $heal = $("#heal");
+		var $box = $("#box");
+		var $armor = $("#boxArmor");
+		$box.css("width", (`${heal}`)+"%"); //Hp of the player.
+		$armor.css("width", (`${armor}`)+"%"); //Armor of the player.
+	};
+
+	function SetPlayerFood(food, thirst){
+		var $food = $("#food");
+		var $foodbox = $("#foodbox");
+		var $thirst = $("#thirstbox");
+		$foodbox.html(`${food}%`); //Hp of the player.
+        $thirst.html(`${thirst}%`);
+	};*/
+
+
+	//new
+	function SetPlayerHealth(heal, armor){
+		var $heal = $("#heal");
+		var $box = $("#box");
+		var $armor = $("#boxArmor");
+		$box.css("width", (`${heal}`)+"%"); //Hp of the player.
+		$armor.css("width", (`${armor}`)+"%"); //Armor of the player.
+	};
+
+	function SetPlayerFood(food, thirst){
+		let $food = $('#health-info_thirst-quantity .progress svg circle');
+		let $thirst = $('#health-info_hunger-quantity .progress svg circle');
+		$food.css('stroke-dashoffset', 300 - food);
+		$thirst.css('stroke-dashoffset', 300 - thirst);
+	};
+
+
+    var audioPlayer = null;
+
+    function playAudio(name, volume) {
+      audioPlayer = new Audio("../celular/" + name + ".ogg");
+      audioPlayer.volume = volume;
+      audioPlayer.play();
+    }
+
+	function stopaudio() {
+      audioPlayer.pause();
+	  audioPlayer.currentTime = 0;
+
+    }
+
+    /*function SetPlayerHealth(health,armor) {
+      document.getElementById('health_value').textContent = arrhealth
+      document.getElementById('health_value').textContent = arrhealth
+    }*/
+
+
+
+    
+    function UpdateSpeed(speedValue, fuelValue) {
+
+    }
+
+    function UpdateFuel(fuel) {
+	    fuel = 20;
+		let totalFuel = 80;
+		//new
+		$('#speed_amount').html(fuel + 'L');
+		$('.info-speed_control-line').css('width', totalFuel/100*fuel);
+    }
+
+    function UpdateKMH(speed_kmh) {
+
+		//new
+		$('#speed-quantity').html(speed_kmh);
+
+    }
+
+
+    //ShowModal("1", "41", "1", "Ok", "Cancelar");
+    var callback = null;
+
+    function ShowModal(callback_id, title, text, bottom_confirm, bottom_cancel) {
+      $('#defaultModal').modal('show');
+      document.getElementById("modal_text").innerHTML = text;
+      document.getElementById("defaultModalLabel").innerHTML = title;
+      document.getElementById("bottom_confirm").innerHTML = bottom_confirm;
+      document.getElementById("bottom_cancel").innerHTML = bottom_cancel;
+      callback = callback_id;
+    }
+
+    function ModalConfirm() {
+      $('#defaultModal').modal('hide');
+
+      mp.trigger("modalConfirm", callback);
+    }
+
+    function ModalCancel() {
+      $('#defaultModal').modal('hide');
+
+      mp.trigger("modalCancel", callback);
+    }
+
+  </script>
+
+</body>
+</html>

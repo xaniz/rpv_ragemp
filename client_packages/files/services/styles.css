@@ -1,0 +1,126 @@
+/* Global styles */
+
+.main-container {
+    height: 100vh;
+  }
+
+
+  .services-wrapper {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+  }
+  
+  /* Header styles */
+  
+  .header {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+  }
+  
+  /* Content styles */
+  
+  .content {
+    position: relative;
+    background-color: #272727ec;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    width: 40%;
+    left: 28%;
+    color: #f5f5dc;
+  }
+  
+  .content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .content-header h2 {
+    font-size: 24px;
+    margin: 0 0 0 10px;
+  }
+  
+  .subheader {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .items {
+    margin-top: 20px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .item .info-header {
+    margin: 0;
+  }
+  
+  .item .info {
+    margin-left: 10px;
+  }
+  
+  .item-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .button-red {
+    background-color: #dc3545;
+  }
+  
+  /* Footer styles */
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive styles */
+  
+  @media screen and (max-width: 768px) {
+    .services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .ipad {
+      margin-bottom: 0;
+    }
+  }

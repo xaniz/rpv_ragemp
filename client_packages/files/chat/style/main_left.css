@@ -1,0 +1,113 @@
+* {
+	font-family: ARIAL !important;
+}
+body {
+    margin-left: 0.7727975270479134vh;
+    margin-top: 0.7727975270479134vh;
+}
+
+#chat {
+    display: block;
+    z-index: 0;
+    color: white;
+    color: rgb(255, 255, 255);
+    line-height: 2.009428129829985vh;
+    font-weight: bold;
+    font-family: "ARIAL", ARIAL;
+    font-size: 6px;
+    letter-spacing: 0.4px;
+    user-select: none;
+    width: 75vh;
+    height: 25vh; /* increase the height of the chat window */
+}
+
+@media screen and (min-height: 166.9242658423493vh) {
+    #chat {
+        font-size: 2.782071097372488vh !important;
+        font-weight: bold;
+    }
+}
+
+#chat ul#counter {
+    padding: 0 0.5vh 0 0.5vh;
+    min-height: 1.0vh;
+    font-size: 1.55vh;
+    font-family: "ARIAL", ARIAL;
+    text-shadow: 0px 0px 0.1791190108191654vh black,0px 0px 0.1791190108191654vh black,0px 0px 0.1791190108191654vh black,0px 0px 0.1791190108191654vh black;
+    position: absolute;
+    margin-left: 25.25%;
+    margin-top: 0.725%;
+}
+
+#chat ul#chat_messages {
+	margin-bottom: 0;
+    height: 25vh;
+    padding: 0 0.5vh 0 0.5vh;
+    width: 75vh;
+    min-height: 1.0vh;
+    font-size: 1.55vh;
+    word-wrap: break-word;
+    font-family: "ARIAL", ARIAL;
+    text-shadow: 0px 0px 0.1791190108191654vh black,0px 0px 0.1791190108191654vh black,0px 0px 0.1791190108191654vh black,0px 0px 0.1791190108191654vh black;
+    overflow: overlay;
+    direction: rtl;
+}
+
+#chat ul#chat_messages > li {
+	list-style-type: none;
+}
+
+#chat input#chat_msg {
+    color: white;
+    background: rgba(0,0,0,0.5);
+    outline: none;
+    border: none;
+    font-family: "ARIAL", ARIAL;
+    font-size: 1.50vh;
+    font-weight: bold;
+    line-height: 1.09vh;
+    width: 30vw;
+    padding: 1.5vh 1.5vh 1.5vh 2.5vh;
+    /* width: 402px;
+    height: 40px; */
+    font-family: ARIAL !important;
+    /* font-size: 14px; */
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#chat_channels li {
+    float: left;
+    border: 0.1545595054095827vh solid black;
+    list-style-type: none;
+    padding: 0.7727975270479134vh 2.31839258114374vh;
+    margin: 0.7727975270479134vh 0.7727975270479134vh 0 0;
+    text-transform: uppercase;
+    font-size: 2.009273570324575vh;
+    text-shadow: none;
+}
+
+#chat_channels li#active {
+	color: rgb(165,69,165);
+}
+
+::-webkit-scrollbar {
+    width: 0.418238vh;
+    /*height: 1.236476043276662vh;*/
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .75);
+}
+
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 0.3091190108191654vh rgba(0,0,0,.1);
+    background-color: #f5f5f5;*/
+}
+
+#chat ul#chat_messages > li {
+    direction: ltr;
+    text-align: left;
+    margin-left: 10px;
+}

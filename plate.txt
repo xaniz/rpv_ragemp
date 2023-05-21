@@ -1,0 +1,6 @@
+Bus Driver - 8400/h
+Delivery  - 4200/h
+Miner - 9600/h
+Meat Maker 13500/h
+Electrician 5400/h
+Hacker 8600/h

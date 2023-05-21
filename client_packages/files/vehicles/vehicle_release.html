@@ -1,0 +1,94 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta content="width=1300, initial-scale=1 user-scalable=yes" name="viewport" />
+		<!-- Stylesheets (Semantic, Font Awesome, and Fonts -->
+		<link rel="stylesheet" href="css/wlist.css"  />
+
+
+		
+	</head>
+
+	<body>
+		<div class="ui container new2" style="margin-top: 261px;">
+		
+			<div class="ui stacked segments new-d2">
+				
+				<div class="ui segment new-top2">
+					<img src="picture3.png" alt="" class="new-top__img2">
+					<div class="new-top__box2">
+						<div class="new-top__box-title2"></div>
+						
+					</div>
+				</div>		
+				<div class="ui segment help-main new-center2">
+					
+					<table class="ui definition table new-center__table2" id="contracts">
+						<thead>
+							<tr class="ttttr2">
+								<th style="display: none;" class="single line tg2" width="10px;"></th>
+								<th class="mm2"></th>
+								<th class="mmm2"></th>
+
+								<th></th>
+							</tr>
+						</thead>
+						<tbody id="release_vehicle_list">
+						</tbody>
+					</table>
+				</div>
+				<div class="ui bottom attached segment new-end2">
+					<center>
+						<div class="button bbtn" id="close">
+							Zatvori
+						  </div>
+					</center>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<!-- Javascript (jQuery, Semantic) -->
+		<script src="../inventory2/js/jquery.js"></script>
+		<script src="../inventory2/js/semantic.min.js" ></script>
+		<script>
+
+			$(document).ready(function() {
+				$("#close").click(function() {
+					mp.trigger("Destroy_Character_Menu");
+				});
+
+			});
+			
+			function LoadPlayerVehiclesToRelease(vehicle_list) {
+				vehicles_count = 0;
+				// Vehicles From Stock
+				$("#release_vehicle_list").empty();
+				veh_list = JSON.parse(vehicle_list);
+				if(veh_list.length <= 0) {
+					$('#release_vehicle_list').append("");
+				} else {
+					for(let i = 0; i < veh_list.length; i++) {
+						
+						$('#release_vehicle_list').append('<tr><td><td class="single line"><h2 class="ui center aligned header" style="color: white">'+veh_list[i].Model+'</h2></td><td><center><a class="ui red label">$'+veh_list[i].Price+'</a></td><td><button id="release_'+veh_list[i].Index+'" class="fluid ui green button">Vrati</button></td></tr>');
+						
+						$("#release_" + veh_list[i].Index).click(function() {
+							mp.trigger("Player_Vehicle_Release", veh_list[i].Index, veh_list[i].Price);
+						});
+						vehicles_count++;
+					}
+				}
+				
+				document.getElementById("p_vehicle_count").innerHTML = vehicles_count;
+				
+			}
+		</script>
+
+	</body>
+</html>

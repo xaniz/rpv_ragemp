@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta content="width=500, initial-scale=1 user-scalable=yes" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="services">
+        <div class="header">
+		  <img src="picture.png" alt="Image description">
+          <h1 id="agency_name">Policija</h1>
+        </div>
+        <div class="content">
+          <div class="content-header">
+            <i class="fas fa-phone-volume"></i>
+            <div>
+              <h2>Pozivi</h2>
+              <div id="chamadas" class="subheader"></div>
+            </div>
+          </div>
+          <div class="items" id="caller_list">
+          </div>
+        </div>
+        <div class="footer" id="closeclass">
+          <div class="button d-block" id="service_close">
+            Zatvori
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript (jQuery, Semantic) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.nicescroll.min.js"></script>
+    <script>
+      $('.content').niceScroll({
+        cursorborder:"1px solid #424242",
+      });
+
+      $(document).ready(function() {
+        $("#service_close").click(function() {
+          mp.trigger("Destroy_Character_Menu");
+        });
+      });
+
+      function LoadCalls(name, jsonvar) {
+        document.getElementById('agency_name').innerHTML = name;
+
+        $("#caller_list").empty();
+        let services = JSON.parse(jsonvar);
+
+        if(services.length > 0) {
+          document.getElementById('chamadas').innerHTML = "Lista poziva";
+
+          for(let i = 0; i < services.length; i++) {
+            $('#caller_list').append('<div class="item"><div class="item-content"><div class="icon"><i class="fas fa-street-view"></i></div><div class="info"><p class="info-header"><strong> Pozivaoc:</strong> <i>'+services[i].name+'</i> | <strong>Mesto poziva:</strong> <i>'+services[i].location+'</i> </p><p>'+services[i].timeago+'</p></div></div><div class="item-buttons"><a href="#" class="button" onclick="service_track(\''+services[i].index+'\')">Lociraj</a><a href="#" class="button button-red" onclick="service_remove(\''+services[i].index+'\')">Obrisi</a></div></div>')
+          }
+        }
+        else {
+          document.getElementById('chamadas').innerHTML = "Trenutni "+services.length+" pozivi.";
+        }
+      }
+
+      function service_track(id) {
+        mp.trigger("Service_Track", id);
+      }
+
+      function service_remove(id) {
+        mp.trigger("Service_Remove", id);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="fonts/font/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+	<script src="./js/library/vue.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<div @click="exit()" class="exit">
+				<a>X</a>Izlaz
+		</div>
+		<div v-if="style == 0" class="style0">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="nameblock">
+				<div class="desc">Ammunation</div>
+				<div class="desc2">Za kupovinu oruzija morate posedovati dozvolu koja se kupuje u LSPD</div>
+			</div>
+			<div class="center">
+				<div class="block active">
+					<img src="img/weaponc.png" class="ico">
+				</div>
+				<div @click="gostyle(1)" class="block">
+					<img src="img/itemc.png" class="ico">
+				</div>
+			</div>
+			<div class="allitems2">
+				<div  @click="buy(0)" class="bbg2">
+					<img src="img/0.png" class="ico">
+					<a>$500</a>
+				</div>
+				<div @click="buy(1)" class="bbg2">
+					<img src="img/1.png" class="ico">
+					<a>$700</a>
+				</div>
+				<div @click="buy(2)" class="bbg2">
+					<img src="img/2.png" class="ico">
+					<a>$400</a>
+				</div>
+				
+				
+				
+				<div class="bbg2"></div>
+				<div class="bbg2"></div>
+				<div class="bbg2"></div>
+				<div class="bbg2"></div>
+				<div class="bbg2"></div>
+			</div>
+			<div class="allitems">
+				<div v-for="i in 12" class="bbg"></div>
+			</div>
+		</div>
+		<div v-if="style == 1" class="style0">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="nameblock">
+				<div class="desc">Municija</div>
+				<div class="desc2"></div>
+			</div>
+			<div class="center">
+				<div @click="gostyle(0)" class="block">
+					<img src="img/weaponc.png" class="ico">
+				</div>
+				<div class="block active">
+					<img src="img/itemc.png" class="ico">
+				</div>
+			</div>
+			<div class="allitems2">
+				<div @click="buy(3)" class="bbg2">
+					<img src="img/ammopistol.png" class="ico" >
+					<a>$200</a>
+				</div>
+				<div @click="buy(4)" class="bbg2">
+					<img src="img/ammosmg.png" class="ico">
+					<a>$300</a>
+				</div>
+                <div @click="buy(5)" class="bbg2">
+					<img src="img/ammorifle.png" class="ico">
+					<a>$400</a>
+				</div>
+                <div @click="buy(6)" class="bbg2">
+					<img src="img/ammopump.png" class="ico">
+					<a>$500</a>
+				</div>
+                <div @click="buy(7)" class="bbg2">
+					<img src="img/ammosniper.png" class="ico">
+					<a>$600</a>
+				</div>
+				<div class="bbg2"></div>
+				<div class="bbg2"></div>
+			</div>
+			<div class="allitems">
+				<div v-for="i in 12" class="bbg"></div>
+			</div>
+		</div>
+	</div>
+    <script src="./js/index.js"></script>
+	<script src="./js/library/jquery-3.2.1.min.js"></script>
+</body>
+</html>

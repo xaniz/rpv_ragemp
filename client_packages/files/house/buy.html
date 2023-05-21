@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>House</title>
+</head>
+<body>
+    <div class="house-wrapper">
+        <div class="house" id="house">
+            <div class="container">
+                <div class="full-width-wrapper">
+                    <div class="full-width">
+                        <div id="owner_name" class="bold">Michael Henderson</div>
+                        <div class="semibold">Vlasnik</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <div id="Exit_button" class="button viewexit"><img src="assets/controls/door_exit.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>  
+    <script src="../css/jquery.js"></script>  
+</body>
+<script>
+    function Loadmenu(id,name,gslot)
+    {
+		
+        $("#owner_name").text(name);
+		if(name === undefined)
+		{
+			$("#owner_name").text("No");
+		}
+        $("#garage_slot").text(gslot+" Slot");
+        $("#Exit_button").click(
+        function() {
+            mp.trigger("ExitFromHouse",id);
+        });
+    }
+</script>
+</html>

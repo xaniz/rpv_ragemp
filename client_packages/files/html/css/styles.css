@@ -1,0 +1,282 @@
+.info-box {
+    max-width: 700px;
+    overflow: auto;
+    display: table;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #905252, #350c2b);
+    color: #e8e8e8;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.3);
+    animation: fade-in 0.4s ease;
+}
+	.info-box-height {
+		max-height: calc(100vh - 200px);
+		overflow: auto;
+	}
+	.info-box-wide {
+		max-width: 800px;
+	}
+	.info-box-header {
+	    font-size: 39px;
+	    margin-bottom: 20px;
+	    font-weight: 100;
+	    text-align: center;
+	}
+	.info-box-header-small {
+		font-size: 22px;
+	    margin-bottom: 5px;
+	    margin-top: 20px;
+	}
+		.info-box-header-small:first-child {
+			margin-top: 0px;
+		}
+
+	.info-box-subheader {
+		font-size: 17px;
+		margin-top: 15px;
+	}
+
+	.info-box-link-radio {
+		display: inline-block;
+		padding: 3px 0px;
+		margin: 3px 0px;
+		margin-left: 5px;
+		color: #c6aebf;
+		transition: 0.2s;
+	}
+		.info-box-link-radio:hover {
+			color: white;
+		}
+	.info-box-btns {
+		margin-top: 20px;
+		text-align: center;
+	}
+		.info-box-btns span {
+			margin-left: 7px;
+			margin-right: 7px;
+		}
+
+	.info-box table {
+		margin: 0 auto;
+	}
+	
+	.btn-medium {
+    display: inline-block;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 100px;
+   	text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
+   	border: 0px;
+	transition: 0.2s;
+	text-align: center !important;
+}
+
+.btn-red {    
+	background: linear-gradient(to right, #af2727, #560a0a);
+	background-position: center left;
+	background-size: 150%;
+	color: white;
+}
+	.btn-red:hover {
+		background-position: center right -3px;
+		color: white;
+	}
+
+.btn-purple {
+	background: linear-gradient(to right, #a7618a, #443754);
+	background-position: center left;
+	background-size: 150%;
+	color: white;
+}
+	.btn-purple:hover {
+		background-position: center right -3px;
+		color: white;
+	}
+	
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'SF UI Display';
+	cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+::-webkit-scrollbar {
+	width: 18px;
+}
+	::-webkit-scrollbar-track {
+		background: none; 
+	}
+	::-webkit-scrollbar-thumb {
+		border: 4px solid rgba(0, 0, 0, 0);
+		background-clip: padding-box;
+    	border-radius: 10px;
+    	background-color: rgba(0, 0, 0, 0.35);
+	}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.online-list-wrapper {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+}
+
+.online-list-wrapper .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #FEB333;
+    text-align: center;
+    position: relative;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.online-list-wrapper .header::after {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 60px;
+    background-color: #FEB333;
+}
+
+.online-list-wrapper .online {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.online-list-wrapper .online .container {
+    position: relative;
+    max-height: 800px;
+    min-width: 725px;
+    width: 725px;
+    max-width: 725px;
+    background-color: #303030;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.online-list-wrapper .online .container .subheader {
+    font-size: 18px;
+    line-height: 1;
+    color: #ffffff;
+    white-space: pre;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.online-list-wrapper .online .container .subheader .bold {
+    font-weight: 700;
+}
+
+.online-list-wrapper .online .container .subheader .translucent {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.online-list-wrapper .online .container .table-scroll {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 100%;
+    overflow: hidden;
+    margin: 0 -50px;
+    margin-top: 30px;
+}
+
+.online-list-wrapper .online .container .table-scroll .table-head {
+    padding-right: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.online-list-wrapper .online .container .table-scroll .table-body {
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+
+.online-list-wrapper .online .container .table-scroll .table-body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.online-list-wrapper .online .container .table-scroll .table-body::-webkit-scrollbar-track {
+    border-radius: 2.5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.online-list-wrapper .online .container .table-scroll .table-body::-webkit-scrollbar-thumb {
+    border-radius: 2.5px;
+    background-color: #FEB333;
+}
+
+.online-list-wrapper .online .container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.online-list-wrapper .online .container table tr th, .online-list-wrapper .online .container table tr td {
+    padding: 15px 20px 15px 0;
+    text-align: left;
+    width: 120px;
+    color: #ffffff;
+    font-size: 18px;
+    word-break: break-word;
+}
+
+.online-list-wrapper .online .container table tr th:first-child, .online-list-wrapper .online .container table tr td:first-child {
+    padding-left: 50px;
+}
+
+.online-list-wrapper .online .container table tr th:last-child, .online-list-wrapper .online .container table tr td:last-child {
+    padding-right: 50px;
+}
+
+.online-list-wrapper .online .container table tr th:nth-child(2), .online-list-wrapper .online .container table tr td:nth-child(2) {
+    width: auto;
+}
+
+.online-list-wrapper .online .container table thead th {
+    position: sticky;
+    top: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    padding: 20px 0;
+}

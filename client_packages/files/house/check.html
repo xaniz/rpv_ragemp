@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>House</title>
+</head>
+<body>
+    <div class="house-wrapper">
+        <div class="house" id="house">
+            <div class="container">
+                <div class="full-width-wrapper">
+                    <div class="full-width">
+                        <div id="texts" class="bold">CENA:</div>
+                        <div id="price" class="bold">99 999 999 999</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <div id="InspectHouse" class="button decline"><img src="assets/controls/eye.png" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div id="Buy_House" class="button accept"><img src="assets/controls/shop.png" alt=""></div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script> 
+    <script src="../css/jquery.js"></script> 
+</body>
+<script>
+    function Loadmenu(id,price,gslot)
+    {
+        $("#price").text("$"+price);
+        $("#garage_slot").text(gslot+" Slot");
+        $("#Buy_House").click(
+        function() {
+            mp.trigger("BuyHouse",id);
+        });
+        $("#InspectHouse").click(
+        function() {
+            mp.trigger("InspectHouse",id);
+        });
+    }
+</script>
+</html>

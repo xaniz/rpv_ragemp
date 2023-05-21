@@ -1,0 +1,189 @@
+	@media  (max-width: 1300px)  {
+    #infoped {
+		zoom: 70%
+		}
+	}
+	@media (min-width: 1301px) and (max-width: 1400px) {
+		#infoped {zoom: 80%}
+	}
+	@media (min-width: 1401px) and (max-width: 1650px) {
+		#infoped {zoom: 80%}
+	}
+	@media (min-width: 1651px) and (max-width: 2560px) {
+		#infoped {zoom: 100%}
+	}
+
+
+	@font-face {
+		font-family: ProximaNova;
+		src: url(../fonts/ProximaNova-Regular.woff);
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap
+	}
+	@font-face {
+		font-family: ProximaNova;
+		src: url(../fonts/ProximaNova-Semibold.woff);
+		font-weight: 500;
+		font-display: swap
+	}
+
+	@font-face {
+		font-family: ProximaNova;
+		src: url(../fonts/ProximaNova-Light.woff);
+		font-weight: 100;
+		font-display: swap
+	}
+
+	@font-face {
+		font-family: ProximaNova;
+		src: url(../fonts/ProximaNova-Bold.woff);
+		font-weight: 900;
+		font-style: normal;
+		font-display: swap
+	}
+
+	@font-face {
+		font-family: ProximaNova;
+		src: url(../fonts/ProximaNova-Extrabld.woff);
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap
+	}
+	
+	#infoped .bgshow {
+	position: absolute;
+	background:url('../images/donate/bgshow.png');
+	box-shadow: inset 0 0 678px 586px rgb(29 27 40 / 60%);
+	background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+	}
+
+	#infoped * {
+		margin: 0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		text-transform: none;
+		font-family: ProximaNova,sans-serif;
+	}
+
+	#infoped {
+		display: none;
+		height: 100%;
+		width: 100%;
+		font-family: 'Gotham Pro';
+		-webkit-user-select: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#infoped.infoped {
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+
+	#infoped .exit_btn {
+		position: absolute;
+		right: 3.24074vh;
+		top: 3.51852vh;
+		width: 4.62963vh;
+		height: 4.62963vh;
+		border-radius: .92593vh;
+			background: #F44336;
+		display: flex;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center
+	}
+
+	#infoped .exit_btn img {
+		width: 2.59259vh
+	}
+
+	#infoped .list_main,
+	#infoped .list_job {
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
+
+	#infoped .btn_slider {
+		position: absolute;
+		cursor: pointer;
+		width: 4.62963vh;
+		height: 4.62963vh;
+		border-radius: .92593vh;
+		background: #03A3F5;
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
+
+
+
+	#infoped .blockSpawn {
+		cursor: pointer;
+		width: 29.16667vh;
+		height: 51.94444vh;
+		margin: 0 .74074vh;
+		background: #fff;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: #ffffff
+	}
+
+	#infoped .blockSpawn .icon {
+		width: 6.01852vh;
+		margin-bottom: 2.22222vh;
+		position: relative;
+		z-index: 2
+	}
+
+	#infoped .blockSpawn .title {
+		font-size: 1.66667vh;
+		font-weight: 900;
+		text-align: center;
+		position: relative;
+		z-index: 2
+	}
+
+	#infoped .blockSpawn .desc {
+		text-align: center;
+		font-size: 1.2963vh;
+		margin-top: 1.2037vh;
+		position: relative;
+		z-index: 2
+	}
+
+	#infoped .blockSpawn.top {
+		clip-path: polygon(0 6.42%, 100% 0%, 100% 93.58%, 0% 100%)
+	}
+
+	#infoped .blockSpawn.down {
+		clip-path: polygon(0 0, 100% 6.42%, 100% 100%, 0% 93.58%)
+	}
+
+	#infoped .blockSpawn:hover .cover {
+			background: #f44336b8;
+			transition: all .60s;
+	}
+
+	#infoped .blockSpawn .cover {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: rgba(32, 32, 32, 0.87)
+	}

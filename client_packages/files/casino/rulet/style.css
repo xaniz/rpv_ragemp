@@ -1,0 +1,27 @@
+.dugme {
+  position: fixed;
+  left: 49%;
+  top: 25%;
+  width: 10vh;
+  height: 5vh;
+  color:rgb(176, 252, 0);
+  background-color: rgb(49, 49, 49);
+  border-color: rgb(236, 253, 0);
+}
+
+.dugme2 {
+  position: fixed;
+  left: 39%;
+  top: 25%;
+  width: 10vh;
+  height: 5vh;
+  color:rgb(176, 252, 0);
+  background-color: rgba(49, 49, 49, 0);
+  border-color: rgba(236, 253, 0, 0);
+}
+
+.krug {
+  position: fixed;
+  left: 38.5%;
+  top: 29%;
+}

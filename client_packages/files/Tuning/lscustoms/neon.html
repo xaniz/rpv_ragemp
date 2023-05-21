@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="ls_castoms.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="../fonts/PFDinDisplayPro/stylesheet.css" rel="stylesheet">
+    <style>
+      .slidecontainer {
+        width: 90%;
+        margin-left:5%;
+      }
+      
+      .slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;
+        background: #ffffff;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      .slider:hover {
+        opacity: 1;
+      }
+      .slider::-moz-range-thumb {
+        width: 23px;
+        height: 24px;
+        border: 0;
+        background: url('contrasticon.png');
+        cursor: pointer;
+      }
+      .demo3{
+        margin-left: 50%;
+      }
+      </style>
+</head>
+<body>
+
+    <div class="win-select2">
+
+       <div class="glname-txt2">
+        <div class="slidecontainer">
+          <input type="range" min="0" max="16777215" value="0" class="slider" id="myRange">
+          <div style="margin-left:10%;">Color: <span id="colorname"></span></div>
+        </div>
+
+      </div>
+  <div onclick="mp.trigger('Display_Tunning_home')" id="home" class="go-main-menu"></div>
+  <div class="footer">
+    <div class="container">
+        <div class="text"><div class="icon transmission"></div><p>Omogucava stavljanje neon svetla i ulepsavanje vaseg automobila</p></div>
+        <div id="price" class="price"><p>0$</p></div>
+        <div id="buy" class="buy-button"><div class="img"></div><p>Kupi</p></div>
+    </div>
+  </div>
+
+    </div>
+
+    <script src="../../css/jquery.js"></script>
+    <script>
+      $(document).ready(function() {
+      var output = document.getElementById("colorname");
+      var colorPicker = document.getElementById("myRange");
+
+      output.innerHTML = '#' + (colorPicker.value).toString(16).padStart(6, '0');
+
+      colorPicker.onchange = function() {
+        var colorValue = parseInt(this.value);
+        var red = (colorValue >> 16) & 255;
+        var green = (colorValue >> 8) & 255;
+        var blue = colorValue & 255;
+
+        output.innerHTML = '#' + colorValue.toString(16).padStart(6, '0');
+
+        selectedchange(red, green, blue);
+      }
+
+      let selectedmodValueR = -1;
+      let selectedmodValueG = -1;
+      let selectedmodValueB = -1;
+      let tempdata;
+
+      function loaddata(data)
+      {
+          tempdata = JSON.parse(data);
+          $("#price p").text("2000$");
+          var rgb = hexToRgb(tempdata[0].hexColor);
+          colorPicker.value = (rgb.r << 16) + (rgb.g << 8) + rgb.b;
+          output.innerHTML = '#' + (colorPicker.value).toString(16).padStart(6, '0');
+          selectedchange(rgb.r, rgb.g, rgb.b);
+      }
+
+      function selectedchange(r, g, b)
+      {
+        selectedmodValueR = r;
+        selectedmodValueG = g;
+        selectedmodValueB = b;
+        mp.trigger("tunning_onindexchange",false,"neonR",r);
+        mp.trigger("tunning_onindexchange",false,"neonG",g);
+        mp.trigger("tunning_onindexchange",false,"neonB",b);
+      }
+
+      function hexToRgb(hex) {
+          var r = parseInt(hex.substring(1, 3), 16);
+          var g = parseInt(hex.substring(3, 5), 16);
+          var b = parseInt(hex.substring(5, 7), 16);
+
+          return { r, g, b };
+      }
+
+      $('#right-button').click(function() {
+        event.preventDefault();
+        $('#content').animate({
+          scrollLeft: "+=160px"
+        }, "slow");
+      });
+
+      $('#left-button').click(function() {
+        event.preventDefault();
+        $('#content').animate({
+          scrollLeft: "-=160px"
+        }, "slow");
+      });
+
+      $("#buy").click(function () {
+        mp.trigger("tunning_onindexchange",true,"LSCUSTOM_neonR",selectedmodValueR);
+        mp.trigger("tunning_onindexchange",true,"LSCUSTOM_neonG",selectedmodValueG);
+        mp.trigger("tunning_onindexchange",true,"LSCUSTOM_neonB",selectedmodValueB);
+      });
+    });
+      </script>
+    
+    <script src="tuning.js"></script>
+</body>
+</html>

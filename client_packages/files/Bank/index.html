@@ -1,0 +1,290 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../utils/libs/betterslider.css">
+    <script src="../utils/js/fas.js" crossorigin="anonymous "></script>
+    <script src="../utils/libs/jquery.js"></script>
+    <script src="../utils/libs/betterslider.js "></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="contaienr-close" onclick="CloseBank()">
+            
+            <p class="closeicon" style="display: none; font-size: 3vh;"><i class="fa-regular fa-xmark"></i></p>
+        </div>
+
+        <div class="main-container">
+            <div class="header ">
+                <img src="./img/logo.png ">
+            </div>
+            <p class="info-text">-</p>
+            <p class="info-text-two"></p>
+            <div class="row">
+                <div class="row-item">
+                    <center>
+                        <img class="card" src="./img/02.png">
+                    </center>
+                    <div class="card-content">
+                        <div class="head">
+                            <img class="img-logo" src="./img/logo.png ">
+                            <img class="img-icon" src="./img/03.png ">
+                        </div>
+                        <p class="current-bank-number">Broj racuna</p>
+                        <p class="current-bank-number-inner">999555333</p>
+
+                        
+                    </div>
+                    <div class="action-buttons">
+                        <button onclick="gotowithdraw() " id="withdraw-button" style="background-color: #242424; "><a><i class="fa-solid fa-wallet"></i>Podignite novac</a></button>
+                        <button onclick="gotodeposit() " id="deposit-button"><a><i class="fa-solid fa-credit-card"></i>Ostavite novac</a></button>
+                        <button onclick="gotosend() " id="send-button"><a><i class="fa-solid fa-paper-plane"></i>Posaljite novac</a></button>
+                        
+                    </div>
+                </div>
+                <div class="row-item">
+                    <div class="withdraw">
+                        <i class="fa-solid fa-wallet"></i>
+                        <p class="info-text-one-withdraw">Podignite novac</p>
+                        
+                        <p class="info-text-three-withdraw">Kolicina</p>
+                        <input class="input1" id="withdraw-input" type="number" onkeypress="return (event.charCode>= 48 && event.charCode <= 57) " onpaste="return false" placeholder="$1000">
+                        
+                        <button onclick="bankWithdrawMoney()" class="withdraw-submit">Potvrdi</button>
+                    </div>
+                    <div class="deposit">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <p class="info-text-one-withdraw">Ostavite novac</p>
+                        <p class="info-text-three-withdraw">Kolicina</p>
+                        <input class="input2" id="deposit-input" type="number" onkeypress="return (event.charCode>= 48 && event.charCode <= 57)" onpaste="return false" placeholder="$1000">
+                    
+                        <button onclick="bankDepositMoney()" class="withdraw-submit">Potvrdi</button>
+                    </div>
+                    <div class="send">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <p class="info-text-one-withdraw">Posaljite novac</p>
+                        <p class="info-text-three-withdraw">Kolicina</p>
+                        <input class="input3" id="banktransfareamount" type="number" onkeypress="return (event.charCode>= 48 && event.charCode <= 57) " onpaste="return false" placeholder="$1000">
+                        <p class="info-text-three-withdraw" style="margin-top: 2vh;">ID</p>
+                        <input class="input4" id="banktransfarenumber" type="number" onkeypress="return (event.charCode>= 48 && event.charCode<= 57) " onpaste="return false" placeholder="ID Igraca">
+                        <button onclick="bankTransfareMoney()" class="withdraw-submit">Potvrdi</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .noUi-connects {
+        border-radius: 0.5vh;
+        
+    }
+    
+    .noUi-connect {
+        background: #242424 !important;
+        height: 0.5vw;
+        outline: none;
+        
+    }
+</style>
+
+<script>
+    function bankTransfareMoney() {
+        let amount = $('#banktransfareamount').val();
+        let banknumer = $('#banktransfarenumber').val();
+        if (Number(amount) > 0 && Number(banknumer) >= 0) {
+            mp.trigger('Client:BankTransfareMoney', banknumer, amount);
+        }
+    }
+
+    function bankDepositMoney() {
+        let depositamount = $('#deposit-input').val();
+        
+        if (Number(depositamount) > 0) {
+            mp.trigger('Client:BankDepositMoney', depositamount);
+        }
+    }
+
+    function bankWithdrawMoney() {
+        let withdrawamount = $('#withdraw-input').val();
+       
+        if (Number(withdrawamount) > 0) {
+            mp.trigger('Client:BankWithdrawMoney', withdrawamount);
+        }
+    }
+
+    // openatm('{"bankmoney":8074001,"currentmoney":2672459,"banknumber":1307929877,"bankHistory":[{"name":"Auszahlung","amount":158128,"ispayment":true,"date":"09.12.2021"},{"name":"Einzahlung","amount":45685,"ispayment":false,"date":"09.12.2021"},{"name":"Überweisung","amount":706,"ispayment":true,"date":"09.12.2021"}]}')
+
+    function openatm(bankcardjson) {
+        let atmjson = JSON.parse(bankcardjson)
+        $('#current-balance-text').text(formatNumber(atmjson.bankmoney))
+        $('.current-bank-number-inner').text(atmjson.banknumber)
+
+        if (atmjson.bankmoney <= 0) {
+            atmjson.bankmoney = 1;
+        }
+
+        if (atmjson.currentmoney <= 0) {
+            atmjson.currentmoney = 1;
+        }
+
+        console.log(atmjson.currentmoney);
+
+        let slider_withdraw = document.getElementById('slider-withdraw')
+
+        noUiSlider.create(slider_withdraw, {
+            start: [0],
+            connect: [true, false],
+            step: 1,
+            range: {
+                'min': 0,
+                'max': atmjson.bankmoney
+            }
+        });
+
+        slider_withdraw.noUiSlider.on('update', function(values, handle) {
+            $('#withdraw-input').val(parseInt(values[0]))
+        });
+
+        let slider_deposit = document.getElementById('slider-deposit')
+
+        noUiSlider.create(slider_deposit, {
+            start: [0],
+            connect: [true, false],
+            step: 1,
+            range: {
+                'min': 0,
+                'max': atmjson.currentmoney
+            }
+        });
+
+        slider_deposit.noUiSlider.on('update', function(values, handle) {
+            $('#deposit-input').val(parseInt(values[0]))
+        });
+
+        atmjson.bankHistory.forEach(element => {
+            if (element.ispayment == true) {
+                $html = $(
+                    `
+                <li>
+                    <div class="info ">
+                        <a>${element.name}</a>
+                        ${element.date}
+                        <br>
+                        ${element.date}
+                    </div>
+                    <div class="money ">
+                        <span style="font-weight: bold; color: red; ">-${formatNumber(element.amount)}</span> <span>$</span>
+                    </div>
+                </li>
+                `
+                )
+            } else {
+                $html = $(
+                    `
+                <li>
+                    <div class="info ">
+                        <a>${element.name}</a>
+                        ${element.date}
+                        <br>
+                        ${element.date}
+                    </div>
+                    <div class="money ">
+                        <span style="font-weight: bold; color: rgb(120, 222, 40); ">+${formatNumber(element.amount)}</span> <span>$</span>
+                    </div>
+                </li>
+                `
+                )
+            }
+            $('#bankhistory-field').append($html)
+        })
+    }
+
+    function gotowithdraw() {
+        $('.row-item .withdraw').show(0)
+        $('.row-item .deposit').hide(0)
+        $('.row-item .send').hide(0)
+        $('.row-item .activity').hide(0)
+
+        $("#withdraw-button ").css("background-color", "#242424");
+        $("#deposit-button ").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#send-button ").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#activity-button ").css("background-color", "rgba(196, 196, 196, 0.05)");
+
+        
+    }
+
+    function gotodeposit() {
+        $('.row-item .withdraw').hide(0)
+        $('.row-item .deposit').show(0)
+        $('.row-item .send').hide(0)
+        $('.row-item .activity').hide(0)
+
+        $("#withdraw-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#deposit-button").css("background-color", "#242424");
+        $("#send-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#activity-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+
+        
+    }
+
+    function gotosend() {
+        $('.row-item .withdraw').hide(0)
+        $('.row-item .deposit').hide(0)
+        $('.row-item .send').show(0)
+        $('.row-item .activity').hide(0)
+
+        $("#withdraw-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#deposit-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#send-button").css("background-color", "#242424");
+        $("#activity-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+
+        
+    }
+
+    function gotoactivity() {
+        $('.row-item .withdraw').hide(0)
+        $('.row-item .deposit').hide(0)
+        $('.row-item .send').hide(0)
+        $('.row-item .activity').show(0)
+
+        $("#withdraw-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#deposit-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#send-button").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#activity-button").css("background-color", "#242424");
+
+        $("#withdraw-button").css("box-shadow", "0 0 1vh 0 transparent");
+        $("#deposit-button").css("box-shadow", "0 0 1vh 0 transparent");
+        $("#send-button").css("box-shadow", "0 0 1vh 0 transparent");
+        $("#activity-button").css("box-shadow", "0 0 1vh 0 #242424");
+    }
+
+    function formatNumber(num) {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+    }
+
+    function CloseBank() {
+        mp.trigger("Hide_Crafting_System");
+    }
+
+    function CloseIconHover(state) {
+        if (state) {
+            $('.bankicon').css('display', 'block')
+            $('.closeicon').css('display', 'none')
+        } else {
+            $('.closeicon').css('display', 'block')
+            $('.bankicon').css('display', 'none')
+        }
+    }
+
+</script>
+
+</html>

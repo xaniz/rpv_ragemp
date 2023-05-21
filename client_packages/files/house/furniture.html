@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+</head>
+<body style="background-color: transparent;">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+
+			<div class="card bg-dark text-white" style="top:20%;">
+				<div class="card-header"><span id="header">Shop Menu</span><button type="button" class="btn btn-danger btn-sm card-close-button" onclick="CloseMenu();">X</button></div>
+				<div class="card-body catalog-vehicles">
+                    <div id="content" class="row">
+
+
+                    </div>
+
+
+                </div>
+                <div class="card-footer">
+                    <div id="options"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+<script src="../css/jquery.js"></script>
+<script src="../css/bootstrap.js"></script>
+<script src="../css/bootstrap-slider.js"></script>
+<script src="itemshop.js"></script>
+<script>
+    
+let purchasedAmount = 1;
+let selected = undefined;
+let selectedname = undefined;
+
+
+function populateBusinessItems(businessItemsJson, businessName,returnto, multiplier) {
+	
+		// Initialize the values
+		purchasedAmount = 1;
+		selected = undefined;
+		selectedname = undefined;
+
+
+		// Get items to show
+		let businessItemsArray = JSON.parse(businessItemsJson);
+		let header = document.getElementById('header');
+		let content = document.getElementById('content');
+		let options = document.getElementById('options');
+		
+		// Clear the children
+		while(content.firstChild) {
+			content.removeChild(content.firstChild);
+		}
+		// Clear the children
+		while(options.firstChild) {
+			options.removeChild(options.firstChild);
+		}
+		
+		// Show business name
+		header.textContent = businessName;
+		
+		for(let i = 0; i < businessItemsArray.length; i++) {
+			
+			let item = businessItemsArray[i];
+			
+			
+			let itemContainer = document.createElement('div');
+
+			let itemBody = document.createElement('div');
+			let itemDescription = document.createElement('div');
+			let itemVariation = document.createElement('div');
+			let itemAmmount = document.createElement('div');
+			let itemPrice = document.createElement('div');
+		//	let buttonPlus = document.createElement('div');
+		//	let buttonMinus = document.createElement('div');
+			let itemImage = document.createElement('img');
+			
+			itemContainer.classList.add('card', 'bg-dark', 'text-white', 'mb-2', 'col-md-12','panel-row');
+
+			itemBody.classList.add('card-body','row');
+			itemDescription.classList.add('col-md-6');
+			itemVariation.classList.add('col-md-3');
+			itemImage.classList.add('col-md-3');
+
+
+			
+		//	buttonPlus.classList.add('btn', 'btn-success','btn-sm','btn-block','col-md-12');
+		//	buttonMinus.classList.add('btn', 'btn-danger','btn-sm','btn-block','col-md-12');
+			
+			let price = Math.round(item.price * multiplier);
+			
+			itemImage.src = 'img/' + item.picture + '.png';
+
+			
+			itemAmmount.innerHTML = '<b>Amount:</b> ' + purchasedAmount;
+			itemPrice.innerHTML = '<b>Price:</b> ' + price + '$<br>';
+			itemDescription.innerHTML = '<b>'+item.name+ '</b><br>';
+			itemDescription.append(itemPrice);
+			itemDescription.append(itemAmmount);
+			
+			
+		//	buttonPlus.textContent = '+';
+		//	buttonMinus.textContent = '-';
+
+			
+			itemContainer.onclick = (function() {
+				// Check if the item is not selected
+				if(selected != i) {
+					
+					if(selected != undefined) {
+						let previousSelected = document.getElementsByClassName('panel-row')[selected];
+						previousSelected.classList.remove('bg-secondary');
+						previousSelected.classList.add('bg-dark');
+					}
+					
+					let currentSelected = document.getElementsByClassName('panel-row')[i];
+					currentSelected.classList.add('bg-secondary');
+					currentSelected.classList.remove('bg-dark');
+					
+					// Store the item and initialize the amount
+					purchasedAmount = 1;
+					selected = i;
+					selectedname = item.name;
+					
+					// Update the element's text
+					itemAmmount.innerHTML = '<b>Amount:</b> ' + purchasedAmount;
+					itemPrice.innerHTML = '<b>Price:</b> ' + price * purchasedAmount+ '$<br>';
+					
+				}
+			});
+			
+			
+		/*	buttonPlus.onclick = (function() {
+				purchasedAmount++;
+				if(purchasedAmount <= 10) 
+				{
+					itemAmmount.innerHTML = '<b>Amount:</b> ' + purchasedAmount;
+					itemPrice.innerHTML = '<b>Price:</b> ' + price * purchasedAmount+ '$<br>';
+				}
+				else
+				{
+					purchasedAmount--;
+				}
+			});
+			
+			buttonMinus.onclick = (function() {
+				
+				purchasedAmount--;
+				if(purchasedAmount >= 0) 
+				{
+					itemAmmount.innerHTML = '<b>Amount:</b> ' + purchasedAmount;
+					itemPrice.innerHTML = '<b>Price:</b> ' + price * purchasedAmount+ '$<br>';
+				}
+				else
+				{
+					purchasedAmount = 0;
+				}
+			});*/
+			
+			
+			
+			content.appendChild(itemContainer);
+			itemContainer.appendChild(itemBody);
+			
+			itemBody.appendChild(itemImage);
+			itemBody.appendChild(itemDescription);
+			itemBody.appendChild(itemVariation);
+			
+		//	itemVariation.appendChild(buttonPlus);
+		//	itemVariation.appendChild(buttonMinus);
+		}
+		let purchaseButton = document.createElement('div');
+
+		
+		purchaseButton.classList.add('btn', 'btn-success', 'btn-sm', 'btn-block');
+
+		
+		purchaseButton.textContent = "Purchase";
+
+		
+
+		purchaseButton.onclick = (function() {
+			// Check if the user purchased anything
+			if(selected != undefined) {
+				mp.trigger('purchasefurniture',returnto,selectedname ,selected);
+			}
+		});
+
+		
+		options.appendChild(purchaseButton);
+
+		
+}
+
+
+function CloseMenu() {
+	mp.trigger('hidePoliceCivilMenu');
+}
+</script>
+</html>

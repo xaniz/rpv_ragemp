@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/police.css"/>
+
+
+</head>
+<style>
+    body {
+        font-size: 12px;
+		overflow:hidden;
+    }
+	
+</style>
+<body style="background-color: transparent;">
+<div class="container-fluid">
+
+    <div class="row">
+
+
+        <div class="col-md-2"></div>
+		<div class="ipad"><img src="../pictures/ipad.webp" /></div>
+        <div class="col-md-8">
+
+            <div class="card text-white bg-dark" style="top:20%;">
+                
+                <div class="card-body">
+                    <button type="button" class="btn btn-danger btn-sm card-close-button" onclick="CloseMDC();">X
+                    </button>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- Nav pills -->
+                            <ul class="nav nav-pills flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#home">Licenca</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#fine">Kazne</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-9 creator-scroll">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+
+                                <div class="tab-pane container active" id="home">
+
+                                    <h5 class="card-title">Licenca</h5>
+                                    <p class="card-text">
+
+										<div class="card mb-3">
+											<div class="row no-gutters">
+												<div class="col-md-3">
+													<div class="card-body">
+														<img src="Pistol.png">
+													</div>
+												</div>
+												<div class="col-md-6">												
+													<div class="card-body">
+														<h6 class="card-title">Licenca za oruzije</h6>
+														<p class="card-text">Kupovinom licence sticete legalno pravo na nosenje oruzija.</p>
+													</div>
+													
+													
+												</div>
+												<div class="col-md-3">
+													<div class="card-body">
+														<button type="button" id="buygunlic" class="btn btn-info btn-sm btn-block"> $20000 </button>
+													</div>
+												</div>
+											</div>
+										</div>
+								
+                                    </p>
+
+                                </div>
+                                <div class="tab-pane container " id="fine">
+
+                                    <h5 class="card-title">Kazne</h5>
+
+                                        <div class="table-responsive-sm">
+                                            <table class="table table-sm table-dark table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Datum</th>
+                                                        <th>Ime</th>
+                                                        <th>Opis</th>
+                                                        <th>Kazna</th>
+                                                        <th>Policajac</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody  id="fines">
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-2"></div>
+
+
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="newdesc">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Opis</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div id="modal-description"></div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Zatvori</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+<script src="../inventory2/js/jquery.js"></script>
+<script src="../css/bootstrap.js"></script>
+
+<script>
+var buttonGunTest = document.getElementById('buygunlic');
+	
+	buttonGunTest.onclick = (function() {
+						
+		mp.trigger('buygunlic');
+						
+	});
+	function CloseMDC() {
+	mp.trigger('hidePoliceCivilMenu');
+    }
+    
+    function DeletePaidedFine(id)
+    {
+
+    }
+
+    function LoadFines(data)
+    {
+        let fines = JSON.parse(data);
+
+        var tablefines = document.getElementById('fines');
+
+        while(tablefines.firstChild) {
+			tablefines.removeChild(tablefines.firstChild);
+		}
+
+        if(fines.length > 0)
+		{			
+            
+			for(let i = 0; i < fines.length; i++) 
+			{
+			
+				let item = fines[i];
+				
+				var row = document.createElement('tr');
+				var col1 = document.createElement('td');
+				var col2 = document.createElement('td');
+				var col3 = document.createElement('td');
+				var col4 = document.createElement('td');
+				var col5 = document.createElement('td');
+				var col6 = document.createElement('td');
+				
+				col1.textContent = item.datetime;
+				col2.textContent = item.suspect;
+				
+				
+				let button1 = document.createElement('button');
+				button1.textContent = 'Detalji';
+				button1.className = "btn btn-sm";
+				button1.setAttribute("data-toggle", "modal");
+				button1.setAttribute("data-target", "#newdesc");
+				button1.onclick = (function() {
+					document.getElementById('modal-description').textContent = item.description;
+				});
+				col3.appendChild(button1);
+				
+				col4.textContent = "$" + item.price;
+				col5.textContent = item.officer;
+				
+				if(item.ispaid === 0)
+				{
+					col6.innerHTML = '<span onclick="trypayfine('+item.id+','+item.price+')" id="fine_"'+item.id+'  class="btn btn-sm btn-danger">Plati</span>';
+				}
+			
+
+				
+				row.appendChild(col1);
+				row.appendChild(col2);
+				row.appendChild(col3);
+				row.appendChild(col4);
+				row.appendChild(col5);
+				row.appendChild(col6);
+				
+				tablefines.appendChild(row);
+				
+			}	
+		}
+    }
+    function trypayfine(id,price)
+    {
+        DeletePaidedFine(id);
+        mp.trigger("trypayfine",id,price);
+    }
+
+</script>
+</html>

@@ -1,0 +1,127 @@
+.right-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: right top;
+}
+
+.right-top .container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.right-top .container .server {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: fit-content;
+}
+
+.right-top .container .server .logo-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.right-top .container .server .logo-wrapper .logo {
+    min-height: 55px;
+    height: 55px;
+    min-width: 50px;
+    width: 50px;
+}
+
+.right-top .container .server .logo-wrapper .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.right-top .container .server .logo-wrapper .title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-right: 11px;
+}
+
+.right-top .container .server .logo-wrapper .title .icon {
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.right-top .container .server .logo-wrapper .title .games {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    line-height: 1;
+    background: -webkit-linear-gradient(#008df0, #008df0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.right-top .container .server .online {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+.right-top .container .money {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.right-top .container .money .row {
+    position:relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.right-top .container .money .row:first-child {
+    margin-top: 0;
+}
+
+.right-top .container .money .row:last-child {
+    margin-bottom: 0;
+}
+
+.right-top .container .money .row .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26px;
+    width: 26px;
+    min-height: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.right-top .container .money .row .icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+.right-top .container .money .row .value {
+    font-size: 26px;
+    line-height: 1;
+    color: #008df0;
+    text-shadow: 0 0 1.5px rgba(0, 0, 0, 0.75);
+    font-weight: 700;
+}

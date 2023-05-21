@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Car Showroom</title>
+</head>
+
+<body>
+
+    <div class="exit">
+        <div class="exit_button">E</div>
+        <div class="exit_text">Za izlaz</div>
+    </div>
+
+
+    <div class="car-showroom-wrapper">
+
+        <div class="nav">
+            
+
+            <div class="nav-items">
+            <select id="vehicle_name_price" class="nav-items" name="" size="15%">
+             
+            </select>
+            <div class="nav-footer">
+                <div class="nav-footer-text">Cena</div>
+                <div id="price_show" class="nav-footer-text">$0</div>
+                <div class="nav-footer-line"></div>
+                <div onclick="buyvehicle(selectedvehiclemodel)" class="nav-footer-button">Kupi</div>
+            </div>
+            </div>
+            </div>
+
+    </div>
+    <script src="js/index.js"></script>
+    <script src="../css/jquery.js"></script>
+    <script>
+        let vehData = [];
+        let selectedvehiclemodel = undefined;
+        function LoadVehicleData(name, data) {
+            vehData = [];
+            vehData = JSON.parse(data);
+            $("#businessname").text(name);
+            for (let index = 0; index < vehData.length; index++) {
+                if (index == 0) {
+                    mp.trigger("PreviewVehicleDealership", vehData[index].model);
+                    $('#vehicle_name_price').append('<optgroup onclick="selectedvehicle(\''+vehData[index].model+'\',\''+vehData[index].price+'\')" id="veh_' + index + '"  class="nav-item checked"><option class="nav-item-text">' + vehData[index].model + '</div><option class="nav-item-price">' + vehData[index].price + '$</div></optgroup>');
+                } else {
+                    $('#vehicle_name_price').append('<optgroup onclick="selectedvehicle(\''+vehData[index].model+'\',\''+vehData[index].price+'\')" id="veh_' + index + '"  class="nav-item"><option class="nav-item-text">' + vehData[index].model + '</div><option class="nav-item-price">' + vehData[index].price + '$</div></optgroup>');
+                }
+
+            }
+
+
+            vehicles = Array.from(document.querySelectorAll('#vehicle_name_price .nav-item'));
+
+        }
+        function selectedvehicle(name,price)
+        {
+            $("#price_show").text("$"+price);
+            selectedvehiclemodel = name;
+            mp.trigger("PreviewVehicleDealership", name);
+        }
+        function buyvehicle() {
+            mp.trigger("Business_Buy_Vehicle", selectedvehiclemodel);
+        }
+
+        $("#close").click(function () {
+            mp.trigger("Destroy_dealership_Menu");
+        });
+
+        $(document).keydown(function(e) {
+	
+    switch (e.which) {
+        // Show input.
+        case 69: {
+            mp.trigger("Destroy_dealership_Menu");
+            break;
+        }
+    }
+});
+    </script>
+</body>
+
+</html>

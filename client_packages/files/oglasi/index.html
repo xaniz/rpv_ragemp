@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <i class="fa-solid fa-circle-xmark" onclick="closeUi()"></i>
+            <div>
+                <img src="./styles/logo.png">
+                <div style="margin-left: 1.65vh; font-family: 'ubuntu'; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+                    <p style="font-size: 3.15vh;"><span style="font-family: 'ubuntu-m' !important; font-weight: bold;">WN</span><span>Oglasi</span></p>
+                    <br>
+                    <p style="font-size: 1vh; margin-bottom: 0.9vh;">Napisite vas oglas!</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p style="margin-top: 2.25vh;margin-left: 10.5vh;">Broj telefona</p>
+            <input id="number" type="number" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="Broj telefona..." style="margin-top: 1vh; width: 100%; height: 4.2vh; padding: 1vh; border: none; outline: none; background: #19171D; border-radius: 0.4vh; color: white; font-size: 1.4vh;">
+            
+            <p style="margin-top: 2.25vh;margin-left: 11.5vh;">Vas oglas</p>
+            <textarea id="textarea" placeholder="Oglas..." style="margin-top: 1vh; width: 100%; height: 14.2vh; resize: none; color: white;background-color: #19171D; border-radius: 0.4vh; outline: none; border: none; font-size: 1.4vh; font-family: 'ubuntu'; padding: 1vh; margin-top: 1vh;"></textarea>
+            <p style="margin-top: 0.9vh;margin-left: 9.0vh;">Cena po oglasu: <span style="color: #00ff47;">$1000</span></p>
+            <button onclick="sendAd()" style="font-size: 1.8vh; font-family: 'ubuntu-m'; color: rgb(3, 3, 3); background-color: #b6ff0d; box-shadow: 0px 0px 0.1vh #b6ff0d; overflow: visible; margin-top: 0.25vh; height: 6.2vh; width: 100%; outline: none; border: none; border-radius: 0.4vh;">Postavi</button>
+        </div>
+    </div>
+</body>
+<script src="./javascript/functions.js"></script>
+<script src="../utils/js/fas.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    let currentCost = 5;
+    let currentType = 1;
+
+    function calculateAdPrice() {
+        return $('#textarea').val().length * currentCost;
+    }
+
+    function selectCategory(element, type) {
+        $(element).each(function(index) {
+            $("button").removeClass("active");
+        })
+        $(element).addClass("active");
+        currentType = type;
+    }
+
+    function closeUi() {
+        mp.trigger("Hide_Crafting_System");
+    }
+
+    function sendAd() {
+
+        let content = $('#textarea').val();
+        let phonenumber = $('#number').val();
+
+        if (phonenumber.length <= 0) phonenumber = 0;
+
+        mp.trigger("Client:wnews:SubmitPost", content, phonenumber);
+    }
+</script>
+
+</html>

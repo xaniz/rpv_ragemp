@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>CC</title>
+	<meta name="description" content="CC">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/speedometer.css">
+	<link rel="stylesheet" href="css/right_top.css">
+	<link rel="stylesheet" href="css/left_bottom.css">
+	<link rel="stylesheet" href="css/weapon.css">
+	<link rel="stylesheet" href="css/right_bottom.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" id="font">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<link rel="stylesheet" href="../auth/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!--new-->
+	<link rel="stylesheet" href="css/new-style.css">
+	<!--end new-->
+</head>
+
+<body class="hud" style="overflow:hidden !important;">
+	<div style="position: relative; width: 100%; height: 100%;">
+
+		<!-- new -->
+		<div class="top-info-box">
+			<div class="top-info_date">
+				<div id="clock" class="time">
+					16:38: <span></span>
+				</div>
+				<div id="date" class="date">
+					26.11.20
+				</div>
+			</div>
+			
+			<div class="top-info_persons-id">
+				<div class="persons-qunatity" id="online_players">
+					1999 
+				</div>
+				<div class="person-id" id="passport_id">
+					119
+				</div>
+			</div>
+			<div class="top-info_logo">
+				<img src="img/logo.png" alt="">
+			</div>
+
+		</div>
+		<!-- end new-->
+
+
+		<div class="right-top" id="rightTop">
+			<div class="container">
+				<!-- to delete -->
+
+				<!--<div class="server">
+                <div class="logo-wrapper">
+                    <div class="title">
+                        <div class="icon">Satellit</div>
+                        <div class="games">RolePlay </div>
+                    </div>
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="online">Онлайн: <span id="online_players">2528</span></div>
+            </div>-->
+
+				<!-- end to delete -->
+
+				<div class="microphone-info " id="microphone" v-if="mic">
+					<div class="microphone-info_icon">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+								<path class="top"
+									d="M26.24 16.5271C26.24 15.8871 25.7506 15.3976 25.1106 15.3976C24.4706 15.3976 23.9812 15.8871 23.9812 16.5271C23.9812 20.9318 20.4047 24.5082 16 24.5082C11.5953 24.5082 8.01883 20.9318 8.01883 16.5271C8.01883 15.8871 7.52942 15.3976 6.88942 15.3976C6.24942 15.3976 5.76001 15.8871 5.76001 16.5271C5.76001 21.76 9.6753 26.1647 14.8706 26.7294V29.7412H10.7671C10.1271 29.7412 9.63766 30.2306 9.63766 30.8706C9.63766 31.5106 10.1271 32 10.7671 32H21.233C21.873 32 22.3624 31.5106 22.3624 30.8706C22.3624 30.2306 21.873 29.7412 21.233 29.7412H17.1294V26.7294C22.3247 26.1647 26.24 21.76 26.24 16.5271Z" />
+								<g filter="url(#filter0_d)">
+									<path class="bottom"
+										d="M15.9999 0C12.5364 0 9.71289 2.82353 9.71289 6.28706V16.4894C9.71289 19.9906 12.5364 22.7765 15.9999 22.8141C19.4635 22.8141 22.287 19.9906 22.287 16.5271V6.28706C22.287 2.82353 19.4635 0 15.9999 0Z" />
+								</g>
+							</g>
+							<defs>
+								<filter id="filter0_d" x="5.71289" y="-4" width="20.5741" height="30.8141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+									<feOffset />
+									<feGaussianBlur stdDeviation="2" />
+									<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.805667 0 0 0 0 0.116667 0 0 0 0.25 0" />
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+								</filter>
+								<clipPath id="clip0">
+									<rect width="32" height="32" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+
+					</div>
+					<div class="microphone-info_text">
+						
+					</div>
+				</div>
+				
+
+
+
+				<div class="money-level-info">
+					<div class="money">
+						<div class="row cash">
+							
+							<div class="icon">
+								<svg width="16" height="14" viewBox="0 0 16 14" fill="#97e900" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13.6 3.11111H12.8V2.33333C12.8 1.71449 12.5471 1.121 12.0971 0.683418C11.647 0.245833 11.0365 0 10.4 0H2.4C1.76348 0 1.15303 0.245833 0.702944 0.683418C0.252856 1.121 0 1.71449 0 2.33333V11.6667C0 12.2855 0.252856 12.879 0.702944 13.3166C1.15303 13.7542 1.76348 14 2.4 14H13.6C14.2365 14 14.847 13.7542 15.2971 13.3166C15.7471 12.879 16 12.2855 16 11.6667V5.44444C16 4.82561 15.7471 4.23211 15.2971 3.79453C14.847 3.35694 14.2365 3.11111 13.6 3.11111ZM2.4 1.55556H10.4C10.6122 1.55556 10.8157 1.6375 10.9657 1.78336C11.1157 1.92922 11.2 2.12705 11.2 2.33333V3.11111H2.4C2.18783 3.11111 1.98434 3.02917 1.83431 2.88331C1.68429 2.73744 1.6 2.53961 1.6 2.33333C1.6 2.12705 1.68429 1.92922 1.83431 1.78336C1.98434 1.6375 2.18783 1.55556 2.4 1.55556ZM14.4 9.33333H13.6C13.3878 9.33333 13.1843 9.25139 13.0343 9.10553C12.8843 8.95967 12.8 8.76184 12.8 8.55556C12.8 8.34928 12.8843 8.15145 13.0343 8.00558C13.1843 7.85972 13.3878 7.77778 13.6 7.77778H14.4V9.33333ZM14.4 6.22222H13.6C12.9635 6.22222 12.353 6.46805 11.9029 6.90564C11.4529 7.34322 11.2 7.93672 11.2 8.55556C11.2 9.17439 11.4529 9.76789 11.9029 10.2055C12.353 10.6431 12.9635 10.8889 13.6 10.8889H14.4V11.6667C14.4 11.8729 14.3157 12.0708 14.1657 12.2166C14.0157 12.3625 13.8122 12.4444 13.6 12.4444H2.4C2.18783 12.4444 1.98434 12.3625 1.83431 12.2166C1.68429 12.0708 1.6 11.8729 1.6 11.6667V4.53444C1.85701 4.62235 2.12755 4.66706 2.4 4.66667H13.6C13.8122 4.66667 14.0157 4.74861 14.1657 4.89447C14.3157 5.04033 14.4 5.23816 14.4 5.44444V6.22222Z"
+										fill="#97e900" />
+								</svg>
+							</div>
+							<div class="value" id="on_hands_money">$99999999999</div>
+						</div>
+						<div class="row bank">
+							
+							<div class="icon">
+								<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M14.9998 1.66666H2.99984C2.26346 1.66666 1.6665 2.26361 1.6665 2.99999V11C1.6665 11.7364 2.26346 12.3333 2.99984 12.3333H14.9998C15.7362 12.3333 16.3332 11.7364 16.3332 11V2.99999C16.3332 2.26361 15.7362 1.66666 14.9998 1.66666Z"
+										stroke="#97e900" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M1.6665 5.66666H16.3332" stroke="#97e900" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="value" id="on_bank_money">$99999999999</div>
+						</div>
+					</div>
+					<!--new Stars-->
+
+					<!--end new-->
+				</div>
+			</div>
+		</div>
+
+		<!-- new -->
+		<div id="info_speed_box" class="info-speed-box">
+			<div class="info-speed_top">
+				<div class="info-speed_top_quantity">
+					<div class="speed-quantity" id="speed-quantity">
+						<span>0</span>85
+					</div>
+					<div class="speed-text">
+						KM/H
+					</div>
+				</div>
+
+				<div class="intfo-speed_top-transmission">
+					<div class="transmission-quantity">
+						<svg>
+							<defs>
+								<mask id="mask" x="0" y="0" width="100%" height="100%">
+									<rect id="overlay" x="0" y="0" width="100%" height="100%" />
+									<text id="text" x="50%" y="0" dy="80%">3</text>
+								</mask>
+							</defs>
+							<rect id="r" x="0" y="0" width="100%" height="100%" />
+						</svg>
+					</div>
+					<div class="transmission-text">
+						
+					</div>
+				</div>
+			</div>
+			<div class="info-speed_center">
+			</div>
+			<div class="info-speed_bottom">
+				
+				<div class="info-speed_control">
+					<div class="info-speed_control-line"></div>
+				</div>
+				<div class="info-speed_icon"></div>
+				<div id="motorstat" class="info-speed_motor">
+					<div class="info-speed_motor-icon">
+						<img src="img/icons/icon-motor.png" alt="">
+					</div>
+				</div>
+				<div id="doorstat" class="info-speed_door">
+					<div class="info-speed_door-icon">
+						<img src="img/icons/icon-door.svg" alt="">
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- end new -->
+
+		
+	</div>
+	<!--help menu-->
+
+	<!--weapon widget-->
+	<div class="info weapon animated faster unarmed" id="weapon">
+		<div id="weapon_image">
+			<img src="img/weapons/pistol.png" alt="">
+		</div>
+
+		<div id="weapon_bullets">
+			<div id="weapon_clip" class="clip"><span>999</span></div>
+			<div id="weapon_ammo" class="ammo"><span>999</span></div>
+		</div>
+
+		<div class="icon" id="bullets">
+			<i><img src="img/weapon-bullets.png" alt=""></i>
+			<i class="clone"><img src="img/weapon-bullets.png" alt=""></i>
+			<span></span>
+		</div>
+	</div>
+
+	<!--microphone-->
+	<div class="left-bottom" id="leftBottom">
+		<div class="container">
+			<!--          <ul class="icons">
+          <li class="icon-1">
+                <div class="microphone" id="microphone" v-if="mic">
+
+                </div>
+            </li>
+        </ul>-->
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/b2e0cac130.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/saferInnerHTML@1/dist/saferInnerHTML.polyfills.min.js"></script>
+	<script>
+		const scaling = () => {
+			const defaultHeight = 1080;
+			const windowHeight = window.innerHeight;
+			const scalingCoeff = windowHeight / defaultHeight;
+
+			const speedo = document.querySelector('#infobuttons');
+			speedo.style.transform = `scale(${scalingCoeff})`;
+
+			
+
+		}
+
+		window.onload = () => {
+			scaling();
+		}
+		/*const help = document.querySelector('#rightBottom .bcontainer');
+		const helpContent = document.querySelector('#rightBottom .content');
+
+		help.addEventListener('click', (e) => {
+			help.classList.toggle('active');
+			helpContent.classList.toggle('hidden');
+		});*/
+		function DisplayMenu(toggle) {
+      if (toggle === true) {
+			$('#infobuttons').show();
+			$('#microphone').show();
+			$('.money-level-info').show();
+			$('.top-info_date').show();
+			$('.top-info_persons-id').show();
+			
+      } else {
+		$('#infobuttons').hide();
+			$('#microphone').hide();
+			$('.money-level-info').hide();
+			$('.top-info_date').hide();
+			$('.top-info_persons-id').hide();
+      }
+    }
+
+EnableSpeedo(false);
+
+    /*function EnableSpeedo(toggle) {
+      if (toggle === true) {
+			$('.info-speed-box').show();
+      } else {
+			$('.info-speed-box').hide();
+      }
+    }*/
+	
+		updateWeapon(false);
+
+		function updateWeapon(armed, weapon = 'knife') {
+			var weaponContainer = document.querySelector('#weapon');
+			var bulletsContainer = document.querySelector('#bullets');
+
+			if (armed === true) {
+
+				var oldWeapon = document.querySelector('#weapon_image img').src;
+				var newWeapon = 'img/weapons/' + weapon + '.png';
+				if (oldWeapon !== newWeapon) {
+					document.querySelector('#weapon_image img').src = newWeapon;
+				}
+
+				if (weaponContainer.classList.contains('armed') === false) {
+					weaponContainer.classList.remove('unarmed', 'fadeOut');
+					weaponContainer.classList.add('armed', 'fadeIn');
+				}
+
+			} else {
+
+				if (weaponContainer.classList.contains('unarmed') === false) {
+					weaponContainer.classList.remove('armed', 'fadeIn');
+					weaponContainer.classList.add('unarmed', 'fadeOut');
+				}
+
+			}
+		}
+
+		UpdateSpeed(230, 30);
+
+		function UpdateSpeed(speedValue, fuelValue,enginestat,gear,doorstat) {
+			var speedometerNumbers = document.querySelector('#speed-quantity');
+			var fuelNumber = $('#speed_amount');
+			if(enginestat == 1 && $("#motorstat").hasClass("active") == false)
+			{
+				$("#motorstat").addClass("active");
+			}else if(enginestat == 0 &&$("#motorstat").hasClass("active"))
+			{
+				$("#motorstat").removeClass("active");
+			}
+			if(doorstat == 1 && $("#doorstat").hasClass("active") == false)
+			{
+				$("#doorstat").addClass("active");
+			}else if(doorstat == 0 &&$("#doorstat").hasClass("active"))
+			{
+				$("#doorstat").removeClass("active");
+			}
+			
+			$(".transmission-quantity text").text(gear);
+			$(speedometerNumbers).html(speedValue);
+			$(fuelNumber).html(fuelValue+'L');
+			$('.info-speed_control-line').css('width',(40/100*fuelValue*2.75)+'%');
+		}
+
+		var current_hands = -1;
+		var current_bank = -1;
+
+		SetPlayerVoice(false);
+
+		/*
+	function SetPlayerVoice(active) {
+		if (active === false) {
+			document.getElementById('microphone').innerHTML = `<img v-if="mic" src="./hud/micoff.png" width="20px" height="40px">`;
+		} else {
+			document.getElementById('microphone').innerHTML = `<img v-if="mic" src="./hud/micon.png" width="20px" height="40px">`;
+		}
+	}
+*/
+
+		/*new*/
+		function SetPlayerVoice(active) {
+			if (active === false) {
+				document.getElementById('microphone').classList.remove('active');
+			} else {
+				document.getElementById('microphone').classList.add('active');
+
+			}
+		}
+		/*end new*/
+
+		function setplayeronline(count, max) {
+
+			//$("#online_players").text(count+" / "+max);
+			$("#online_players").html(count + " / <span class='total'>" + max + "</span>");
+
+		}
+
+		 DisplayMenu(true);
+		 function DisplayMenu(toggle)
+		 {
+		     if(toggle == true)
+		     {
+
+		         document.getElementById("child1").style.visibility = "visible";
+		         document.getElementById("child2").style.visibility = "visible";
+		         document.getElementById("car_km").style.visibility = "visible";
+		         document.getElementById("fuelContainer").style.visibility = "visible";
+		         document.querySelector('main').style.visibility = "visible"
+		     }
+		     else
+		     {
+		         document.getElementById("Head").style.visibility = "hidden";
+		         document.getElementById("child1").style.visibility = "hidden";
+		         document.getElementById("child2").style.visibility = "hidden";
+		         document.getElementById("car_km").style.visibility = "hidden";
+		         document.getElementById("fuelContainer").style.visibility = "hidden";
+		         document.querySelector('main').style.visibility = "hidden"
+		     }
+
+		 }
+
+		function DisplayMoney(toggle) {
+			if (toggle === true) {
+				document.getElementById("child2").style.visibility = "visible";
+			} else {
+				document.getElementById("child2").style.visibility = "hidden";
+			}
+
+		}
+		DisplayVeh(false);
+
+		function DisplayVeh(toggle) {
+			if (toggle === true) {
+				$('#info_speed_box').show();
+			} else {
+
+				$('#info_speed_box').hide();
+			}
+		}
+
+		// document.getElementById("car_km").style.visibility = "hidden";
+
+		function updateclock(time,id,date)
+		{
+			$("#clock").text(time);
+			$("#date").text(date);
+			$("#passport_id").text(id);	
+
+		}
+
+
+		function SetPlayerMoney(hands, bank) {
+
+			// $('#on_bank_money').text(bank.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+
+			if (current_hands !== hands) {
+				/* $('#on_hands_money').animateNumber({
+				     number: hands,
+				     numberStep: function (now, tween) {
+				         var floored_number = Math.floor(now),
+				             target = $(tween.elem);
+				         if (hands >= 0) {
+				             $("#on_hands_money").css("color", "#fff");
+				         } else {
+				             $("#on_hands_money").css("color", "#C85052");
+				         }
+				         target.text(floored_number);
+				     }
+				 });*/
+				$('#on_hands_money').html('$' + hands);
+				current_hands = hands;
+			}
+
+			if (current_bank !== bank) {
+				/*$('#on_bank_money').animateNumber({
+				    number: bank,
+				    numberStep: function (now, tween) {
+				        var floored_number = Math.floor(now),
+				            target = $(tween.elem);
+				        if (bank >= 0) {
+				            $("#on_bank_money").css("color", "#fff");
+				        } else {
+				            $("#on_bank_money").css("color", "#C85052");
+				        }
+				        target.text(floored_number);
+				    }
+				});*/
+				$('#on_bank_money').html('$' + bank);
+				current_bank = bank;
+			}
+
+		}
+
+
+
+		// function SetPlayerCredits(credits) {
+		//   document.getElementById('on_credits').innerHTML = credits;
+		// }
+
+		/*  function SetPlayerTime(hour) {
+		    document.getElementById('hour').textContent = hour;
+		  }*/
+
+		// function SetPlayerWanted(level) {
+		//   document.getElementById("wanteds").innerHTML = "";
+
+		//   if (level == 0) {
+		//     return;
+		//   }
+
+		//   if (level <= 16) {
+		//     for (i = 0; i <= 15; i++) {
+		//       if (i < level) {
+		//         $("#wanteds").append("<span class='fa fa-star checked'></span>");
+		//         if (i == 15) $("#wanteds").append("<br>");
+		//       } else {
+		//         $("#wanteds").append("<font color='#fff'<span class='fa fa-star'></span></font>");
+		//         if (i == 15) $("#wanteds").append("<br>");
+		//       }
+		//     }
+		//   } else if (level <= 32) {
+		//     for (i = 0; i <= 31; i++) {
+		//       if (i < level) {
+		//         $("#wanteds").append("<span class='fa fa-star checked'></span>");
+		//         if (i == 15) $("#wanteds").append("<br>");
+
+		//       } else {
+		//         $("#wanteds").append("<font color='#fff'<span class='fa fa-star'></span></font>");
+		//         if (i == 15) $("#wanteds").append("<br>");
+		//       }
+		//     }
+		//   } else if (level <= 48) {
+		//     for (i = 0; i <= 47; i++) {
+		//       if (i < level) {
+		//         $("#wanteds").append("<span class='fa fa-star checked'></span>");
+		//         if (i == 15) $("#wanteds").append("<br>");
+		//         if (i == 31) $("#wanteds").append("<br>");
+		//       } else {
+		//         $("#wanteds").append("<font color='#fff'<span class='fa fa-star'></span></font>");
+		//         if (i == 15) $("#wanteds").append("<br>");
+		//         if (i == 31) $("#wanteds").append("<br>");
+		//       }
+		//     }
+		//   } else {
+		//     for (i = 0; i <= 63; i++) {
+		//       if (i < level) {
+		//         $("#wanteds").append("<span class='fa fa-star checked'></span>");
+		//         if (i == 15) $("#wanteds").append("<br>");
+		//         if (i == 31) $("#wanteds").append("<br>");
+		//         if (i == 47) $("#wanteds").append("<br>");
+		//       } else {
+		//         $("#wanteds").append("<font color='#fff'<span class='fa fa-star'></span></font>");
+		//         if (i == 15) $("#wanteds").append("<br>");
+		//         if (i == 31) $("#wanteds").append("<br>");
+		//         if (i == 47) $("#wanteds").append("<br>");
+		//       }
+		//     }
+		//   }
+
+		// }
+	</script>
+</body>
+
+</html>

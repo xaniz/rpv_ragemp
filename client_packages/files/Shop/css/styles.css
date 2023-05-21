@@ -1,0 +1,509 @@
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: local("aafuture Thin Italic"), local("aafuture-ThinItalic"), url(../fonts/aafuture-ThinItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: local("aafuture ExtraLight Italic"), local("aafuture-ExtraLightItalic"), url(../fonts/aafuture-ExtraLightItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: local("aafuture Light Italic"), local("aafuture-LightItalic"), url(../fonts/aafuture-LightItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local("aafuture Italic"), local("aafuture-Italic"), url(../fonts/aafuture-Italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: local("aafuture Medium Italic"), local("aafuture-MediumItalic"), url(../fonts/aafuture-MediumItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: local("aafuture SemiBold Italic"), local("aafuture-SemiBoldItalic"), url(../fonts/aafuture-SemiBoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: local("aafuture Bold Italic"), local("aafuture-BoldItalic"), url(../fonts/aafuture-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: local("aafuture ExtraBold Italic"), local("aafuture-ExtraBoldItalic"), url(../fonts/aafuture-ExtraBoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: local("aafuture Black Italic"), local("aafuture-BlackItalic"), url(../fonts/aafuture-BlackItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local("aafuture Thin"), local("aafuture-Thin"), url(../fonts/aafuture-Thin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local("aafuture ExtraLight"), local("aafuture-ExtraLight"), url(../fonts/aafuture-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local("aafuture Light"), local("aafuture-Light"), url(../fonts/aafuture-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("aafuture Regular"), local("aafuture-Regular"), url(../fonts/aafuture-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("aafuture Medium"), local("aafuture-Medium"), url(../fonts/aafuture-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("aafuture SemiBold"), local("aafuture-SemiBold"), url(../fonts/aafuture-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("aafuture Bold"), local("aafuture-Bold"), url(../fonts/aafuture-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local("aafuture ExtraBold"), local("aafuture-ExtraBold"), url(../fonts/aafuture-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "aafuture";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local("aafuture Black"), local("aafuture-Black"), url(../fonts/aafuture-Black.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.house-wrapper {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'aafuture', sans-serif;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+}
+
+.house-wrapper .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #008df0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.house-wrapper .header::after {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 60px;
+    background-color: #008df0;
+}
+
+.house-wrapper .house {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.house-wrapper .house .container {
+    position: relative;
+    min-width: 400px;
+    width: 400px;
+    max-width: 400px;
+    max-height: 800px;
+  background-color: #30303000;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0 0 20px rgba(188, 255, 2, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.house-wrapper .house .container .specs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    width: 100%;
+    min-height: fit-content;
+    margin: 0;
+    border-radius: 10px
+}
+
+.house-wrapper .house .container .specs .spec {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: fit-content;
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.house-wrapper .house .container .specs .spec:first-child {
+    margin-top: 0;
+}
+
+.house-wrapper .house .container .specs .spec:last-child {
+    margin-bottom: 0;
+}
+
+.house-wrapper .house .container .specs .spec .name {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.house-wrapper .house .container .specs .spec .value {
+    margin-left: 10px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.house-wrapper .house .container .full-width-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -50px;
+    margin-top: 21px;
+    padding: 0 50px;
+
+}
+
+.house-wrapper .house .container .full-width-wrapper .full-width {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.house-wrapper .house .container .full-width-wrapper .full-width > * {
+    margin: 5px 0;
+}
+
+.house-wrapper .house .container .full-width-wrapper .full-width > *:first-child {
+    margin-top: 0;
+}
+
+.house-wrapper .house .container .full-width-wrapper .full-width > *:last-child {
+    margin-bottom: 0;
+}
+
+.house-wrapper .house .container .full-width-wrapper .full-width .bold {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.house-wrapper .house .container .full-width-wrapper .full-width .semibold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    color: #a2fa00;
+}
+
+.house-wrapper .house .container .buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.house-wrapper .house .container .buttons .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: fit-content;
+    margin: 10px 0;
+}
+
+.house-wrapper .house .container .buttons .row:first-child {
+    margin-top: 0;
+}
+
+.house-wrapper .house .container .buttons .row:last-child {
+    margin-bottom: 0;
+}
+
+.house-wrapper .house .container .buttons .row .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 10%;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 25px;
+    min-height: fit-content;
+    height: 50px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 25px;
+    transition: 0.15s linear;
+    margin: 0 125px;
+}
+
+.house-wrapper .house .container .buttons .row .button:first-child {
+    border-radius: 2.5px;
+    border: 1px solid #ffffff00;
+}
+
+.house-wrapper .house .container .buttons .row .button:last-child {
+    border-radius: 2.5px;
+    border: 1px solid #ffffff00;
+}
+
+.house-wrapper .house .container .buttons .row .button.accept {
+    border-radius: 2.5px;
+    border: 1px solid #ffffff00;
+
+}
+
+.house-wrapper .house .container .buttons .row .button.accept:hover {
+    transform: scale(1.5);
+    
+}
+
+.house-wrapper .house .container .buttons .row .button.decline {
+    color: #91ff00;
+	    border-radius: 2.5px;
+}
+
+.house-wrapper .house .container .buttons .row .button.decline:hover {
+    transform: scale(1.5);
+    
+}
+
+.house-wrapper .house .container .buttons .row .button.viewexit {
+    
+    color: #91ff00;
+	    border-radius: 2.5px;
+}
+
+.house-wrapper .house .container .buttons .row .button.viewexit:hover {
+    
+    transform: scale(1.5);
+}
+
+.house-wrapper .house-control {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: fit-content;
+    height: auto;
+    transform-origin: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.house-wrapper .house-control .container {
+    position: relative;
+    height: fit-content;
+    background-color: #46464600;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 0 20px rgba(229, 255, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.house-wrapper .house-control .container .header-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.house-wrapper .house-control .container .header-row .header {
+    justify-content: flex-start;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.house-wrapper .house-control .container .header-row .header::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+.house-wrapper .house-control .container .header-row .address {
+    margin: 18px 0 21px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.house-wrapper .house-control .container .controls {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.house-wrapper .house-control .container .controls .control {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    width: 150px;
+    min-height: 150px;
+    height: 150px;
+    margin: 0 5px;
+    background-color: rgba(243, 4, 4, 0);
+    border-radius: 6px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.15s linear;
+}
+
+.house-wrapper .house-control .container .controls .control:first-child {
+    margin-left: 0;
+}
+
+.house-wrapper .house-control .container .controls .control:last-child {
+    margin-right: 0;
+}
+
+.house-wrapper .house-control .container .controls .control .icon {
+    min-width: 50px;
+    width: 50px;
+    min-height: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.house-wrapper .house-control .container .controls .control .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.house-wrapper .house-control .container .controls .control .name {
+    height: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    transition: 0.15s linear;
+}
+
+.house-wrapper .house-control .container .controls .control:hover .name {
+    color: rgba(182, 248, 0, 0.75);
+}

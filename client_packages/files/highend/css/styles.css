@@ -1,0 +1,600 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: local("Montserrat Thin Italic"), local("Montserrat-ThinItalic"), url(../fonts/Montserrat-ThinItalic.ttf) format("truetype");
+}
+.vehicle_name_price{
+    margin-right: 20px;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: local("Montserrat ExtraLight Italic"), local("Montserrat-ExtraLightItalic"), url(../fonts/Montserrat-ExtraLightItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: local("Montserrat Light Italic"), local("Montserrat-LightItalic"), url(../fonts/Montserrat-LightItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Montserrat Italic"), local("Montserrat-Italic"), url(../fonts/Montserrat-Italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Montserrat Medium Italic"), local("Montserrat-MediumItalic"), url(../fonts/Montserrat-MediumItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Montserrat SemiBold Italic"), local("Montserrat-SemiBoldItalic"), url(../fonts/Montserrat-SemiBoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"), url(../fonts/Montserrat-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: local("Montserrat ExtraBold Italic"), local("Montserrat-ExtraBoldItalic"), url(../fonts/Montserrat-ExtraBoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: local("Montserrat Black Italic"), local("Montserrat-BlackItalic"), url(../fonts/Montserrat-BlackItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local("Montserrat Thin"), local("Montserrat-Thin"), url(../fonts/Montserrat-Thin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local("Montserrat ExtraLight"), local("Montserrat-ExtraLight"), url(../fonts/Montserrat-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local("Montserrat Light"), local("Montserrat-Light"), url(../fonts/Montserrat-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Montserrat Regular"), local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Montserrat Medium"), local("Montserrat-Medium"), url(../fonts/Montserrat-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(../fonts/Montserrat-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"), url(../fonts/Montserrat-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local("Montserrat Black"), local("Montserrat-Black"), url(../fonts/Montserrat-Black.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.car-showroom-wrapper {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+}
+
+.car-showroom-wrapper .car-showroom-specs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right top;
+    display: flex;
+    justify-content: center;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container {
+    position: relative;
+    min-width: 375px;
+    width: 375px;
+    max-width: 375px;
+    min-height: fit-content;
+    background-color: #303030;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    color: #2184ff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .header::after {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 60px;
+    background-color: #2184ff;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    width: 100%;
+    min-height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: fit-content;
+    margin: 10px 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec:first-child {
+    margin-top: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec:last-child {
+    margin-bottom: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec > * {
+    margin: 5px 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec > *:first-child {
+    margin-top: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec > *:last-child {
+    margin-bottom: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .title {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .title .icon {
+    min-height: 24px;
+    height: 24px;
+    min-width: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .title .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .title .name {
+    font-size: 16px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value .text {
+    font-size: 16px;
+    line-height: 1;
+    color: #2184ff;
+    font-weight: 600;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value .bars {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value .bars .bar {
+    margin: 0 2px;
+    height: 5px;
+    width: 100%;
+    background-color: #959595;
+    transition: 0.15s linear;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value .bars .bar:first-child {
+    margin-left: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value .bars .bar:last-child {
+    margin-right: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value .bars .bar.active {
+    background-color: #2184ff;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: fit-content;
+    margin-top: 21px;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: fit-content;
+    margin: 10px 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row:first-child {
+    margin-top: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row:last-child {
+    margin-bottom: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 25px;
+    min-height: fit-content;
+    height: 50px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 25px;
+    transition: 0.15s linear;
+    margin: 0 15px;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row .button:first-child {
+    margin-left: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row .button:last-child {
+    margin-right: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row .button.accept {
+    color: #303030;
+    background-color: #2184ff;
+    border-color: #2184ff;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row .button.accept:hover {
+    background-color: #F98427;
+    border-color: #F98427;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row .button.decline {
+    color: #959595;
+    border-color: #959595;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row .button.decline:hover {
+    color: #303030;
+    background-color: #959595;
+}
+
+.car-showroom-wrapper .car-showroom-switcher {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center bottom;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container {
+    position: relative;
+    min-width: 90vw;
+    width: 90vw;
+    max-width: 90vw;
+    background-color: #303030;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+    height: 40px;
+    width: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow:first-child {
+    margin-right: 20px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow:last-child {
+    margin-left: 20px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 2000%;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow:hover .icon svg path {
+    fill: #2184ff;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow:active .icon svg path {
+    fill: #F98427;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow.left::after {
+    left: 0;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow.right::after {
+    right: 0;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 25px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow .icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow .icon svg path {
+    fill: #ffffff;
+    transition: 0.15s linear;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles .vehicle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 65.6px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles .vehicle .name {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s linear;
+    color: #959595;
+    min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles .vehicle .price {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s linear;
+    color: #959595;
+    min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles .vehicle.current .name {
+    font-size: 40px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles .vehicle.current .price {
+    font-size: 26px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles .vehicle.active .name {
+    color: #2184ff;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles .vehicle.active .price {
+    color: #ffffff;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles-bars {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles-bars .bar {
+    height: 5px;
+    width: 100%;
+    margin: 0 1px;
+    background-color: #959595;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles-bars .bar:first-child {
+    margin-left: 0;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles-bars .bar:last-child {
+    margin-right: 0;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container .vehicles-bars .bar.active {
+    background-color: #2184ff;
+}

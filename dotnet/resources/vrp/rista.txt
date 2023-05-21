@@ -1,0 +1,229 @@
+case 194: // STANDARDNA UNIFORMA DUGI RUKAVI
+                        Client.SetClothes(11, 414, 0);
+                        Client.SetClothes(8, 191, 0);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 59, 0);
+                        Client.SetClothes(4, 148, 0);
+                        Client.SetClothes(3, 1, 0);
+                        Client.SetClothes(1, 0, 0); 
+
+                        NAPI.Player.SetPlayerArmor(Client, 30);
+
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+
+                        Client.SetData<dynamic>("character_duty_outfit", 194);
+                        break;
+                    case 195:
+
+                        Client.SetClothes(11, 413, 0);
+                        Client.SetClothes(8, 191, 0);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 59, 0);
+                        Client.SetClothes(4, 148, 0);
+                        Client.SetClothes(3, 0, 0);
+                        Client.SetClothes(1, 0, 0);     
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+ 
+                        NAPI.Player.SetPlayerArmor(Client, 30);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 195); 
+                        break;
+                    case 196:
+                        Client.SetClothes(11, 414, 1);
+                        Client.SetClothes(8, 191, 1);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 57, 0);
+                        Client.SetClothes(4, 148, 0);
+                        Client.SetClothes(3, 1, 0);
+                        Client.SetClothes(1, 0, 0);                     
+ 
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+                        NAPI.Player.SetPlayerArmor(Client, 30);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 196);
+                        break;
+
+                    case 197:
+
+                        //UsefullyRP.CMD_Mascara(Client, true);
+
+                        Client.SetClothes(11, 413, 1);
+                        Client.SetClothes(8, 191, 1);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 57, 0);
+                        Client.SetClothes(4, 148, 0);
+                        Client.SetClothes(3, 0, 0);
+                        Client.SetClothes(1, 0, 0);                     
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+                        NAPI.Player.SetPlayerArmor(Client, 30);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 197);
+                        break;
+
+                    case 199:
+
+                        //UsefullyRP.CMD_Mascara(Client, true);
+
+                        Client.SetClothes(11, 413, 2);
+                        Client.SetClothes(8, 191, 0);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 58, 1);
+                        Client.SetClothes(4, 148, 1);
+                        Client.SetClothes(3, 0, 0);
+                        Client.SetClothes(1, 0, 0);                     
+                        NAPI.Player.SetPlayerArmor(Client, 250);
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 199);
+                        break;
+
+                    case 198:
+
+                        Client.SetClothes(11, 414, 2);
+                        Client.SetClothes(8, 191, 0);
+                        Client.SetClothes(7, 156, 0);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 58, 1);
+                        Client.SetClothes(4, 148, 1);
+                        Client.SetClothes(3, 1, 0);
+                        Client.SetClothes(1, 0, 0);                     
+ 
+                        NAPI.Player.SetPlayerArmor(Client, 30);
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 198);
+                        break;
+
+                }
+                break;
+            case PedHash.FreemodeFemale01:
+                switch (ID)
+                {
+
+                    case 194:
+                        Client.SetClothes(11, 441, 0);
+                        Client.SetClothes(8, 236, 0);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 60, 0);
+                        Client.SetClothes(4, 156, 0);
+                        Client.SetClothes(3, 3, 0);
+                        Client.SetClothes(1, 0, 0);                     
+ 
+                        NAPI.Player.SetPlayerArmor(Client, 30);
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+                        Client.SetData<dynamic>("character_duty_outfit", 194);
+                        break;
+
+                    case 195:
+
+                        Client.SetClothes(11, 440, 0);
+                        Client.SetClothes(8, 236, 0);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 60, 0);
+                        Client.SetClothes(4, 156, 0);
+                        Client.SetClothes(3, 14, 0);
+                        Client.SetClothes(1, 0, 0);                     
+ 
+                        NAPI.Player.SetPlayerArmor(Client, 30);
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 195);
+                        break;
+
+                    case 196:
+                          Client.SetClothes(11, 441, 1);
+                        Client.SetClothes(8, 236, 1);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 57, 0);
+                        Client.SetClothes(4, 156, 0);
+                        Client.SetClothes(3, 3, 0);     
+                        Client.SetClothes(1, 0, 0);               
+ 
+                        NAPI.Player.SetPlayerArmor(Client, 30);
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 196); 
+                        break;
+
+                    case 197:
+
+                        Client.SetClothes(11, 440, 1);
+                        Client.SetClothes(8, 236, 1);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 57, 0);
+                        Client.SetClothes(4, 156, 0);
+                        Client.SetClothes(3, 14, 0);      
+                        Client.SetClothes(1, 0, 0);               
+ 
+                        NAPI.Player.SetPlayerArmor(Client, 100);
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 197);
+                        break;
+
+                    case 199:
+
+                          Client.SetClothes(11, 440, 2);
+                        Client.SetClothes(8, 236, 0);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 58, 1);
+                        Client.SetClothes(4, 156, 1);
+                        Client.SetClothes(3, 14, 0);
+                        Client.SetClothes(1, 0, 0);                     
+ 
+                        NAPI.Player.SetPlayerArmor(Client, 250);
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 199);
+                        break;
+
+                    case 198:
+
+                        Client.SetClothes(11, 441, 2);
+                        Client.SetClothes(8, 236, 0);
+                        Client.SetClothes(6, 24, 0);
+                        // Client.SetClothes(9, 58, 1);
+                        Client.SetClothes(4, 156, 1);
+                        Client.SetClothes(3, 3, 0);
+                        Client.SetClothes(1, 0, 0);                     
+ 
+                        NAPI.Player.SetPlayerArmor(Client, 250);
+ 
+                        Client.ClearAccessory(0);
+                        Client.ClearAccessory(1);
+                        Client.ClearAccessory(2);
+ 
+                        Client.SetData<dynamic>("character_duty_outfit", 199);
+                        break;

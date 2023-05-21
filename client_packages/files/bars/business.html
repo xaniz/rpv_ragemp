@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="contaienr-close" onclick="CloseBank()">
+            
+            <p class="closeicon" style="display: none; font-size: 3vh;"><i class="fa-regular fa-xmark"></i></p>
+        </div>
+
+        <div class="main-container">
+            <div class="header ">
+                
+            </div>
+            <p class="info-text">-</p>
+            <p class="info-text-two"></p>
+            <div class="row">
+                <div class="row-item">
+                    <center>
+                        <img class="card" src="./img/02.png">
+                    </center>
+                    <div class="card-content">
+                        <div class="head">
+                            <img class="img-logo" src="./img/logo.png ">
+                            <img class="img-icon" src="./img/03.png ">
+                        </div>
+                        <p class="current-bank-number">Racun Kompanije</p>
+                        <p class="currentbussinesmoney"><span id="currentbussinesmoney"></span> $</p>
+
+                        
+                    </div>
+                    <div class="action-buttons">
+                        <button onclick="gotowithdraw() " id="withdraw-button" style="background-color: #242424; "><a><i class="fa-solid fa-wallet"></i>Racun Kompanije -> Privatan Racun</a></button>
+                        
+                    </div>
+                </div>
+                <div class="row-item">
+                    <div class="withdraw">
+                        <i class="fa-solid fa-wallet"></i>
+                        <p class="info-text-one-withdraw">Transfer Novca</p>
+                        
+                        <p class="info-text-three-withdraw">Kolicina</p>
+                        <input class="input1" id="withdraw-input" type="number" onkeypress="return (event.charCode>= 48 && event.charCode <= 57) " onpaste="return false" placeholder="$1000">
+                        
+                        <button onclick="bbankWithdrawMoney()" class="withdraw-submit">Potvrdi</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+	<script src="./js/library/jquery-3.2.1.min.js"></script>
+</body>
+
+<style>
+    .noUi-connects {
+        border-radius: 0.5vh;
+        
+    }
+    
+    .noUi-connect {
+        background: #242424 !important;
+        height: 0.5vw;
+        outline: none;
+        
+    }
+</style>
+
+<script>
+    
+</script>
+
+
+<script>
+
+    function bbankWithdrawMoney() {
+        let withdrawamount = $('#withdraw-input').val();
+       
+        if (Number(withdrawamount) > 0) {
+            mp.trigger('Client:bBankWithdrawMoney', withdrawamount);
+        }
+    }
+
+    function gotowithdraw() {
+        $('.row-item .withdraw').show(0)
+        $('.row-item .deposit').hide(0)
+        $('.row-item .send').hide(0)
+        $('.row-item .activity').hide(0)
+
+        $("#withdraw-button ").css("background-color", "#242424");
+        $("#deposit-button ").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#send-button ").css("background-color", "rgba(196, 196, 196, 0.05)");
+        $("#activity-button ").css("background-color", "rgba(196, 196, 196, 0.05)");
+
+        
+    }
+
+    function loadbbalance(totmoney) {
+        document.getElementById("currentbussinesmoney").textContent = `Your current balance is $${totmoney}.`;
+    }
+
+    function formatNumber(num) {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+    }
+
+    function CloseBank() {
+        mp.trigger("Hide_Crafting_System");
+    }
+
+    function CloseIconHover(state) {
+        if (state) {
+            $('.bankicon').css('display', 'block')
+            $('.closeicon').css('display', 'none')
+        } else {
+            $('.closeicon').css('display', 'block')
+            $('.bankicon').css('display', 'none')
+        }
+    }
+
+</script>
+
+</html>

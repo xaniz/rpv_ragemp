@@ -1,0 +1,524 @@
+*:focus {
+    outline: 70;
+}
+@font-face{
+	font-family:AAFuture;
+	src:url(aafuture.ttf) format("truetype");
+}
+@font-face{
+	font-family:Gilroy-m;
+	src:url(gilroy-medium.ttf) format("truetype");
+}
+body{
+	width:100vw;
+	height:100vw;
+	
+	
+	font-family:Gilroy-m !important;
+	font-weight:600;
+}
+
+.covek{
+	display:flex;
+	width:111%;
+	justify-content:space-between;
+	border-bottom:2px solid rgba(211, 211, 211, 0);
+	padding-bottom:2%;
+	
+	
+}
+.covek div{
+	width:450px;
+	height:710px;
+	background-image:url(../img/mimport.png);
+	position: fixed;
+	left: 67.7%;
+	top: 8%;
+}
+
+.clothes_circle{
+	display:flex;
+	width:111%;
+	justify-content:space-between;
+	border-bottom:2px solid rgba(211, 211, 211, 0);
+	padding-bottom:20%;
+	
+	
+}
+.clothes_circle div{
+	border-radius:1px;
+	width:75px;
+	height:75px;
+	background:#58585823;
+}
+#Glava{
+	background-image:url(../img/headhatu.png);
+	background-size:75px;
+	position: fixed;
+	left: 72.8%;
+	top: 13%;
+}
+#Glava.active-cloth{
+	background-image:url(../img/headhat.png) !important;
+	
+}
+#Oci{
+	background-image:url(../img/sglases.png);
+	background-size:75px;
+	position: fixed;
+	left: 82%;
+	top: 13%;
+}
+#Oci.active-cloth{
+	background-image:url(../img/sglasesu.png) !important;
+}
+#Nos{
+	background-image:url(../img/bpwest.png);
+	background-size:75px;
+	position: fixed;
+	left: 77.418%;
+	top: 30%;
+}
+#Nos.active-cloth{
+	background-image:url(../img/bpwestu.png) !important;
+}
+#Obuca{
+	background-image:url(../img/shoe.png);
+	background-size:75px;
+	position: fixed;
+	left: 77.418%;
+	top: 66%;
+}
+#Obuca.active-cloth{
+	background-image:url(../img/shoeu.png) !important;
+}
+#Dodaci{
+	background-image:url(../img/watchhand.png);
+	background-size:75px;
+	position: fixed;
+	left: 87%;
+	top: 35%;
+}
+#Dodaci.active-cloth{
+	background-image:url(../img/watchhandu.png) !important;
+}
+#Pantalone{
+	background-image:url(../img/panties.png);
+	background-size:75px;
+	position: fixed;
+	left: 77.5%;
+	top: 40%;
+}
+#Pantalone.active-cloth{
+	background-image:url(../img/pantiesu.png) !important;
+}
+#Maska{
+	background-image:url(../img/fmask.png);
+	background-size:75px;
+	position: fixed;
+	left: 77.418%;
+	top: 9%;
+}
+#Maska.active-cloth{
+	background-image:url(../img/fmasku.png) !important;
+}
+#Jakna{
+	background-image:url(../img/gray-tshirt.png);
+	background-size:75px;
+	position: fixed;
+	left: 77.418%;
+	top: 21%;
+}
+#Jakna.active-cloth{
+	background-image:url(../img/red-tshirt.png) !important;
+}
+
+
+
+
+.clothes_circle div:hover{
+	cursor:pointer;
+	border:1px solid rgba(184, 183, 182, 0.432);
+}
+.center {	
+	display: flex;
+	justify-content:center;
+	width:95%;
+	
+	
+}
+
+.invents{
+	margin-left:2vw;
+	
+	width:135vw;
+	height:80%;
+}
+.people{
+	border-right:2px solid gray;
+	width:35%;	
+	
+}
+.people .people_1{
+	height:77%;
+	
+	width:90%;
+	text-align:center;
+	padding:20px 0;
+}
+.people .people_weapon{
+	
+	width:90%;
+}
+.people .people_weapon .people_w_title{
+	width:35%;
+	height:35px;
+	background: linear-gradient(102.98deg, #4B5BE6 -4.92%, rgba(75, 91, 230, 0) 76.94%);
+	color:white;
+	font-weight:700;
+	border-radius: 5px;
+	padding:10px 5px;
+	display:flex;
+	justify-content:center;
+	margin-top:5px;
+	align-items:center;
+}
+.people .people_weapon .people_weapon-weapons{	
+	display:flex;
+	justify-content:space-around;
+	margin-top:15px;
+	align-items:center;
+}
+.people .people_weapon .people_weapon-weapons div{	
+	border:2px solid gray;
+	border-radius:50%;
+	width:75px;
+	height:75px;
+	cursor:pointer;
+}
+.people .people_weapon .people_weapon-weapons div:after{	
+	display:block;
+	margin-top:105%;
+	color:white;
+	border:1px solid gray;
+	border-radius:50%;
+	width:20px;
+	height:20px;
+	text-align:center;
+}
+.people .people_weapon .people_weapon-weapons #weapon1:after{	
+	content:'1';
+}
+.people .people_weapon .people_weapon-weapons #weapon2:after{	
+	content:'2';
+}
+.people .people_weapon .people_weapon-weapons #weapon3:after{	
+	content:'3';
+}
+.people .people_weapon .people_weapon-weapons #weapon4:after{	
+	content:'4';
+}
+.people .people_weapon .people_weapon-weapons div:hover{	
+	border:2px solid #4b5be6;
+}
+.people .people_1 div{
+	position:absolute;
+	border:2px solid gray;
+	border-radius:50%;
+	width:75px;
+	height:75px;
+	cursor:pointer;
+	background-size:75px;
+	background-repeat:no-repeat;
+}
+.people .people_1 div:after{
+	display:block;
+	margin-top:105%;
+	color:white;
+}
+.people .people_1 div:hover{
+	border:2px solid #4b5be6;
+}
+.people .people_1 img{
+	margin-top:12vh;
+}
+.people .people_1 #head{
+	left:25%;
+	top:9%;
+	background-image:url(../img/icon.png);
+}
+.people .people_1 #head:after{
+	content:'Hat';
+}
+.people .people_1 #glasses{
+	left:32%;
+	top:18%;
+	background-image:url(../img/icon.png);
+}
+.people .people_1 #glasses:after{
+	content:'Glass';
+}
+
+.people .people_1 #ears{
+	left:35%;
+	top:28%;
+	border-bottom:3px solid #4b5be6;
+}
+.people .people_1 #ears:after{
+	content:'Серьги';
+}
+.people .people_1 #armor{
+	left:35%;
+	top:40%;
+	border-bottom:3px solid #4b5be6;
+}
+.people .people_1 #armor:after{
+	content:'Armor';
+}
+.people .people_1 #watches{
+	left:35%;
+	top:52%;
+}
+.people .people_1 #watches:after{
+	content:'Часы';
+}
+
+.people .people_1 #boots{
+	left:32%;
+	top:32%;
+	background-image:url(../img/icon.png);
+}
+.people .people_1 #boots:after{
+	content:'Shoes';
+}
+.people .people_1 #Accesory{
+	left:18%;
+	top:45%;
+	background-image:url(../img/icon.png);
+}
+.people .people_1 #Accesory:after{
+	content:'Accesory';
+}
+.people .people_1 #pants{
+	left:32%;
+	top:45%;
+	background-image:url(../img/icon.png);
+}
+.people .people_1 #pants:after{
+	content:'Pants';
+}
+.people .people_1 #armor{
+	left:25%;
+	top:32%;
+	background-image:url(../img/icon.png);
+}
+.people .people_1 #armor:after{
+	content:'Armor';
+}
+.people .people_1 #mask{
+	left:18%;
+	top:18%;
+	background-image:url(../img/icon.png);
+}
+.people .people_1 #mask:after{
+	content:'Mask';
+}
+
+.people .people_1 #TOP{
+	left:18%;
+	top:32%;
+	background-image:url(../img/icon.png);
+	border-bottom:3px solid #4b5be6;
+}
+.people .people_1 #TOP:after{
+	content:'Top';
+}
+
+.graytext{
+	color:gray;
+	font-weight:400;
+}
+.help_div{
+width:100%;
+margin:0 auto;
+height:8vh;
+display:flex;
+justify-content:space-around;
+}	
+.help_div1{
+	display:flex;
+	margin-left:-60vw;
+	width:18vw;
+	justify-content:space-around;
+	align-items:center;
+	color:black;
+	font-weight:900;
+	font-size:22px; 
+}
+
+.help_div1 div{
+	width:50px;
+	height:50px;
+	border-radius:1px;
+	background:#96969575;
+	padding:5px 25px;
+	color:black;
+	font-size:1.5em;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+    .inventorys-all{
+		margin:6px auto; 
+		height:495px;
+	}
+
+#context-menu a
+{
+	color: inherit;
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	text-shadow: black 1px 1px 2px;
+}
+
+.context-menu-item:hover
+{
+	background-color: rgba(11, 101, 0, 0.25);
+}
+
+#context-menu
+{
+	background: rgba(0, 0, 0, 0.65);
+	width: 90px;
+	color: white;
+	position: absolute;
+	text-align: center;
+	border: 1px solid white;
+}
+
+/*======================================================================= */
+.custom-menu {
+    display: none;
+	z-index: 100000;
+	width: 75px;
+	font-size:14px;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255,0.65);
+    white-space: nowrap;
+    text-transform: uppercase;
+box-shadow:inset 0 0 678px 586px rgb(29 27 40 / 60%);
+    color: rgba(255, 255, 255,255);
+    border-radius: 0px;
+    padding: 0;
+}
+
+.custom-menu li {
+    padding: 4px 8px;
+    cursor: pointer;
+	
+    list-style-type: none;
+    transition: all .3s ease;
+    user-select: none;
+}
+
+.custom-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: rgba(0, 0,0,255);
+  font-weight: bold;
+}
+
+@media only screen and (max-height: 768px) and (max-width: 1366px)  {
+	#Glava{
+		background-image:url(../img/headhatu.png);
+		background-size:75px;
+		position: fixed;
+		left: 74.8%;
+		top: 13%;
+	}
+	#Glava.active-cloth{
+		background-image:url(../img/headhat.png) !important;
+		
+	}
+	#Oci{
+		background-image:url(../img/sglases.png);
+		background-size:75px;
+		position: fixed;
+		left: 84%;
+		top: 13%;
+	}
+	#Oci.active-cloth{
+		background-image:url(../img/sglasesu.png) !important;
+	}
+	#Nos{
+		background-image:url(../img/bpwest.png);
+		background-size:75px;
+		position: fixed;
+		left: 79.418%;
+		top: 30%;
+	}
+	#Nos.active-cloth{
+		background-image:url(../img/bpwestu.png) !important;
+	}
+	#Obuca{
+		background-image:url(../img/shoe.png);
+		background-size:75px;
+		position: fixed;
+		left: 79.418%;
+		top: 66%;
+	}
+	#Obuca.active-cloth{
+		background-image:url(../img/shoeu.png) !important;
+	}
+	#Dodaci{
+		background-image:url(../img/watchhand.png);
+		background-size:75px;
+		position: fixed;
+		left: 89%;
+		top: 35%;
+	}
+	#Dodaci.active-cloth{
+		background-image:url(../img/watchhandu.png) !important;
+	}
+	#Pantalone{
+		background-image:url(../img/panties.png);
+		background-size:75px;
+		position: fixed;
+		left: 79.5%;
+		top: 40%;
+	}
+	#Pantalone.active-cloth{
+		background-image:url(../img/pantiesu.png) !important;
+	}
+	#Maska{
+		background-image:url(../img/fmask.png);
+		background-size:75px;
+		position: fixed;
+		left: 79.418%;
+		top: 9%;
+	}
+	#Maska.active-cloth{
+		background-image:url(../img/fmasku.png) !important;
+	}
+	#Jakna{
+		background-image:url(../img/gray-tshirt.png);
+		background-size:75px;
+		position: fixed;
+		left: 79.418%;
+		top: 21%;
+	}
+	#Jakna.active-cloth{
+		background-image:url(../img/red-tshirt.png) !important;
+	}
+
+	.covek div{
+		width:0px;
+		height:0px;
+		background-image:url(../img/mimport.png);
+		position: fixed;
+		left: 67.7%;
+		top: 8%;
+	}
+
+}

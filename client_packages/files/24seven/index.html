@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="fonts/font/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+	<script src="./js/library/vue.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<div @click="exit()" class="exit">
+				<a>X</a>Izlaz
+		</div>
+		<div v-if="style == 0" class="style0">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="nameblock">
+				<div class="desc">24/7</div>
+				<div class="desc2"></div>
+			</div>
+			<div class="center">
+				<div class="block active">
+					<img src="img/weaponc.png" class="ico">
+				</div>
+			</div>
+			<div class="allitems2">
+				<div  @click="buy(0)" class="bbg2">
+					<img src="img/water.png" class="ico">
+					<a>Voda - $25</a>
+				</div>
+				<div @click="buy(1)" class="bbg2">
+					<img src="img/burger.png" class="ico">
+					<a>Burger - $30</a>
+				</div>
+				<div @click="buy(2)" class="bbg2">
+					<img src="img/phone.png" class="ico">
+					<a>Telefon - $1000</a>
+				</div>
+				<div @click="buy(3)" class="bbg2">
+					<img src="img/gascan.png" class="ico">
+					<a>Kanister - $100</a>
+				</div>
+				<div @click="buy(4)" class="bbg2">
+					<img src="img/radio.png" class="ico">
+					<a>Radio - $150</a>
+				</div>
+				<div @click="buy(5)" class="bbg2">
+					<img src="img/cableties.png" class="ico">
+					<a>Vezice - $50</a>
+				</div>
+				<div @click="buy(6)" class="bbg2">
+					<img src="img/lotto.png" class="ico">
+					<a>Lotto - $150</a>
+				</div>
+				<div @click="buy(7)" class="bbg2">
+					<img src="img/pajser.png" class="ico">
+					<a>Pajser - $500</a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+    <script src="./js/index.js"></script>
+	<script src="./js/library/jquery-3.2.1.min.js"></script>
+</body>
+</html>

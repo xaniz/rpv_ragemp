@@ -1,0 +1,1282 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Montserrat Thin Italic'), local('Montserrat-ThinItalic'),
+    url(../fonts/Montserrat-ThinItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Montserrat ExtraLight Italic'),
+    local('Montserrat-ExtraLightItalic'),
+    url(../fonts/Montserrat-ExtraLightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'),
+    url(../fonts/Montserrat-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Italic'), local('Montserrat-Italic'),
+    url(../fonts/Montserrat-Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'),
+    url(../fonts/Montserrat-MediumItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'),
+    url(../fonts/Montserrat-SemiBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),
+    url(../fonts/Montserrat-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'),
+    url(../fonts/Montserrat-ExtraBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'),
+    url(../fonts/Montserrat-BlackItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Montserrat Thin'), local('Montserrat-Thin'),
+    url(../fonts/Montserrat-Thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'),
+    url(../fonts/Montserrat-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light'), local('Montserrat-Light'),
+    url(../fonts/Montserrat-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url(../fonts/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url(../fonts/Montserrat-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url(../fonts/Montserrat-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+    url(../fonts/Montserrat-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Montserrat Black'), local('Montserrat-Black'),
+    url(../fonts/Montserrat-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ExoSoft';
+  src: url('../assets/fonts/ExoSoft-Medium.eot');
+  src: local('☞Exo Soft Medium'), local('ExoSoft-Medium'),
+    url('../assets/fonts/ExoSoft-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/ExoSoft-Medium.woff2') format('woff2'),
+    url('../assets/fonts/ExoSoft-Medium.woff') format('woff'),
+    url('../assets/fonts/ExoSoft-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ExoSoft';
+  src: url('../assets/ExoSoft-Bold.eot');
+  src: local('☞Exo Soft Bold'), local('ExoSoft-Bold'),
+    url('../assets/ExoSoft-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/ExoSoft-Bold.woff2') format('woff2'),
+    url('../assets/ExoSoft-Bold.woff') format('woff'),
+    url('../assets/ExoSoft-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ExoSoft';
+  src: url('../assets/fonts/ExoSoft-BoldItalic.eot');
+  src: local('☞Exo Soft Bold Italic'), local('ExoSoft-BoldItalic'),
+    url('../assets/ExoSoft-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/ExoSoft-BoldItalic.woff2') format('woff2'),
+    url('../assets/ExoSoft-BoldItalic.woff') format('woff'),
+    url('../assets/ExoSoft-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* @font-face {
+    font-family: 'ExoSoft';
+    src: url('ExoSoft-SemiBold.eot');
+    src: local('☞Exo Soft Semi Bold'), local('ExoSoft-SemiBold'),
+        url('ExoSoft-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('ExoSoft-SemiBold.woff2') format('woff2'),
+        url('ExoSoft-SemiBold.woff') format('woff'),
+        url('ExoSoft-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ExoSoft';
+    src: url('ExoSoft-SemiBoldItalic.eot');
+    src: local('☞Exo Soft Semi Bold Italic'), local('ExoSoft-SemiBoldItalic'),
+        url('ExoSoft-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ExoSoft-SemiBoldItalic.woff2') format('woff2'),
+        url('ExoSoft-SemiBoldItalic.woff') format('woff'),
+        url('ExoSoft-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ExoSoft';
+    src: url('ExoSoft-ExtraBoldItalic.eot');
+    src: local('☞Exo Soft Extra Bold Italic'), local('ExoSoft-ExtraBoldItalic'),
+        url('ExoSoft-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ExoSoft-ExtraBoldItalic.woff2') format('woff2'),
+        url('ExoSoft-ExtraBoldItalic.woff') format('woff'),
+        url('ExoSoft-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+} */
+
+optgroup {
+  padding: 0;
+}
+
+.text-shadow {
+  color: rgba(255, 255, 255, 0.25);
+  /* color: rgb(134, 134, 134); */
+}
+.exit {
+  position: absolute;
+  width: 202px;
+  height: 23px;
+  left: 22px;
+  top: 17px;
+  display: flex;
+  align-items: baseline;
+}
+
+.exit_button {
+  width: 23px;
+  height: 23px;
+  background: #d9ff00;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.exit_text {
+  width: 171px;
+  height: 17px;
+  font-family: ExoSoft-Bold;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #c8ff00;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header_info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.clock {
+  display: flex;
+  width: 82px;
+  height: 36px;
+  margin-top: 15px;
+}
+
+.hour {
+  background: url('../assets/hour.svg') no-repeat;
+  width: 19px;
+  height: 19px;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+.time {
+  width: 60px;
+  height: 19px;
+
+  /* font-family: ExoSoft-BoldItalic; */
+
+  font-family: 'ExoSoft', sans-serif;
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.date {
+  /* width: 59px;
+  height: 19px; */
+
+  font-family: ExoSoft-BoldItalic;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 4px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.logo_text_1 {
+  flex-basis: 100%;
+  text-align: center;
+  /* width: 71px;
+  height: 22px; */
+
+  font-family: ExoSoft-ExtraBoldItalic;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #cefc00;
+
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo_text_2 {
+  flex-basis: 100%;
+  text-align: center;
+  /* width: 59px;
+  height: 13px; */
+
+  font-family: ExoSoft-BoldItalic;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.info_person {
+  flex-basis: 100%;
+  display: flex;
+  position: relative;
+  padding-left: 20px;
+}
+
+.info_person::before {
+  content: ' ';
+  position: absolute;
+  background: url('../assets/Group_2.svg') no-repeat;
+  width: 15px;
+  height: 15px;
+  left: -3px;
+}
+
+.info_person_number {
+  /* width: 83px;
+  height: 19px; */
+  font-family: ExoSoft-BoldItalic;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info_id {
+  display: flex;
+  flex-basis: 100%;
+  align-items: baseline;
+  padding-left: 20px;
+  position: relative;
+}
+.info_id::before {
+  content: 'ID';
+  font-family: 'ExoSoft';
+  font-size: 16px;
+  /* line-height: 16px; */
+  position: absolute;
+  color: #d0ff00;
+  left: 0px;
+  top: 0px;
+  width: 15px;
+  height: 15px;
+}
+
+.info_id_id {
+  /* width: 23.55px;
+  height: 15px; */
+  font-family: ExoSoft-BoldItalic;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.scroll {
+  /* position: absolute; */
+  /* padding-left: 13px;
+  width: 4px;
+  height: 874px;
+  top: 106px;
+  right: 5px; */
+}
+
+.scroll_1 {
+  width: 2px;
+  height: 613px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+}
+
+.scroll_2 {
+  width: 4px;
+  height: 125px;
+
+  background: #fccf3f;
+  border-radius: 2px;
+}
+
+.nav {
+  position: absolute;
+  width: 407px;
+  height: 874px;
+  top: 250px;
+  right: 10px;
+}
+
+.header-nav {
+  display: flex;
+  background: #3a465f;
+  /* background:black;  */
+  /* background-blend-mode: lighten; */
+  width: 393px;
+  height: 70px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.header-nav::before {
+  position: absolute;
+  content: 'Автомаркет';
+  position: absolute;
+  font-size: 68px;
+  line-height: 80px;
+  font-family: 'ExoSoft';
+  /* height: 100%; */
+  top: -10px;
+  color: #3a465f;
+  -webkit-text-stroke: 0.01em rgba(255, 255, 255, 0.123);
+}
+
+.header-nav::after {
+  position: absolute;
+  content: 'Автомаркет';
+  position: absolute;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: 'ExoSoft';
+  color: white;
+  /* width: 100%; */
+  margin-top: 24px;
+  text-align: center;
+  left: 170px;
+}
+
+.header-nav-img {
+  margin-left: 9px;
+  background: url('../assets/test_2.png') no-repeat;
+
+  height: 80px;
+  width: 122px;
+  margin-right: 51px;
+  position: relative;
+  background-size: cover;
+  /* object-fit: cover; */
+  /* z-index: 1; */
+}
+
+/* .header-nav-img::after {
+   content: ' ';
+   position: absolute;
+   background: url('../assets/Group_63.png') no-repeat;
+    top: 0px;
+   width: 47px;
+   height: 47px;
+   z-index: 50;
+  } */
+
+.header-nav-text {
+  font-family: ExoSoft-Bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 24px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.nav-items {
+  outline: none;
+  display: flex;
+  width: 400px;
+  /* height: 58px; */
+  padding: 6px 6px 50px 6px;
+  flex-wrap: wrap;
+  background: rgba(29, 29, 29, 0.25);
+  border-radius: 4px;
+}
+
+.nav-items::-webkit-scrollbar {
+  width: 2px;
+  height: 613px;
+  background: rgba(216, 231, 11, 0.767);
+  border-radius: 2px;
+}
+
+.nav-items::-webkit-scrollbar-track {
+  width: 2px;
+  height: 613px;
+  background: rgba(216, 231, 11, 0.25);
+  border-radius: 2px;
+}
+
+.nav-items::-webkit-scrollbar-thumb {
+  width: 4px;
+  height: 125px;
+
+  background: #d9fc3f;
+  border-radius: 2px;
+}
+
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  /* width: 395px; */
+  height: 58px;
+
+  background: rgba(0, 0, 0, 0.15);
+  border: 0.5px solid rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+  border-radius: 3px;
+  /* padding-left: 19px; */
+  margin-bottom: 3px;
+  color: #ffffff;
+}
+
+.nav-item-text {
+  font-family: 'ExoSoft';
+  font-size: 18px;
+  line-height: 21px;
+  /* color: #ffffff; */
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 50%;
+  /* margin-right: 53px; */
+}
+
+.nav-item-price {
+  padding-right: 15px;
+  /* font-family: ExoSoft-Medium; */
+  font-family: 'ExoSoft';
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 50%;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.nav-item:hover{
+  cursor: pointer;
+  background: #d0ff00;
+  box-shadow: 0px 0px 7px #d0ff00;
+  border: 0.5px solid #ffffff;
+  box-sizing: border-box;
+  color: rgba(37, 37, 37, 0.74);
+}
+.nav-item:hover .nav-item-price {
+  color: rgba(0, 0, 0, 0.43) !important;
+}
+
+.nav-item-text:hover {
+  color: rgba(37, 37, 37, 0.74);
+}
+
+.nav-item-price:hover{
+  color: rgba(0, 0, 0, 0.43);
+}
+
+.nav-footer {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.nav-footer-text {
+  margin-top: 13px;
+  flex-basis: 100%;
+  /* font-family: ExoSoft-Bold; */
+  font-family: 'ExoSoft';
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.nav-footer-line {
+  width: 349px;
+  height: 0.5px;
+  margin-top: 11px;
+  margin-bottom: 19px;
+  background: rgba(255, 255, 255, 0.103);
+}
+
+.nav-footer-button {
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 44px;
+  background: #d0ff00;
+  border-radius: 4px;
+  /* font-family: ExoSoft-Bold; */
+  font-family: 'ExoSoft';
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.nav-footer-button:hover {
+  cursor: pointer;
+  background: #d0ff00;
+  box-shadow: 0px 0px 7px #d0ff00;
+}
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.car-showroom-wrapper {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.car-showroom-wrapper .car-showroom-specs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: right top;
+  display: flex;
+  justify-content: center;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container {
+  position: relative;
+  min-width: 375px;
+  width: 375px;
+  max-width: 375px;
+  min-height: fit-content;
+  border-bottom-left-radius: 12px;
+  box-shadow: inset 0 0 678px 586px rgb(29 27 40 / 60%);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 30px 50px;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+  color: #008df0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 45px;
+  width: 100%;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .header::after {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60px;
+  background-color: #008df0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  list-style: none;
+  width: 100%;
+  min-height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: fit-content;
+  margin: 10px 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec:first-child {
+  margin-top: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec:last-child {
+  margin-bottom: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec > * {
+  margin: 5px 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .specs
+  .spec
+  > *:first-child {
+  margin-top: 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .specs
+  .spec
+  > *:last-child {
+  margin-bottom: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .title .icon {
+  min-height: 20px;
+  height: 20px;
+  min-width: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .specs
+  .spec
+  .title
+  .icon
+  img {
+  height: 100%;
+  width: 100%;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .title .name {
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: fit-content;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value .text {
+  font-size: 16px;
+  line-height: 1;
+  color: #008df0;
+  font-weight: 600;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .specs .spec .value .bars {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .specs
+  .spec
+  .value
+  .bars
+  .bar {
+  margin: 0 2px;
+  height: 5px;
+  width: 100%;
+  background-color: #959595;
+  transition: 0.15s linear;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .specs
+  .spec
+  .value
+  .bars
+  .bar:first-child {
+  margin-left: 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .specs
+  .spec
+  .value
+  .bars
+  .bar:last-child {
+  margin-right: 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .specs
+  .spec
+  .value
+  .bars
+  .bar.active {
+  background-color: #008df0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: fit-content;
+  margin-top: 21px;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  min-height: fit-content;
+  margin: 10px 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row:first-child {
+  margin-top: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row:last-child {
+  margin-bottom: 0;
+}
+
+.car-showroom-wrapper .car-showroom-specs .container .buttons .row .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  border-radius: 25px;
+  min-height: fit-content;
+  height: 50px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 25px;
+  transition: 0.15s linear;
+  margin: 0 15px;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .buttons
+  .row
+  .button:first-child {
+  margin-left: 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .buttons
+  .row
+  .button:last-child {
+  margin-right: 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .buttons
+  .row
+  .button.accept {
+  color: #303030;
+  background-color: #008df0;
+  border-color: #008df0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .buttons
+  .row
+  .button.accept:hover {
+  background-color: #f98427;
+  border-color: #f98427;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .buttons
+  .row
+  .button.decline {
+  color: #959595;
+  border-color: #959595;
+}
+
+.car-showroom-wrapper
+  .car-showroom-specs
+  .container
+  .buttons
+  .row
+  .button.decline:hover {
+  color: #303030;
+  background-color: #959595;
+}
+
+.car-showroom-wrapper .car-showroom-switcher {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center bottom;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container {
+  position: relative;
+  min-width: 90vw;
+  width: 90vw;
+  max-width: 90vw;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: inset 0 0 678px 586px rgb(29 27 40 / 60%);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: fit-content;
+  height: 40px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow:first-child {
+  margin-right: 20px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow:last-child {
+  margin-left: 20px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 2000%;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .arrow:hover
+  .icon
+  svg
+  path {
+  fill: #008df0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .arrow:active
+  .icon
+  svg
+  path {
+  fill: #f98427;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow.left::after {
+  left: 0;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow.right::after {
+  right: 0;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 25px;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow .icon svg {
+  height: 100%;
+  width: 100%;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .arrow .icon svg path {
+  fill: #ffffff;
+  transition: 0.15s linear;
+}
+
+.car-showroom-wrapper .car-showroom-switcher .container .vehicles-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: fit-content;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: fit-content;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles
+  .vehicle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 65.6px;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles
+  .vehicle
+  .name {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s linear;
+  color: #959595;
+  min-height: fit-content;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles
+  .vehicle
+  .price {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s linear;
+  color: #959595;
+  min-height: fit-content;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles
+  .vehicle.current
+  .name {
+  font-size: 40px;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles
+  .vehicle.current
+  .price {
+  font-size: 26px;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles
+  .vehicle.active
+  .name {
+  color: #008df0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles
+  .vehicle.active
+  .price {
+  color: #ffffff;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles-bars {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: fit-content;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles-bars
+  .bar {
+  height: 5px;
+  width: 100%;
+  margin: 0 1px;
+  background-color: #959595;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles-bars
+  .bar:first-child {
+  margin-left: 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles-bars
+  .bar:last-child {
+  margin-right: 0;
+}
+
+.car-showroom-wrapper
+  .car-showroom-switcher
+  .container
+  .vehicles-container
+  .vehicles-bars
+  .bar.active {
+  background-color: #008df0;
+}

@@ -1,0 +1,39 @@
+/* Style for the container */
+.container {
+  width: 500px; /* Width of the container */
+  height: 300px; /* Height of the container */
+  margin: 50px auto; /* Center the container horizontally and add a top and bottom margin of 50px */
+  background-color: #f2f2f2; /* Add a light gray background color to the container */
+  padding: 20px; /* Add padding to the container */
+  border-radius: 10px; /* Add rounded corners to the container */
+}
+
+/* Style for the input field */
+input[type="number"] {
+  width: 120px; /* Make the input field fill the container */
+  height: 30px; /* Set the height of the input field */
+  margin-bottom: 10px; /* Add a margin at the bottom of the input field */
+  font-size: 18px; /* Set the font size of the input field */
+  padding: 5px; /* Add padding to the input field */
+  border-radius: 5px; /* Add rounded corners to the input field */
+  border: 1px solid #ccc; /* Add a light gray border to the input field */
+}
+
+/* Style for the buttons */
+button {
+  position:static;
+  width: 120px; /* Make the buttons fill the container */
+  height: 60px; /* Set the height of the buttons */
+  font-size: 18px; /* Set the font size of the buttons */
+  margin-bottom: 10px; /* Add a margin at the bottom of the buttons */
+  background-color: #4CAF50; /* Add a green background color to the buttons */
+  color: white; /* Set the text color of the buttons to white */
+  border: none; /* Remove the border of the buttons */
+  cursor: pointer; /* Add a cursor pointer to the buttons */
+  border-radius: 5px; /* Add rounded corners to the buttons */
+}
+
+/* Style for the buttons when hovered over */
+button:hover {
+  background-color: #3e8e41; /* Change the background color of the buttons on hover */
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pstats.css">
+  </head>
+  <body>
+    <button id="quest-button"></button>
+    <div class="container">
+      <div class="mains">
+        <div class="level">
+          <div class="value">1</div>
+        </div>
+        <div class="experience">
+          <div class="value">500</div>
+        </div>
+      </div>
+      <div class="rest">
+        <div class="job">
+            <div class="value">0</div>
+          </div>
+        <div class="job-skill">
+          <div class="value">150</div>
+        </div>
+        <div class="rpv-points">
+          <div class="value">364</div>
+        </div>
+        <div class="referal">
+          <div class="value">A9S8WS</div>
+        </div>
+        <div class="carlic">
+          <div class="value">720</div>
+        </div>
+        <div class="motolic">
+          <div class="value">720</div>
+        </div>
+        <div class="flylic">
+          <div class="value">720</div>
+        </div>
+        <div class="gunlic">
+          <div class="value">720</div>
+        </div>
+        <div class="fishlic">
+          <div class="value">720</div>
+        </div>
+        <div class="organisation">
+          <div class="value">LSPD</div>
+        </div>
+        <div class="orgrank">
+          <div class="value">Director</div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <script>
+      function updateStats(level, exp, rpvpoints, posao, skill, referral, carlic, motolic, flylic, gunlic, fishlic, organisation, orgrank ) {
+        $('.level .value').text(level);
+        $('.experience .value').text(exp);
+        $('.rpv-points .value').text(rpvpoints);
+        $('.job .value').text(posao);
+        $('.job-skill .value').text(skill);
+        $('.referal .value').text(referral);
+        $('.carlic .value').text(carlic);
+        $('.motolic .value').text(motolic);
+        $('.flylic .value').text(flylic);
+        $('.gunlic .value').text(gunlic);
+        $('.fishlic .value').text(fishlic);
+        $('.organisation .value').text(organisation);
+        $('.orgrank .value').text(orgrank);
+      }
+
+      document.getElementById("quest-button").addEventListener("click", function() {
+        StartQuest();
+      });
+
+      function StartQuest() {
+        mp.trigger("CStartQuest");
+        mp.trigger("Hide_Crafting_System");
+      }
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/library/jquery-3.2.1.min.js"></script>
+  </body>
+</html>

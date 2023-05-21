@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Menu</title>
+</head>
+<body>
+    <div class="menu-wrapper">
+        <div class="menu" id="menu">
+            <div class="container">
+                <div class="header">Odeca</div>
+                <ul class="list">
+                    <li class="select-item">
+                        <div class="row">
+                            <div onclick="Select_Menu(11);"class="name">Gornji deo</div>
+                        </div>
+                    </li>
+                    <li class="select-item">
+                        <div class="row">
+                            <div onclick="Select_Menu(8);"class="name">Majce</div>
+                        </div>
+                    </li>
+					<li class="select-item">
+                        <div class="row">
+                            <div onclick="Select_Menu(3);"class="name">Torzo</div>
+                        </div>
+                    </li>
+                    <li class="select-item">
+                        <div class="row">
+                            <div onclick="Select_Menu(4);"class="name">Pantalone</div>
+                        </div>
+                    </li>
+                    <li class="select-item">
+                        <div class="row">
+                            <div onclick="Select_Menu(6);"class="name">Cipele</div>
+                        </div>
+                    </li>
+                    <li class="select-item">
+                        <div class="row">
+                            <div onclick="Select_Menu(12);"class="name">Kape</div>
+                        </div>
+                    </li>
+					<li class="select-item">
+                        <div class="row">
+                            <div onclick="Select_Menu(13);"class="name">Naocare</div>
+                        </div>
+                    </li>
+					<li class="select-item">
+                        <div class="row">
+                            <div onclick="Select_Menu(7);" class="name">Dodaci</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <div class="row">
+                        
+                        <div onclick="Select_Menu(0);" class="button decline">Izlaz</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+	<script>
+	function Select_Menu(id) {
+		mp.trigger("Cloth_Store",id);
+	}
+	
+	</script>
+</body>
+</html>

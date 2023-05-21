@@ -1,0 +1,179 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client-Side Js", "Client-Side Js", "{60EC43E2-D7D0-4F86-9639-90AB3A8F60EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\AC.js = ..\..\..\client_packages\files\AC.js
+		..\..\..\client_packages\files\camerasManager.js = ..\..\..\client_packages\files\camerasManager.js
+		..\..\..\client_packages\files\events.js = ..\..\..\client_packages\files\events.js
+		..\..\..\client_packages\files\fly.js = ..\..\..\client_packages\files\fly.js
+		..\..\..\client_packages\files\furniture.js = ..\..\..\client_packages\files\furniture.js
+		..\..\..\client_packages\files\index.js = ..\..\..\client_packages\files\index.js
+		..\..\..\client_packages\files\main.js = ..\..\..\client_packages\files\main.js
+		..\..\..\client_packages\files\natives.js = ..\..\..\client_packages\files\natives.js
+		..\..\..\client_packages\files\new_voip.js = ..\..\..\client_packages\files\new_voip.js
+		..\..\..\client_packages\files\VehicleSync.js = ..\..\..\client_packages\files\VehicleSync.js
+		..\..\..\client_packages\files\zones.js = ..\..\..\client_packages\files\zones.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "auth", "auth", "{C11B5B5E-ADC9-41B8-A6D7-FFA04C0B5C58}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\auth\files_missing.html = ..\..\..\client_packages\files\auth\files_missing.html
+		..\..\..\client_packages\files\auth\input.html = ..\..\..\client_packages\files\auth\input.html
+		..\..\..\client_packages\files\auth\mechanic.html = ..\..\..\client_packages\files\auth\mechanic.html
+		..\..\..\client_packages\files\auth\personagem.html = ..\..\..\client_packages\files\auth\personagem.html
+		..\..\..\client_packages\files\auth\personagem_2.html = ..\..\..\client_packages\files\auth\personagem_2.html
+		..\..\..\client_packages\files\auth\personagem_3.html = ..\..\..\client_packages\files\auth\personagem_3.html
+		..\..\..\client_packages\files\auth\personagens.html = ..\..\..\client_packages\files\auth\personagens.html
+		..\..\..\client_packages\files\auth\whitelist.html = ..\..\..\client_packages\files\auth\whitelist.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "celular", "celular", "{9989532A-7390-4C67-BFB4-2EFADF0D05C5}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\celular\arrow_up.png = ..\..\..\client_packages\files\celular\arrow_up.png
+		..\..\..\client_packages\files\celular\chamada_recusada.ogg = ..\..\..\client_packages\files\celular\chamada_recusada.ogg
+		..\..\..\client_packages\files\celular\chamando.ogg = ..\..\..\client_packages\files\celular\chamando.ogg
+		..\..\..\client_packages\files\celular\index.html = ..\..\..\client_packages\files\celular\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inventory", "inventory", "{08681A69-449A-48A9-ACF3-DB319C9DDA3D}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\inventory\armazenamento.html = ..\..\..\client_packages\files\inventory\armazenamento.html
+		..\..\..\client_packages\files\inventory\armazenamento_house.html = ..\..\..\client_packages\files\inventory\armazenamento_house.html
+		..\..\..\client_packages\files\inventory\armazenamento_HQ.html = ..\..\..\client_packages\files\inventory\armazenamento_HQ.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inventory2", "inventory2", "{D6AE6F96-33E0-4ADA-8E13-ACFAB0CB908E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\inventory2\inventory.html = ..\..\..\client_packages\files\inventory2\inventory.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{B4AF01E3-F6EB-4FF3-AEC9-A46654F2907E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\inventory2\js\chareditor.js = ..\..\..\client_packages\files\inventory2\js\chareditor.js
+		..\..\..\client_packages\files\inventory2\js\editordata.js = ..\..\..\client_packages\files\inventory2\js\editordata.js
+		..\..\..\client_packages\files\inventory2\js\fontawesome-all.min.js = ..\..\..\client_packages\files\inventory2\js\fontawesome-all.min.js
+		..\..\..\client_packages\files\inventory2\js\html.js = ..\..\..\client_packages\files\inventory2\js\html.js
+		..\..\..\client_packages\files\inventory2\js\hudmenu.js = ..\..\..\client_packages\files\inventory2\js\hudmenu.js
+		..\..\..\client_packages\files\inventory2\js\jquery-3.3.1.min.js = ..\..\..\client_packages\files\inventory2\js\jquery-3.3.1.min.js
+		..\..\..\client_packages\files\inventory2\js\jquery-ui.min.js = ..\..\..\client_packages\files\inventory2\js\jquery-ui.min.js
+		..\..\..\client_packages\files\inventory2\js\login-ui.tag = ..\..\..\client_packages\files\inventory2\js\login-ui.tag
+		..\..\..\client_packages\files\inventory2\js\nativeui.js = ..\..\..\client_packages\files\inventory2\js\nativeui.js
+		..\..\..\client_packages\files\inventory2\js\riot+compiler.min.js = ..\..\..\client_packages\files\inventory2\js\riot+compiler.min.js
+		..\..\..\client_packages\files\inventory2\js\uikit-icons.min.js = ..\..\..\client_packages\files\inventory2\js\uikit-icons.min.js
+		..\..\..\client_packages\files\inventory2\js\uikit.min.js = ..\..\..\client_packages\files\inventory2\js\uikit.min.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "new_hud", "new_hud", "{1C5F115B-C4D4-45FB-82C2-9058EB4FB776}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\new_hud\arrow_left.png = ..\..\..\client_packages\files\new_hud\arrow_left.png
+		..\..\..\client_packages\files\new_hud\arrow_right.png = ..\..\..\client_packages\files\new_hud\arrow_right.png
+		..\..\..\client_packages\files\new_hud\brake.png = ..\..\..\client_packages\files\new_hud\brake.png
+		..\..\..\client_packages\files\new_hud\car-lights.png = ..\..\..\client_packages\files\new_hud\car-lights.png
+		..\..\..\client_packages\files\new_hud\chicken.png = ..\..\..\client_packages\files\new_hud\chicken.png
+		..\..\..\client_packages\files\new_hud\engine.png = ..\..\..\client_packages\files\new_hud\engine.png
+		..\..\..\client_packages\files\new_hud\fuel.png = ..\..\..\client_packages\files\new_hud\fuel.png
+		..\..\..\client_packages\files\new_hud\heartbeat.png = ..\..\..\client_packages\files\new_hud\heartbeat.png
+		..\..\..\client_packages\files\new_hud\index.html = ..\..\..\client_packages\files\new_hud\index.html
+		..\..\..\client_packages\files\new_hud\microphone.png = ..\..\..\client_packages\files\new_hud\microphone.png
+		..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets = ..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets
+		..\..\..\client_packages\files\new_hud\money.html = ..\..\..\client_packages\files\new_hud\money.html
+		..\..\..\client_packages\files\new_hud\oil.png = ..\..\..\client_packages\files\new_hud\oil.png
+		..\..\..\client_packages\files\new_hud\pills.png = ..\..\..\client_packages\files\new_hud\pills.png
+		..\..\..\client_packages\files\new_hud\shield.png = ..\..\..\client_packages\files\new_hud\shield.png
+		..\..\..\client_packages\files\new_hud\thirsty.png = ..\..\..\client_packages\files\new_hud\thirsty.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MDC", "MDC", "{FE0411D5-030A-4335-A2C3-AEB84FBD86E6}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\MDC\logomdc2.png = ..\..\..\client_packages\files\MDC\logomdc2.png
+		..\..\..\client_packages\files\MDC\MDC.html = ..\..\..\client_packages\files\MDC\MDC.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vehicles", "vehicles", "{3C48BE41-1F1F-4D16-90E7-397B37A7E6FE}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\vehicles\dealership.html = ..\..\..\client_packages\files\vehicles\dealership.html
+		..\..\..\client_packages\files\vehicles\vehicle_buy.html = ..\..\..\client_packages\files\vehicles\vehicle_buy.html
+		..\..\..\client_packages\files\vehicles\vehicle_list.html = ..\..\..\client_packages\files\vehicles\vehicle_list.html
+		..\..\..\client_packages\files\vehicles\vehicle_release.html = ..\..\..\client_packages\files\vehicles\vehicle_release.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vip", "vip", "{8AFA3C5D-93D0-4AB9-A242-D0CD4545F637}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\vip\vip.html = ..\..\..\client_packages\files\vip\vip.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deathscreen", "deathscreen", "{4AD10569-C84B-4598-94A1-6DEEBCE941F3}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\deathscreen\deathscreen.html = ..\..\..\client_packages\files\deathscreen\deathscreen.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html", "html", "{F65B725F-EAD5-4996-8D55-2ECD659869DB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\html\characters.html = ..\..\..\client_packages\files\html\characters.html
+		..\..\..\client_packages\files\html\freemode.html = ..\..\..\client_packages\files\html\freemode.html
+		..\..\..\client_packages\files\html\gas_station.html = ..\..\..\client_packages\files\html\gas_station.html
+		..\..\..\client_packages\files\html\login.html = ..\..\..\client_packages\files\html\login.html
+		..\..\..\client_packages\files\html\notf.html = ..\..\..\client_packages\files\html\notf.html
+		..\..\..\client_packages\files\html\player_list.html = ..\..\..\client_packages\files\html\player_list.html
+		..\..\..\client_packages\files\html\taxi_request.html = ..\..\..\client_packages\files\html\taxi_request.html
+		..\..\..\client_packages\files\html\taxi_ui.html = ..\..\..\client_packages\files\html\taxi_ui.html
+		..\..\..\client_packages\files\html\vehicle.html = ..\..\..\client_packages\files\html\vehicle.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{D7365C86-FAFD-4B29-BBCA-6044E7F68250}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\files\services\services.html = ..\..\..\client_packages\files\services\services.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "static-attachments", "static-attachments", "{09B97013-1B83-43A8-A916-5BBCE7D4B2A1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\client_packages\static-attachments\index.js = ..\..\..\client_packages\static-attachments\index.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bugs", "Bugs", "{1253783C-EA8A-474E-BACC-3F009A0F252B}"
+	ProjectSection(SolutionItems) = preProject
+		Bugs.txt = Bugs.txt
+		Job.txt = Job.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pvrp", "pvrp.csproj", "{474A5C42-D5F0-436C-9470-F6DD48CFE3D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{474A5C42-D5F0-436C-9470-F6DD48CFE3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474A5C42-D5F0-436C-9470-F6DD48CFE3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474A5C42-D5F0-436C-9470-F6DD48CFE3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474A5C42-D5F0-436C-9470-F6DD48CFE3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{415CE475-D0FA-4BFB-8FE6-701A3F3A03CB} = {60EC43E2-D7D0-4F86-9639-90AB3A8F60EE}
+		{C11B5B5E-ADC9-41B8-A6D7-FFA04C0B5C58} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{9989532A-7390-4C67-BFB4-2EFADF0D05C5} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{08681A69-449A-48A9-ACF3-DB319C9DDA3D} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{D6AE6F96-33E0-4ADA-8E13-ACFAB0CB908E} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{B4AF01E3-F6EB-4FF3-AEC9-A46654F2907E} = {D6AE6F96-33E0-4ADA-8E13-ACFAB0CB908E}
+		{1C5F115B-C4D4-45FB-82C2-9058EB4FB776} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{FE0411D5-030A-4335-A2C3-AEB84FBD86E6} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{3C48BE41-1F1F-4D16-90E7-397B37A7E6FE} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{8AFA3C5D-93D0-4AB9-A242-D0CD4545F637} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{4AD10569-C84B-4598-94A1-6DEEBCE941F3} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{F65B725F-EAD5-4996-8D55-2ECD659869DB} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{D7365C86-FAFD-4B29-BBCA-6044E7F68250} = {415CE475-D0FA-4BFB-8FE6-701A3F3A03CB}
+		{09B97013-1B83-43A8-A916-5BBCE7D4B2A1} = {60EC43E2-D7D0-4F86-9639-90AB3A8F60EE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {037B7E1A-5080-4377-ADFD-85C3A0D42BE5}
+	EndGlobalSection
+EndGlobal

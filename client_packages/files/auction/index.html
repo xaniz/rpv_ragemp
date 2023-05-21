@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bidding System</title>
+    <link rel="stylesheet" type="text/css" href="bidding.css">
+</head>
+<body>
+    <img src="image.png" alt="Aukcija">
+    <table>
+        <thead>
+            <tr>
+                <th>Ponudio</th>
+                <th>Suma</th>
+                <th>Vasa Ponuda</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="item-name"></td>
+                <td id="current-bid"></td>
+                <td><input type="number" id="bid-amount" min="0"></td>
+                <td><input type="submit" value="BID" onclick="placeBid()"></td>
+                <td><input type="submit" value="X" onclick="ExitaAll()"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function updateUI(itemName, currentBid) {
+            document.getElementById("item-name").innerHTML = itemName;
+            document.getElementById("current-bid").innerHTML = "$" + currentBid;
+            document.getElementById("bid-amount").value = currentBid + 1;
+        }
+        
+        function placeBid() {
+            var bidAmount = document.getElementById("bid-amount").value;
+            mp.trigger("cplaceBid", bidAmount);
+        }
+        function ExitaAll() {
+            mp.trigger("exitall");
+        }
+    </script>
+</body>
+</html>

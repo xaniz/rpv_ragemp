@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="./bebas-neue/stylesheet.css">
+</head>
+<style>
+	[v-cloak] {
+		display: none;
+	}
+</style>
+<body style="background: none">
+<div id="app" v-cloak>
+	<div class="container" v-if="active">
+		<div v-if="style == 0" @click="exit()" class="exit">
+				<a>X</a>IZLAZ
+		</div>
+		<div class="mainpage" v-if="style == 0">
+			<div class="text">Odaberite vrstu tablce</div>
+			<div @click="gostyle(1)" class="left">
+				<div class="bgleft_for_overflow">
+					
+				</div>
+				<div class="nametype">Obican</div>
+				<div class="namedesc"></div>
+				<div class="filter_hover_shadow_blue"></div>
+				<div class="filter_shadow"></div>
+				<img src="./img/num2.png" class="num10">
+			</div>
+			<div @click="gostyle(2)" class="right">
+				<div class="nametype">Unikatan</div>
+				<div class="namedesc"></div>
+				<div class="filter_hover_shadow_red"></div>
+				<div class="filter_shadow"></div>
+				<div class="bgright_for_overflow">
+					
+				</div>
+				<img src="./img/num.png" class="num1">
+				<div class="num1_shadow"></div>
+				
+			</div>
+		</div>
+		
+		<div class="standartnum" v-if="style == 1">
+			<div @click="gostyle(0)" class="exit">
+				<a><</a>NAZAD
+			</div>
+			<div class="light_left"></div>
+			
+			<div class="ordermenu">
+				
+				<div class="desclist">
+					Obicne registarske tablice
+				</div>
+				<div class="list">
+					<div @click="randomnumber8(1)" v-bind:class="{ active: btns[1] }" id="block" class="block">
+						<div class="nb">8 Nasumicnih karaktera</div>
+						<div class="np">$1000</div>
+					</div>
+					<div @click="randomnumber7(3)" v-bind:class="{ active: btns[3] }" id="block" class="block">
+						<div class="nb">7 Nasumicnih karaktera</div>
+						<div class="np">$3000</div>
+					</div>
+					<div @click="randomnumber6(4)" v-bind:class="{ active: btns[4] }" id="block" class="block">
+						<div class="nb">6 Nasumicnih karaktera</div>
+						<div class="np">$5000</div>
+					</div>
+				</div>
+				
+				<div class="warning"></div>
+				<div @click="change()" class="btnbuynum">KUPI</div>
+			</div>
+			
+		</div>
+		<div v-if="style == 2" class="customnum">
+			<div style="z-index: 10;" @click="gostyle(0)" class="exit">
+				<a><</a>NAZAD
+			</div>
+			<div class="shadow_car"></div>
+			<div class="shadow_car2"></div>
+			<div class="namepage2">UNIKATNE TABLICE</div>
+			<div class="buyblock">
+				<div @click="changecustom(2)" class="btnbuycustom">250 C</div>
+			</div>
+			<input class="inputnum" placeholder="UPISI" value="MERUMOND" v-model="number" type="text" onBlur='this.value=this.value.replace(/[^\qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890]/ig,"");' onkeyup='this.value=this.value.replace(/[^\qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890]/ig,"");' spellcheck="false" maxlength="8" minlength="3">
+			<img src="./img/num3.png" class="number3">
+			
+		</div>
+	</div>
+</div>
+
+<script src="js/changer.js"></script>
+</body>
+</html>

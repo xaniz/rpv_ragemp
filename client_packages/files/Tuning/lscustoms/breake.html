@@ -1,0 +1,78 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="ls_castoms.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="../fonts/PFDinDisplayPro/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+     <div class="left" id="left-button" type="button"></div>
+          <div class="center" id="content">
+              <div class=internal><div class="brakes"></div>Standard</div>
+
+       </div>
+      <div class="right" id="right-button" type="button"></div>
+    </div>
+    </div> 
+
+    <div onclick="mp.trigger('Display_Tunning_home')" id="home" class="go-main-menu"></div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="text"><div class="icon brakes"></div><p>Poboljsava kocenje vozila odnosno brzinu zaustavljanja</p></div>
+            <div id="price" class="price"><p>0$</p></div>
+            <div id="buy" class="buy-button"><div class="img"></div><p>Kupi</p></div>
+        </div>
+    </div>
+      
+
+    <script src="../../css/jquery.js"></script>
+<script >
+  let selectedmodValue = -1;
+function loaddata(data)
+{
+    let tempdata = JSON.parse(data);
+    tempdata.forEach(item => {
+      if(item.price == 0)
+      {
+        $("#content").append("<div onclick='selectedchange("+item.modValue+","+item.price+")'  class=internal><div class='brakes'></div>"+item.Label+" * </div>")
+
+      }else
+      {
+        $("#content").append("<div onclick='selectedchange("+item.modValue+","+item.price+")'  class=internal><div class='brakes'></div>"+item.Label+" </div>")
+      }
+    });
+    $("#buy").click(function () {
+      mp.trigger("tunning_onindexchange",true,"LSCUSTOM_Breake",selectedmodValue);
+    });
+}
+
+function selectedchange(modValue,price)
+{
+   $("#price p").text(price+"$");
+   selectedmodValue = modValue;
+   mp.trigger("tunning_onindexchange",false,"Breake",modValue);
+}
+
+$('#right-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=160px"
+  }, "slow");
+});
+
+ $('#left-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=160px"
+  }, "slow");
+});</script>
+    
+    <script src="tuning.js"></script>
+</body>
+</html>

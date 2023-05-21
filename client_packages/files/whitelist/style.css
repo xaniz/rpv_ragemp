@@ -1,0 +1,41 @@
+@font-face{
+	font-family:AAFuture;
+	src:url(../fonts/aafuture.ttf) format("truetype");
+}
+
+body{
+	font-family:AAFuture !important;
+}
+*{
+	font-family:inherit !important;
+}
+.help-main{
+	background:#303030 !important;
+}
+.bottom{
+	background:#303030 !important;
+}
+.header{
+		background:#008df0 !important;
+		color:white !important;
+		border-radius:0px !important;
+		border:none !important;
+		width:calc(100% + 2em);
+		margin-left:-1em !important;
+}
+.button{
+	border-radius:25px !important;
+	border:1px solid #008df0 !important;
+	background:#303030 !important;
+	color:#008df0 !important;
+	width:40% !important;
+	margin:0 auto !important;
+}
+.button:hover{
+	background:#008df0 !important;
+	color:black !important;
+}
+.label{
+	background:#008df0 !important;
+	color:white !important;
+}

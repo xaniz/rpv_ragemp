@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Online List</title>
+</head>
+<body>
+    <div class="online-list-wrapper">
+        <div class="online" id="online">
+            <div class="container">
+                <div class="header">Online Igraci</div>
+                <div class="subheader" id="count"></div>
+                <div class="table-scroll">
+                    <div class="table-head">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Stars</th>
+                                    <th>Suspect</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table-body" class="playerData">
+                        <table id="players">
+                            <tbody>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script> 
+  <script src="js/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script>
+uiGlobal_Browsers.execute("LoadPlayersW(" + JSON.stringify(menu_item_list) + ");");
+function LoadPlayersW(menu_item_list) {
+   for (var i = 0; i < menu_item_list.length; i++) {
+     var suspect = menu_item_list[i].suspect;
+     var stars = menu_item_list[i].stars;
+     $("#players tbody").append("<tr><td>" + stars + "</td><td>" + suspect + "</td></tr>");
+   }
+}
+			
+			
+			
+			
+// Keys listener.
+$(document).keydown(function(e) {
+
+	switch (e.which) {
+		// Show input.
+		case 27: {
+			mp.trigger("Destroy_Character_Menu");
+			break;
+		}
+		case 73: {
+			mp.trigger("Destroy_Character_Menu");
+			break;
+		}
+		case 192: {
+			mp.trigger("Destroy_Character_Menu");
+			break;
+		}
+	}
+});
+
+	</script>
+	
+	
+</body>
+</html>

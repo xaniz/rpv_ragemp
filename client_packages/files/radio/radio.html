@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background" style="background-image: url('./img/radioMain.png')"></div>
+        <div id="display">
+            <div class="status">Set Freq</div>
+            <h2 class="frequency"></h2>
+            <h2 id="volume"></h2>
+        </div>
+        <input type="number" placeholder="0 - 65535" min="0" max="65535" step="1" class="input" id="freq" >
+        <button id="onSwitch" onclick="toggleRadio();this.blur();"></button>
+        <button id="volumeUp" onclick="volumeChange('up');this.blur();"></button>
+        <button id="volumeDown" onclick="volumeChange('down');this.blur();"></button>
+    </div>
+</body>
+
+<script>
+
+function volumeChange(str) {
+}
+
+function setonscreen(freq){
+document.getElementById("freq").value = freq;
+
+}
+
+function toggleRadio() {
+	mp.trigger("Toggle_Radio");
+}
+
+
+document.addEventListener('keyup', (e) => {
+	switch (e.which) {
+		// Show input.
+		case 13: {
+			if(document.getElementById("freq").value >= 0 && document.getElementById("freq").value <= 65535)
+			{
+				var freq = document.getElementById("freq").value;
+				mp.trigger("SetFreq",freq);
+			}
+			break;
+	}
+  }
+
+});
+
+
+</script>
+</html>

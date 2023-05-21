@@ -1,0 +1,364 @@
+* {
+    user-select: none;
+  }
+
+#form-container {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+#vrata1 {
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #2c2c2ca5;
+    
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #ededed;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 135px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+#vrata2 {
+
+    position: absolute;
+    left: 135px;
+    top: 0px;
+    background: #2c2c2ca5;
+    
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #ededed;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 135px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+#vrata3 {
+
+    position: absolute;
+    left: 0px;
+    top: 75px;
+    background: #2c2c2ca5;
+    
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #ededed;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 135px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+#vrata4 {
+
+    position: absolute;
+    left: 135px;
+    top: 75px;
+    background: #2c2c2ca5;
+    
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #ededed;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 135px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+#gepek {
+    position: absolute;
+
+    left: 80px;
+    top: 150px;
+    background: #2c2c2ca5;
+    
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #ededed;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 110px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#hauba{
+    background: #2c2c2ca5;
+    
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    position: absolute;
+    left: 81px;
+    bottom: 0px;
+    box-sizing: border-box;
+    color: #ededed;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 110px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+#neon{
+    background: #2c2c2ca5;
+    border: 1px solid #a6008d;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    box-sizing: border-box;
+    color: #a6008d;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 75px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#lock{
+    background: #2c2c2ca5;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    position: absolute;
+    left: 190px;
+    bottom: 0px;
+    box-sizing: border-box;
+    color: #FF4742;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 75px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#engine{
+    background: #2c2c2ca5;
+    border: 1px solid #26ff00;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    position: absolute;
+    left: 190px;
+    top: 150px;
+    box-sizing: border-box;
+    color: #26ff00;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 80px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#blinker{
+    background: #2c2c2ca5;
+    border: 1px solid #ffea00;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    box-sizing: border-box;
+    color: #ffea00;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 80px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+
+@media only screen and  (min-height:720px) and (max-width:1280px) {
+
+    #quit-form{ 
+        left: 220px;
+        min-width: 100px;
+        min-height: 60px;
+    }   
+    #purchase-form{ 
+        min-width: 100px;
+        min-height: 60px;
+    } 
+    #test-form{ 
+        left: 110px;
+        min-width: 100px;
+        min-height: 60px;
+    }   
+    
+
+  }
+
+  @media only screen and  (min-height:768px) and (max-width:1366px) {
+
+    #quit-form{ 
+        left: 220px;
+        min-width: 100px;
+        min-height: 60px;
+    }   
+    #purchase-form{ 
+        min-width: 100px;
+        min-height: 60px;
+    } 
+    #test-form{ 
+        left: 110px;
+        min-width: 100px;
+        min-height: 60px;
+    }   
+
+  }

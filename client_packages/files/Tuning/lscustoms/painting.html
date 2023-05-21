@@ -1,0 +1,40 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="ls_castoms.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="../fonts/PFDinDisplayPro/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="win-select">
+       <div class="wrap-paint">
+        <div class="paint-logos"></div>
+           <div onclick="mp.trigger('tunning_onindexchange',false,'LSCUSTOM_Painting',0)" class="colums"><div class="car-icon-paint"></div><div class="button"><p>Primarna</p></div></div>
+           <div onclick="mp.trigger('tunning_onindexchange',false,'LSCUSTOM_Painting',1)" class="colums"><div class="car-icon-paint"></div><div class="button"><p>Sekundarna</p></div></div>
+           <div onclick="mp.trigger('tunning_onindexchange',false,'LSCUSTOM_Painting',2)" class="colums"><div class="car-icon-paint-neon"></div><div class="button"><p>Neon</p></div></div>
+
+       </div>
+    </div>
+      
+
+    <script src="../../css/jquery.js"></script>
+<script >$('#right-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=160px"
+  }, "slow");
+});
+
+ $('#left-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=160px"
+  }, "slow");
+});</script>
+    
+    <script src="tuning.js"></script>
+</body>
+</html>

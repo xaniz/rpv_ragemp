@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:500&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div style="display:none;"  id="progress" class="progress"><img  id="image" src="./img/marijuana.png"></img></div>
+
+
+<!-- partial -->
+  <script src='./ProgressBar.js'></script>
+<script>
+const MAX = 100
+
+const cp = new CircleProgress('.progress', {
+	max: MAX,
+	value: 0,
+	animationDuration: 400,
+	textFormat: (val) => '',
+});
+let timer = null;
+
+function StartProgressBar(time,imgname)
+{
+	
+	document.getElementById("progress").style.display = "block";
+
+	document.getElementById("progress").style.background = "none";
+	//document.getElementById("progress").style.background = "url('./img/"+imgname+".png')";
+	document.getElementById("image").src ="./img/"+imgname+".png";
+	document.getElementById("image").style.opacity = 0;
+	document.getElementById("progress").style.backgroundRepeat = "no-repeat";
+	document.getElementById("progress").style.backgroundPosition = "center";
+	timer = setInterval(function()
+	{ 
+		cp.value += 100/(time*2);
+		t =  cp.value/115;
+		
+		
+		document.getElementById("image").style.opacity = t;
+		console.log();
+		if(cp.value == 100)
+		{
+			StopProgress();
+			
+		}
+	}, 500);
+}
+
+function StopProgress()
+{
+	if(timer != null)
+	{
+		clearInterval(timer);
+		timer = null;
+		mp.trigger("DestroyProgressBar");
+	}
+}
+
+</script>
+</body>
+</html>

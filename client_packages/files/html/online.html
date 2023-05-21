@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Online List</title>
+</head>
+<body>
+    <div class="online-list-wrapper">
+        <div class="online" id="online">
+            <div class="container">
+                <div class="header">Online lista</div>
+                <div class="subheader" id="count"></div>
+                <div class="table-scroll">
+                    <div class="table-body" class="playerData">
+                            <tbody>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script> 
+  <script src="../css/jquery.js"></script>
+<script>
+
+	  function LoadPlayers(data, online, max) {
+				let localData = JSON.parse(data);
+				
+				$("#players > tbody").empty();
+				$("#players > tbody:last-child").empty();
+				
+				$('#count').append("<span class='bold'>" + online + "</span> / <span class='translucent'>" + max + "</span><");
+
+				for(let i = 0; i < localData.length; i++) {
+                    //$('#players > tbody:last-child').append('<tr><td>'+localPlayers[i].ID+'</td><td><span style="color: '+localPlayers[i].Color+';">'+localPlayers[i].Name+'</span></td><td>'+localPlayers[i].Level+'</td><td>'+localPlayers[i].Ping+'</td></tr>');
+                    $('#players > tbody:last-child').append('<tr><td>'+localData[i].ID+'</td><td>'+localData[i].Name+'</td><td>'+localData[i].Level+'</td><td>'+localData[i]._Ping+'</td></tr>');
+				}
+            }
+			
+			
+
+
+
+
+	</script>
+	
+	
+</body>
+</html>

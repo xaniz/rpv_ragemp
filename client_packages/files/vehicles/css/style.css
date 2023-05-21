@@ -1,0 +1,175 @@
+.img-responsive {
+  display: block;
+	max-width: 100%;
+	height: auto;
+}
+.img-responsive .img-width {
+  width: 100%;
+}
+
+/* НАЧАЛО СТИЛЕЙ ВТОРОЙ СТРАНИЧКИ */
+
+body {
+  padding-top: 10px;
+  background: transparent;
+}
+
+body.second .header-container {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+body.second .header {
+  background-color: #16142b;
+  opacity: 0.8;
+  text-align: center;
+  padding: 40px 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 30px 30px 0 0;
+}
+
+body.second .header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+body.second .cars {
+  padding-bottom: 40px;
+}
+
+body.second .cars-inner {
+  padding: 50px 80px;
+  background-color: #16142b;
+  overflow-y: scroll;
+  height: 70vh;
+}
+
+body.second .cars .car-wrap {
+  margin-bottom: 40px;
+}
+
+body.second .cars .car {
+  font-size: 0.9rem;
+  height: 100%;
+}
+
+body.second .cars .car .car-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0d0d24;
+  color: #ffffff;
+  padding: 15px 20px;
+}
+
+body.second .cars .car .car-description strong {
+  color: #565656;
+}
+
+body.second .cars .car .car-description .details p {
+  padding: 0;
+  margin: 0;
+}
+
+body.second .cars .car .car-description .color-select .color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-right: 3px;
+  border: 3px solid transparent;
+  -webkit-transition: border-color .25s ease;
+  -o-transition: border-color .25s ease;
+  transition: border-color .25s ease;
+}
+
+body.second .cars .car .car-description .color-select p {
+  margin-bottom: 10px;
+}
+
+body.second .cars .car .car-description .color-select .color:focus, body.second .cars .car .car-description .color-select .color:active {
+  outline: none;
+}
+
+body.second .button {
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25 ease;
+  transition: all .25s ease;
+  background: linear-gradient(to right, #c423e3 , #5751e3)!important;
+  background-size: 1px 200px;
+}
+
+.red {
+  background-color: #d01919!important;
+}
+.orange {
+  background-color: #f2680d!important;
+}
+.yellow {
+  background-color: #fbbd08!important;
+}
+.green {
+  background-color: #21ba45!important;
+}
+.teal {
+  background-color: #009c95!important;
+}
+.blue {
+  background-color: #2185d0!important;
+}
+.violet {
+  background-color: #5829bb!important;
+}
+.purble {
+  background-color: #e0e1e2!important;
+}
+.brown {
+  background-color: #a5673f!important;
+}
+.grey {
+  background-color: #767676!important;
+}
+.black {
+  background-color: #1b1c1d!important;
+}
+
+.vehicle_count {
+  color: #ffffff;
+  background: linear-gradient(to right, #c423e3 , #5751e3)!important;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.closebtn-wrap{
+  background-color: #16142b;
+  padding: 15px;
+}
+
+.closebtn button {
+  background: linear-gradient(to right, #c423e3 , #5751e3)!important;
+  border: none;
+  color: #ffffff;
+  width: 100%;
+  padding: 10px 0;
+}
+
+body.second .button:hover { 
+}
+
+body.second .button:focus, body.second .button:active {
+  outline: none;
+}

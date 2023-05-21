@@ -1,0 +1,11 @@
+{
+  "name": "hot-loader",
+  "version": "1.0.0",
+  "description": "Run rage.mp code instantly from your code editor",
+  "main": "index.js",
+  "author": "Mos",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.0.0"
+  }
+}

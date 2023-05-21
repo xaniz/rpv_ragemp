@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>GTA 5</title>
+</head>
+<body>
+
+  <div class="blur"></div>
+
+  <div id="content">
+
+    <header class="header">
+
+      <div class="header-left">
+        <img src="logo.png" alt="alt" class="logo img-responsive">
+        <h1 class="title">Покупка машины</h1>
+      </div>
+      
+      <div class="header-right">
+        <h2><span id="on_hands_money"></span></h2>
+      </div>
+
+      <button id="close">🗙</button>
+
+    </header>
+
+
+    <div class="slider-big" id="slider-big">
+			
+			
+
+    </div>
+    
+    <div class="slider-small-wrapper">
+      <img src="arrow.png" alt="arrow" class="arrow">
+      <div class="slider-small" id="slider-small">
+				
+      </div>
+    </div>
+    
+  </div>
+  <script src="js/index.js"></script>
+  <script src="../css/jquery.js"></script>
+  <script src="js/slick.min.js"></script>
+
+  <script>
+
+
+		$("#close").click(function () {
+			mp.trigger("Destroy_Character_Menu");
+		});
+
+		let color_id = 0;
+
+		function LoadVehiclesToDealership(name, vehicle_list) {
+			// Vehicles From Stock
+			$("#slider-big").empty();
+			$("#slider-small").empty();
+			veh_list = JSON.parse(vehicle_list);
+			if (veh_list.length <= 0) {
+				$('#slider-big').append("");
+				$('#slider-small').append("");
+			} else {
+				for (let i = 0; i < veh_list.length; i++) {
+
+					var itemBig = '<div class="car"><div class="car-inner"><div class="car-inner__content"><div class="car-info"><h3>'+veh_list[i].Model+'</h3><p>Цена: <span>'+veh_list[i].Price+'$</span></p><p>In stock: <span>'+veh_list[i].Stock+'</span></p></div><div class="car-img"><img src="http://infinityrp.ir/ingame/'+veh_list[i].Model+'.png" alt="alt" class="img-responsive"></div><div class="car-button"><button class="button" id="buy_vehicle_'+veh_list[i].Model+'">Buy</button></div></div></div></div>';
+
+					var itemSmall = '<div class="car"><div class="car-inner"><img src="https://alyaska.000webhostapp.com/veh/'+veh_list[i].Model+'.png" alt="Car picture" class="img-responsive"></div></div>';
+
+					$('#slider-small').append(itemSmall);
+
+					$('#slider-big').append(itemBig);
+
+					$("#buy_vehicle_" + veh_list[i].Model).click(function () {
+						mp.trigger("Business_Buy_Vehicle", veh_list[i].Model, color_id);
+					});
+				}
+			}
+
+			$('#slider-big').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				fade: true,
+				asNavFor: '.slider-small'
+			});
+
+			$('#slider-small').slick({
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				asNavFor: '.slider-big',
+				dots: false,
+				centerMode: true,
+				focusOnSelect: true,
+				centerPadding: '0',
+				arrows: true,
+				prevArrow: '<button type="button" class="arrow-left"><img src="arrow-left.png" alt="arrow"></button>',
+				nextArrow: '<button type="button" class="arrow-right"><img src="arrow-right.png" alt="arrow"></button>'
+			});
+
+		}
+
+		function SetPlayerMoney(hands) {
+			$('#on_hands_money').text(hands);
+		}
+
+  </script>
+
+</body>
+</html>

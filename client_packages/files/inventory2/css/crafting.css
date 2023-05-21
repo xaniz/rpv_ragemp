@@ -1,0 +1,234 @@
+.invents{
+    margin-top:200px;
+    margin-right: auto;
+    width: 550px;
+}
+
+.sideinve{
+    position: fixed;
+    margin-top:-70px;
+    width: 550px;
+    margin-left: 10%;
+    display: inline-table;
+}
+
+
+.crafting-panel {
+    width: 120%;
+    font-size: 2em;
+    position: relative;
+    vertical-align: top;
+    float:left;
+    text-shadow: black 1px 1px 2px;
+}
+
+
+.crafting-panel.active {
+    background-color: rgba(11, 101, 0, 0.5);
+}
+
+.crafting-title {
+    font-weight: 500;
+}
+
+.crafting-ingredient {
+    font-size: 17.5px;
+    color: #fdff70;
+    display: inline-block;
+}
+
+.crafting-ingredient:nth-child(even) {
+    color: white;
+}
+
+.crafting-ingredient {
+    margin-left: 5px;
+}
+
+.crafting-queue {
+    padding: 0;
+    width: 68px;
+    height: 68px;
+    text-align: center;
+    background: linear-gradient(rgba(11, 101, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 0%);
+}
+
+.crafting-queue:not(:last-child) {
+    margin-right: calc((100% - 7 * 68px) / 6);
+}
+
+.fa.fa-times {
+    color: #ff6e6e;
+    font-size: 15px;
+    top: 2.5px;
+    right: 4px;
+    position: absolute;
+}
+
+.timer {
+    width: 100%;
+    left: 0;
+    bottom: 3px;
+    position: absolute;
+    color: white;
+    font-size: 12.5px;
+}
+.item-slot.draggable-container--is-dragging {
+	background-color: rgba(4, 50, 0, 0.2);
+	box-shadow:0 0 30px  1px #ffffff33 inset;
+}
+.draggable-container--is-dragging > .item-slot-inner{
+	border-radius:1px;
+	background:#ffffff44;
+	border:1px solid #fff;
+	
+}
+.draggable-container--is-dragging > .item-slot-inner > p{
+	background:rgba(100,100,100,0.2);
+}
+.tooltipDontDrop{
+	background:red;
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:10px;
+	width:100%;
+	text-align:center;
+	z-index:10000;
+	padding:4px;
+	border-radius:2px;
+	opacity:0;
+	visibility:visible;
+	transition:0.3s;
+}
+.tooltipDontDrop.show{
+	animation: tooltip 3s ;
+}
+@keyframes tooltip{
+	0%{opacity:0;}
+	20%{opacity:1;}
+	50%{opacity:0;}
+	70%{opacity:1;}
+	100%{opacity:0;}
+}
+.item-slot-inner {
+
+    border: 0px solid rgba(255, 255, 255, 0);
+    width: 75px;
+    height: 75px;
+    text-align: center;
+	z-index:10000;
+	
+}
+.item-slot {
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.5);
+	border-radius:1px;
+    background: #33333371;
+	margin:0px;
+	cursor:pointer;
+    left: 20%;
+    top: -15%;
+}
+.item-slot-inner >p {
+    text-align: center;
+    font-size: 10px;
+    margin:1px;
+	position:relative;
+	
+	padding:0px 0;
+
+}
+.item-slot-inner >img {
+    height: 50px;
+    width: 50px;
+}
+.item-slot:hover {
+    border:1px solid #8a8a8a7c;
+}    
+
+.slot-name {
+    width: 100%;
+    left: -2px;
+    bottom: 0px;
+	font-weight: bold;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slot-info {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slot-item, .slot-item-locked {
+    pointer-events: none;
+}
+
+.slot-indicator {
+    position: absolute;
+    font-size: 16px;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
+
+@media only screen and (max-height: 768px) and (max-width: 1366px)  {
+    .invents, .sideinve {
+        position: fixed !important;
+        
+      }
+    .invents {
+        width: 450px;
+        left: 9%;
+      }
+      .sideinve {
+        width: 450px;
+        margin-left: auto;
+        margin-top: -70px;
+      }
+	.item-slot-inner {
+
+        border: 0px solid rgba(255, 255, 255, 0);
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        z-index:10000;
+        
+    }
+    .item-slot {
+        padding: 0;
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.5);
+        border-radius:1px;
+        background: #33333371;
+        margin:0px;
+        cursor:pointer;
+        left: 0%;
+        top: -15%;
+    }
+    .item-slot-inner >p {
+        text-align: center;
+        font-size: 10px;
+        margin:1px;
+        position:relative;
+        
+        padding:0px 0;
+    
+    }
+
+}

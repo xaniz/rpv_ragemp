@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Player Questions</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <span class="lpsys">RPV LP System</span>
+  <button class="exit">izlaz</button>
+	<div class="container">
+		<div class="question">
+			<span>This is a sample question.</span>
+			<div>
+				<button class="answer">A</button>
+				<button class="delete">D</button>
+			</div>
+		</div>
+		<!-- more questions will be added dynamically using JS -->
+	</div>
+  <script>
+    function SendingReport(reportListJson) {
+      const reportList = JSON.parse(reportListJson);
+      const container = document.querySelector(".container");
+    
+      // Remove existing questions from the container
+      while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
+    
+      // Loop through the reportList and add a question item for each report
+      reportList.forEach((report) => {
+        const question = document.createElement("div");
+        question.classList.add("question");
+    
+        const text = document.createElement("span");
+        text.textContent = `ID ${report.rid}: ${report.reporttext}`;
+        question.appendChild(text);
+    
+        const buttons = document.createElement("div");
+    
+        // Add an event listener to the Delete button to remove the corresponding question 
+        const deleteButton = document.createElement("button");
+        deleteButton.classList.add("delete");
+        deleteButton.textContent = "D";
+        deleteButton.addEventListener("click", () => {
+          mp.trigger("client::dreport", report.rid);
+          container.removeChild(question);
+        });
+        buttons.appendChild(deleteButton);
+    
+        const answerButton = document.createElement("button");
+        answerButton.classList.add("answer");
+        answerButton.textContent = "A";
+    
+        // Add an event listener to the Answer button to show the answer section
+        let answerShown = false;
+        answerButton.addEventListener("click", () => {
+          if (!answerShown) {
+            const answerSection = document.createElement("div");
+            answerSection.classList.add("answer-section");
+    
+            const answerInput = document.createElement("textarea");
+            answerInput.classList.add("answer-input");
+            answerInput.setAttribute("placeholder", "Odgovor...");
+    
+            const sendButton = document.createElement("button");
+            sendButton.classList.add("send-button");
+            sendButton.textContent = "S";
+    
+            // Add an event listener to the Send button to trigger the sendAnswer function
+            sendButton.addEventListener("click", () => {
+              const answer = answerInput.value;
+              sendAnswer(report.rid, answer);
+
+              container.removeChild(answerSection);
+            });
+    
+            answerSection.appendChild(answerInput);
+            answerSection.appendChild(sendButton);
+            question.appendChild(answerSection);
+            answerShown = true;
+    
+            // Hide the answer button
+            answerButton.style.display = "none";
+            deleteButton.style.display = "none";
+          }
+        });
+    
+        question.appendChild(answerButton);
+        question.appendChild(buttons);
+        container.appendChild(question);
+      });
+    
+      // Add an event listener to the "izlaz" button to trigger the "Hide_Crafting_System" event
+      const exitButton = document.querySelector(".exit");
+      exitButton.addEventListener("click", () => {
+        mp.trigger("Hide_Crafting_System");
+      });
+    }
+    
+    function sendAnswer(playerId, answer) {
+    mp.trigger("client::lpanswer", playerId, answer);
+    mp.trigger("Hide_Crafting_System");
+  }
+    </script>
+</body>
+</html>

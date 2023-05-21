@@ -1,0 +1,177 @@
+
+<html>
+	<head>
+		<script src="howler.min.js"></script>
+	</head>
+	
+	<body>
+		
+	</body>
+	
+	<script>
+
+		var radioList = [];
+		
+		var maxVolume = 0.3;
+		var maxDistance = 20;
+		
+		function AddRadio(id, x, y, z, stream, carid) {
+			if(carid != 0) {
+				let exists = false;
+				for(let i = 0; i < radioList.length; i++) {
+					if(radioList[i] && radioList[i].carid == carid) {
+						exists = true;
+						break;
+					}
+				}
+				if(exists) return;
+			}
+			if(!stream || stream == "null") {
+				radioList[id] = {
+					"xmr": null,
+					"x": x,
+					"y": y,
+					"z": z,
+					"carid": carid
+				};
+			} else {
+				radioList[id] = {
+					"xmr": new Howl({
+						src: [stream],
+						html5: true,
+						volume: 0,
+						autoplay: false
+					}),
+					"x": x,
+					"y": y,
+					"z": z,
+					"carid": carid
+				};
+				radioList[id].xmr.play();
+			}
+		}
+		
+		function RemoveRadio(id) {
+			if(radioList[id].xmr)
+			{
+				radioList[id].xmr.stop();
+				radioList[id].xmr.unload();
+			}
+			radioList[id].x = 0;
+			radioList[id].y = 0;
+			radioList[id].z = 0;
+			radioList[id].stream = "null";
+			radioList[id].carid = 0;
+			//radioList[id].sql_id = -1;
+			radioList[id].xmr = null;
+		}
+		
+		function RemoveAllRadios() {
+			for(let i = 0; i < radioList[i]; i++) {
+				if(radioList[i].carid == 0 && radioList[i].sqlid == -1) continue;
+				
+				if(radioList[id].xmr) 
+				{
+					radioList[id].xmr.stop();
+					radioList[i].xmr.unload();
+				}
+				radioList[i] = null;
+			}
+		}
+		
+		function ChangeStream(id, stream) {
+			if(id == null) return;
+			if(stream == null || stream == "null" || !stream) {
+				if(radioList[id].xmr) radioList[id].xmr.stop();
+			} else if(!radioList[id].xmr) {
+				radioList[id].xmr = new Howl({
+						src: [stream],
+						html5: true,
+						volume: 0,
+						autoplay: false
+				});
+				radioList[id].xmr.play();
+			} else {
+				radioList[id].xmr.stop();
+				radioList[id].xmr.unload();
+				
+				radioList[id].xmr = new Howl({
+						src: [stream],
+						html5: true,
+						volume: 0,
+						autoplay: false
+				});
+				radioList[id].xmr.play();
+				
+				/*radioList[id].xmr._src = stream;
+				radioList[id].xmr.load();
+				radioList[id].xmr.play();*/
+			}
+		}
+		
+		function Update(px, py, pz, pcar, maxvol) {
+			maxVolume = maxvol;
+			for(let i = 0; i < radioList.length; i++) {
+				if(!radioList[i]) continue;
+				if(!radioList[i].xmr) continue;
+				let dist = distanceVector(px, py, pz, radioList[i].x, radioList[i].y, radioList[i].z);
+				
+				if(radioList[i].carid != 0) {
+					if(radioList[i].carid == pcar) {
+						radioList[i].xmr.volume(0.06);
+						//alert("15");
+					} else {
+						radioList[i].xmr.volume(0);
+						//alert("14");
+					}
+				} else {
+					if(maxVolume <= 0) {
+						radioList[i].xmr.volume(0);
+					} else {
+						if(dist < maxDistance) {
+							//radioList[i].xmr.volume((maxDistance - dist) / maxDistance * maxVolume);
+														
+							switch(parseInt(dist))
+							{
+								case 0: radioList[i].xmr.volume(0.10); break;
+								case 1: radioList[i].xmr.volume(0.095); break;
+								case 2: radioList[i].xmr.volume(0.090); break;
+								case 3: radioList[i].xmr.volume(0.085); break;
+								case 4: radioList[i].xmr.volume(0.080); break;
+								case 5: radioList[i].xmr.volume(0.075); break;
+								case 6: radioList[i].xmr.volume(0.070); break;
+								case 7: radioList[i].xmr.volume(0.065); break;
+								case 8: radioList[i].xmr.volume(0.060); break;
+								case 9: radioList[i].xmr.volume(0.055); break;
+								case 10: radioList[i].xmr.volume(0.050); break;
+								case 11: radioList[i].xmr.volume(0.045); break;
+								case 12: radioList[i].xmr.volume(0.040); break;
+								case 13: radioList[i].xmr.volume(0.035); break;
+								case 14: radioList[i].xmr.volume(0.030); break;
+								case 15: radioList[i].xmr.volume(0.025); break;
+								case 16: radioList[i].xmr.volume(0.020); break;
+								case 17: radioList[i].xmr.volume(0.015); break;
+								case 18: radioList[i].xmr.volume(0.010); break;
+								case 19: radioList[i].xmr.volume(0.005); break;
+								case 20: radioList[i].xmr.volume(0.002); break;
+								
+							}
+
+						} else {
+							radioList[i].xmr.volume(0);
+							
+						}
+					}
+				}
+			}
+		}
+		
+		function distanceVector(x1, y1, z1, x2, y2, z2) {
+			var dx = x1 - x2;
+			var dy = y1 - y2;
+			var dz = z1 - z2;
+
+			return Math.sqrt( dx * dx + dy * dy + dz * dz );
+		}
+	</script>
+</html>

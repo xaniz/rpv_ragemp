@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+
+
+.dugme2 {
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  color: rgb(36, 36, 36);
+  background-color: greenyellow;
+  border-color: rgb(88, 139, 10);
+}
+
+h1 {  
+  font-size: 150%;
+  padding: 0.25em .5em;  
+  font-family: 'Cairo', sans-serif;
+}
+
+h1 span {
+  color: aliceblue;
+  border: 15px solid rgba(46, 46, 46, 0);
+  padding: 0.1em .2em;  
+}
+
+.icons { 
+  display: inline-block;
+  width: 128px;
+  height: 504px;
+  overflow: hidden;
+  background: rgb(207, 16, 16) url(vockice.png) repeat-y;
+  will-change: backgroundPosition;
+  transition: 0.3s background-position ease-in-out;
+  padding: 0 80px;
+  transform: translateZ(0);
+}
+
+.icons:nth-child(2) {
+  margin: 0 10px;
+}
+
+* { box-sizing: border-box; }
+
+.spinner-container {
+  overflow: hidden;
+  height: 652px;  
+  padding: 2em;
+  transform: translate(-50%, -50%) scale(.62, .62);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transition: 0.3s transform;
+}
+
+.app-wrap.winner-false {
+  -webkit-animation: linear 1s spin;
+          animation: linear 1s spin;
+}
+.header {
+  position: fixed ;
+  left: 36.77%;
+  top: 15%;
+}
+
+#repeatButton {
+  position: fixed ;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;  
+  border: none;
+  background: url(button.png) transparent 0 0 no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 48px;
+  position: absolute;
+  top: 69.4%;
+  right: 63.0%; 
+  cursor: pointer;
+
+}
+
+#exitButton {
+  position: fixed ;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;  
+  border: none;
+  background: url(button.png) transparent 0 0 no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 48px;
+  position: absolute;
+  top: 45.4%;
+  right: 63.0%; 
+  cursor: pointer;
+
+}
+
+.spinner-container::after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  left: 30px;
+  background: rgba(58, 58, 58, 0.226);  
+}
+
+.gradient-fade {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  bottom: 32px;
+  left: 32px;
+  background: linear-gradient(
+    to bottom, 
+    rgba(64,64,64,1) 0%, 
+    rgba(64,64,64,0) 7%, 
+    rgba(64,64,64,0) 93%, 
+    rgba(64,64,64,1) 100%
+  );
+}
+
+@media screen and (max-width: 1000px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(.55, .55);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(.4, .4);
+  }
+}
+
+@media only screen and (max-height: 720px) and (min-width: 1280px) {
+  .header {
+    position: absolute;
+    top: -3%;
+    left: 31%;
+  }
+}

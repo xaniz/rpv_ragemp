@@ -1,0 +1,141 @@
+#mdc {
+    position: absolute;
+    left: -486px;
+    top: 33%;    
+}
+
+.mdc_device {
+    position: relative;
+    background-image: url('../images/mdc.png');
+    background-repeat: no-repeat;
+    width: 519px;
+    height: 282px;
+    z-index: 3;
+}        
+
+.mdc_inner::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.mdc_inner::-webkit-scrollbar
+{
+	width: 2px;
+	background-color: #F5F5F5;
+}
+
+.mdc_inner::-webkit-scrollbar-thumb
+{
+	background-color: #333;
+}
+
+.mdc_inner {
+    position: absolute;
+    top: 20px;
+    left: 101px;
+    padding: 3px 6px;
+    right: 33px;
+    height: 233px;
+    background-color: rgba(255,255,255,0.7);
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mdc_task {
+    position: relative;
+    z-index: 6;
+    font-family: Segoe UI;
+    font-size: 11px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.mdc_task_menu {
+    position: absolute;
+    border: 1px solid #333;
+    top: 4px;
+    right: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;    
+}
+
+.mdc_task_menu_item {
+    float: left;
+    padding: 4px 10px;
+    color: #FFF;
+}
+
+.mdc_task_menu_item.respond {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#008e04+0,006e2e+100 */
+background: rgb(0,142,4); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(0,142,4,1) 0%, rgba(0,110,46,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,142,4,1) 0%,rgba(0,110,46,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,142,4,1) 0%,rgba(0,110,46,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008e04', endColorstr='#006e2e',GradientType=0 ); /* IE6-9 */
+} 
+
+.mdc_task_menu_item.remove {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+background: rgb(169,3,41); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+} 
+
+.mdc_task_menu_item:nth-child(2n) {
+  border-left: 1px solid #333;
+}
+
+.mdc_task p {
+    margin: 0;
+}
+
+.mdc_info {
+    float: left;
+    width: 100%;
+}
+.mdc_info span {
+  float: left;
+  width: 69%;
+}
+.mdc_info label {
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+
+.mdc_location {
+  color: #ff6455;
+}
+.mdc_street {
+  color: #5562ff;
+}
+.mdc_distance {
+  color: #208552;
+}
+
+.mdc_led {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 37px;
+    right: 7px;
+    z-index: 4;
+}
+
+.mdc_led.off {
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: none;
+}
+
+.mdc_led.on {
+    background-color: rgba(255, 0, 0, 1);
+    box-shadow: 0 0 5px red;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="fonts/font/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+	<script src="./js/library/vue.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<div @click="exit()" class="exit">
+				<a>X</a>Izlaz
+		</div>
+		<div v-if="style == 0" class="style0">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="nameblock">
+				<div class="desc">LSPD Oruzarnica</div>
+				<div class="desc2"></div>
+			</div>
+			<div class="center">
+				<div class="block active">
+					<img src="img/weaponc.png" class="ico">
+				</div>
+			</div>
+			<div class="allitems2">
+				<div  @click="buy(0)" class="bbg2">
+					<img src="img/Lampa.png" class="ico">
+					<a>Lampa</a>
+				</div>
+				<div @click="buy(1)" class="bbg2">
+					<img src="img/Pendrek.png" class="ico">
+					<a>Pendrek</a>
+				</div>
+				<div @click="buy(2)" class="bbg2">
+					<img src="img/Stungun-icon.png" class="ico">
+					<a>Tazer</a>
+				</div>
+				<div @click="buy(3)" class="bbg2">
+					<img src="img/Pistolj.png" class="ico">
+					<a>Pistolj</a>
+				</div>
+				<div @click="buy(4)" class="bbg2">
+					<img src="img/Pump_Shotgun.png" class="ico">
+					<a>Pump Shotgun</a>
+				</div>
+				<div @click="buy(5)" class="bbg2">
+					<img src="img/Pump-shotgun-mk2-icon.png" class="ico">
+					<a>Pumpshotgun 2</a>
+				</div>
+				<div @click="buy(6)" class="bbg2">
+					<img src="img/Assault_SMG.png" class="ico">
+					<a>Assault SMG</a>
+				</div>
+				<div @click="buy(7)" class="bbg2">
+					<img src="img/Combat_PDW.png" class="ico">
+					<a>Combat PDW</a>
+				</div>
+				<div @click="buy(8)" class="bbg2">
+					<img src="img/Assault_Rifle.png" class="ico">
+					<a>Assault Rifle</a>
+				</div>
+				<div @click="buy(9)" class="bbg2">
+					<img src="img/Special_Carabine.png" class="ico">
+					<a>Special Carbine</a>
+				</div>
+				<div @click="buy(14)" class="bbg2">
+					<img src="img/Advanced-rifle-icon.png" class="ico">
+					<a>Advancedrifle</a>
+				</div>
+				<div @click="buy(10)" class="bbg2">
+					<img src="img/Heavy_Sniper.png" class="ico">
+					<a>Heavy Sniper</a>
+				</div>
+				<div @click="buy(11)" class="bbg2">
+					<img src="img/radio.png" class="ico">
+					<a>Radio</a>
+				</div>
+				<div @click="buy(12)" class="bbg2">
+					<img src="img/pancir.png" class="ico">
+					<a>Pancir</a>
+				</div>
+				<div @click="buy(13)" class="bbg2">
+					<img src="img/Bandage.png" class="ico">
+					<a>Prva pomoc</a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+    <script src="./js/index.js"></script>
+	<script src="./js/library/jquery-3.2.1.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Light.woff') format('woff'),
+  url('../fonts/ProximaNova-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Bold.woff') format('woff'),
+  url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+body {
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: #ffffff;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  font-size: 25px;
+  font-style: italic;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  color: #01234b;
+  border: none;
+  background: #ffffff;
+  padding: 8px 30px 5px 30px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.car-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 20px 15px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  position: relative;
+}
+
+#close {
+  position: absolute;
+  right: 30px;
+  bottom: -50px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.header-left {
+  display: flex;
+}
+
+.header-right {
+  align-self: flex-end;
+}
+
+.header h1, .header h2, .header h3 {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.header-right h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.title {
+  margin: 0;
+  align-self: flex-end;
+  margin-left: 20px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 49px;
+  bottom: -7px;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: -50%;
+  bottom: 8px;
+}
+
+.car-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.car-img img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slider-big, .slider-small-wrapper {
+  background: rgba(0,0,0,0.6);
+}
+
+.slider-big {
+  position: relative;
+  padding: 20px 0;
+}
+
+.slider-big .car {
+  outline: none;
+}
+
+.slider-big .car-inner {
+  width: 70%;
+  margin: 0 auto;
+  border-left: 10px solid #3651b9;
+  border-top: 10px solid #3651b9;
+  border-right: 10px solid #3651b9;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.slider-big .car-inner__content {
+  background: radial-gradient(rgba(54, 81, 185, 0.6), rgba(14, 34, 57, 0.6));
+  position: relative;
+  z-index: 2;
+  padding: 20px 10px 10px 20px;
+  height: 445px;
+}
+
+.car-info h3 {
+  font-size: 40px;
+  font-style: italic;
+  margin: 0;
+}
+
+.car-info p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.car-info p span {
+  font-size: 21px;
+}
+
+.slider-small-wrapper {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.slider-small-wrapper .arrow {
+  position: absolute;
+  z-index: 2;
+  left: 49%;
+  transform: translateX(-49%);
+}
+
+.slider-small {
+  background: radial-gradient(rgba(54, 81, 185, 0.6), rgba(14, 34, 57, 0.6));
+  border-left: 10px solid #3651b9;
+  border-right: 10px solid #3651b9;
+  border-top: 10px solid #3651b9;
+  border-radius: 7px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 10px 20px 10px;
+}
+
+.slider-small .car {
+  height: 160px;
+  margin: 0 20px;
+  position: relative;
+  z-index: 2;
+  outline: none;
+}
+
+.slider-small .car img {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-small .car {
+  background: linear-gradient(#405ece, #131313);
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.slider-small .car-inner {
+  background-color: #131313;
+  position: relative;
+  z-index: 3;
+  height: 100%;
+}
+
+.slider-small .slick-arrow {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider-small .slick-arrow img {
+  width: 90%;
+}
+
+.slider-small .arrow-left {
+  left: -75px;
+}
+.slider-small .arrow-right {
+  right: -75px;
+}

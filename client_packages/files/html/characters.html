@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<div id="root">
+
+		
+		
+
+		<div class="characters-wrapper">
+			<div class="characters-header">
+				<h3></h3>
+				<p></p>
+			</div>
+			<div class="characters" id="characters">
+				
+			</div>
+			<div class="button-wrapper">
+				<button class="create-character" id="btn_newchar">Napravi karaktera</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="../css/jquery.js"></script>
+	<script src="libs/js.cookie.min.js"></script>
+
+	<script type="text/javascript">
+			
+		$(document).ready(function() {
+			
+			$('#btn_newchar').click(function() {
+				mp.trigger("CreateCharacter");
+			});
+
+			$('#preloader-btn').click(function() {
+				//$('#popup').hide();
+			});
+
+			if(!Cookies.get('modalShown')) {
+					///$("#popup").show();
+				Cookies.set('modalShown', true);
+			} else {
+			}
+	
+		});
+
+		//$('#characters').append('<div class="panel panel-inventory"><div class="panel-body"><div class="panel-heading"><h3 class="panel-title"><center>PERSONAGEM <b>1</b></h3></div><table class="table"><tbody><tr><td>Level</td><td>1</td><td>Experiencia</td><td>1</td></tr><tr><td>Dinheiro</td><td>$1</td><td>Banco</td><td>$1</td></tr></tbody></table><a href="#" class="btn btn-info " role="button" id="preview_">Visualizar</a>OU<a href="#" class="btn btn-success " role="button" id="select_">Selecionar</a>/*<button class="btn btn-success btn-block " id="nextBtn" id="select_15">Selecionar</button>*/</div></div><br/>');
+				
+		function LoadCharacters(chars) {
+			var character = JSON.parse(chars);
+			if(character.length > 0) 
+			{
+				console.log("mamad");
+				for(let i = 0; i < character.length; i++) 
+				{
+
+					$('#characters').append('<div class="character"><div class="character-info"><div class="row"><div class="col-12"><div class="character-info-item"><span>Ime:</span><strong>'+character[i].Name+'</strong></div><div class="character-info-item"><span>Level:</span><strong>'+character[i].Level+'</strong></div><div class="character-info-item"><span>Novac:</span><strong>$'+character[i].Money+'</strong></div><div class="character-info-item"><span>Banka:</span><strong>$'+character[i].Bank+'</strong></div><div class="character-info-item"><span>XP:</span><strong>'+character[i].Exp+' / '+character[i].Exp_Max+'</strong></div></div></div></div><div class="character-buttons"><button class="button button-dark" id="preview_'+character[i].ID+'">Izbor</button><button class="button" id="select_'+character[i].ID+'">Ulaz</button></div></div>');
+
+					$('#preview_'+character[i].ID).click(function() {
+						mp.trigger("ClientPreviewCharacterID", character[i].ID);
+					});
+					
+					$('#select_'+character[i].ID).click(function() {
+						mp.trigger("SelectCharacter", character[i].ID);
+					});
+
+				}
+			}
+		}
+	
+	</script>
+
+</body>
+</html>

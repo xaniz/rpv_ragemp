@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/inventory.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/dark.css">
+	<link rel="stylesheet" type="text/css" href="css/crafting.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.old.css">
+</head>
+
+<body id="body">
+	<ul class='custom-menu'>  
+		<li onclick="clickevent('use')" data-action="use">Koristi</li>
+		<li onclick="clickevent('drop')" data-action="drop">Baci</li>
+		<li onclick="clickevent('drop-all')" data-action="drop_all">Baci Sve</li>
+		<li onclick="clickevent('split')" data-action="split">Podeli</li>
+
+		
+		
+	</ul>
+		<div class="help_div">
+						<div class="help_div1"><div><p style="color:#9dff00">I</p></div><p style="color:#b3ff00">Za izlazak</p></div>
+			
+		</div>
+	
+
+		<div class="center" >
+			
+		<div class="invents">
+			
+				<div id="sideInventoryTitle" class="crafting-panel crafting-title panel-dark">
+				<span></span><br><span
+						style="float:left;"></span></div>
+						
+		
+						<div id="inventory" data-inventory="0" class="inventorys-all crafting-panel crafting-title panel-dark"
+					style="padding-top:5px; ">
+
+
+				
+			</div>
+			<div class="sideinve">
+				<div id="inventoryTitle" class="crafting-panel crafting-title panel-dark">
+					<span>Sef Kuce</span><br><span
+						style="float:left;"></span></div>
+				
+						<div id="sideInventory" data-inventory="1" class=" crafting-panel crafting-title panel-dark"
+						style="padding-top:7px;">
+				</div>
+			</div>
+			</div>
+		</div>
+	
+
+
+
+	<script src="libraries/jquery-3.3.1.min.js"></script>
+
+	<script src="libraries/sortable.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.clothes_circle div').on('click',function(){
+			if($(this).hasClass('active-cloth'))
+				$(this).removeClass('active-cloth');
+			else
+				$(this).addClass('active-cloth');
+		});
+	});
+	$(document).keydown(function(e) {
+	
+		switch (e.which) {
+			// Show input.
+			case 27: {
+				mp.trigger("Destroy_Character_Menu");
+				break;
+			}
+			case 73: {
+				mp.trigger("Destroy_Character_Menu");
+				break;
+			}
+		}
+	});
+		var drag_target = {};
+		var target = {};
+		var data = [{}];
+		var dataside = [{}];
+	function LoadInventory(InventoryData,storage,limit,weight)
+        {
+                data = [];
+                dataside = [];
+              //  $('#inventory').empty();
+                data = JSON.parse(InventoryData);
+				dataside = JSON.parse(storage);
+				let inv_vazn = 0;
+				let side_vazn = 0;
+
+				data.forEach(item => {
+					 inv_vazn += item.weight*item.amount;
+				});
+
+				dataside.forEach(item => {
+					side_vazn += item.weight*item.amount;
+				});
+
+                $("#inventoryWeight").text( " "+ Math.round(inv_vazn * 10) / 10+"/"+limit+"KG");
+                $("#sideInventoryWeight").text( " "+ Math.round(side_vazn * 10) / 10+"/"+weight+"KG");
+                
+				
+                generate_inventory();
+				containerSelector = ".item-slot";
+				containers = document.querySelectorAll(containerSelector);
+				var sortable = new Draggable.Droppable(containers, {
+					draggable: '.item-slot-inner',
+					dropzone: '.item-slot',
+					mirror: {
+						constrainDimensions: true,
+					},
+				});
+				var droppableOrigin;
+				var droppableNow;
+				sortable.on('drag:start', (evt) => {});
+				sortable.on('droppable:dropped', (evt) => {
+					evt.cancel();
+					dragginContainer = document.querySelectorAll(".draggable-container--is-dragging");	
+					dragobj = document.querySelectorAll(".draggable-container--is-dragging > div");	
+					dropPlace = document.querySelectorAll(".draggable-container--over");	
+					dropPlaceChild = document.querySelectorAll(".draggable-container--over > div");	
+					$(dragobj[0]).css({"display":"none"});
+					$(".item-slot[data-dropable=0]").css({"background":"#ff000033"});
+					$(".item-slot[data-inuse=1][type!=0]").css({"background":"#ff000033"});
+					
+				});
+				//console.log(sortable);
+				
+				
+        }
+			 function clickevent(name)
+			 {
+				$(".custom-menu").hide(0);
+			
+				target.func = name;
+				
+				console.log(target);
+				/*if(target.inventoryid == "inventory")
+				{
+					mp.trigger("InventoryRespone","slot",property,res[property].sqlid);
+				}
+				else if(target.inventoryid == "sideInventory")
+				{
+					mp.trigger("sideInventoryRespone","slot",property,res[property].sqlid);
+				}*/
+				mp.trigger("HouseInventoryRespone",target.func,target.slotid,target.sqlid,target.type,target.amount,target.inventoryid);
+			 }
+			 
+		var generate_inventory = function () {
+			creatItem(dataside,"sideInventory",rows=32);
+			creatItem(data,"inventory",rows=32);
+			function creatItem(res,patternid,rows){
+				$('#'+patternid).empty();
+				for (let index = 0; index < (rows); index++) {
+					$('#'+patternid).append(
+						`<div  class="crafting-panel item-slot" data-dropable="1" data-Useable="false" data-inuse="1" data-slot="${index}" amount="0" type="0" ></div>`
+					);
+				}
+				var lst = 0;
+				NegativeArr = [];
+				for (const property in res) {
+					//data[property]
+					idslot = res[property].slotid;
+					if(idslot == -1){
+						
+						NegativeArr[lst] = res[property];
+						console.log(res[property].sqlid);
+						
+						
+						lst++;
+						continue;
+					}
+					slot = $('#' + patternid + " > .item-slot[data-slot="+idslot+"]");
+					$(slot).attr({
+						"sqlid":res[property].sqlid,
+						"data-dropable":res[property].dropable,
+						"data-Useable":res[property].Useable,
+						"data-inuse":res[property].inuse,
+						"amount":res[property].amount,
+						"inventoryid": patternid,
+						"type":res[property].type
+					});
+					console.log("#1 "+patternid);
+					$(slot).append( innerSolt(res[property]) );
+				}
+				//add negative item
+				emptyItem  = $('#' + patternid + " > .item-slot[type="+0+"]");
+				
+				for(const property in emptyItem){
+					if(property == NegativeArr.length)
+						break;
+					if(NegativeArr[property].sqlid == undefined)
+					break;
+					
+					$(emptyItem[property]).attr({
+						"sqlid":NegativeArr[property].sqlid,
+						"slotid":property,
+						"data-dropable":NegativeArr[property].dropable,
+						"data-Useable":NegativeArr[property].Useable,
+						"data-inuse":NegativeArr[property].inuse,
+						"inventoryid": patternid,
+						"amount":NegativeArr[property].amount,
+						"type":NegativeArr[property].type
+					});
+					
+					console.log("#2 "+patternid);
+					
+					if(patternid == "inventory")
+					{
+						mp.trigger("InventoryRespone","slot",$(emptyItem[property]).attr('data-slot'),NegativeArr[property].sqlid);
+					}
+					else if(patternid == "sideInventory")
+					{
+						mp.trigger("HouseInventoryRespone","slot",$(emptyItem[property]).attr('data-slot'),NegativeArr[property].sqlid);
+					}
+					$(emptyItem[property]).append( innerSolt(NegativeArr[property]) );
+				}
+				function innerSolt(obj){
+					inderSolt = $("<div>").addClass("item-slot-inner").css({"overflow":"hidden","position":"relative"});
+					imgSlot = $("<img>").attr({src:obj.picture}).css({"margin-top":"12%"});
+					pSlot = $("<p>")
+					.css({"position":"absolute","bottom":"0","padding":"0px","transform-origin":"0 100%","text-align":"center","width":"100%","margin":"1px -2px 2px","color":"white","font-size":"11px","background":"rgba(0, 0, 0, 0.5)","text-transform":"uppercase"})
+					.html(obj.name +" "+obj.amount+"x");
+					sinfo = $("<p>")
+					.css({"position":"absolute","bottom":"88%","padding":"0px","transform-origin":"0 100%","text-align":"center","width":"100%","margin":"1px -2px","color":"white","font-size":"10px","background":"rgba(0, 0, 0, 0.5)","text-transform":"uppercase"})
+					.html(Math.round((obj.weight*obj.amount)*10)/10+" KG");
+					$(inderSolt).append(imgSlot).append(pSlot,sinfo);
+					
+					return inderSolt;
+				}
+			}
+			
+			onslothover = false;
+			$('.item-slot').on("mouseenter",function(){
+				onslothover = true;
+			});
+			$('.item-slot').on("mouseleave",function(){
+				onslothover = false;
+			});
+			$('.item-slot').each(function (xx) {
+				$(this).bind("contextmenu", function (event) {
+					event.preventDefault();
+					
+					target = {
+						sqlid: $(this).attr('sqlid'),
+						slotid: $(this).attr('data-slot'),
+						inventoryid: $(this.parentNode).attr('id'),						
+						amount: $(this).attr('amount'),
+						type: $(this).attr('type')
+					};
+					$(".custom-menu").css({
+						top: event.pageY + "px",
+						left: event.pageX + "px"
+					});
+					if(!onslothover)	
+						$(".custom-menu").finish().toggle(100);
+						
+				});
+			})
+
+			$(document).click(function (e) {
+				$(".custom-menu").hide(0);
+			});
+			 
+			
+		}
+		generate_inventory();
+		dragobj = null;
+		dropPlace = null;
+		dropPlaceChild = null;
+		dragginContainer = null;
+		overnot = false;
+		
+		
+		$(document).on('mouseup',function(e){
+				$(".item-slot[data-dropable=0]").css({"background":"none"});
+				$(".item-slot[data-inuse=1][type!=0]").css({"background":"none"});
+				isRightMB = e.which == 3; 	
+				if(isRightMB){
+
+					$(".inventorys-all").on("contextmenu",".item-slot",function(e){
+					
+						console.log(this.getAttribute("data-inuse")+" "+ this.getAttribute("type")+" "+ $(this.parentNode).attr("id")+" "+this.getAttribute("amount"));
+						$(".custom-menu , .custom-menu > li").css({"display":"block"});
+						
+						$(".custom-menu > li[data-action=split]").css({"display":"none"});
+						$(".custom-menu > li[data-action=drop_all]").css({"display":"none"});
+						
+						if(($(this.parentNode).attr("id") == "sideInventory"))
+						{
+							$(".custom-menu > li[data-action=use]").css({"display":"none"});
+							$(".custom-menu > li[data-action=drop]").css({"display":"none"});
+						}
+						if(this.getAttribute("amount") >= 2){
+							
+							$(".custom-menu > li[data-action=split]").css({"display":"block"});
+							if($(this.parentNode).attr("id") == "inventory")
+							{
+								$(".custom-menu > li[data-action=drop_all]").css({"display":"block"});
+							}
+								
+						}else if(($(this.parentNode).attr("id") == "sideInventory"))
+						{
+							$(".custom-menu , .custom-menu > li").css({"display":"none"});
+						}
+						if(this.getAttribute("type") == "0" || this.getAttribute("data-inuse") == 1){
+							
+							$(".custom-menu").css({"display":"none"});
+							OpenTooltip("use & drop",this);
+							return false;
+						}
+						if(this.getAttribute("data-Useable") == "false" )
+							$(".custom-menu > li[data-action=use]").css({"display":"none"});	
+						if(this.getAttribute("data-dropable") == "0" )
+							$(".custom-menu > li[data-action=drop]").css({"display":"none"});		
+												
+					});
+					
+				}
+				else{
+				
+				
+					if(dropPlace ==null || dragginContainer==null  || dropPlace[0].getAttribute("type") != 0 && dropPlace[0].getAttribute("type") != $(dragginContainer[0]).attr("type") ||(dropPlace[0].getAttribute("type") != 0 && $(dropPlace[0].parentNode).attr("id") != $(dragginContainer[0]).attr("inventoryid")) ||  
+					dropPlace.length == 0)
+						
+						return false;
+					if( dragginContainer[0].getAttribute("data-dropable") == "0" ){
+						OpenTooltip("drop",dragginContainer[0]);
+						return false;
+					}
+					else if( dropPlace[0].getAttribute("data-dropable") == "0" ){
+						OpenTooltip("drop",dropPlace[0]);
+						return false;
+					}
+					if(($(dragginContainer[0]).attr("data-inuse") == 1 || $(dragginContainer[0]).attr("data-dropable") == 0) && $(dropPlace[0].parentNode).attr("id") != $(dragginContainer[0]).attr("inventoryid"))
+					{
+						
+						console.log("na");
+						return false;
+					}
+					console.log($(dragginContainer[0]).attr("data-inuse")+" "+$(dragginContainer[0]).attr("data-dropable")+" "+$(dropPlace[0].parentNode).attr("id"));
+					DropedItem();
+				}
+				defualteVarialbe();
+		});
+		function OpenTooltip(text,parrent){
+			item = $("<div>").addClass("tooltipDontDrop").html(text);
+			$(parrent).append(item);
+			$(item).addClass("show");
+			setTimeout(function(){
+				$(".tooltipDontDrop").remove();
+			},10000);
+		}
+		function defualteVarialbe(){
+			dragobj = null;
+			dropPlace = null;
+			dropPlaceChild = null;
+			dragginContainer = null;
+		}
+		function replaceAttr(t1,t2){
+			type1 =  $(t1).attr( "type" );
+			sqlid1 =  $(t1).attr( "sqlid" );
+			sqlid2 =  $(t2).attr( "sqlid" );
+			inventoryid1 =  $(t1.parentNode).attr( "id" );
+			inventoryid2 =  $(t2.parentNode).attr( "id" );
+			console.log($(t1).attr( "inventoryid" )+" "+$(t2).attr( "inventoryid" ));
+			amount1 =  $(t1).attr( "amount" );
+			dataUseable1 =  $(t1).attr( "data-Useable" );
+			dataInuse1 =  $(t1).attr( "data-inuse" );
+			dataDropable1 =  $(t1).attr( "data-dropable" );
+			type2 =  $(t2).attr( "type" );
+			amount2 =  $(t2).attr( "amount" );
+			dataUseable2 =  $(t2).attr( "data-Useable" );
+			dataInuse2 =  $(t2).attr( "data-inuse" );
+			dataDropable2 =  $(t2).attr( "data-dropable" );
+			$(t1).attr({type:type2,amount:amount2,inventoryid:inventoryid2,sqlid:sqlid2,"data-Useable":dataUseable2,
+			"data-inuse":dataInuse2,"data-dropable":dataDropable2});	
+			$(t2).attr({type:type1,amount:amount1,inventoryid:inventoryid1,sqlid:sqlid1,"data-Useable":dataUseable1,
+			"data-inuse":dataInuse1,"data-dropable":dataDropable1});	
+		}
+		function DropedItem(){
+			
+			//replace attribute type and amount
+			replaceAttr(dragginContainer[0],dropPlace[0]);
+			$(dropPlace[0]).append(dragobj[0]);
+			$(dragginContainer[0]).append(dropPlaceChild[0]);
+			//back to css
+			$(dragobj[0]).css({"display":"block","border":"none"});
+			oldplace = {
+				state : "old",
+				sqlid: $(dragginContainer[0]).attr('sqlid'),
+				inventoryid: $(dragginContainer[0].parentNode).attr("id"),
+				inventoryindex:$(dragginContainer[0].parentNode).attr("data-inventory"),
+				slotid: $(dragginContainer[0]).attr('data-slot'),
+				amount: $(dragginContainer[0]).attr('amount'),
+				type: $(dragginContainer[0]).attr('type')
+				
+			};
+			target = {
+				sqlid: $(dropPlace[0]).attr('sqlid'),
+				state : "target",
+				inventoryid: $(dropPlace[0].parentNode).attr("id"),
+				inventoryindex:$(dropPlace[0].parentNode).attr("data-inventory"),
+				slotid: $(dropPlace[0]).attr('data-slot'),
+				amount: $(dropPlace[0]).attr('amount'),
+				type: $(dropPlace[0]).attr('type')
+				
+			};
+			
+			console.log(oldplace);
+			console.log(target);
+			
+			
+			if(oldplace.inventoryid == "inventory" && target.inventoryid == "sideInventory")
+			{		
+				mp.trigger("HouseInventoryRespone","addtoside",target.slotid,target.sqlid,target.type,target.amount);
+
+			}
+			else if(oldplace.inventoryid == "sideInventory" && target.inventoryid == "inventory")
+			{		
+				mp.trigger("HouseInventoryRespone","addtoinv",target.slotid,target.sqlid,target.type,target.amount);
+			}
+			else if(oldplace.inventoryid == "sideInventory" && target.inventoryid == "sideInventory")
+			{		
+				if(oldplace.type == target.type && (target.type != 0 || oldplace.type != 0) && (target.sqlid != oldplace.sqlid))
+				{
+					mp.trigger("HouseInventoryRespone","stack",oldplace.sqlid,target.sqlid);
+					return;
+				}
+				
+				mp.trigger("HouseInventoryRespone","slot",target.slotid,target.sqlid);
+			}
+			else if(oldplace.inventoryid == "inventory" && target.inventoryid == "inventory")
+			{
+				if(oldplace.type == target.type && (target.type != 0 || oldplace.type != 0)&& (target.sqlid != oldplace.sqlid))
+				{
+					mp.trigger("HouseInventoryRespone","stack_main_iv",oldplace.sqlid,target.sqlid);
+					return;
+				}
+
+				mp.trigger("InventoryRespone","slot",target.slotid,target.sqlid);
+			}
+			
+			
+			//mp.trigger("InventoryRespone",target.func,target.slotid,target.sqlid,target.type,target.amount);
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>RP</title>
+	<meta name="description" content="RP">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/range.css">
+  <link rel="stylesheet" href="css/stylenorm.css">
+
+</head>
+
+<body class="create">
+
+  <div class="create-char">
+
+		<div class="step">
+
+			
+
+			<form class="ui form">
+				<div class="input-container">
+					<div class="input">
+						<input type="text" placeholder="Ime" id="creation_forename">
+					</div>
+					<div class="input">
+						<input type="text" placeholder="Prezime" id="creation_surname">
+					</div>
+				</div>
+
+				<div class="select-container">
+					<span class="step-title text-center d-block">Pol</span>
+					<div class="select-gender" id="creation_gender">
+						<input type="hidden" name="gender" id="gender-value">
+						<div class="gender-button">
+							<div class="gender gender_male button button-dark" data-value="1">Musko</div>
+						</div>
+						<div class="gender-button">
+							<div class="gender gender_female button button-dark" data-value="0">Zensko</div>
+						</div>
+					</div>
+				<div class="input-container" style="margin-left:36%; margin-top:6%; width:28%;">
+					<div class="input">
+						<input name="age" style="text-align:center;" type="number" placeholder="Godine" id="creation_age" >
+					</div>
+				</div>
+				</div>
+				
+				<div class="ui error message"></div>
+			</form>
+ 
+		</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Otac</span>
+					<span class="slider-value" id="display-base"></span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_base"></div>
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Majka</span>
+					<span class="slider-value" id="display-base2"></span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_base2"></div>
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Slicnost</span>
+					<span class="badge">
+						<i class="fa fa-angle-left"></i>
+						Majka - Otac
+						<i class="fa fa-angle-right"></i>
+					</span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_baseblend"></div>
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Boja koze</span>
+					<span class="badge">
+						<i class="fa fa-angle-left"></i>
+						Svetlo - Tamno
+						<i class="fa fa-angle-right"></i>
+					</span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_skin"></div>
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Boja ociju</span>
+					<span class="slider-value" id="display-eyes"></span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_eyes"></div>
+				</div>
+			</div>
+			
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Kosa</span>
+					<span class="slider-value" id="display-hair"></span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_hair"></div>
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Boja kose</span>
+					<span class="slider-value" id="display-haircolor"></span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_haircolor"></div>
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Osvetljenje kose</span>
+					<span class="slider-value" id="display-haircolor2"></span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_haircolor2"></div>
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Obrve</span>
+					<span class="slider-value" id="display-eyebrows"></span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_eyebrows"></div>
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<div class="slider-header">
+					<span class="setting-name">Brada</span>
+					<span class="slider-value" id="display-beard"></span>
+				</div>
+				<div class="slider">
+					<div class="ui range" id="range_beard"></div>
+				</div>
+			</div>
+
+			<div class="step-buttons">
+				<div class="button button-dark" id="charcreation_back"><i class="fas fa-sign-out-alt" style="transform: rotate(180deg);"></i>Nazad</div>
+				<div class="button button-yellow" id="charcreation_next">Dalje</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<div class="camera">
+		<span class="camera-title"></span>
+		<div class="camera-buttons">
+			<div class="button button-dark" id="charcreation_head">Zoom lice</div>
+			<div class="button button-dark" id="charcreation_body">Zoom telo</div>
+		</div>
+		<span class="camera-title rotate"></span>
+		<div class="ui range" id="range_rotation"></div>
+	</div>
+
+	<script src="../css/jquery.js"></script>
+	<script src="css/range.js"></script>
+	<script src="../css/semantic.min.js"></script>
+
+	<script>
+		
+		$('.select-gender .gender').click(function (val, data) {
+			$('.gender.active').removeClass('active');
+			$(this).addClass('active');
+			$(this).parents('.select-gender').find('input').attr('value', $(this).attr('data-value'));
+			var genderVal = document.getElementById('gender-value').value
+			OnRangeChange("range_gender", genderVal, data)
+		});
+		$('.camera-buttons .button').click(function() {
+			$('.camera-buttons .button.active').removeClass('active');
+			$(this).addClass('active');
+		})
+		$(document).ready(function () {
+			$('.ui.form').form({
+				fields: {
+					firstname: {
+						identifier: 'first-name',
+						rules: [{
+							type: 'empty',
+							prompt: 'Unesite ime!'
+						}]
+					},
+					lastname: {
+						identifier: 'last-name',
+						rules: [{
+							type: 'empty',
+							prompt: 'Unesite prezime!'
+						}]
+					},
+					age: {
+						identifier: 'age',
+						rules: [{
+							type: 'empty',
+							prompt: 'Unesite godine!'
+						}]
+					},
+					sex: {
+						identifier: 'gender',
+						rules: [{
+							type: 'minCount[1]',
+							prompt: 'Odaberite pol!'
+						}]
+					}
+					
+				}
+			});
+
+			$("#charcreation_back").click(function () {
+				mp.trigger("ClientCharCreationBack");
+			});
+
+			$("#charcreation_next").click(function () {
+			if($("#creation_age").val() == null)
+			{
+			$("#creation_age").val() = 18;
+			}
+				mp.trigger("ClientCharCreationNext", $("#creation_forename").val(), $("#creation_surname").val(), $("#creation_age").val());
+			});
+
+			$("#charcreation_head").click(function () {
+				mp.trigger("cameraPointTo", 1);
+			});
+
+			$("#charcreation_body").click(function () {
+				mp.trigger("cameraPointTo", 0);
+			});
+		});
+		
+		// parseFloat(val.toFixed(1))
+		function LoadNewCharacter(arr_data) {
+
+			let data = JSON.parse(arr_data);
+			$("#creation_forename").val(data[0].Forename);
+			$("#creation_surname").val(data[0].Surname);
+			$('#gender-value').val(data[0].Gender);
+
+			$('#range_base').range({
+				min: 0,
+				max: 22,
+				start: data[0].Base,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_base", val, data), $('#display-base').html(val)
+				}
+			});
+			$('#range_base2').range({
+				min: 0,
+				max: 24,
+				start: data[0].Base2,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_base2", val, data), $('#display-base2').html(val)
+				}
+			});
+			$('#range_baseblend').range({
+				min: 0,
+				max: 9,
+				start: data[0].BaseBlend,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_baseblend", val, data)
+				}
+			});
+			$('#range_skin').range({
+				min: 0,
+				max: 9,
+				start: data[0].Skin,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_skin", val, data), $('#display-skin').html(val)
+				}
+			});
+			$('#range_eyes').range({
+				min: 0,
+				max: 6,
+				start: data[0].Eyes,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_eyes", val, data), $('#display-eyes').html(val)
+				}
+			});
+			$('#range_hair').range({
+				min: 0,
+				max: 72,
+				start: data[0].Hair,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_hair", val, data), $('#display-hair').html(val)
+				}
+			});
+			$('#range_haircolor').range({
+				min: 0,
+				max: 63,
+				start: data[0].HairColor,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_haircolor", val, data), $('#display-haircolor').html(val)
+				}
+			});
+			$('#range_haircolor2').range({
+				min: 0,
+				max: 63,
+				start: data[0].HairHighlightColor,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_haircolor2", val, data), $('#display-haircolor2').html(val)
+				}
+			});
+			$('#range_eyebrows').range({
+				min: 0,
+				max: 31,
+				start: data[0].Eyebrows,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_eyebrows", val, data), $('#display-eyebrows').html(val)
+				}
+			});
+			$('#range_beard').range({
+				min: 0,
+				max: 28,
+				start: data[0].Beard,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_beard", val, data), $('#display-beard').html(val)
+				}
+			});
+			$('#range_rotation').range({
+				min: 0,
+				max: 360,
+				start: 100,
+				step: 20,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_rotation", val, data)
+				}
+			});
+			$('#range_elevation').range({
+				min: -2,
+				max: 1,
+				start: 0,
+				step: 1,
+				smooth: false,
+				onChange: function (val, data) {
+					OnRangeChange("range_elevation", val, null)
+				}
+			});
+		}
+
+		function OnRangeChange(id, val, data) {
+			console.log(id, val);
+			mp.trigger("ClientOnRangeChange", id, val);
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1d79a83f-b3dc-4c3d-b4ce-d727f28d6c34": {
+      "ProjectGuid": "1d79a83f-b3dc-4c3d-b4ce-d727f28d6c34",
+      "DisplayName": "Infinity",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "474a5c42-d5f0-436c-9470-f6dd48cfe3d5": {
+      "ProjectGuid": "474a5c42-d5f0-436c-9470-f6dd48cfe3d5",
+      "DisplayName": "pvrp",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

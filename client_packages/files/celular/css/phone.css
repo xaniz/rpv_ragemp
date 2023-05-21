@@ -1,0 +1,2867 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Thin.eot');
+    src: local('SF Pro Display Thin'), local('SFProDisplay-Thin'),
+        url('../fonts/SFProDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Thin.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Thin.woff') format('woff'),
+        url('../fonts/SFProDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-ThinItalic.eot');
+    src: local('SF Pro Display ThinItalic'), local('SFProDisplay-ThinItalic'),
+        url('../fonts/SFProDisplay-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-ThinItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-ThinItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Ultralight.eot');
+    src: local('SF Pro Display Ultralight'), local('SFProDisplay-Ultralight'),
+        url('../fonts/SFProDisplay-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Ultralight.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Ultralight.woff') format('woff'),
+        url('../fonts/SFProDisplay-Ultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-UltralightItalic.eot');
+    src: local('SF Pro Display UltralightItalic'), local('SFProDisplay-UltralightItalic'),
+        url('../fonts/SFProDisplay-UltralightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-UltralightItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-UltralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Light.eot');
+    src: local('SF Pro Display Light'), local('SFProDisplay-Light'),
+        url('../fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Light.woff') format('woff'),
+        url('../fonts/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-LightItalic.eot');
+    src: local('SF Pro Display LightItalic'), local('SFProDisplay-LightItalic'),
+        url('../fonts/SFProDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-LightItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-LightItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Regular.eot');
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+        url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-RegularItalic.eot');
+    src: local('SF Pro Display Regular Italic'), local('SFProDisplay-RegularItalic'),
+        url('../fonts/SFProDisplay-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-RegularItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-RegularItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Medium.eot');
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-MediumItalic.eot');
+    src: local('SF Pro Display MediumItalic'), local('SFProDisplay-MediumItalic'),
+        url('../fonts/SFProDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-MediumItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-MediumItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Semibold.eot');
+    src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
+        url('../fonts/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-SemiboldItalic.eot');
+    src: local('SF Pro Display SemiboldItalic'), local('SFProDisplay-SemiboldItalic'),
+        url('../fonts/SFProDisplay-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-SemiboldItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Bold.eot');
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+        url('../fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-BoldItalic.eot');
+    src: local('SF Pro Display BoldItalic'), local('SFProDisplay-BoldItalic'),
+        url('../fonts/SFProDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-BoldItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Black.eot');
+    src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
+        url('../fonts/SFProDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Black.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Black.woff') format('woff'),
+        url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-BlackItalic.eot');
+    src: local('SF Pro Display Black Italic'), local('SFProDisplay-BlackItalic'),
+        url('../fonts/SFProDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-BlackItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-BlackItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Heavy.eot');
+    src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
+        url('../fonts/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Heavy.woff') format('woff'),
+        url('../fonts/SFProDisplay-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-HeavyItalic.eot');
+    src: local('SF Pro Display HeavyItalic'), local('SFProDisplay-HeavyItalic'),
+        url('../fonts/SFProDisplay-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-HeavyItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@keyframes slideOutDown {
+    from {
+        visibility: hidden;
+        top: -300px;
+    }
+
+    to {
+        visibility: visible;
+        top: 30px;
+    }
+}
+
+@keyframes slideOutUp {
+    from {
+        visibility: visible;
+        top: 30px;
+    }
+
+    to {
+        visibility: hidden;
+        top: -300px;
+    }
+}
+  
+.slideOutDown {
+    animation-name: slideOutDown;
+}
+
+.slideOutUp {
+    animation-name: slideOutUp;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#iphone {
+    position: absolute;
+    bottom: 33px;
+    right: 47px;
+    height: 628.99px;
+    width: 314px;
+    background: url('../assets/body.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'SF Pro Display';
+    transform-origin: right bottom;
+}
+
+#iphone .face {
+    padding: 18.3px 20.2px 18.7px 20.5px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#iphone .face .forelock {
+    position: absolute;
+    top: 15.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #26272B;
+    height: 24.66px;
+    width: 152.59px;
+    border-bottom-left-radius: 16.535px;
+    border-bottom-right-radius: 16.535px;
+    z-index: 9999;
+}
+
+#iphone .face .forelock::before,
+#iphone .face .forelock::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    border-top: 2px solid #26272B;
+    height: 5px;
+    width: 5px;
+}
+
+#iphone .face .forelock::before {
+    left: -2.86px;
+    border-right: 2px solid #26272B;
+    border-top-right-radius: 5px;
+}
+
+#iphone .face .forelock::after {
+    right: -2.86px;
+    border-left: 2px solid #26272B;
+    border-top-left-radius: 5px;
+}
+
+#iphone .face .forelock .speaker {
+    position: absolute;
+    top: 6.3px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5.78px;
+    width: 39.5px;
+    background-color: #37383C;
+    border-radius: 2.89px;
+}
+
+#iphone .face .forelock .camera {
+    position: absolute;
+    top: 4.4px;
+    left: calc(50% + 8.3px * 2 + 39.5px / 2);
+    transform: translateX(-50%);
+    height: 9.64px;
+    width: 9.64px;
+    background-color: #37383C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iphone .face .forelock .camera .camera-dot {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #CD5C5C;
+}
+
+#iphone .face .screen {
+    height: 100%;
+    width: 100%;
+    border-radius: 28.58px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+#iphone .face .screen.dark-theme {
+    background-color: #161616;
+}
+
+#iphone .face .screen.wallpaper {
+    background: linear-gradient(-45deg, #304776 0%, #5a97bd 100%);
+}
+
+#iphone .face .screen.wallpaper.dark-bg {
+    background:
+        linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(-45deg, #304776 0%, #5a97bd 100%);
+}
+
+#iphone .face .screen .status-bar {    
+    width: 100%;
+}
+
+#iphone .face .screen .status-bar .bar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 11.5px 14.8px 0 18.1px;
+}
+
+#iphone .face .screen .status-bar .time {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#iphone .face .screen .status-bar.dark .time {
+    color: #000000;
+}
+
+#iphone .face .screen.dark-theme .status-bar .time {
+    color: #ffffff !important;
+}
+
+#iphone .face .screen .status-bar .status-icons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen .status-bar .status-icons .icon {
+    margin: 0 3.5px;
+}
+
+#iphone .face .screen .status-bar .status-icons .icon:first-child {
+    margin-left: 0;
+}
+
+#iphone .face .screen .status-bar .status-icons .icon:last-child {
+    margin-right: 0;
+}
+
+#iphone .face .screen .status-bar .status-icons .icon > img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen .status-bar .status-icons .icon > svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen .status-bar .status-icons .service-icon {
+    width: 14px;
+    height: 8px;
+    line-height: 8px;
+    padding-top: 3.2px;
+}
+
+#iphone .face .screen .status-bar .status-icons .service-icon > svg {
+    height: auto;
+    width: auto;
+}
+
+#iphone .face .screen .status-bar .status-icons .service-icon > svg path {
+    fill: #ffffff;
+}
+
+#iphone .face .screen .status-bar.dark .status-icons .service-icon > svg path {
+    fill: #000000;
+}
+
+#iphone .face .screen.dark-theme .status-bar .status-icons .service-icon > svg path {
+    fill: #ffffff !important;
+}
+
+#iphone .face .screen .status-bar .status-icons .service-icon[data-state="0"] > svg path,
+#iphone .face .screen .status-bar .status-icons .service-icon[data-state="1"] > svg path:nth-child(1),
+#iphone .face .screen .status-bar .status-icons .service-icon[data-state="1"] > svg path:nth-child(2),
+#iphone .face .screen .status-bar .status-icons .service-icon[data-state="1"] > svg path:nth-child(3),
+#iphone .face .screen .status-bar .status-icons .service-icon[data-state="2"] > svg path:nth-child(1),
+#iphone .face .screen .status-bar .status-icons .service-icon[data-state="2"] > svg path:nth-child(2),
+#iphone .face .screen .status-bar .status-icons .service-icon[data-state="3"] > svg path:nth-child(1) {
+    opacity: 0.25;
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon {
+    width: 20px;
+    height: 9px;
+    line-height: 9px;
+    padding-top: 2.2px;
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon > svg {
+    height: auto;
+    width: auto;
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon > svg g {
+    fill: #ffffff;
+    opacity: 0.38;
+}
+
+#iphone .face .screen .status-bar.dark .status-icons .battery-icon > svg g {
+    fill: #000000;
+}
+
+#iphone .face .screen.dark-theme .status-bar .status-icons .battery-icon > svg g {
+    fill: #ffffff !important;
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon > svg rect {
+    fill: #ffffff;
+}
+
+#iphone .face .screen .status-bar.dark .status-icons .battery-icon > svg rect {
+    fill: #000000;
+}
+
+#iphone .face .screen.dark-theme .status-bar .status-icons .battery-icon > svg rect {
+    fill: #ffffff !important;
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="5"] > svg rect {
+    width: calc(5 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="10"] > svg rect {
+    width: calc(10 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="15"] > svg rect {
+    width: calc(15 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="20"] > svg rect {
+    width: calc(20 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="25"] > svg rect {
+    width: calc(25 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="30"] > svg rect {
+    width: calc(30 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="35"] > svg rect {
+    width: calc(35 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="40"] > svg rect {
+    width: calc(40 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="45"] > svg rect {
+    width: calc(45 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="50"] > svg rect {
+    width: calc(50 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="55"] > svg rect {
+    width: calc(55 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="60"] > svg rect {
+    width: calc(60 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="65"] > svg rect {
+    width: calc(65 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="70"] > svg rect {
+    width: calc(70 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="75"] > svg rect {
+    width: calc(75 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="80"] > svg rect {
+    width: calc(80 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="85"] > svg rect {
+    width: calc(85 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="90"] > svg rect {
+    width: calc(90 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon[data-battery-percent="95"] > svg rect {
+    width: calc(95 * 14.964px / 100);
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon.red > svg rect {
+    fill: #ff3a3c;
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon.yellow > svg rect {
+    fill: #ffcc01;
+}
+
+#iphone .face .screen .status-bar .status-icons .battery-icon.charging > svg rect {
+    fill: #4cda64;
+}
+
+#iphone .face .screen>.app {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+#iphone .face .screen .home-button-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: max-content;
+}
+
+#iphone .face .screen .home-button-zone .home-button-wrapper {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iphone .face .screen .home-button-zone .home-button-wrapper .home-button {
+    width: 99.91px;
+    height: 3.72px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1.85px;
+}
+
+#iphone .face .screen .home-button-zone.dark .home-button-wrapper .home-button {
+    background-color: rgba(66, 66, 66, 0.8);
+}
+
+#iphone .face .screen.dark-theme .home-button-zone .home-button-wrapper .home-button {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#iphone .face .screen>.app.lockscreen {
+    padding: 49px 5.5px 61.8px 5.5px;
+    height: calc(100% - 49px - 61.8px);
+}
+
+#iphone .face .screen>.app .container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#iphone .face .screen>.app.lockscreen .lock-status {
+    margin-bottom: 11.8px;
+}
+
+#iphone .face .screen>.app.lockscreen .lock-status .icon {
+    height: 25px;
+    width: 17px;
+}
+
+#iphone .face .screen>.app.lockscreen .lock-status .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.lockscreen .container>.datetime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 100;
+    margin-bottom: 19.1px;
+}
+
+#iphone .face .screen>.app.lockscreen .container>.datetime .time {
+    font-size: 51px;
+    margin-bottom: 1px;
+}
+
+#iphone .face .screen>.app.lockscreen .container >.datetime .date {
+    font-size: 18px;
+}
+
+#iphone .face .screen .notifications {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: -300px;
+    padding: 0 6.5px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+#iphone .face .screen>.app.lockscreen .container .notifications {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    height: 100%;
+    padding: 0;
+    overflow-y: auto;
+}
+
+#iphone .face .screen .notifications::-webkit-scrollbar {
+    width: 0;
+}
+
+#iphone .face .screen .notifications .notification {
+    display: flex;
+    flex-direction: column;
+    padding: 8.3px 11.1px 10px 11.1px;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 10px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#iphone .face .screen .notifications .notification:last-child {
+    margin-bottom: 0;
+}
+
+#iphone .face .screen .notifications .notification>.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+}
+
+#iphone .face .screen .notifications .notification>.header .icon {
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    border-radius: 3.38px;
+    margin-right: 6.3px;
+    overflow: hidden;
+}
+
+#iphone .face .screen .notifications .notification>.header .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen .notifications .notification>.header .title {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 4px;
+}
+
+#iphone .face .screen .notifications .notification>.header .age {
+    white-space: nowrap;
+}
+
+#iphone .face .screen .notifications .notification>.body {
+    margin-top: 10.5px;
+    font-size: 14px;
+}
+
+#iphone .face .screen .notifications .notification>.body p {
+    margin: 0;
+    word-break: break-word;
+}
+
+#iphone .face .screen>.app.lockscreen .quick-actions {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    bottom: 12.4px;
+    left: 31.8px;
+    right: 31.8px;
+}
+
+#iphone .face .screen>.app.lockscreen .quick-actions .button {
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iphone .face .screen>.app.lockscreen .quick-actions .button:first-child .icon {
+    width: 13px;
+    height: 14px;
+}
+
+#iphone .face .screen>.app.lockscreen .quick-actions .button:last-child .icon {
+    width: 16px;
+    line-height: 12px;
+    height: 12px;
+}
+
+#iphone .face .screen>.app.lockscreen .quick-actions .button .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.homescreen {
+    padding: 16px 13px 82.8px 13px;
+    height: calc(100% - 16px - 82.8px);
+}
+
+#iphone .face .screen>.app.homescreen .container {
+    overflow: visible;
+}
+
+#iphone .face .screen>.app.homescreen .container .apps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#iphone .face .screen>.app.homescreen .container .apps .app-wrapper {
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iphone .face .screen>.app.homescreen .container .apps .app-wrapper .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 56px;
+    cursor: pointer;
+    margin-bottom: 17.6px;
+    position: relative;
+}
+
+#iphone .face .screen>.app.homescreen .container .apps .app-wrapper .app .icon {
+    height: 44px;
+    width: 44px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#iphone .face .screen>.app.homescreen .container .apps .app-wrapper .app .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.homescreen .container .apps .app-wrapper .app .title {
+    margin-top: 5.4px;
+    font-size: 11px;
+    font-weight: 300;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 56px;
+    text-align: center;
+}
+
+#iphone .face .screen>.app.homescreen .screen-dots {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 76.8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#iphone .face .screen>.app.homescreen .screen-dots li {
+    height: 6px;
+    width: 6px;
+    background-color: rgba(255, 255, 255, 0.45);
+    margin: 0 5.5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#iphone .face .screen>.app.homescreen .screen-dots li:first-child {
+    margin-left: 0;
+}
+
+#iphone .face .screen>.app.homescreen .screen-dots li:last-child {
+    margin-right: 0;
+}
+
+#iphone .face .screen>.app.homescreen .screen-dots li.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#iphone .face .screen>.app.homescreen .dock {
+    position: absolute;
+    bottom: 0;
+    left: 5.5px;
+    right: 5.5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+#iphone .face .screen>.app.homescreen .dock .dock-apps {
+    margin: 0;
+    padding: 12px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#iphone .face .screen>.app.homescreen .dock .dock-apps .app {
+    position: relative;
+    min-height: 44px;
+    max-height: 44px;
+    min-width: 44px;
+    max-width: 44px;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app.homescreen .dock .dock-apps .app .icon {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#iphone .face .screen>.app.homescreen .dock .dock-apps .app .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.homescreen .apps .app-wrapper .app .notification-counter,
+#iphone .face .screen>.app.homescreen .dock .dock-apps .app .notification-counter {
+    position: absolute;
+    right: -7.5px;
+    top: -7.5px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #FF3737;
+    border-radius: 8px;
+    padding: 2px 6px;
+}
+
+#iphone .face .screen>.app.homescreen .apps .app-wrapper .app .notification-counter {
+    right: -3.5px;
+    top: -6.5px;
+}
+
+#iphone .face .screen>.app.callscreen {
+    padding: 60.6px 31.5px 83px 31.5px;
+    height: calc(100% - 60.6px - 83px);
+}
+
+#iphone .face .screen>.app.callscreen .container {
+    justify-content: space-between;
+    overflow: visible;
+}
+
+#iphone .face .screen>.app.callscreen .container .call-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#iphone .face .screen>.app.callscreen .container .call-header .caller {
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.callscreen .container .call-header .call-type {
+    margin-top: 6.4px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#iphone .face .screen>.app.callscreen .container .control-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.callscreen .container .control-buttons .button {
+    height: 56px;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+#iphone .face .screen>.app.callscreen .container .control-buttons .button .icon {
+    height: 23px;
+    line-height: 23px;
+    width: 23px;
+}
+
+#iphone .face .screen>.app.callscreen .container .control-buttons .button .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.callscreen .container .control-buttons .button::after {
+    position: absolute;
+    content: attr(data-desc);
+    bottom: -22.4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#iphone .face .screen>.app.callscreen .container .control-buttons .button.decline {
+    background-color: #FF3737;
+}
+
+#iphone .face .screen>.app.callscreen .container .control-buttons .button.decline .icon {
+    transform: rotate(135deg);
+}
+
+#iphone .face .screen>.app.callscreen .container .control-buttons .button.accept {
+    background-color: #53D769;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons {
+    flex-direction: column;
+    align-items: center;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .button::after {
+    bottom: -19.3px;
+    font-size: 14px;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 56.6px;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button {
+    background-color: rgba(229, 229, 229, 0.2);
+    margin-bottom: 34px;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button.inactive {
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: default;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button.active {
+    background-color: #ffffff;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button .icon svg path {
+    fill: #ffffff;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button.active .icon svg path {
+    fill: #000000;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button .microphone-icon {
+    width: 16px;
+    line-height: 25px;
+    height: 25px;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button .keypad-icon,
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button .add-icon {
+    width: 22px;
+    line-height: 22px;
+    height: 22px;
+}
+
+#iphone .face .screen>.app.callscreen.active .container .control-buttons .keypad .button .contacts-icon {
+    width: 31px;
+    line-height: 20px;
+    height: 20px;
+}
+
+#iphone .face .screen>.app.contacts {
+    padding: 7.6px 0 44.64px 0;
+    height: calc(100% - 7.6px - 44.64px);
+}
+
+#iphone .face .screen>.app .container .control-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    min-height: fit-content;
+}
+
+#iphone .face .screen>.app .container .control-bar>.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    max-width: 40%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#iphone .face .screen.dark-theme>.app .container .control-bar>.title {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app .container .control-bar .control {
+    padding: 11px;
+    cursor: pointer;
+    color: #157EFB;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.switcher {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.switcher .switch-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 2px;
+    overflow: hidden;
+    width: 112px;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.switcher .switch-buttons button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1;
+    color: #157EFB;
+    text-align: center;
+    padding: 4px;
+    font-family: 'SF Pro Display';
+    border: 1px solid #157EFB;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.switcher .switch-buttons button.active {
+    background-color: #157EFB;
+    color: #ffffff;
+    cursor: default;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.switcher .switch-buttons button:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.switcher .switch-buttons button:last-child {
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.inactive {
+    cursor: default;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.add .icon {
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.new .icon {
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.back .icon {
+    line-height: 17px;
+    height: 17px;
+    width: 10px;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.back .title {
+    margin-left: 4.5px;
+}
+
+#iphone .face .screen>.app .container .control-bar .control.back .counter {
+    margin-left: 3px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #007AFF;
+    min-height: 16px;
+    max-height: 16px;
+    min-width: 16px;
+    padding: 0 5px;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iphone .face .screen>.app .container .control-bar .control .icon > svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app .container .control-bar .control .icon > svg path {
+    fill: #007AFF;
+}
+
+#iphone .face .screen>.app .container .search-bar {
+    margin-top: 6px;
+    margin-bottom: 14px;
+    width: 100%;
+    padding: 0 11px;
+}
+
+#iphone .face .screen>.app .container .search-bar .input-group {
+    width: 100%;
+    position: relative;
+}
+
+#iphone .face .screen>.app .container .search-bar .input-group .icon {
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 11px;
+    height: 11px;
+    width: 11px;
+}
+
+#iphone .face .screen>.app .container .search-bar .input-group .icon > svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app .container .search-bar .input-group .icon > svg path {
+    fill: rgba(0, 0, 0, 0.6);
+}
+
+#iphone .face .screen.dark-theme>.app .container .search-bar .input-group .icon > svg path {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+#iphone .face .screen>.app .container .search-bar .input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5.5px 5.5px 5.5px 29px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-family: 'SF Pro Display';
+}
+
+#iphone .face .screen.dark-theme>.app .container .search-bar .input-group input {
+    background-color: #2A2A2A;
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app .container .search-bar .input-group input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#iphone .face .screen.dark-theme>.app .container .search-bar .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#iphone .face .screen>.app .container > .title-bar:first-child {
+    margin-top: 15px;
+}
+
+#iphone .face .screen>.app .container .title-bar {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0 10.5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#iphone .face .screen.dark-theme>.app .container .title-bar {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app .container .title-bar .title {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#iphone .face .screen>.app .container .title-bar .control.add {
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app .container .title-bar .control.add .icon {
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+}
+
+#iphone .face .screen>.app .container .title-bar .control.add .icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app .container .title-bar .control.add .icon svg path {
+    fill: #595BD3;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info {
+    margin: 9px 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .basic-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .basic-info .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #999999;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 13.5px;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .basic-info .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .basic-info .name {
+    font-size: 21px;
+    text-align: center;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .contact-info .basic-info .name {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .controls {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .controls button {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'SF Pro Display';
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .controls button .icon-wrapper {
+    height: 33px;
+    width: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #057BFA;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .controls button .icon-wrapper .icon {
+    height: 15.25px;
+    line-height: 15.25px;
+    width: 15.25px;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .controls button .icon-wrapper .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.contacts .container .contact-info .controls button .title {
+    font-size: 12px;
+    text-align: center;
+    color: #007AFF;
+    margin-top: 2px;
+}
+
+#iphone .face .screen>.app .container .workspace {
+    flex: 1 1 auto;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#iphone .face .screen>.app .container .workspace {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#iphone .face .screen.dark-theme>.app .container .workspace {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+#iphone .face .screen>.app .container .workspace::-webkit-scrollbar {
+    width: 4px;
+}
+
+#iphone .face .screen>.app .container .workspace::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #B4B4B4;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .contacts-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .contacts-group .title {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 4px 10.5px;
+    font-size: 14px;
+    font-weight: 700;
+    user-select: none;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .contacts-group .title {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .contacts-group .contact-wrapper,
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper {
+    padding: 0 10.5px;
+    transition: all 0.15s linear;
+    cursor: pointer;
+    user-select: none;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .contacts-group .contact-wrapper:focus,
+#iphone .face .screen>.app.contacts .container .workspace .contacts-group .contact-wrapper:active,
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper:focus,
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper:active {
+    background-color: #f7f7f7;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .contacts-group .contact-wrapper:focus,
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .contacts-group .contact-wrapper:active,
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .call-wrapper:focus,
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .call-wrapper:active {
+    background-color: #2A2A2A;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .contacts-group .contact-wrapper .contact {
+    padding: 11.5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .contacts-group .contact-wrapper .contact {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .contacts-group .contact-wrapper:last-child .contact {
+    border-bottom: none;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 11.5px 0;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .call-wrapper .call {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call .basic-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call .basic-info .caller {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .call-wrapper .call .basic-info .caller {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call.missed .basic-info .caller {
+    color: #FF3737;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call .basic-info .call-type {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .call-wrapper .call .basic-info .call-type {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call .datetime {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .call-wrapper .call .datetime {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call .info-icon {
+    min-width: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #007AFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 9.5px;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call .info-icon svg {
+    width: 3.2px;
+    height: 7.8px;
+    line-height: 7.8px;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .call-wrapper .call .info-icon svg path {
+    fill: #007AFF;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .call-wrapper .call .info-icon svg path {
+    fill: #ffffff;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .info-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.15s linear;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .info-row {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .info-row.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .info-row.clickable:active,
+#iphone .face .screen>.app.contacts .container .workspace .info-row.clickable:focus {
+    background-color: #f7f7f7;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .info-row.clickable:active,
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .info-row.clickable:focus {
+    background-color: #2A2A2A;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .info-row .title {
+    font-size: 14px;
+    margin-bottom: 7px;
+    line-height: 1;
+}
+
+#iphone .face .screen.dark-theme>.app.contacts .container .workspace .info-row .title {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .info-row .value {
+    color: #057BFA;
+    font-size: 18px;
+}
+
+#iphone .face .screen>.app.contacts .container .workspace .info-row .button {
+    font-size: 14px;
+    color: #057BFA;
+}
+
+#iphone .face .screen>.app.phone {
+    padding: 40.4px 31.5px 97px 31.5px;
+    height: calc(100% - 40.4px - 97px);
+}
+
+#iphone .face .screen>.app.phone .container .number-wrapper {
+    min-height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iphone .face .screen>.app.phone .container .number-wrapper .number {
+    font-size: 31px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+}
+
+#iphone .face .screen>.app.phone .container .number-wrapper .number::-webkit-outer-spin-button,
+#iphone .face .screen>.app.phone .container .number-wrapper .number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#iphone .face .screen.dark-theme>.app.phone .container .number-wrapper .number {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.phone .container .add-number {
+    cursor: pointer;
+    padding: 4px;
+    margin-bottom: 27.3px;
+}
+
+#iphone .face .screen>.app.phone .container .add-number .title {
+    color: #157EFB;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#iphone .face .screen>.app.phone .container .keypad {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key {
+    width: 56px;
+    height: 56px;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.15s linear;
+}
+
+#iphone .face .screen.dark-theme>.app.phone .container .keypad .key {
+    background-color: #2A2A2A;
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key:active,
+#iphone .face .screen>.app.phone .container .keypad .key:focus {
+    background-color: #C8C8C8;
+}
+
+#iphone .face .screen.dark-theme>.app.phone .container .keypad .key:active,
+#iphone .face .screen.dark-theme>.app.phone .container .keypad .key:focus {
+    background-color: #575757;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.backspace {
+    background-color: transparent !important;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.inactive {
+    background-color: transparent !important;
+    cursor: default;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.call {
+    background-color: #53D769 !important;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key .digit {
+    font-size: 27px;
+    line-height: 1;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key .chars {
+    font-size: 8px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    padding-left: 1.5px;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.zero .chars {
+    font-weight: 700;
+    font-size: 10px;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.asterisk .icon {
+    width: 14px;
+    height: 15px;
+    line-height: 15px;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.hashtag .icon {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.backpsace .icon {
+    width: 24px;
+    height: 18px;
+    line-height: 18px;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.call .icon {
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key .icon > svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.phone .container .keypad .key.asterisk .icon > svg path,
+#iphone .face .screen>.app.phone .container .keypad .key.hashtag .icon > svg path {
+    fill: #000000;
+}
+
+#iphone .face .screen.dark-theme>.app.phone .container .keypad .key.asterisk .icon > svg path,
+#iphone .face .screen.dark-theme>.app.phone .container .keypad .key.hashtag .icon > svg path {
+    fill: #ffffff;
+}
+
+#iphone .face .screen>.app .navigation {
+    position: absolute;
+    bottom: 0;
+    left: 19.5px;
+    right: 19.5px;
+}
+
+#iphone .face .screen>.app .navigation-tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#iphone .face .screen>.app .navigation-tabs .tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+#iphone .face .screen>.app .navigation-tabs .tab .icon {
+    height: 19px;
+    line-height: 19px;
+}
+
+#iphone .face .screen>.app .navigation-tabs .tab .icon > svg {
+    height: 100%;
+}
+
+#iphone .face .screen>.app .navigation-tabs .tab .icon > svg path {
+    fill: #A2A2A2;
+}
+
+#iphone .face .screen>.app .navigation-tabs .tab.active .icon > svg path {
+    fill: #157EFB;
+}
+
+#iphone .face .screen>.app .navigation-tabs .tab .title {
+    color: #A2A2A2;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+#iphone .face .screen>.app .navigation-tabs .tab.active .title {
+    color: #157EFB;
+}
+
+#iphone .face .screen>.app.messages,
+#iphone .face .screen>.app.navigator {
+    padding: 7.6px 0 0 0;
+    height: calc(100% - 7.6px);
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat {
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 10.5px 10px 10.5px;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 14.9px 17.5px 14.9px 4.5px;
+    cursor: pointer;
+    transition: all 0.15s linear;
+    user-select: none;
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace .message-wrapper {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper:focus,
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper:active {
+    background-color: #f7f7f7;
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace .message-wrapper:focus,
+#iphone .face .screen.dark-theme>.app.messages .container .workspace .message-wrapper:active {
+    background-color: #2A2A2A;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .dot-block {
+    min-width: 6px;
+    margin-right: 4px;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .dot-block,
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .icon-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .dot-block .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #2788FB;
+    border-radius: 50%;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .icon-wrapper {
+    margin-right: 7.5px;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .icon-wrapper .icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #999999;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .icon-wrapper .icon.img {
+    background-color: transparent;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .icon-wrapper .icon > svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .icon-wrapper .icon > svg circle,
+#iphone .face .screen>.app.new-contact .container .workspace .basic-info .icon svg circle {
+    fill: none;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #999999;
+    stroke-linecap: round;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .icon-wrapper .icon > svg path,
+#iphone .face .screen>.app.new-contact .container .workspace .basic-info .icon svg path {
+    fill: #999999;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .basic-info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7.5px;
+    max-width: 198.81px;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .basic-info .sender {
+    font-size: 14px;
+    font-weight: 700;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace .message-wrapper .message .basic-info .sender {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .basic-info .info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .basic-info .info .datetime {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace .message-wrapper .message .basic-info .info .datetime {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .basic-info .info .icon {
+    width: 5px;
+    line-height: 9px;
+    min-height: 9px;
+    margin-left: 5px;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .basic-info .info .icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .basic-info .info .icon svg path {
+    fill: rgba(0, 0, 0, 0.4);
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace .message-wrapper .message .basic-info .info .icon svg path {
+    fill: rgba(255, 255, 255, 0.4);
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .message-text {
+    font-size: 12px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.6);
+    max-height: 26px;
+    overflow: hidden;
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace .message-wrapper .message .message-text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#iphone .face .screen>.app.messages .container .workspace .message-wrapper .message .message-text p {
+    margin: 0;
+    word-break: break-word;
+}
+
+#iphone .face .screen>.app .app-input {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 10.5px;
+    width: 100%;
+    min-height: fit-content;
+}
+
+#iphone .face .screen>.app .app-input .camera-button {
+    margin-right: 7.5px;
+    min-height: 23.3px;
+    max-height: 23.3px;
+    min-width: 17.75px;
+    max-width: 17.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app .app-input .camera-button svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app .app-input .camera-button svg path {
+    fill: #686868;
+    transition: 0.15s linear;
+}
+
+#iphone .face .screen.dark-theme>.app .app-input .camera-button svg path {
+    fill: #8B8B8B;
+}
+
+#iphone .face .screen>.app .app-input .input-group {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+#iphone .face .screen>.app .app-input .input-group input {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    outline: none;
+    border-radius: 14px;
+    padding: 6px 30px 6px 11px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    font-family: 'SF Pro Display';
+    margin: 0;
+    background-color: transparent;
+}
+
+#iphone .face .screen.dark-theme>.app .app-input .input-group input {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app .app-input .input-group .send {
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    border: none;
+    outline: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #53D769;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app .app-input.new .input-group .send {
+    background-color: #167EFC;
+}
+
+#iphone .face .screen>.app .app-input .input-group .send .icon {
+    height: 12px;
+    line-height: 12px;
+    width: 10px;
+}
+
+#iphone .face .screen>.app .app-input .input-group .send .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat > :first-child {
+    margin-top: auto !important;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .datetime {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace.chat .datetime {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: fit-content;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group:last-child {
+    margin-bottom: 0;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group.my {
+    align-items: flex-end;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group .message {
+    max-width: 95%;
+    width: fit-content;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 14px;
+    background-color: #E5E5EA;
+    position: relative;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group .message.image {
+    padding: 0;
+    height: 100%;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group .message.image img {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace.chat .messages-group .message {
+    background-color: #2A2A2A;
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group.my .message {
+    text-align: right;
+    color: #ffffff;
+    background-color: #53D769;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group .message:last-child::before,
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group.my .message:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group.my .message:last-child::before {
+    content: none;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group .message:last-child::before {
+    left: -5px;
+    background-image: url('../assets/messages/message.svg');
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace.chat .messages-group .message:last-child::before {
+    background-image: url('../assets/messages/message_dark.svg');
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group.my .message:last-child::after {
+    right: -5px;
+    background-image: url('../assets/messages/message_my.svg');
+}
+
+#iphone .face .screen>.app.messages .container .workspace.chat .messages-group .message.image::after {
+    content: none !important;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat {
+    padding-bottom: 10px;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    padding: 7.5px 10.5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace.new-chat .new-chat-header {
+    background-color: #2A2A2A;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header .title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace.new-chat .new-chat-header .title {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header .reciever {
+    margin-left: 8px;
+    width: 100%;
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace.new-chat .new-chat-header .reciever {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header .reciever input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: 'SF Pro Display';
+    color: #000000;
+    width: 100%;
+}
+
+#iphone .face .screen.dark-theme>.app.messages .container .workspace.new-chat .new-chat-header .reciever input {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header .reciever input[type=number]::-webkit-inner-spin-button, 
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header .reciever input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header .add {
+    min-height: 16.65px;
+    max-height: 16.65px;
+    min-width: 16.65px;
+    max-width: 16.65px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header .add svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.messages .container .workspace.new-chat .new-chat-header .add svg path {
+    fill: #007AFF;
+    fill-rule: evenodd;
+}
+
+#iphone .face .screen>.app.new-contact {
+    padding: 7.6px 0 0 0;
+    height: calc(100% - 7.6px);
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace {
+    border-top: none;
+    padding-top: 10px;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .basic-info {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .basic-info .icon {
+    margin-left: 10px;
+    margin-right: 15px;
+    min-width: 33.69px;
+    max-width: 33.69px;
+    min-height: 33.69px;
+    max-height: 33.69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .basic-info .icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .basic-info .icon .title {
+    position: absolute;
+    color: #157EFB;
+    font-size: 10px;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .rows,
+#iphone .face .screen>.app.navigator .container .workspace .rows {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .rows .row,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen.dark-theme>.app.new-contact .container .workspace .rows .row,
+#iphone .face .screen.dark-theme>.app.navigator .container .workspace .rows .row {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .rows .row:last-child,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row:last-child {
+    margin-bottom: 0;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .rows .row input,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row input {
+    padding: 0;
+    padding-right: 5px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    outline: none;
+    font-size: 12px;
+    font-family: 'SF Pro Display';
+    color: #000000;
+    background-color: transparent;
+}
+
+#iphone .face .screen.dark-theme>.app.new-contact .container .workspace .rows .row input,
+#iphone .face .screen.dark-theme>.app.navigator .container .workspace .rows .row input {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .rows .row input::placeholder,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row input::placeholder {
+    color: #A5A5A5;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .rows .row .title,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .title {
+    font-size: 12px;
+}
+
+#iphone .face .screen.dark-theme>.app.new-contact .container .workspace .rows .row .title,
+#iphone .face .screen.dark-theme>.app.navigator .container .workspace .rows .row .title {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .basic-info .rows {
+    flex: 1 1 auto;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .basic-info .rows .row {
+    padding-left: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 7.5px;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info {
+    margin-top: 20px;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row {
+    padding: 6.5px 10px;
+    align-items: center;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row .action,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .action {
+    margin-right: 11.5px;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row .action .icon,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .action .icon {
+    min-width: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row .action .icon.minus,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .action .icon.minus {
+    background-color: #FF3B30;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row .action .icon.minus .minus,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .action .icon.minus .minus {
+    width: 56.25%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row .action .icon.plus,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .action .icon.plus {
+    background-color: #4CD964;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row .action .icon.plus .plus,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .action .icon.plus .plus {
+    background-color: #ffffff;
+    position: absolute;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row .action .icon.plus .plus:first-child,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .action .icon.plus .plus:first-child {
+    height: 1px;
+    width: 56.25%;
+}
+
+#iphone .face .screen>.app.new-contact .container .workspace .additional-info .rows .row .action .icon.plus .plus:last-child,
+#iphone .face .screen>.app.navigator .container .workspace .rows .row .action .icon.plus .plus:last-child {
+    width: 1px;
+    height: 56.25%;
+}
+
+#iphone .face .screen>.app .container .workspace .switch-control input[type=checkbox] {
+    display: none;
+}
+
+#iphone .face .screen>.app .container .workspace .switch-control input[type=checkbox] + label {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    width: 36px;
+    height: 22px;
+    border-radius: 16px;
+    border: 1px solid #E5E5EA;
+    transition: background-color .1s ease-in-out;
+}
+
+#iphone .face .screen>.app .container .workspace .switch-control input[type=checkbox] + label:before {
+    content: '';
+    top: 0.75px;
+    left: 0.75px;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: left .1s ease-in-out;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+#iphone .face .screen>.app .container .workspace .switch-control input[type=checkbox]:checked + label {
+    background-color: #4cd964;
+    border-color: #4cd964;
+}
+
+#iphone .face .screen>.app .container .workspace .switch-control input[type=checkbox]:checked + label:before {
+    left: calc(100% - 19px);
+}
+
+#iphone .face .screen>.app.settings .container .workspace .rows {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#iphone .face .screen>.app.settings .container .workspace .rows .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 11.5px;
+}
+
+#iphone .face .screen>.app.settings .container .workspace .rows .row .icon {
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-right: 7px;
+}
+
+#iphone .face .screen>.app.settings .container .workspace .rows .row .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+#iphone .face .screen>.app.settings .container .workspace .rows .row .info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 11.5px;
+}
+
+#iphone .face .screen.dark-theme>.app.settings .container .workspace .rows .row .info {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+#iphone .face .screen>.app.settings .container .workspace .rows .row .info .title {
+    color: #000000;
+    font-size: 14px;
+}
+
+#iphone .face .screen.dark-theme>.app.settings .container .workspace .rows .row .info .title {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.camera {
+    background-color: #000000;
+}
+
+#iphone .face .screen>.app.camera .container .control-bar {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+}
+
+#iphone .face .screen>.app.camera .container .control-bar .control {
+    color: #F1C100;
+}
+
+#iphone .face .screen>.app.camera .container .control-bar .control.simple {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 11.4px 16px 0 16px;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .modes {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-bottom: -5px;
+    margin-top: -5px;
+    min-height: 22px;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .modes .mode {
+    margin: 0 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F1C100;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    transition: 0.15s linear;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .modes .mode.inactive {
+    cursor: default;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 73.6px;
+    position: relative;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .last-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    overflow: hidden;
+    min-height: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .last-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-click {
+    min-height: 55.4px;
+    max-height: 55.4px;
+    min-width: 55.4px;
+    max-width: 55.4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-click svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-click svg .outer {
+    stroke-width: 4.5;
+    stroke: #ffffff;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-click svg .inner {
+    fill: #ffffff;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-click.send svg .inner {
+    fill: #167EFC;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-click.send svg .arrow {
+    fill: #ffffff;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-switcher {
+    min-width: 30.26px;
+    max-width: 30.26px;
+    min-height: 23.44px;
+    max-height: 23.44px;
+    cursor: pointer;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-switcher svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-switcher svg g:first-child {
+    opacity: 0.5;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-switcher svg g:first-child path:first-child {
+    fill: #ffffff;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-switcher svg g:first-child path:last-child {
+    stroke: #ffffff;
+    stroke-width: 1.476;
+    stroke-miterlimit: 10;
+}
+
+#iphone .face .screen>.app.camera .container .camera-bar .camera-control-bar .camera-switcher svg g:last-child {
+    fill: #ffffff;
+}
+
+#iphone .face .screen>.app.camera .home-button-zone {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#iphone .face .screen>.app.navigator .search-bar {
+    margin-bottom: 4px;
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper {
+    width: 100%;
+    padding: 0 10.5px;
+    margin-bottom: 9px;
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper .navigator-bar {
+    width: 100%;
+    position: relative;
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper .navigator-bar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10.5px;
+    right: -10.5px;
+    width: calc(100% + 10.5px * 2);
+    height: 2px;
+    background-color: rgba(89, 91, 211, 0.2);
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper .navigator-bar .navs {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper .navigator-bar .navs .nav {
+    margin: 0 2px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(89, 91, 211, 0.4);
+    transition: 0.15s linear;
+    position: relative;
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper .navigator-bar .navs .nav.active {
+    color: #595BD3;
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper .navigator-bar .navs .nav.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 50%;
+    background-color: #595BD3;
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper .navigator-bar .navs .nav:first-child {
+    margin-left: -10px;
+}
+
+#iphone .face .screen>.app.navigator .navigator-bar-wrapper .navigator-bar .navs .nav:last-child {
+    margin-right: -10px;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace {
+    border-top: none;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10.5px;
+    transition: 0.15s linear;
+    cursor: pointer;
+    user-select: none;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper:active,
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper:focus {
+    background-color: #F7F7F7;
+}
+
+#iphone .face .screen.dark-theme>.app.navigator .container .workspace .navigator-item-wrapper:active,
+#iphone .face .screen.dark-theme>.app.navigator .container .workspace .navigator-item-wrapper:focus {
+    background-color: #2A2A2A;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 0;
+}
+
+#iphone .face .screen.dark-theme>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .title {
+    flex: 1 1 auto;
+    padding: 4px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+
+#iphone .face .screen.dark-theme>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .title {
+    color: #ffffff;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .distance {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 4px;
+    white-space: nowrap;
+}
+
+#iphone .face .screen.dark-theme>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .distance {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .distance:last-child {
+    margin-right: 0;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .mark-icon {
+    margin-left: 4px;
+    min-height: 26px;
+    max-height: 26px;
+    min-width: 26px;
+    max-width: 26px;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .mark-icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .mark-icon svg circle {
+    fill: #595BD3;
+}
+
+#iphone .face .screen>.app.navigator .container .workspace .navigator-item-wrapper .navigator-item .mark-icon svg path {
+    fill: #ffffff;
+}

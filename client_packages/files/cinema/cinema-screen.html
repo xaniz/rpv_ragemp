@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="fonts/style.css">
+		<link rel="stylesheet" href="style.css" />
+
+		<style>
+			body {
+				zoom: 1.0 !important;
+			}
+		</style>
+	</head>
+
+		
+	<body>
+	
+		<div class="cinema-screen" id="cinema-screen"></div>
+		<div class="cinema-screen2"></div>
+
+		<div class="settings-box-right" id="menu_cinema" style="display:none;">
+			<div class="settings-box-header">Cinema</div>
+
+			<div class="settings-box-row-wide">
+				Dobrodosli u Cinema meni, ovo je kino administratorska kontrol tabla, koristite opcije za kontrolu.
+			</div>
+
+			<div class="settings-box-row-wide">
+				Kopirajte video URL sa youtube i nalepite ga ovde:
+			</div>
+
+			<div class="settings-box-row-wide">
+				<input type="text" id="cinema-url" placeholder="https://www.youtube.com/watch?v=bQyTmG0whr4&ab_channel=hadehd">
+				<span class="btn-sm button open" onclick="addCinemaVideo()">Start</span>
+				<br>
+				<span class="btn-sm button open" onclick="OpenCinema()">Otvori kino</span>
+				<br>
+				<span class="btn-sm button close" onclick="CloseCinema()">Zatvori kino</span>
+			</div>
+		</div>
+
+		<span class="btn-sm button close btn-bottom-center" id="exit-btn" onclick="exitCinema()">Izlaz</span>
+
+
+		<script>
+			//setCinema("1", 0, "https://www.youtube.com/watch?v=6BIcNp_-Omw");
+			function setCinema(username, time, url)
+			{
+				$('#cinema-screen').html(`			
+					<iframe 
+						src="https://www.youtube.com/embed/${url}?start=${time}&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&autoplay=1&vq=medium&disablekb=1"  
+						frameborder="0"
+						allowfullscreen
+						class="cinema-video">
+					</iframe>`);
+
+				$('#cinema-username').html(username);
+			}
+
+			function DisplayMenu(toggle)
+			{
+				if(toggle === true)
+				{
+					document.getElementById("menu_cinema").style.display = "block";
+				}
+				else
+				{
+					document.getElementById("menu_cinema").style.display = "none";
+				}
+				
+			}
+			
+			
+			function clearCinema()
+			{
+				$('#cinema-screen').html('');
+				$('#cinema-username').html('');
+			}
+
+			function addCinemaVideo()
+			{
+				let url = $('#cinema-url').val();
+
+				mp.trigger("addCinemaVideo", url);
+			}
+
+			function voteCinemaSkip()
+			{
+				mp.trigger("voteCinemaSkip");
+			}
+
+			function OpenCinema()
+			{
+				mp.trigger("Cinema_Open", true);
+			}
+			function CloseCinema()
+			{
+				mp.trigger("Cinema_Open", false);
+			}
+
+			function exitCinema()
+			{
+				$("#exit-btn").remove();
+				mp.trigger("exitCinema");
+			}
+
+			$(document).keydown(function(objEvent) {
+			    if (objEvent.keyCode == 9) {  //tab pressed
+			        objEvent.preventDefault(); // stops its action
+			    }
+			})
+		</script>
+	</body>
+</html>

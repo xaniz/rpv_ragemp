@@ -1,0 +1,73 @@
+﻿::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(220, 220, 220, 0.75);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+.creator-scroll {
+	height: 50vh;
+	margin-top: 2vh;
+	overflow-y: auto;
+	overflow-x:hidden;
+}
+
+
+.job-scroll {
+	height: 30vh;
+	margin-top: 2vh;
+	overflow-y: auto;
+	overflow-x:hidden;
+}
+
+.catalog-vehicles {
+	
+	
+	height: 55vh;
+	margin-top: 2vh;
+	overflow-y: auto;
+	overflow-x:hidden;
+}
+
+.card-close-button
+{
+	position:absolute;
+	right:0;
+	margin-right:7px;
+	color:#303030!important;
+	background:#bcf000 !important;
+}
+.card-close-button:hover{
+	background:#303030 !important;
+	color:#bcf000! important;
+}
+.close{
+	margin:0 !important;
+	padding:0.25rem 0.5rem !important;
+	line-height:1.5 !important;
+}
+
+.zoomIn {
+	animation: scale-in-center 0.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Webarch</title>
+  <link rel='stylesheet' href='../css/bootstrap.min.css'>
+<link rel="stylesheet" href="./css/style2.css">
+</head>
+<body style="overflow:hidden">
+
+    
+	
+      <div class="tiles blue added-margin">
+	  
+        <div id="bod" class="tiles-body">
+          
+          <div id="title" class="tiles-title">Banka</div>
+          <div class="heading">
+            <span id="main" class="animate-number" data-animation-duration="1200">$ 184121.8</span> 
+          </div>
+          
+          <div class="description">
+            <i class="icon-custom-up"></i>
+              
+            <span id="descrip" class="text-white mini-description ">&nbsp;<span class="blend">Za podizanje </span></span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<script>
+function UpdateNotf(title,bigtitle,descripton,html){
+    document.getElementById("title").innerHTML=title;
+    document.getElementById("main").innerHTML=bigtitle;
+    document.getElementById("descrip").innerHTML = descripton;
+    document.getElementById("bod").style.backgroundColor = html;
+
+}
+</script>
+
+
+
+</body>
+</html>

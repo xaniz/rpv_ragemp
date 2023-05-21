@@ -1,0 +1,93 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta content="width=1300, initial-scale=1 user-scalable=yes" name="viewport" />
+		<link rel="stylesheet" href="css/wanted.css"  />
+
+
+
+	</head>
+
+	<body>
+		<div class="ui container new2" style="margin-top: 261px;">
+			<div class="ui stacked segments new-d2">
+			  <div class="ui segment new-top2">
+				<div class="new-top__box2">
+				</div>
+				<img src="picture2.png" alt="Picture">
+			  </div>
+			  <div class="ui segment help-main new-center2">
+				<table class="ui definition table new-center__table2" id="contracts">
+				  <thead>
+					<tr class="ttttr2">
+					  <th class="single line tg2" width="10px;">Ime_Prezime</th>
+					  <th class="mm2">WL</th>
+					  <th class="mmm2"></th>
+					  <th></th>
+					</tr>
+				  </thead>
+				  <tbody id="p_wanted_list">
+				  </tbody>
+				</table>
+			  </div>
+			  <div class="ui bottom attached segment new-end2">
+				<center>
+				  <div class="button bbtn" id="close">
+					Zatvori
+				  </div>
+				</center>
+			  </div>
+			</div>
+		  </div>
+
+
+
+		<!-- Javascript (jQuery, Semantic) -->
+		<script src="../inventory2/js/jquery.js"></script>
+		<script src="../inventory2/js/semantic.min.js" ></script>
+		<script>
+
+			$(document).ready(function() {
+				$("#close").click(function() {
+					mp.trigger("Destroy_Character_Menu");
+				});
+
+			});
+			
+			function LoadWantedList(wanted_list) {
+			let data = JSON.parse(wanted_list);
+			let table = document.getElementById("p_wanted_list");
+
+			if (data.length > 0) {
+				table.innerHTML = "";
+
+				for (let i = 0; i < data.length; i++) {
+				let row = table.insertRow(i);
+				let nameCell = row.insertCell(0);
+				let levelCell = row.insertCell(1);
+				let buttonCell = row.insertCell(2);
+				levelCell.classList.add("level");
+				let button = document.createElement("button");
+				button.innerText = "Lociraj";
+				button.classList.add("ui", "button", "active");
+				button.id = i;
+				button.addEventListener("click", function() {
+					mp.trigger("trackplayer", i);
+					mp.trigger("Hide_Crafting_System");
+				});
+				buttonCell.appendChild(button);
+				nameCell.innerHTML = data[i].Suspect;
+				levelCell.innerHTML = data[i].Wanted;
+				}
+			} else {
+				table.innerHTML = "Nema nikog na listi.";
+			}
+		}
+		</script>
+
+	</body>
+</html>

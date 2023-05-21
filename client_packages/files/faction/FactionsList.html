@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/catalog.css">
+</head>
+<body style="background-color: transparent;">
+<div class="container-fluid">
+
+    <div class="row">
+
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6">
+            <div class="card bg-dark text-white" style="top:10%;">
+                <div class="card-header">Organizacije
+                    <button type="button" class="btn btn-sm card-close-button" onclick="closeFactions();">X
+                    </button>
+                </div>
+                <div class="card-body">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#stats">Legalne</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#clothes">Ilegalne</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="tab-content">
+
+
+                        <div id="stats" class="tab-pane container active ">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                
+
+
+									<div class="table-responsive online-players">
+									<table class="table table-condensed table-sm">
+										<thead>
+										<tr>
+										  <th scope="col">Ime</th>
+										  <th scope="col">Tip</th>
+										  <th scope="col">Clanova</th>
+										  <th scope="col"  class="text-right">Akcija</th>
+										</tr>
+										</thead>
+										<tbody id="orglist">
+											
+										</tbody>
+									</table>
+									</div>
+							
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="clothes" class="tab-pane container fade ">
+
+                             <div class="row">
+                                <div class="col-md-12">
+                                
+								<div class="table-responsive online-players">
+								<table class="table table-condensed table-sm">
+									<thead>
+									<tr>
+                                        <th scope="col">Ime</th>
+                                        <th scope="col">Tip</th>
+                                        <th scope="col">Clanova</th>
+                                        <th scope="col"  class="text-right">Akcija</th>
+									</tr>
+								  </thead>
+									<tbody id="ilegallist">
+										
+									</tbody>
+								</table>
+								</div>
+
+                                </div>
+								<button type="button" data-toggle="modal" data-target="#myModal" id="factionCreateModal" class="btn btn-sm">Napravi organizaciju ($1.000.000)</button>
+                            </div>
+							
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-3"></div>
+
+
+    </div>
+
+
+
+
+
+
+	<!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Pravljenje organizacije</h4>
+                    <button type="button" class="btn btn-sm close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="form-group">
+					  <label for="factionname">Ime</label>
+					  <input type="text" class="form-control" id="factionname">
+					</div>
+
+					
+					<div class="form-group">
+						<label>Kategorija</label><br>
+						<input checked type="radio" name="factiontype" value="7"> Ilegalna<br>
+
+					</div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm" data-dismiss="modal" id="factioncreate">Napravi</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+	
+
+</div>
+
+</body>
+
+<script src="../css/jquery.js"></script>
+<script src="../css/bootstrap.js"></script>
+<script src="factions.js"></script>
+</html>

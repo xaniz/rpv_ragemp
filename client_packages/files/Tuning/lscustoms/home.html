@@ -1,0 +1,72 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="ls_castoms.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">   
+    <link href="../fonts/PFDinDisplayPro/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="header">
+        <div class="container">
+     <div class="left" id="left-button" type="button"></div>
+          <div class="center" id="content">
+              <div onclick="menuready('bumper')" class=internal><div class="bamper"></div>Branik</div>
+              <div onclick="menuready('breake')" class=internal><div class="brakes"></div>Kocnice</div>
+              <div onclick="menuready('plate')" class=internal><div class="car-number"></div>Tablica</div>
+              <div onclick="menuready('engine')" class=internal><div class="engine"></div>Motor</div>
+              <div onclick="menuready('tinting')" class=internal><div class="glass"></div>Staklo</div>
+              <div onclick="menuready('hood')" class=internal><div class="hood"></div>Hauba</div>
+              <div onclick="menuready('horn')" class=internal><div class="horn"></div>Sirena</div>
+              <div onclick="menuready('headlight')" class=internal><div class="lights"></div>Farovi</div>
+              <div onclick="menuready('exhaust')" class=internal><div class="muffler"></div>Auspuh</div>
+              <div onclick="menuready('painting')" class=internal><div class="paint"></div>Boja</div>
+              <div onclick="menuready('frame')" class=internal><div class="protection"></div>Protekcija</div>
+              <div onclick="menuready('roof')" class=internal><div class="roof"></div>Krov</div>
+              <div onclick="menuready('sideskirt')" class=internal><div class="sideskirt"></div>Pragovi</div>
+              <div onclick="menuready('spoiler')" class=internal><div class="spoiler"></div>Spojler</div>
+              <div onclick="menuready('suspension')" class=internal><div class="suspension"></div>Amortizeri</div>
+              <div onclick="menuready('transmission')" class=internal><div class="transmission"></div>Menjac</div>
+              <div onclick="menuready('turbo')" class=internal><div class="trubo"></div>Turbina</div>
+              <div onclick="menuready('disk')" class=internal><div class="wheel"></div>Tockovi</div>
+
+       </div>
+      <div class="right" id="right-button" type="button"></div>
+    </div>
+    <div class="logotype"><div class="vsc"></div></div>
+    </div> 
+    <div class="main-footer">
+        <div onclick="mp.trigger('Exit_Tuning')" id="exit_menu" class="but-main-exit">
+            <div class="image"></div>
+        </div>
+    </div>
+
+
+    <script src="../../css/jquery.js"></script>
+<script>
+  
+function menuready(name)
+{
+  mp.trigger("tunning_MainMenuRespone",name);
+}
+
+$('#right-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=160px"
+  }, "slow");
+});
+
+ $('#left-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=160px"
+  }, "slow");
+});</script>
+    
+    <script src="tuning.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+
+.icon-speed {
+    display: block;
+    position: absolute;
+    padding: 10px 8px;
+    left:0%;
+    right:0%;
+    top:75%;
+    margin:0 auto;
+    width: 60px; height: 30px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.35);
+    font-family: 'aafuture', aafuture;
+}
+
+.icon-speed i { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #FFF; z-index: 11; font-size: 15px; }
+.icon-speed img { width: 16px; margin: -3px 0 0 0; }
+.icon-speed span { display: block; position: absolute; left: 50%; bottom: 0; transform: translate(-50%,0); width: 100%; height: 100%; }
+
+.icon-speed.text { display: inline-block; overflow: visible; width: auto; padding: 0; }
+.icon-speed.text i { display: inline-block; float: left; transform: translate(0%,0%); left: 0; top: 0; position: relative; padding: 10px 8px; width: 30px; height: 30px; border-radius: 100px; color: #FFF; }
+.icon-speed.text i:before { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+.icon-speed.text span { position: relative; width: auto; height: auto; left: 0; transform: translate(0,0); display: inline-block; font-size: 12px; padding: 7px 15px 0 10px; font-weight: 700; color: #FFF; }
+
+
+.icon-speed.dying:not(.customstatus) span { animation: trew-status-blink 500ms infinite; }
+.icon-speed.pulse i { animation: trew-pulse 500ms 1; }
+
+
+
+
+
+.info { position: absolute; }
+
+.info.server { top: 45px; right: 26px; width: 90px; height: 90px; }
+.info.server #server img { max-width: 100%; opacity: 0.75; }
+
+.info.player { top: 140px; right: 25px; text-align: right;}
+.info.player #job span { font-size: 24px; color: #FFF; font-weight: 900; text-transform: uppercase; text-shadow: 0px 1px 1px rgba(0,0,0,0.75); }
+
+
+.info.player #status { clear: both; }
+.info.player #status ul { margin: 10px 0 0 0; }
+.info.player #status ul li { float: right;}
+.info.player #status ul li#health span { background: linear-gradient(180deg, #ff0000 0%, #aa0000 100%); }
+.info.player #status ul li#armor span { background: linear-gradient(180deg, #0bcfe6 0%, #0aa3b5 100%); }
+.info.player #status ul li#stamina span { background: linear-gradient(180deg, #ffb700 0%, #e0a102 100%); }
+.info.player #status ul li#hunger span { background: linear-gradient(180deg, #ff8000 0%, #cd6700 100%); }
+.info.player #status ul li#thirst span { background: linear-gradient(180deg, #00c3ff 0%, #008fbb 100%); }
+.info.player #status ul li#health.dead { animation: trew-pulse 500ms infinite; }
+.info.player #status ul li#health.dead span { height: 0 !important; }
+.info.player #status ul li#health.dead i.fas:before { content: '\f714'; }
+
+.info.vehicle { bottom: 25px; left: 50%; transform: translate(-50%,0); z-index: 11; }
+.info.vehicle.active { opacity: 1; }
+.info.vehicle.inactive { opacity: 0; }
+
+
+.info.vehicle #speedometer { position: relative; width: 270px; height: 130px; }
+.info.vehicle #speedometer svg { position: absolute; top: 0; left: 50%; transform: translate(-50%,0) rotate(138deg); width: 130px; }
+
+.info.vehicle #speedometer svg circle { display: block; fill: transparent; stroke-width: 5px; stroke-linecap: round; stroke-dasharray: 283; stroke-dashoffset: 75; transform-origin: 50% 50%; }
+.info.vehicle #speedometer svg circle.mask { stroke: rgba(0,0,0,0.35); }
+.info.vehicle #speedometer svg circle.speed { stroke: url(#speed-gradient); stroke-dashoffset: 180; }
+.info.vehicle #speedometer svg:first-child { z-index: 11; }
+
+
+.info.vehicle #speedometer svg circle { transition: all 250ms linear; }
+.info.vehicle #speedometer svg circle.zero { stroke: #008df0; stroke-dashoffset: 235; }
+.info.vehicle #speedometer svg circle.twentyfive { stroke: #008df0; stroke-dashoffset: 180; }
+.info.vehicle #speedometer svg circle.fifty { stroke: #008df0;  stroke-dashoffset: 125; }
+.info.vehicle #speedometer svg circle.seventyfive { stroke: #008df0;  stroke-dashoffset: 75; }
+
+
+.info.vehicle #speedometer #vehicle-speed { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; color: #FFF;}
+.info.vehicle #speedometer #vehicle-speed span { display: block; font-weight: 900; font-size: 30px; text-shadow: 0px 1px 1px rgba(0,0,0,0.75); }
+
+.info.vehicle #speedometer #vehicle-speed strong { display: inline-block; font-size: 10px; font-weight: 900; padding: 2px 5px; border-radius: 100px; text-shadow: 0px 1px 1px rgba(0,0,0,0.75); transition: all 150ms linear; }
+.info.vehicle #speedometer #vehicle-speed strong.on { background: #18b70b; }
+
+.info.vehicle #speedometer #vehicle-gear,
+.info.vehicle #speedometer #vehicle-others { position: absolute; bottom: 0; left: 50%; width: 69px; transform: translate(-50%,0); margin: auto; border: 2px solid transparent; }
+
+.info.vehicle #speedometer #vehicle-gear.pulsing { animation: trew-siren 1s infinite; }
+
+.info.vehicle #speedometer #vehicle-gear i { top: -2px; }
+.info.vehicle #speedometer #vehicle-gear span { padding: 5px 15px 0 10px; }
+
+
+.info.vehicle #speedometer #vehicle-status-left { position: absolute; bottom: 0; left: 0; }
+.info.vehicle #speedometer #vehicle-status-left ul li { float: left; }
+
+.info.vehicle #speedometer #vehicle-status-right { position: absolute; bottom: 0; right: 0; }
+.info.vehicle #speedometer #vehicle-status-right ul li { float: left; }
+
+.info.vehicle #speedometer li#seatbelt span { background: linear-gradient(180deg, #ff0000 0%, #aa0000 100%); }
+.info.vehicle #speedometer li#seatbelt.on span { background: linear-gradient(180deg, #18b70b 0%, #128c08 100%); }
+
+.info.vehicle #speedometer li#fuel span { background: linear-gradient(180deg, #008df0 0%, #008df0 100%); }
+.fuel_div{
+    position:absolute;
+    left:0%;
+    top:18%;
+    right:0%;
+    margin:0 auto;
+}
+
+.info.vehicle #speedometer li#lights.normal span,
+.info.vehicle #speedometer li#lights.high span { background: linear-gradient(180deg, #00c3ff 0%, #008fbb 100%); }
+
+.info.vehicle #speedometer li#signals.dying span { background: linear-gradient(180deg, #18b70b 0%, #128c08 100%); animation: trew-status-blink 750ms infinite; }
+
+
+@keyframes trew-siren {
+    0% { border-color: rgba(255,0,0,0); box-shadow: 0 0 10px 10px rgba(255,0,0,0); }
+    50% { border-color: rgba(255,0,0,1); box-shadow: 0 0 10px 10px rgba(255,0,0,0.50); }
+    100% { border-color: rgba(255,0,0,0); box-shadow: 0 0 10px 10px rgba(255,0,0,0); }
+}
+
+@keyframes trew-soundwave {
+    0% { box-shadow: 0 0 0 0px rgba(255,255,255,0.75); }
+    100% { box-shadow: 0 0 0 25px rgba(255,255,255,0); }
+}
+
+@keyframes trew-status-blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes trew-pulse {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+@keyframes trew-speed {
+    0% { stroke-dashoffset: 280; }
+    50% { stroke-dashoffset: 75; }
+    100% { stroke-dashoffset: 280; }
+}
+
+@keyframes trew-bullets {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    100% { transform: translate(30px,-60px) rotate(90deg); opacity: 0;}
+}
+
+@keyframes trew-rainbow{
+    100%,
+    0%{ background: rgba(255,0,0,0.70); }
+    8%{ background: rgba(255,127,0,0.70); }
+    16%{ background: rgba(230,205,23,0.70); }
+    25%{ background: rgba(127,255,0,0.70); }
+    33%{ background: rgba(0,255,0,0.70); }
+    41%{ background: rgba(0,255,127,0.70); }
+    50%{ background: rgba(0,255,255,0.70); }
+    58%{ background: rgba(0,127,255,0.70); }
+    66%{ background: rgba(0,0,255,0.70); }
+    75%{ background: rgba(127,0,255,0.70); }
+    83%{ background: rgba(255,0,255,0.70); }
+    91%{ background: rgba(255,0,127,0.70); }
+}

@@ -1,0 +1,932 @@
+﻿/* 
+    :: ________АВТОРСТВО________
+    :: Верстка и дизайн: AGRessoR
+    :: Вебсайт: WWW.XSPACES.RU
+    :: Инфо: Создано специально для "NeptuneEvo"
+    :: Размещая данный материал где либо - вы обязуетесь указать автора т.е. - AGRessoR
+*/
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'PF DinDisplay Pro';
+
+    overflow:  hidden;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #0000009c;
+}
+.header .container{
+    width: 1220px;
+    height: 70px;
+    margin: auto;
+}
+#newspan{
+    padding: 3px 5px 3px 5px;
+    background-color: #686868;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 11px;
+}
+.glname-txt{
+    background-color: #ffc600;
+    width: 450px;
+    height: 40px;
+    margin: auto;
+    padding-top: 1px;
+    border-radius: 0px 0px 50px 50px;
+}
+.glname-txt2{
+    background-color: #008df0;
+    width: 450px;
+    height: 120px;
+    margin: auto;
+    padding-top: 1px;
+    border-radius: 0px 0px 50px 50px;
+}
+.glname-txt p{
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.main-footer{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.but-main-exit{
+    position: fixed;
+    background-color: #b3ff00;
+    width: 48px;
+    height: 38px;
+    left: 0%;
+    top:12%;
+}
+
+.but-main-exit:hover{
+    background-color: #758d09;
+}
+
+.image{
+    background-image: url(../images/btnexit.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+}
+
+
+/* ========================= SLIDER ========================= */
+
+.left{
+    background-image: url(../images/left.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    float: left; 
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-right: 10px;
+   }
+   .left:hover{
+    background-color: rgba(255, 201, 25, 0.822);
+}
+   
+   .internal{
+    width: 120px;
+    height: 70px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: default;
+   }
+
+.internal:hover{
+    background-color: #ffc600;
+}
+
+.internal:hover span{
+    background-color: #fff;
+    color: rgb(255, 154, 1);
+}
+.internal:active{
+    background-color: #ffc600;
+}
+
+   .center{
+    float: left; 
+    width: 1100px;
+    height: 70px;
+    overflow:  hidden;
+    white-space: nowrap;
+   }
+   
+   .right{
+    background-image: url(../images/right.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    float: left; 
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+   }
+   .right:hover{
+       background-color: rgba(255, 201, 25, 0.822);
+   }
+
+   /* ========================= CART ICONS ========================= */
+
+.armor{
+       display: block;
+       background-image: url(../images/armor.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 50px;
+       height: 50px;
+       margin-left: 27%;
+}
+
+.bamper{
+    display: block;
+    background-image: url(../images/bamper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.bamper-back{
+    display: block;
+    background-image: url(../images/bamper-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.brakes{
+    display: block;
+    background-image: url(../images/brakes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.car-number{
+    display: block;
+    background-image: url(../images/car-number.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.engine{
+    display: block;
+    background-image: url(../images/engine.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.glass{
+    display: block;
+    background-image: url(../images/glass.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.hood{
+    display: block;
+    background-image: url(../images/hood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.horn{
+    display: block;
+    background-image: url(../images/horn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.lattice{
+    display: block;
+    background-image: url(../images/lattice.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.lights{
+    display: block;
+    background-image: url(../images/lights.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.flame{
+    display: block;
+    background-image: url(../images/flame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.muffler{
+    display: block;
+    background-image: url(../images/muffler.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.paint{
+    display: block;
+    background-image: url(../images/paint.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.protection{
+    display: block;
+    background-image: url(../images/protection.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.roof{
+    display: block;
+    background-image: url(../images/roof.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.sideskirt{
+    display: block;
+    background-image: url(../images/sideskirt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.spoiler{
+    display: block;
+    background-image: url(../images/spoiler.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.suspension{
+    display: block;
+    background-image: url(../images/suspention.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.transmission{
+    display: block;
+    background-image: url(../images/transmission.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.trubo{
+    display: block;
+    background-image: url(../images/trubo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.wheel{
+    display: block;
+    background-image: url(../images/wheel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+.wings{
+    display: block;
+    background-image: url(../images/wings.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 27%;
+}
+
+   /* ========================= DOP ICONS ========================= */
+
+span{
+    padding: 3px 5px 3px 5px;
+    background-color: #ffc600;
+    color: rgb(156, 156, 156);
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+   /* ========================= DOP BUTTON ========================= */
+
+.go-main-menu{
+    position: absolute;
+    background-image: url(../images/left.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(217, 255, 0);
+    top: 13%;
+    width: 50px;
+    height: 50px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgb(0, 153, 255);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 153, 255,1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 153, 255,1);
+}
+.go-main-menu:hover{
+    background-color: rgba(204, 255, 0, 0.706);
+}
+
+   /* ========================= DOP STYLE ========================= */
+
+.footer{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+	bottom: 0;
+}
+
+.footer .container{
+    width: 100%;
+    text-align: right;
+    float: left;
+}
+
+.buy-button{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffc800ce;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.buy-button:hover{
+    background-color: #ffc600;
+}
+
+.buy-button p{
+    margin-right: 30px;
+}
+
+.price{
+    width: 180px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #000000a2;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: default;
+}
+.buy-button .img{
+    background-image: url(../images/wallet.png);
+    width: 30px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+
+.footer .container .text{
+    background-color: #00000050;
+    width: 350px;
+    border-radius: 3px;
+    color: #fff;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+    float: left;
+    cursor: default;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 0;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+   /* ========================= BUMBER MENU ========================= */
+   .win-select2{
+    width: 100%;
+    height: 100%;
+}
+.win-select{
+    width: 100%;
+    height: 100%;
+    background-color: #000000c2;
+}
+.container-custom{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    margin-top: 250px;
+}
+.container-custom .wrap{
+    width: 400px;
+    height: 135px;
+    margin: 0 auto;
+
+}
+.container-custom .wrap .cont{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.container-custom .wrap .cont .bumper-front{
+    background-image: url(../images/bumper-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 80px;
+}
+
+.container-custom .wrap .cont .bumper-main{
+    background-image: url(../images/bumper-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 80px;
+}
+
+.container-custom .wrap .cont .button{
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.767);
+    color: rgba(88, 88, 88, 0.74);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: default ;
+    margin-left: 25px;
+
+}
+.container-custom .wrap .cont .button:hover{
+    background-color: #ffc600;
+    color: #fff;
+}
+
+.container-custom .wrap .cont .button p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.container-custom .name p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+   /* ========================= MAIN LOGO VSC ========================= */
+.logotype{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.logotype .vsc{
+    background-image: url(../images/vsc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+   /* ========================= PAINT SELECT MENU ========================= */
+
+.wrap-paint{
+    display: block;
+    margin: auto;
+    width: 1000px;
+    height: 450px;
+    margin-top: 100px;
+}
+
+.wrap-paint .colums{
+    display: block;
+    margin: auto;
+    width: 333px;
+    height: 180px;
+    float: left;
+    text-align: center;
+}
+
+.right-name-paint{
+    background-color: #ffc600;
+    width: auto;
+    height: 50px;
+    color: #fff;
+    border-radius: 0px 0px 0px 50px;
+    position: absolute;
+    right: 0;
+    padding-left: 50px;
+}
+.right-name-paint p{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 20px;
+}
+/*logos paint*/
+
+.paint-logos{
+    background-image: url(../images/vsc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 280px;
+    margin: auto;
+}
+
+/* cars img icons paint*/
+
+.car-icon-paint{
+    background-image: url(../images/side.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 65px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.car-icon-paint-neon{
+    background-image: url(../images/side-neon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 65px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+/* Paint select icons*/
+
+.wrap-paint .colums .button{
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.767);
+    color: rgba(88, 88, 88, 0.74);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: default ;
+    margin-left: 25px;
+
+}
+.wrap-paint .colums .button:hover{
+    background-color: #ffc600;
+    color: #fff;
+}
+
+.wrap-paint .colums .button p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.wrap-paint .colums p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+.price .mon-icon{
+    background-image: url(../images/mon-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+}
+
+   /* ========================= protection_menu MENU ========================= */
+
+.wrap-protection{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    margin-top: 250px;
+    background-color: #000;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 50px 50px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 50px 50px rgba(0,0,0,1);
+    box-shadow: 0px 0px 50px 50px rgba(0,0,0,1);
+}
+
+.wrap-protection .colums{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 180px;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.car-icon-protect{
+    background-image: url(../images/protect.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 70px;
+    padding-bottom: 70px;
+    margin-left: 15px;
+}
+
+.car-icon-turbina{
+    background-image: url(../images/turbina.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 120px;
+    margin-left: 90px;
+}
+
+/* Protect select icons*/
+
+.wrap-protection .colums .button{
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.767);
+    color: rgba(88, 88, 88, 0.74);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: default ;
+    margin-left: 25px;
+
+}
+.wrap-protection .colums .button:hover{
+    background-color: #ffc600;
+    color: #fff;
+}
+
+.wrap-protection .colums .button p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.wrap-protection .colums p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+   /* ========================= WHELL'S MENU ========================= */
+
+   .wrap-whells{
+    display: block;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    margin-top: 150px;
+    background-color: #000;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 50px 50px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 50px 50px rgba(0,0,0,1);
+    box-shadow: 0px 0px 50px 50px rgba(0,0,0,1);
+}
+
+.whells-colums-three{
+    background-color: #00000050;
+    width: 600px;
+    height: 250px;   
+    float: right;
+}
+
+.whells-colums-one{
+    background-color: #00000050;
+    width: 200px;
+    height: 500px;
+}
+
+/*Сами карточки*/
+.whell-card{ 
+    background-color: rgba(249, 249, 249);
+    width: 200px;
+    height: 250px;
+    float: left;
+    color: #ffc600;
+}
+.whell-card:hover{
+    -webkit-box-shadow: 0px 0px 50px 0px rgb(249, 249, 249);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(249, 249, 249);
+    box-shadow: 0px 0px 50px 0px rgba(249, 249, 249);
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.whell-card-one{
+    background-color: #ffc600;
+    width: 200px;
+    height: 500px;
+    color: #fff;
+    border-radius: 10px 0px 0px 10px;
+}
+.whell-card-one:hover{
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(255,198,0,1);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(255,198,0,1);
+    box-shadow: 0px 0px 50px 0px rgba(255,198,0,1);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+.image-whell-colum{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    margin-top: 25px;
+}
+.image-whell-colum p{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 10px;
+    cursor: default;
+}
+
+.image-whell-colum-exclusive{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    padding-top: 150px;
+}
+.image-whell-colum-exclusive p{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 10px;
+    cursor: default;
+}
+
+/* Whell pack images*/
+.image-whell-colum-exclusive .exclusive{
+    background-image: url(../images/whells/exclusive.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+.image-whell-colum .sport{
+    background-image: url(../images/whells/sport.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.image-whell-colum .allroads{
+    background-image: url(../images/whells/allroads.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.image-whell-colum .lowrider{
+    background-image: url(../images/whells/lowrider.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.image-whell-colum .maslcar{
+    background-image: url(../images/whells/maslcar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.image-whell-colum .offroad{
+    background-image: url(../images/whells/offroad.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.image-whell-colum .tonner{
+    background-image: url(../images/whells/tonner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}

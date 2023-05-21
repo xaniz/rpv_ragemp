@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="../css/jquery.js"></script>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+		
+	<body>
+		<div class="list-box">
+		<span class="craft-loading" onclick="hide()"> 
+        
+        
+
+		</span>
+			<div class="list-box-navigation">
+			
+				<div class="list-box-nav-header">Izrada</div>
+				<span id="craft-buttons"></span>
+				
+			</div>
+
+			<div class="list-box-content">
+			
+				<div class="list-box-content-header">Izrada itema <span class="butten-Close" onclick="hide()">X</span></div>
+				U levom meniju izaberite item koji zelite da napravite. Morate imati neophodne komponente u vasoj torbi.
+			
+			</div>
+
+			<span id="craft-desc"></span>
+			
+		</div>
+		
+		
+
+		<script>
+			
+				addItem(id, name, chance, level)
+					
+						id - 1;
+						name - SMG;
+						chance - 50;
+						level - 1;
+
+
+				/*addComponent(id, name, amount, icon)
+					Добавить компонент необходимый для крафта, вызывать после создания addItem
+						id - из craftData
+						name - название предмета
+						amount - необходимое количество числом
+						icon - название иконки из папки иконок инвентаря
+			*/
+			
+			var timer = undefined;
+			function StartCrafting(id,time)
+			{
+			
+			let progress_percentage = 0;
+
+					timer =setInterval(function(){
+						
+						
+						progress_percentage += 20/(time/1000);
+						console.log(progress_percentage);
+						if(progress_percentage >= 99.9){
+						progress_percentage = 100;
+						
+						mp.trigger("CraftCompleted",id);
+						clearInterval(timer);
+						timer = undefined;
+						}
+						$(".progress-counter").html(progress_percentage.toFixed(0)+"%");
+					},200);
+			
+			}
+			function addItem(id, name)
+			{
+				$("#craft-buttons").append(`
+					<div class="list-box-nav-btn btn-purple" onclick="show('item_${id}')">${name}</div>
+				`);
+
+				$("#craft-desc").append(`
+					<div class="list-box-content" id="item_${id}" style="display: none;">
+
+						<div class="list-box-content-header">Craft «${name}»<span class="butten-Close" onclick="hide()">X</span></div>
+
+						<div class="craft-subheader">Potrebne komponente:</div>
+						
+						<div class="craft-components" id="components_${id}"></div>
+
+						
+						
+						<span class="btn-medium btn-purple craft-btn" onclick="craft(${id})">Zapocni izradu</span>
+						<div class="progress-counter">
+							0%
+						</div>
+					</div>
+				`);
+			}
+
+			function addComponent(id, name, amount, icon)
+			{
+				$(`#components_${id}`).append(`
+					<div class="craft-item">
+						<div class="craft-item-icon" style="background-image: url(Craft-img/${icon})"></div>
+						<div class="craft-item-text">${name} ${amount}x.</div>
+						
+					</div>
+				`);
+			}
+
+			function show(id)
+			{
+				$(".list-box-content").css("display", "none");
+				$("#"+id).css("display", "inline-block");
+			}
+
+			function hide()
+			{
+				if(timer != undefined)
+				{
+					clearInterval(timer)
+				}
+				mp.trigger("CloseCraftMenu");
+			}		
+
+			let doubleClick = 0;
+			function craft(id)
+			{
+				if(doubleClick > Date.now()) return ;
+				doubleClick = Date.now()+1000;
+
+				mp.trigger("CheckCraft", id);
+			}	
+		</script>
+	</body>
+</html>

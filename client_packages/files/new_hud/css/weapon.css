@@ -1,0 +1,17 @@
+.info.weapon { bottom: 85px; right: 25px; }
+.info.weapon.armed { display: block; opacity: 1; }
+.info.weapon.unarmed { display: none; opacity: 0; }
+
+.info.weapon #weapon_image { float: left; width: 200px; height: 40px; text-align: left; position: relative; }
+.info.weapon #weapon_image img { position:  absolute; top: 50%; right: 25px; transform: translateY(-50%); height: 40px; }
+
+.info.weapon #weapon_bullets { color: #FFF; float: left; width: 35px; text-shadow: 0px 1px 1px rgba(0,0,0,0.75); line-height: 1; }
+.info.weapon #weapon_bullets .clip { font-weight: 900; font-size: 22px; }
+.info.weapon #weapon_bullets .ammo { font-weight: 700; font-size: 16px; opacity: 0.7;}
+
+
+.info.weapon #bullets { margin: 0; float: left; margin: 5px 0 0 20px; overflow: visible; transform: scale(1.1); }
+.info.weapon #bullets i { color: #FFF; float: right; height: 34px; width: 34px; border-radius: 100px; }
+.info.weapon #bullets i.clone { background: none; position: absolute; float: none; top: 15px; left: inherit; left: 10px; opacity: 0; }
+.info.weapon #bullets.shooting i.clone { animation: trew-bullets 250ms 1; }
+.info.weapon #bullets i img { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-35%); }

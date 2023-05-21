@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/mdc.css">
+    <script src="../../js/jquery.js"></script>
+</head>
+<body>
+    <div id="mdc">
+        <div class="mdc_inner">
+        </div>
+        <div class="mdc_led off">
+        </div>
+        
+        <div class="mdc_device"></div>
+    </div>
+</body>
+<script type="text/javascript">
+
+let active = false;      
+let mdcInterval = null; 
+let ledTimeout= null;
+
+function date_formatted() {
+    let d = new Date();
+    let hours = 0;
+    let minutes = 0;
+    let seconds = 0;
+    
+    if(d.getUTCHours() < 10) { hours = '0' + d.getUTCHours(); } else { hours = d.getUTCHours(); }
+    if(d.getUTCMinutes() < 10) { minutes = '0' + d.getUTCMinutes(); } else { minutes = d.getUTCMinutes(); }
+    if(d.getUTCSeconds() < 10) { seconds = '0' + d.getUTCSeconds(); } else { seconds = d.getUTCSeconds(); }
+         
+    return Math.round(d.getUTCMonth() + 1) + '/' + d.getUTCDate() + '/' + d.getUTCFullYear() + ' ' + hours + ':' + minutes + ':' + seconds;
+}
+
+function led() {
+    if(ledTimeout != null) clearTimeout(ledTimeout);
+    
+    ledTimeout = setTimeout(function() {
+      if($('.mdc_led').hasClass('off')) {
+          $('.mdc_led').removeClass('off').addClass('on');
+      } else {
+          $('.mdc_led').removeClass('on').addClass('off');
+      }
+        
+      led();
+    }, 100);
+}
+
+function reportCrime(id, crime, location, street, distance) {
+    let dist = 0;
+
+    if(parseInt(distance) > 999) {
+        dist = (Math.round(parseInt(distance) / 100) / 10) + 'km';
+    } else {
+        dist = parseInt(distance) + 'm'; 
+    }
+    
+    $('.mdc_inner').append('<div data-id="' + id + '" data-responding="0" class="mdc_task"><p>' + crime + ', <b class="mdc_location">' + location + '</b>, <b class="mdc_street">' + street + '</b>, Distance <b class="mdc_distance">' + dist + '</b></p><div class="mdc_info" data-id="' + id + '"><span>&#8658; 0 units responding</span><label>' + date_formatted() + '</label></div><div class="mdc_task_menu" data-id="' + id + '"><div class="mdc_task_menu_item respond" data-id="' + id + '">Respond</div><div class="mdc_task_menu_item remove" data-id="' + id + '">Remove</div></div></div> ');
+
+    if(!active) {
+        led();
+    }
+
+    setTimeout(function() {
+        $(".mdc_info[data-id='" + id + "']").remove();
+    }, 300000);
+}
+
+function responding(id) {
+    $('.mdc_task').each(function() {
+        if($(this).attr('data-id') == id) {
+            let responding = $(this).attr('data-responding');
+            let respond = '';
+            
+            responding = parseInt(responding) + 1;
+            
+            if(responding == 1) {
+                respond = '&#8658; 1 unit responding';
+            } else {
+                respond = '&#8658; ' + responding + ' units responding';            
+            }
+            
+            $(".mdc_info[data-id='" + id + "']").html(respond);
+            $(this).attr('data-responding', responding);
+        }
+    });    
+}
+
+function removeTask(id) {
+    $(".mdc_task[data-id='" + id + "']").remove();
+}
+
+function toggleMDC(toggle) {
+    $('.mdc_task_menu').each(function() {          
+        $(this).slideUp(250);
+    });
+
+    if(!toggle) {
+        $("#mdc").stop().animate({left: '-486px'}, 500);
+        clearTimeout(ledTimeout);
+        $('.mdc_led').removeClass('on').addClass('off');
+    } else {
+        $("#mdc").stop().animate({left: '-80px'}, 500);
+        clearTimeout(ledTimeout);     
+        $('.mdc_led').removeClass('on').addClass('off');
+    }
+
+    active = toggle;
+}
+
+$('body').on('click', '.mdc_task', function (event) {
+    if(event.target.className != 'mdc_task_menu_item remove' && event.target.className != 'mdc_task_menu_item respond') {
+        let val = $(this).attr('data-id');
+        
+        $('.mdc_task_menu').each(function() {          
+            $(this).slideUp(250);
+        });
+        
+        $(".mdc_task_menu[data-id='" + val + "']").slideDown(250);        
+    }
+});
+
+$('body').on('click', '.respond', function () {
+    let id = $(this).attr('data-id');
+    
+    $('.mdc_task_menu').each(function() {          
+        $(this).slideUp(250);
+    });
+    
+    mp.trigger('respondToCrime', id);
+});
+
+$('body').on('click', '.remove', function () {
+    let id = $(this).attr('data-id');
+    
+    removeTask(id);
+
+    mp.trigger('removeCrime', id);
+});
+</script>
+</html>

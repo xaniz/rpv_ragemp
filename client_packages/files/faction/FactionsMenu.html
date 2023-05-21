@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/catalog.css">
+</head>
+<body style="background-color: transparent;">
+<div class="container-fluid">
+
+    <div class="row">
+
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+            <div class="card bg-dark text-white" style="top:15%;">
+                <div class="card-header">Organizacija
+                    <button type="button" class="btn btn-sm card-close-button" onclick="closeFactions();">X
+                    </button>
+                </div>
+                <div class="card-body">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#stats">Aplikacije</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#clothes">Clanovi</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#settings">Podesavanja & Info</a>
+                        </li>
+					
+						
+                    </ul>
+
+
+                    <div class="tab-content">
+
+
+                        <div id="stats" class="tab-pane container active ">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                
+									<div class="table-responsive factions-scroll">
+									<table class="table table-condensed table-sm">
+										<thead>
+										<tr>
+										  <th scope="col">Ime</th>
+										  <th scope="col">Level</th>
+										  <th scope="col">Telefon</th>
+										  <th scope="col" colspan="2" class="text-center">Akcija</th>
+										</tr>
+									  </thead>
+										<tbody id="requests">
+											
+										</tbody>
+									</table>
+									</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="clothes" class="tab-pane container fade ">
+
+                             <div class="row">
+                                <div class="col-md-12">
+                                
+								<div class="table-responsive factions-scroll">
+									<table class="table table-condensed table-sm">
+										<thead>
+										<tr>
+										  <th scope="col">Ime</th>
+										  <th scope="col">Rank</th>
+
+										  <th scope="col"  class="text-right">Akcija</th>
+										</tr>
+									  </thead>
+										<tbody id="members">
+
+										  
+										</tbody>
+									</table>
+								</div>
+
+                                </div>
+								
+                            </div>
+							
+
+                        </div>
+						
+						
+						<div id="settings" class="tab-pane container fade ">
+
+                             <div class="row factions-scroll">
+
+								
+								<div class="col-md-6">
+							
+										<h3>Organizacija info</h3>
+										<div class="table-responsive">
+											<table class="table table-condensed table-sm">
+												<tbody>
+													
+													<tr>
+													<td><strong>Ime organizacije </strong></td>
+														<td id="factionName" class="text-warning">None</td>
+													</tr>
+													
+													
+													<tr>
+													<td><strong>Clanovi </strong></td>
+														<td id="factionMembers" class="text-warning"> 34</td>
+													</tr>
+
+													<tr> <td><strong>Tip </strong></td>
+														<td id="factionType" class="text-warning"> Kriminalna organizacija </td>
+													</tr>
+													
+												
+
+
+													
+																					  
+												</tbody>
+											</table>
+										</div>
+									
+									
+									
+									
+									
+										<h3>Podesavanje</h3>
+									
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Org poruka</span>
+											</div>	
+											<input type="text" class="form-control" value = "Nema" id="fname">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="savefname">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										<button type="button" class="btn btn-sm btn-block ">Obrisi organizaciju</button>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+								
+								</div>	
+							
+							
+								<div class="col-md-6">
+									
+										<h3>Rank Settings</h3>
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 1</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 1" id="rank1">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save1">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 2</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 2" id="rank2">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save2">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 3</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 3" id="rank3">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save3">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 4</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 4" id="rank4">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save4">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 5</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 5" id="rank5">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save5">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 6</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 6" id="rank6">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save6">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 7</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 7" id="rank7">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save7">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 8</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 8" id="rank8">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save8">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 9</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 9" id="rank9">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save9">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+							
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 10</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 10" id="rank10">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save10">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										<div class="input-group mb-1">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Rank 11</span>
+											</div>	
+											<input type="text" class="form-control" value = "Rank 11" id="rank11">
+											
+											<div class="input-group-append">
+													<button class="btn btn-sm btn-primary d-none" id="save11">Sacuvaj</button>
+											</div>
+											
+										</div>
+										
+										
+								
+								</div>
+								
+								
+								
+								
+								
+                            </div>
+							
+
+                        </div>
+						
+						
+
+					
+				  </div>
+				  
+				  
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-2"></div>
+
+
+    </div>
+
+
+
+
+
+
+	<!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Pravljenje organizacije</h4>
+                    <button type="button" class="close btn btn-sm" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="form-group">
+					  <label for="factionname">Ime organizacije</label>
+					  <input type="text" class="form-control" id="factionname">
+					</div>
+
+					
+					<div class="form-group">
+						<label>Kategorija</label><br>
+						<input type="radio" name="factiontype" value="5"> Gang<br>
+						<input type="radio" name="factiontype" value="6"> Mafija<br>
+					</div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" id="factioncreate">Napravi organizaciju</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+	<!-- Modal -->
+		  <div class="modal fade" id="RankModal" role="dialog">
+			<div class="modal-dialog modal-sm modal-dialog-centered">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Promeni Rank</h4>
+				</div>
+				<div class="modal-body">
+				  
+				  
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="1"> <span id="setrank1">Rank 1</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="2"> <span id="setrank2">Rank 2</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="3"> <span id="setrank3">Rank 3</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="4"> <span id="setrank4">Rank 4</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="5"> <span id="setrank5">Rank 5</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="6"> <span id="setrank6">Rank 6</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="7"> <span id="setrank7">Rank 7</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="8"> <span id="setrank8">Rank 8</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="9"> <span id="setrank9">Rank 9</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="10"> <span id="setrank10">Rank 10</span></label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optradio" value="11"> <span id="setrank11">Rank 11</span></label>
+					</div>
+
+				  
+				  
+				  
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal" id="saverank">Sacuvaj</button>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
+		  
+		  
+		  
+		  
+		  
+		  <!-- Modal -->
+		<div id="newMethModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog modal-dialog-centered">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <!-- Modal Header -->
+              <div class="modal-header">
+                   <h4 class="modal-title">Kupi Meth laboratoriju</h4>
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+				
+			  <div class="modal-body">
+				<p>Molim vas da budete na mestu gde zelite da laboratorija bude!</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal" id="newmethlab">KUPI & POSTAVI</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+		
+		<!-- Modal -->
+		<div id="newCocaineModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog modal-dialog-centered">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <!-- Modal Header -->
+              <div class="modal-header">
+                   <h4 class="modal-title">Kupi Meth laboratoriju</h4>
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+			  <div class="modal-body">
+				<p>Molim vas da budete na mestu gde zelite da laboratorija bude!</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal" id="newcocainelab">KUPI & POSTAVI</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+		
+		<!-- Modal -->
+		<div id="changeLabLocation" class="modal fade" role="dialog">
+		  <div class="modal-dialog modal-dialog-centered">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <!-- Modal Header -->
+              <div class="modal-header">
+                   <h4 class="modal-title">Promeni lokaciju laboratorije</h4>
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+			  <div class="modal-body">
+				<p>Molim vas da budete na mestu gde zelite da laboratorija bude!</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal" id="changelabloc">Promeni</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Izlaz</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		  
+	
+
+</div>
+
+</body>
+
+<script src="../css/jquery.js"></script>
+<script src="../css/bootstrap.js"></script>
+<script src="factions.js"></script>
+</html>

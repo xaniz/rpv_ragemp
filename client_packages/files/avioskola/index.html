@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="fonts/font/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+	<script src="./js/library/vue.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<div v-if="style == 0" class="style0">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+			<div class="nameblock">
+				<div class="desc"></div>
+			</div>
+			<div class="nameblock">
+				<div class="desc2"></div>
+			</div>
+			<div class="center2">
+				<div class="block active">
+					<img src="img/tablet.png" class="ico3">
+				</div>
+			</div>
+			<div class="allitems2">
+				<div @click="buy(0)" class="bbg2">
+					<img src="img/veh.png" class="ico">
+					   Zapocnite letenje
+				</div>
+			</div>
+			<div class="allitems">
+				<div v-for="i in 12" class="bbg"></div>
+			</div>
+		</div>
+	</div>
+    <script src="./js/index.js"></script>
+	<script src="./js/library/jquery-3.2.1.min.js"></script>
+</body>
+</html>

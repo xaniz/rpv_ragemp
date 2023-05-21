@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <script src="../css/jquery.js"></script>
+    <title>deathscreen</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: rgba(38, 42, 50, 0);
+
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+        .container {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .container .update {
+            text-align: center;
+
+        }
+
+        .container .update p {       
+            font-size: 2.0vh;
+            font-weight: 400;
+            color: #a6ff00;
+            text-transform: uppercase;
+        }
+
+        .container .update hr {
+            background: #a6ff00;
+            border: none;
+            height: 1vh;
+            border-radius: 0.5vh;
+            width:0%;
+            text-align: left;
+        }
+
+        .container .update {
+            position: absolute;
+            width:100vw;
+            bottom:20vh;
+        }
+
+
+        .container .update .color {
+            width: 0;
+            overflow: hidden;
+            color: #a6ff00;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="update">
+            <p>Umirete</p>
+            <hr/>
+        </div>
+    </div>
+</body>
+<script>
+    function updateBrowser(data) {
+        let counter = 0;
+        let c = 0;
+        let i = setInterval(function () {
+            $(".container .update hr").css("width", c + "%");
+            $("body").css('background-color' , 'rgba(38, 42, 50, ' + c/100 + ')');
+            counter++;
+            c++;
+
+            if (counter > 100) {
+                clearInterval(i);
+                mp.trigger("InjuredSystem:Respawn");
+            }
+        }, parseInt(data) / 100);
+    }
+</script>
+</html>

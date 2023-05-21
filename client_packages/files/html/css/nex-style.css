@@ -1,0 +1,226 @@
+﻿@font-face {
+    font-family: Geometria; 
+    src: url(../fonts/Geometria.ttf); 
+   }
+   @font-face {
+    font-family: AAFuture; 
+    src: url(../fonts/aafuture.ttf); 
+   }
+   @font-face {
+    font-family: Acrobat; 
+    src: url(../fonts/Acrobat-Regular.otf); 
+   }
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.left-box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 881px;
+	padding-left: 55px;
+	padding-right: 8px;
+	min-height: 170px;
+	margin-bottom: 30px;
+	background: url(../img/bg-bg.png) center no-repeat;
+	background-size: 100% 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.left-box__img {
+	position: relative !important;
+	margin-left: 40px;
+}
+.left-box__text-title {
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 700;
+	/* Text style for "Парковачны" */
+	letter-spacing: 0.67px;
+	text-align: right;
+	margin-bottom: 30px;
+}
+.left-box__text-subtitle {
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 18px;
+	word-break: break-all !important;
+	font-weight: 400;
+	/* Text style for "Lorem ipsu" */
+	letter-spacing: 0.5px;
+	
+}
+.gta-acount__content {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.left {
+	width: 50%;
+}
+.right {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	
+}
+.login-body{
+	background-image:url(../img/bg.png);
+	background-repeat:no-repeat;
+	background-cover:cover;
+}
+.right-logo {
+	/*position: relative !important;
+	height: 50px;
+	margin-bottom: 50px;*/
+}
+.right-box {
+	width: 500px;
+	height:800px;
+	margin-bottom: 59px;
+	position:relative;
+	z-index:1;
+	padding:20px 20px;
+	margin-top:8%;
+	background:#171717;
+}
+
+.right-box__top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-left: 7px;
+	padding-right: 7px;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 36px;
+	font-weight: 300;
+	text-transform: uppercase;
+	/* Text style for "Авторизаци" */
+	letter-spacing: 0.5px;
+	margin-bottom: 13px;
+}
+.right-box__top a{
+	font-family:Geometria;
+}
+.right-box form{
+	margin-top:5em;
+}
+.right-box form p, .right-box form a{
+	font-family:AAFuture;
+	line-height: 22px;
+	font-weight:400;
+	font-size:18px;
+	width:90%;
+	margin:0 auto;
+}
+.right-box__bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+}
+.right-box__bottom-hr {
+	
+	width: 50%;
+	border: none;
+	margin: 0;
+	padding: 0;
+	height: 2px;
+	background-color: #ffffff;
+}
+.right-box__bottom-hr__red {
+	background-color: #f04545;
+}
+.right-box__top-a {
+	color: #ffffff;
+	transition: 0.5s;
+	font-size:0.7em;
+	margin:0 1.5em;
+	margin-top:0.5em;
+}
+.right-box__top-a:hover {
+	color: #f04545;
+}
+
+
+.gal {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.gal-text {
+	margin-left: 18px;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 400;
+	/* Text style for "Соглашаюсь" */
+	letter-spacing: 0.5px;
+}
+[id^=c]{
+    display: none;
+}
+[id^=c] + label{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #f04545;
+    text-align: center;    
+    cursor: pointer;
+}
+[id^=c] + label:before{
+    content: '';
+    display: inline-block;
+    color: #f04545;
+    background-color: #f04545;
+    background-size: 24px 24px;
+    width: 24px;
+    margin-top: -3px;
+    margin-left: -3px;
+    height: 24px;
+    /*font-size: 24px;
+    line-height: 24px;*/
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+[id^=c]:checked + label:before{    
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

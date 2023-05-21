@@ -1,0 +1,75 @@
+
+  
+  .progress {
+	  
+	text-align: center;
+	font-family: Montserrat, Helvetica Neueu, Helvetica, Arial, sans-serif;
+
+
+	background-color: rgb(3,2,2,0);
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	--progress-value: .3243;
+	--color: hsl(calc(240 * (1 - var(--progress-value))), 100%, calc(30% + 20% * var(--progress-value)));
+  
+  }
+  @media only screen and (min-width: 1079px) 
+  {
+	#image {width: 8%; height:15%; top: 7%;right:46%;}  
+  }
+  
+  @media only screen and (min-width: 1400px) and (max-width: 1690px) 
+  {
+	#image {width: 8%; height:14%; top: 6%;right:46%;}  
+  }
+  
+  @media only screen and (min-width: 1650px) and (max-width: 1690px) 
+  {
+	#image {width: 8%; height:14%; top: 6%;right:46%;}  
+  }
+  
+  @media only screen and (min-width: 1000px) and (max-width: 1300px) 
+  {
+	#image {width: 8%; height:12%; top: 4%;right:46%;}  
+  }
+
+  #image{
+	  position:absolute;
+	 
+  }
+  .circle-progress {
+	width: 15%;
+	height: 15%;
+  }
+  
+  .circle-progress-value {
+	stroke-width: 3px;
+	stroke: var(--color);
+	
+	stroke-dasharray: 5.98 0.2;
+	transition: stroke .4s;
+  }
+  
+  .circle-progress-circle {
+	stroke-width: 4px;
+	
+	stroke: #17181c;
+  }
+  
+  .circle-progress-text {
+	font-weight: bold;
+	fill: var(--color);
+
+	transform: translateX(0.2em);
+	transform: translateY(-2.2em);
+	transition: fill .4s;
+  }
+  
+  
+  
+  a {
+	color: #75798a;
+	
+	text-decoration-offset: 4px;
+  }

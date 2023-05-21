@@ -1,0 +1,17 @@
+{
+	"maxplayers" : 5,
+	"name" : "🏠 RP-V", 
+	"gamemode" : "roleplay+",
+	"language" : "en",
+	"stream-distance" : 500.0,
+	"announce" : false,
+	"enable-nodejs" : false,
+	"csharp" : "enable",
+	"port": 22005,
+	"voice-chat": true,
+	"voice-chat-sample-rate": 48000,
+	"server-side-weapons-only-mode":true,
+	"api-threading-debugging": false
+
+	
+}

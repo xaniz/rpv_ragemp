@@ -1,0 +1,1 @@
+require('./betternotifs/index.js');

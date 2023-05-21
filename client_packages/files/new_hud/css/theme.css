@@ -1,0 +1,62 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    user-select: none;
+}
+
+.noty_theme__fivestar.noty_bar {
+  margin: 4px 0;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 10px 0; }
+  .noty_theme__fivestar.noty_bar .noty_progressbar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.8; }
+  .noty_theme__fivestar.noty_bar .noty_body {
+    padding: 1.25em;
+    font-size: 12pt; }
+  .noty_theme__fivestar.noty_bar .noty_buttons {
+    padding: 0 10px .5em 10px; }
+
+.noty_theme__fivestar.noty_type__alert .text i,
+.noty_theme__fivestar.noty_type__notification .text i {
+  color: #fff; }
+
+.noty_theme__fivestar.noty_type__warning .text i {
+  color: #ff6a00; }
+
+.noty_theme__fivestar.noty_type__error .text i {
+  color: #e41005; }
+
+.noty_theme__fivestar.noty_type__info .text i,
+.noty_theme__fivestar.noty_type__information .text i {
+  color: #00aaff; }
+
+.noty_theme__fivestar.noty_type__success .text i {
+  color: #80ff00; }
+
+.text{
+  line-height: 2em;
+  font-size: 13pt;
+  color: #fff;
+}
+.text i{
+  float: left;
+  font-size: 34pt;
+  margin-right: 30px;
+}
+
+#noty_layout__bottomCenter, #noty_layout__topCenter{
+  width: 600px;
+}
+#noty_layout__topLeft, #noty_layout__topRight,
+#noty_layout__bottomLeft, #noty_layout__bottomRight,
+#noty_layout__centerLeft, #noty_layout__centerRight,
+#noty_layout__center{
+  width: 450px;
+}

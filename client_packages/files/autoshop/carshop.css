@@ -1,0 +1,353 @@
+* {
+    user-select: none;
+  }
+
+#vehicle-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vehicle-list-container {
+    position: absolute;
+    display: flex;
+    top: 85%;
+    left: 27%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicle-box {
+    display: flex;
+    background-color: #414141cd;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 140px;
+    height: 60px;
+    margin: 0 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e1ff00;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.vehicle-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.vehicle-box.selected {
+    color: #000;
+    background-color: #b7ff00b6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background: #414141;
+    border: 2px solid rgb(229, 255, 0);
+    color: rgb(221, 255, 0);
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow-button:hover {
+    background-color: gray;
+    color: white;
+}
+
+#prev-button {
+    margin-right: 20px;
+}
+
+#form-container {
+    position: absolute;
+    top: 65%;
+    left: 1.9%;
+}
+
+#purchase-form {
+
+    background: #00ff04;
+    border: 1px solid #00ff04;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 135px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+#test-form {
+    position: absolute;
+
+    left: 140px;
+    top: 0px;
+    background: #00a2ff;
+    border: 1px solid #00a2ff;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 135px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+
+#test-form:hover {
+  background-color: initial;
+  background-position: 0 0;
+  color: #00a2ff;
+}
+
+#purchase-form:hover {
+    background-color: initial;
+    background-position: 0 0;
+    color: #4bed00;
+  }
+
+#quit-form{
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    position: absolute;
+    left: 280px;
+    top: 0px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-width: 135px;
+    min-height: 75px;
+    outline: 0;
+    padding: 12px 14px;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+
+#quit-form:hover {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff0000;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+#color-container {
+    position: absolute;
+    top: 57%;
+    left: 3.7%;
+    display: flex;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.grey {
+    background-color: #808080;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.green {
+    background-color: #008000;
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+.pink {
+    background-color: #ff69b4;
+}
+
+.purple {
+    background-color: #800080;
+}
+
+.orange {
+    background-color: #ffa500;
+}
+
+.color-box.selected {
+    border: 2px solid #fff;
+}
+
+#selected-car-details {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+#selected-car-name,
+#selected-car-price {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#selected-car-topspeed {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@media only screen and  (min-height:720px) and (max-width:1280px) {
+    #selected-car-name,
+    #selected-car-price {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    #selected-car-topspeed {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+    }
+
+    .color-box {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    #quit-form{ 
+        left: 220px;
+        min-width: 100px;
+        min-height: 60px;
+    }   
+    #purchase-form{ 
+        min-width: 100px;
+        min-height: 60px;
+    } 
+    #test-form{ 
+        left: 110px;
+        min-width: 100px;
+        min-height: 60px;
+    }   
+    
+    .vehicle-box {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+  }
+
+  @media only screen and  (min-height:768px) and (max-width:1366px) {
+    #selected-car-name,
+    #selected-car-price {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        text-transform: uppercase;
+        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    }
+
+    .color-box {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    #quit-form{ 
+        left: 220px;
+        min-width: 100px;
+        min-height: 60px;
+    }   
+    #purchase-form{ 
+        min-width: 100px;
+        min-height: 60px;
+    } 
+    #test-form{ 
+        left: 110px;
+        min-width: 100px;
+        min-height: 60px;
+    }   
+    
+    .vehicle-box {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+  }

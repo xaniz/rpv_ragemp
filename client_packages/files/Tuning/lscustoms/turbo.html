@@ -1,0 +1,61 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="ls_castoms.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="../fonts/PFDinDisplayPro/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="win-select">
+
+       <div class="glname-txt"><p>Ugradnja turba</p></div>
+  <div onclick="mp.trigger('Display_Tunning_home')" id="home" class="go-main-menu"></div>
+
+       <div class="wrap-protection">
+           <div  onclick="mp.trigger('tunning_onindexchange',true,'LSCUSTOM_turbo',-1)" class="colums"><div class="car-icon-turbina"></div><div id="remove" class="button"><p>Uklanjanje Turbo</p></div></div>
+           <div  onclick="mp.trigger('tunning_onindexchange',true,'LSCUSTOM_turbo',0)" class="colums"><div class="car-icon-turbina"></div><div id="install" class="button"><p>Instaliranje Turbo</p></div></div>
+
+       </div>
+    </div>
+      
+
+    <script src="../../css/jquery.js"></script>
+<script >
+
+function loaddata(data)
+{
+    let tempdata = JSON.parse(data);
+    tempdata.forEach(item => {
+      if(item.price == 0 && item.modValue == 0)
+      {
+        $("#remove p").text("Already Installed");
+      }else
+      {
+        $("#install p").text($("#install").text()+""+item.price);
+      }
+    });
+    
+}
+
+
+$('#right-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=160px"
+  }, "slow");
+});
+
+ $('#left-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=160px"
+  }, "slow");
+});</script>
+    
+    <script src="tuning.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# CA2100: Review SQL queries for security vulnerabilities
+dotnet_diagnostic.CA2100.severity = silent
+
+# CS0183: 'is' expression's given expression is always of the provided type
+dotnet_diagnostic.CS0183.severity = none

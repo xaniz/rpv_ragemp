@@ -1,0 +1,1213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./_bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./_bootstrap/css/clavier.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  
+  <style>
+    .inbox_people {
+    background: #f8f8f8 none repeat scroll 0 0;
+    float: left;
+    overflow: hidden;
+    width: 40%; border-right:1px solid #c4c4c4;
+    }
+    .inbox_msg {
+    border: 1px solid #c4c4c4;
+    clear: both;
+    overflow: hidden;
+    }
+    .top_spac{ margin: 20px 0 0;}
+    .recent_heading {float: left; width:40%;}
+    .headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
+    .recent_heading h4 {
+    color: #05728f;
+	
+    font-size: 21px;
+    margin: auto;
+    }
+    .chat_ib h5{ font-size:15px; color:#464646; margin:0 0 8px 0;}
+    .chat_ib h5 span{ font-size:13px; float:right;}
+    .chat_ib p{ font-size:14px; color:#989898; margin:auto}
+    .chat_img {
+    float: left;
+    width: 11%;
+    }
+    .chat_ib {
+    float: left;
+    padding: 0 0 0 15px;
+    width: 88%;
+    }
+    .chat_people{ overflow:hidden; clear:both;}
+    .chat_list {
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 18px 16px 10px;
+    cursor: pointer;
+    }
+    .incoming_msg_img {
+    display: inline-block;
+    width: 6%;
+    }
+    .received_msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+    }
+    .received_withd_msg p {
+    font-family: Helvetica;
+    background: #E4E4E9 none repeat scroll 0 0;
+    border-radius: 15px;
+    color: #323233;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    }
+    .time_date {
+    color: #747474;
+    display: block;
+    font-size: 45px;
+    margin: 20px 0 0;
+    }
+    .received_withd_msg { width: 90%;}
+    .mesgs {
+    float: left;
+    padding: 30px 15px 0 25px;
+    width: 60%;
+    }
+    .sent_msg p {
+    font-family: Helvetica;
+    background: #1F89FE none repeat scroll 0 0;
+    border-radius: 15px;
+    font-size: 14px;
+    margin: 0; 
+    color: #EEF6FF;
+    padding: 5px 10px 5px 12px;
+    width:100%;
+    }
+    .outgoing_msg{ overflow:hidden; margin:10px 0 0px;}
+    .sent_msg {
+    float: right;
+    width: 90%;
+    padding: 10px;
+    }
+    .input_msg_write input {
+    /*background: rgba(0, 0, 0, 0) none repeat scroll 0 0;*/
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    padding: 10px;
+    width: 95%;
+    border: none;
+    font-family: Helvetica;
+    text-decoration: none;
+    outline: none;
+    }
+    .type_msg {position: absolute; bottom:0;width: 100%;}
+    .msg_send_btn {
+    color: #007AFF;
+    cursor: pointer;
+    font-size: 30px;
+    height: 33px;
+    position: absolute;
+    right: 5%;
+    top: 11px;
+    width: 33px;
+    }
+    .messaging { padding: 0 0 50px 0;}
+    .msg_history{
+    margin-bottom: 50px;
+    height: 525px;
+    overflow-y: scroll;
+    border-top: 1px solid #E3E3E3;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+    width: 5px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+    }
+    .selection{ /*#313131*/
+    height: 30px;
+    background-color: #EEF2FF;
+    border: #007AFF 1px solid;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    }
+    .selection .action{
+    background-color: #007AFF;
+    color: white;
+    }
+    a{
+    text-decoration: none;
+    }
+    .navbar-phone{
+    background-color: #fafafa;
+    }
+    .title{
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    }
+    .selection a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    }
+    .selection a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    }
+    .selection a {
+    height: 28px;
+    display: inline-block;
+    color: #007AFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    #appelContainer{
+    height: 600px;
+    }
+    #footer {
+    background-color: #EEF2FF;
+    border-top: 1px solid #c4c4c4;
+    position: absolute;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    }
+    .footer-icon {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    text-align: center;
+    }
+    .footer-icon img{
+    width: 32px;
+    }
+    .footer-icon p{
+    font-size: 10px;
+    color: #aaaaaa;
+    }
+    .footer-icon .active{
+    color: #0066ff;
+    }
+    .footer-icon:hover {
+    text-decoration: none;
+    }
+    .history{
+    margin-top: 20px;
+    height: 40px;
+    }
+    #appel-history, #contactBlock, #conversationBlock {
+    height: 505px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    }
+    .history:first-child {
+    margin-top: 10px;
+    }
+    .history:after {
+    margin-left: 10%;
+    display: block;
+    width: 80%;
+    height: 1px;
+    content: "";
+    background-color: #e6e6e6;
+    }
+    .selection {
+    margin: 0 auto;
+    }
+    .history p{
+    display: inline-block;
+    vertical-align: top;
+    }
+    .icon-history{
+    vertical-align: top;
+    text-align: center;
+    width: 15%;  
+    }
+    .icon-history img{
+    width: 65%;
+    }
+    .num-history{
+    width: 55%;
+    font-size: 18px;
+    }
+    .date-history{
+    width: 20%;
+    color: #a1a1a1;
+    text-align: right;
+    }
+    .miss{
+    color: #ad0000;
+    }
+  </style>
+  <body>
+    <div class="phone">
+      <div class="phone-base">
+        <div class="volume-up"></div>
+        <div class="volume-down"></div>
+        <div class="power"></div>
+        <div class="phone-top">
+          <div class="sensor"></div>
+          <div class="top_speaker"></div>
+          <div class="screen">
+            <div class="screen_active fading">
+			
+              
+                
+                
+             
+			  <div </div>
+              <div class="top_icons" onclick="TogglePhoneCustom()">
+                <ul>
+                  <li class="left call">
+                    <i class="fa fa-phone" aria-hidden="true"></i>  
+                  </li>
+                  <li class="left msg">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>  
+                  </li>
+                  <li class="left callPhone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>  
+                  </li>
+                  <li class="right" style="margin: 2px 4px 2px 2px;">
+                    <div class="battery" value=""></div>
+                  </li>
+                  <li class="right">
+                    <div class="battery_percent"></div>
+                  </li>
+                 
+				  <li class="left">
+                    <div id="number">31230</div>
+              </div>
+              <div id="page_main" style="display:none;">
+                <div class="clock fading">
+                <div id="time">15:58</div> 
+                 
+                  
+                </div>
+                <div class="notifications fading">
+                  <ul id="msg">
+                  </ul>
+                </div>
+                <div class="apps fading">
+                  <ul>
+                    <!-- <li id="app_test" style="background-image: url('images/clock.png')" onclick="startApp('clock')"></li>
+                    <li id="app_test" style="background-image: url('images/calculator.png')" onclick="startApp('sms_view')"></li>
+                    <li id="app_test" style="background-image: url('images/stats.png')" onclick="startApp('contacts')"></li>
+                    <li id="app_test" style="background-image: url('images/notess.png')" onclick="startApp('notes')"></li>-->
+                  </ul>
+                </div>
+                <div class="staticApps fading">
+                  <ul>
+                    <li id="app_test" style="background-image: url('images/phone.png')" onclick="startApp('phone')"></li>
+                    <li id="app_test" style="background-image: url('images/messages.png')" onclick="startApp('sms_view')"></li>
+                    <li id="app_test" style="background-image: url('images/contacts.png')" onclick="startApp('contacts')"></li>
+                    <li id="app_test" style="background-image: url('images/notes.png')" onclick="startApp('notes')"></li>
+                  </ul>
+                </div>
+                <div class="active_app">
+                </div>
+              </div>
+              <div class="clock-container" hidden>
+                <div class="clock">
+                  <div class="hour-hand"></div>
+                  <div class="minute-hand"></div>
+                  <div class="second-hand"></div>
+                </div>
+              </div>
+              <div class="phone-tab-contents">
+                <div class="tabs current" id="numberField" style="display:none;">
+                  <div style="padding-left:10px; padding-right:10px;">
+                    <div class="contact-area">
+                      <ul>
+                      </ul>
+                    </div>
+                    <div class="number-area">
+                      <span class="numbers"><span class="pre_number"></span> <span class="tipped" id="new_number"></span>
+                      <a class="delete-btn"><i class="fa fa-close"></i></a>
+                    </div>
+                    <div class="num-pad row">
+                      <div class="col" onclick="addNumber(1);">
+                        <div class="num" data-key="1">
+                          <div class="txt oneline" id="pushed1">
+                            1
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" onclick="addNumber(2);">
+                        <div class="num" data-key="2">
+                          <div class="txt">
+                            2
+                            <div style="margin-top:-10px;">
+                              <span class="small" style="margin-top:30px">
+                                <p>ABC</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" onclick="addNumber(3);">
+                        <div class="num pushed1" data-key="3">
+                          <div class="txt">
+                            3
+                            <div style="margin-top:-10px;">
+                              <span class="small">
+                                <p>DEF</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="num-pad row">
+                      <div class="col" onclick="addNumber(4);">
+                        <div class="num" data-key="4">
+                          <div class="txt">
+                            4
+                            <div style="margin-top:-10px;">
+                              <span class="small">
+                              <span class="small">
+                                <p>GHI</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" onclick="addNumber(5);">
+                        <div class="num" data-key="5">
+                          <div class="txt">
+                            5
+                            <div style="margin-top:-10px;">
+                              <span class="small">
+                                <p>JKL</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" onclick="addNumber(6);">
+                        <div class="num" data-key="6">
+                          <div class="txt">
+                            6
+                            <div style="margin-top:-10px;">
+                              <span class="small">
+                                <p>MNO</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="num-pad row">
+                      <div class="col"  onclick="addNumber(7);">
+                        <div class="num" data-key="7">
+                          <div class="txt">
+                            7
+                            <div style="margin-top:-10px;">
+                              <span class="small">
+                                <p>PQRS</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" onclick="addNumber(8);">
+                        <div class="num" data-key="8">
+                          <div class="txt">
+                            8
+                            <div style="margin-top:-10px;">
+                              <span class="small">
+                                <p>TUV</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" onclick="addNumber(9);">
+                        <div class="num" data-key="9">
+                          <div class="txt">
+                            9
+                            <div style="margin-top:-10px;">
+                              <span class="small">
+                                <p>WXYZ</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="num-pad row">
+                      <div class="col">
+                        <div class="num">
+                          <div class="txt oneline">
+                            *
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" onclick="addNumber(0);">
+                        <div class="num" data-key="0">
+                          <div class="txt">
+                            0
+                            <div style="margin-top:-10px;">
+                              <span class="small">
+                                <p>+</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="num">
+                          <div class="txt oneline">
+                            #
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <center><a onclick="callNumber();" style="margin-top:10px;"><img style="width:55px;" src="./images/accept.png" alt=""></a></center>
+                  </div>
+                </div>
+                <div class="tabs dark-bg" id="incomingScreen"  style="display:none;">
+                  <div class="calling-info">
+                    <label></label>
+                    <span class="call-duration">Dolazeci poziv ..</span>
+                  </div>
+                  <div class="answer-btn"><i class="fa fa-phone"></i></div>
+                  <div class="deny-btn"><i class="fa fa-phone"></i></div>
+                </div>
+                <div class="tabs dark-bg" id="callScreen"  style="display:none;">
+                  <div class="calling-info">
+                    <label></label>
+                    <span class="call-duration">0:00:00</span>
+                  </div>
+                  <div class="calling-options">
+                  </div>
+                  <div class="hangup-btn"><i class="fa fa-phone"></i></div>
+                </div>
+                <div class="tabs dark-bg" id="incomingScreen"  style="display:none;">
+                  <div class="calling-info">
+                    <label></label>
+                    <span class="call-duration">Dolazeci poziv ...</span>
+                  </div>
+                  <div class="answer-btn"><i class="fa fa-phone"></i></div>
+                  <div class="deny-btn"><i class="fa fa-phone"></i></div>
+                </div>
+                <div class="tabs" id="Show_Add_Contact"  style="display:none;">
+                  <div class="control-bar">
+                    <div class="control" onclick="startApp('contacts')">Otkazi</div>
+                    <div class="tab-title">Kontakt</div>
+                    <button type="button" class="control" onclick="input_contact_add()">Zavrsi</button>
+                  </div>
+                  
+                  <div class="basic-info">
+                    <div class="icon">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="title-info">slika</div>
+                    </div>
+                    <div class="rows">
+                        <div class="roww"><input type="text" placeholder="Name" id="input_contact_name" style="-webkit-appearance: none;-moz-appearance: none;appearance: none;" placeholder="Ime" aria-label="Username" aria-describedby="basic-addon1"></div>
+                        <div class="roww"><input type="text" placeholder="Number" id="input_contact_number" style="-webkit-appearance: none;-moz-appearance: none;appearance: none;"  placeholder="Broj" aria-label="Username" aria-describedby="basic-addon1"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs" id="View_SMS"  style="background-color: #fff; height:535px; display:none;border-radius: 30px;">
+                  <div>
+                    <div class="control-bar">
+                      <div class="control inactive" style="cursor: default;"></div>
+                      <span class="tab-title">Poruke</span>
+                      <a class="control" href="#" onclick="ShowContacts()" style="text-decoration: none;">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 495 495" style="width:15px;enable-background:new 0 0 495 495;" xml:space="preserve">
+                          <polygon style="fill:#2488FF;" points="495,227.5 267.5,227.5 267.5,0 227.5,0 227.5,227.5 0,227.5 0,267.5 227.5,267.5 227.5,495 
+                            267.5,495 267.5,267.5 495,267.5 "></polygon>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div id="chat_view_contacts" style="height:407px">
+                    <div id="templateConv" class="chat_list" style="display:show;">
+                      <div class="chat_people">
+                        <div class="chat_ib">
+                          <h5 class="name">Mike Bishop <span class="chat_date"></span></h5>
+                          <p class="lastMessage">Nije moguce!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="templateConv" class="chat_list" style="display:show;" onclick="">
+                      <div class="chat_people">
+                        <div class="chat_ib">
+                          <h5 class="name">Mike Bishop <span class="chat_date"></span></h5>
+                          <p class="lastMessage">Nije moguce!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs" id="Show_SMS"  style="background-color: #fff; height:535px; display:none; border-radius: 30px;">
+                  <div>
+                    <div class="control-bar">
+                      <div class="tab-title" id="name">Poruke - <span id="message_input_name">Mike Bishop</span> (Broj: #<span id="message_input_number"></span>)</div>
+                    </div>
+                  </div>
+                  <div class="msg_history" id="conversationBlock" style="height:340px">
+                    <br>
+                    <div style="display:show" id="message_list">
+                    </div>
+                  </div>
+                  <div style="margin-top:-45px;">
+                    <div class="type_msg" style="margin-top:-45px;"> <font color="#000"></font> </div>
+                    <div class="input_msg_write">
+                      <input id="input-message" type="text" class="write_msg" v-model="messageTexte" placeholder="SMS" />
+                      <a href="#" onclick="Send_SMS();"><img src="arrow_up.png" width="45px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs" id="contactList"  style="display:none;">
+                  <div id="templateBlock" class="card" style="display: show;">
+                    <div class="control-bar">
+                      <div class="control inactive" style="cursor: default;"></div>
+                      <span class="tab-title">Kontakti</span>
+                      <a class="control" href="#" onclick="Show_Add_Contact();" style="text-decoration: none;">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 495 495" style="width:15px;enable-background:new 0 0 495 495;" xml:space="preserve">
+                          <polygon style="fill:#2488FF;" points="495,227.5 267.5,227.5 267.5,0 227.5,0 227.5,227.5 0,227.5 0,267.5 227.5,267.5 227.5,495 
+                            267.5,495 267.5,267.5 495,267.5 "></polygon>
+                        </svg>
+                      </a>
+                    </div>
+                    </a>
+                    <ul class="list-group list-group-flush" style="overflow-y: auto; height:365px; margin-top:0; " id="contact_list">
+                      <li id="contact_list" style ="display: show;" class="list-group-item cursor pseudo"><a href="#" style=" text-decoration: none;"><font color="#000">Jimmy</font></a></li>
+                      <li id="contact_list" style ="display: none;" class="list-group-item cursor pseudo">
+                        <a href="#" style=" text-decoration: none;"><font color="#53a001"><i class="fas fa-phone"></i> Ukljuci</font> <span style="opacity:0;">---</span></a>
+                        <a href="#" style=" text-decoration: none;"><font color="#0b8abc"><i class="fas fa-comment"></i> Posalji SMS</font> <span style="opacity:0;">---</span> </a>
+                        <a href="#" style=" text-decoration: none;"><font color="#cc6363"><i class="fas fa-trash-alt"></i> Obrisi kontakt</font> <span style="opacity:0;">---</span> </a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="homebtn">
+            <div class="btn-home" style="cursor: pointer;" onclick="mainmenu()"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+      let number_sms = 0;
+      let sms_name = "";
+      function loadContacts(arrContacts) {
+      	var n_contacts = JSON.parse(arrContacts);
+      	
+      	document.getElementById("contact_list").innerHTML = "";
+      	
+      	if(n_contacts.length > 0)
+      	{
+      		for(var i = 0; i < n_contacts.length; i++)
+      		{
+      			$('#contact_list').append('<li id="contact_'+n_contacts[i].index+'" style ="display: show;" class="list-group-item cursor pseudo"><a href="#" onclick="Display_Action(\''+n_contacts[i].index+'\')" style=" text-decoration: none;"><font color="#000">'+n_contacts[i].name+'</font></a><br><br><a href="#" onclick="CALL_Number(\''+n_contacts[i].number+'\')" style=" text-decoration: none;"><font color="#53a001"><i class="fas fa-phone"></i> Pozovi</font> <span style="opacity:0;">---</span></a><a href="#" style=" text-decoration: none;" onclick="SMS_Number(\''+n_contacts[i].number+'\', \''+n_contacts[i].name+'\')"><font color="#0b8abc"><i class="fas fa-comment"></i> Posalji SMS</font> <span style="opacity:0;">---</span> </a><a href="#" style=" text-decoration: none;" onclick="DELETE_Number(\''+n_contacts[i].number+'\')"><font color="#cc6363"><i class="fas fa-trash-alt"></i> Obrisi</font> <span style="opacity:0;">---</span> </a></li>');
+      		}
+      	}
+      }
+      
+      function loadSMSList(arrContacts) {
+      	var n_contacts = JSON.parse(arrContacts);
+      	
+      	document.getElementById("chat_view_contacts").innerHTML = "";
+      	
+      	if(n_contacts.length > 0)
+      	{
+      		for(var i = 0; i < n_contacts.length; i++)
+      		{
+      			$('#chat_view_contacts').append('<div id="templateConv" class="chat_list" style="display:show;"  onclick="SMS_Number(\''+n_contacts[i].number+'\', \''+n_contacts[i].name+'\')"><div class="chat_people"><div class="chat_ib"><h5 class="name">'+n_contacts[i].name+' <span class="chat_date"></span></h5><p class="lastMessage">'+n_contacts[i].text+'</p></div></div></div> ');
+      		}
+      	}
+      
+      $("#View_SMS").show();
+      }
+      
+      
+      function Load_SMS(arrsms) {
+      var sms = JSON.parse(arrsms);
+      document.getElementById("message_list").innerHTML = "";
+      	if(sms.length > 0)
+      	{
+      		for(var i = 0; i < sms.length; i++)
+      		{
+      			$('#message_list').append('<div class="received_withd_msg"><p class="contenu" id="message_input">'+sms[i].text+'</p><b><span class="time_date" id="message_input_by">'+sms[i].by+'</span></b></div>');
+      }
+      	}
+      
+      CloseAllAppEx();
+      
+      document.getElementById("message_input_name").innerHTML = number_sms;
+      document.getElementById("message_input_number").innerHTML = sms_name;
+      
+      $("#Show_SMS").show();
+      
+      
+      
+      alert(" "+show+" -- ");
+      }
+      
+      function SMS_Number(number, name) {
+      number_sms = number;
+      sms_name = name;
+      mp.trigger("request_sms", number);
+      }
+      
+      function Send_SMS() {
+      	
+      	if(number_sms == 0) return;
+      
+      	var mess = document.getElementById("input-message").value;
+      	mp.trigger("Send_SMS", number_sms, mess);
+      }
+      
+      function CALL_Number(number) {
+      	CloseAllAppEx();
+      	startCall(number);
+      }
+      
+      
+      function DELETE_Number(number) {
+      	mp.trigger("Remove_Contact", number);
+      }
+      
+      function Display_Action(index) {
+      	
+      }
+      
+      function input_contact_add() {
+      
+      	var in_number = document.getElementById("input_contact_number").value;
+      	var in_name = document.getElementById("input_contact_name").value;
+      	
+      	mp.trigger("addContact", in_number, in_name);
+      }
+      
+      function removeNumber() {
+      	let numbers =  $('.number-area .numbers .tipped').text();
+      	if(numbers.length == 0) return false;
+      
+      	searchInContacts(numbers.substr(0, numbers.length - 1));
+      
+      	$('.number-area .numbers .tipped').removeClass('fail').html('' + numbers.substr(0, numbers.length - 1));
+      	mp.trigger('removeSound');
+      }
+      
+      function addNumber(num) {
+      	let current = $('.number-area .numbers .tipped').text();
+      	if(current.length > 9) return false;
+      
+      	searchInContacts(current + num);
+      
+      	$('.number-area .numbers .tipped').removeClass('fail').html(current + num);
+      	mp.trigger('typeWords');
+      }
+      
+      
+      function incoming(number) {
+      	$('.tabs').each(function() { $(this).removeClass('current'); });
+      	$('#incomingScreen').addClass('current');
+      	
+      	if(act_call.name == null) {
+      		$('.calling-info label').text(number);
+      	} else $('.calling-info label').text(name);
+      
+      	$('.calling-info .call-duration').text('Dolazeci poziv...');
+      	
+      	CloseAllAppEx();
+      	 $("#incomingScreen").show();
+      }
+      
+      function setCallScreen(number, duration, set = false) {
+      	if(callingInterval != null) clearInterval(callingInterval);
+      
+      	if(duration == null && !set) {
+      		$('.calling-info .call-duration').text('Dialing...');
+      	} else {
+      		if(set) act_call.duration = 0;
+      
+      		$('.top_icons').removeClass('outgoingCall deniedCall incomingCall').addClass('activeCall');
+      		
+      		callingInterval = setInterval(function() {
+      			act_call.duration++;
+      
+      			let hours = Math.floor((act_call.duration % (60 * 60 * 24)) / (60 * 60));
+      			let minutes = Math.floor((act_call.duration % (60 * 60)) / 60);
+      			let seconds = Math.floor(act_call.duration % 60);
+      
+      			if(minutes < 10) minutes = '0' + minutes;
+      			if(seconds < 10) seconds = '0' + seconds;
+      
+      			$('.calling-info .call-duration').text(hours + ':' + minutes + ':' + seconds);
+      		}, 1000);
+      	}
+      
+      	if(act_call.name == null) {
+      		$('.calling-info label').text('' + number);
+      	} else $('.calling-info label').text(name);
+      
+      	$('.tabs').each(function() { $(this).removeClass('current'); });
+      	$('#callScreen').addClass('current');
+      	$('.callPhone').removeClass('incoming');
+      
+      	CloseAllAppEx();
+      	 $("#callScreen").show();
+      }
+      
+      function callNumber() {
+      	let number = $('.number-area .numbers .tipped').text();
+      
+      	if(number.length > 2) {
+      		let found = false;
+      
+      		contacts.forEach(function(contact, idx, arr) {
+      			if(contact.number == number) found = contact;
+      
+      			if(idx == arr.length - 1) {
+      				if(found) {
+      					$('.calling-info label').text(found.name);
+      				} else $('.calling-info label').text(number);
+      			}
+      		});
+      		
+      		$('.calling-info .call-duration').text('Dialing...');
+      
+      		$('.tabs').each(function() { $(this).removeClass('current'); });
+      		$('#callScreen').addClass('current');
+      
+      		CloseAllAppEx();
+      		$("#callScreen").show();
+      	 
+      		startCall(number);
+      	} else {
+      		$('.number-area .numbers .tipped').addClass('fail');
+      
+      		setTimeout(function() {
+      			$('.number-area .numbers .tipped').removeClass('fail');
+      		}, 3000);
+      	}
+      }
+      
+      function hangUp() {
+      	cancelCall(true);
+      	mp.trigger('cancelCall');
+      	
+      	
+      }
+      
+      
+      
+      $(document).ready(function() {
+      	if(act_call != false) {
+      		$('.main').show();
+      		if(act_call.state == 'outgoing') {
+      			setCallScreen(act_call.number, act_call.duration);
+      		} else {
+      			if(act_call.duration == null) {
+      				incoming(act_call.number);
+      			} else setCallScreen(act_call.number, act_call.duration);
+      		}
+      	} else {
+      		contacts.forEach((contact) => {
+      			$('.contact-area ul').append('<li class="contact" id="contact-' + contact.number + '" data-name="' + contact.name +'" data-number="' + contact.number +'"><span>' + contact.name +'</span><div class="contact-info"><label>(323) 555</label> <span class="contact_number">' + contact.number + '</span></div></li>');
+      		})
+      
+      		$('.main').fadeIn(300);
+      	}
+      });
+      	  
+      	  //
+      //	  togglePhone(false);
+      let keycodes = [{"code": 49, "number": 1},{"code": 50, "number": 2},{"code": 51, "number": 3},{"code": 52, "number": 4},{"code": 53, "number": 5},{"code": 54, "number": 6},{"code": 55, "number": 7},{"code": 56, "number": 8},{"code": 57, "number": 9},{"code": 48, "number": 0}];
+      var weekDays = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+      var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+      var active = false;
+      var act_app = false;
+      var act_call = false;
+      var interval, dots = '', search, callingInterval = null, timeInterval = null;
+      var d = new Date();
+      
+      const contacts = [];
+      const calls = [];
+      const messages = [];
+      
+      function initApps(apps) {
+      	var load = JSON.parse(apps);
+      
+      	load.forEach(function(app) {
+      		$(".apps ul").append('<li id="app_' + app.name + '" style="background-image: url(\'apps/' + app.name + '/images/app_' + app.name + '.jpg\')" onclick="startApp(\'' + app.name + '\')"><label>' + app.appname + '</label></li>');
+      	});                                                                                                                     
+      }
+      
+      
+      function ShowContacts() {
+      CloseAllAppEx();
+      	$("#contactList").show();
+      }
+      
+      function startApp(app) {
+      	if(app) {
+      	
+      		if(app == "phone")
+      		{
+      			CloseAllAppEx();
+      			$("#numberField").show();
+      		}
+      		else if(app == "contacts")
+      		{
+      			CloseAllAppEx();
+      			$("#contactList").show();
+      		}
+      		else if(app == "sms_view")
+      		{
+      			CloseAllAppEx();
+      			
+            mp.trigger("request_sms_list");
+      		}
+          else if(app == "notes")
+          {
+            CloseAllAppEx();
+      			
+            mp.trigger("requestinfo");
+          }
+
+          else if(app == "clock")
+          {
+            CloseAllAppEx();
+      			
+            mp.trigger("requestclock");
+          }
+      
+      		
+      		act_app = true;
+      	}
+      }
+      
+      function sortList() {
+      	$(".contact-area ul li").sort(function(a, b) {
+      		return $(a).attr('data-name').toLowerCase() < $(b).attr('data-name').toLowerCase();
+      	}).each(function() {
+      		$(".contact-area ul").prepend(this);
+      	})
+      }
+      
+      function searchInContacts(text) {
+      	if(!text.length) return $('.contact').each(function() { $(this).removeClass('found') });
+      	let regex = new RegExp(text);
+      
+      	$('.contact').each(function() {
+      		let found = regex.test($(this).attr('data-number'));
+      
+      		if(found) {
+      			$(this).addClass('found');
+      		} else if($(this).hasClass('found')) $(this).removeClass('found');
+      	});
+      }
+      
+      function setPhoneNumber(number) {
+      	$(".top_icons #number").text(' #' + number);
+      }
+      
+      function startCall(number) {
+      	$('.top_icons').removeClass('activeCall deniedCall incomingCall').addClass('outgoingCall');
+      	$('.callPhone').show();
+      	
+      
+      	act_call = {"number": number, "name": null, "duration": null, "state": "outgoing"};
+      
+      	contacts.forEach((contact) => {
+      		if(contact.number == number) act_call.name = contact.name;
+      	});
+      
+      	mp.trigger('startCall', number);
+      }
+      
+      function acceptCall() {
+      	if(act_call != null) {
+      		$('.tabs').each(function() { $(this).removeClass('current'); });
+      		$('#callScreen').addClass('current');
+      		$('.calling-info label').text('' + act_call.number);
+      		act_call.duration = 0;
+      		
+      		mp.trigger('acceptIncomingCall', act_call.number);
+      	}
+      }
+      
+      function callIncoming(number) {
+      	act_call = {"number": number, "name": null, "duration": null, "state": "incoming"};
+      
+      	contacts.forEach((contact) => {
+      		if(contact.number == number) act_call.name = contact.name;
+      	});
+      
+      	if(active) startApp('phone');
+      	
+      	incoming(number);
+      
+      	$('.top_icons').removeClass('activeCall outgoingCall deniedCall').addClass('incomingCall');
+      	$('.callPhone').addClass('incoming').show();
+      }
+      
+      function denyCall() {
+      	$('.top_icons').removeClass('activeCall outgoingCall incomingCall').addClass('deniedCall');
+      	$('.callPhone').removeClass('incoming').hide();
+      	act_call = false;
+      
+      	setTimeout(function() {
+      		$('.top_icons').removeClass('activeCall outgoingCall incomingCall deniedCall');
+      	}, 1500);
+      
+      	closeApp();
+      	mp.trigger('cancelCall');
+      }
+      
+      function cancelCall(forced = false) {
+      	$('.top_icons').removeClass('activeCall outgoingCall incomingCall deniedCall');
+      	$('.callPhone').removeClass('incoming').hide();
+      	act_call = false;
+      
+      	if(forced != false) {
+      		$('.calling-info .call-duration').text('Poziv zavrsen');
+      	} else $('.calling-info .call-duration').text('Nedostupan');
+      
+      	setTimeout(function() {
+      		$('.tabs').each(function() { $(this).removeClass('current'); });
+      		$('#numberField').addClass('current');
+      		
+      		mainmenu();
+      	}, 2000);
+      
+      	if(callingInterval != null) {
+      		clearInterval(callingInterval);
+      		callingInterval = null;
+      	}
+      }
+      
+      function showApp(app) {
+      	$("#app_" + app).show();
+      }
+      
+      function hideApp(app) {
+      	$("#app_" + app).hide();
+      }
+      
+      function closeApp() {
+      	if(act_app) {
+      		$(".bluetooth").fadeOut(200); 
+      		
+      		$('.app').each(function() {
+      			$(this).fadeOut(200);
+      		});
+      		
+      		act_app = false;       
+      		$(".active_app").empty();
+      	}
+      }
+      
+      function CloseAllAppEx() {
+      
+      	 $('#page_main').hide();
+      	 $('#numberField').hide();
+      	 $('#callScreen').hide();
+      	 $('#incomingScreen').hide();
+      	 $('#Show_Add_Contact').hide();
+      	 $('#contactList').hide();
+      	 $('#Show_SMS').hide();
+      	 $('#View_SMS').hide();
+      
+      }
+      
+      function mainmenu() {
+      	if(!act_call) {
+      		CloseAllAppEx();
+      		//mp.trigger('closeApp');
+      		$("#page_main").show();
+      		
+      		for(let i = 0; i < 12; i++) {
+      			removeNumber();
+      		}
+      		
+      	} else {
+      		$(".active_app").hide();
+      	}
+      }
+      
+      function checkTime(i) {
+        if (i < 10) {
+      	i = "0" + i;
+        }
+        return i;
+      }
+      
+      function getTime() {
+      	d = new Date();
+      	return d.getHours() + ':' + checkTime(d.getMinutes());
+      }
+      
+      function startTime(time) {
+      	if(timeInterval != null) clearInterval(timeInterval);
+      
+      	timeNow = Math.abs(time);
+      
+      	timeInterval = setInterval(function() {
+      		timeNow += 8;
+      
+      		var today = new Date(timeNow * 1000);
+      		var h = today.getUTCHours();
+      		var m = today.getUTCMinutes();
+      		var wd = today.getUTCDay();
+      		var mo = today.getUTCMonth();
+      		var day = today.getUTCDate();
+      
+      		var tag = "th";                                                                                                       
+        
+      		m = checkTime(m);
+      	  
+      		if(day == 1) {
+      			tag = "st";
+      		} else if(day == 2) {
+      			tag = "nd";
+      		}
+      		
+      		$("#time").html(h + ":" + m);
+      		if(!active) $(".battery_percent").html(h + ":" + m); 
+      		$("#date").html(weekDays[wd] + ", " + months[mo] + " " + day + tag);
+      	}, 1000);
+      }
+      
+      function UpdateTime(time) {
+      
+      	$("#time").html(time);
+      }
+      
+      function Show_Add_Contact() {
+      	CloseAllAppEx();
+      	$("#Show_Add_Contact").show();
+      
+      }
+      
+      
+      function newMsg(notification ,number, msg) {
+      	if(notification) $(".msg").fadeIn(200); 
+      	if(msg.length > 43) msg = msg.substring(0,43) + '...';
+      	var element = $('<li><i class="fa fa-envelope-o" aria-hidden="true"></i><span><div class="notification_date"><label>' + number + '</label>' + getTime() + '</div><div class="notification_msg">' + msg + '</div></span></li>');
+      	
+      	$(".notifications ul").prepend(element);
+      	element.animate({height: '37px'}, 500);
+      }
+     // let istoggle = false;
+      //startApp('atm_hacker');
+      function TogglePhoneCustom() {
+
+			mp.trigger("KEY_ARROW_UP");    	
+	
+      }
+	  
+      function togglePhone(toggle) {
+      	var percent = $(".battery").attr("value");
+      	
+      	if(toggle) {
+      		$(".phone").stop().animate({bottom: '0px'}, 1000);
+      		$(".fading").stop().fadeIn(1000);
+      		$(".battery_percent").stop().html(percent);
+      		$(".msg").fadeOut(200);
+      		
+      		/*if(act_call != null && act_call.duration == null && act_call.state == 'incoming') {
+      			startApp('phone');
+      		}*/
+      		mainmenu(true);
+      	} else {
+          $(".phone").stop().animate({bottom: '-585px'}, 1000);
+      		//$(".fading").stop().fadeOut(1000);
+      	}
+      
+      	active = toggle;
+      }
+      
+      var pusher = {
+      	number : function(num) {
+      		$('body').on('click', '.numbers-container .pushed' + num + '', function() {
+      			addNumber(num);
+      		});		
+      	}
+      }
+      
+      pusher.number(1);
+      pusher.number(2);
+      pusher.number(3);
+      pusher.number(4);
+      pusher.number(5);
+      pusher.number(6);
+      pusher.number(7);
+      pusher.number(8);
+      pusher.number(9);
+      pusher.number(0);
+      
+      $('body').on('click', '.delete-btn', function() {
+      	removeNumber();
+      });
+      
+      $('body').on('click', '.numbers-container .pushedasterisk', function() {
+      	$('.number-area .numbers .tipped').append('*');
+      });	
+      
+      $('body').on('click', '.numbers-container .pushednumber', function() {
+      	$('.number-area .numbers .tipped').append('#');
+      });
+      
+      $('body').on('click', '.call-btn', function() {
+      	callNumber();
+      });
+      
+      $('body').on('click', '.hangup-btn', function() {
+      	hangUp();
+      });
+      
+      $('body').on('click', '.answer-btn', function() {
+      	acceptCall();
+      });
+      
+      $('body').on('click', '.deny-btn', function() {
+      	denyCall();
+      });
+      
+      $('body').on('click', '.contact', function() {
+      	$('.number-area .numbers .tipped').removeClass('fail').html($(this).attr('data-number'));
+      
+      	searchInContacts($(this).attr('data-number'));
+      });
+      
+      togglePhone(false);
+      
+    </script>
+  </body>
+</html>

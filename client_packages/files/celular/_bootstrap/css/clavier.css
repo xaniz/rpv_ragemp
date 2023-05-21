@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+#mainClavier
+{
+    margin: 10px auto;
+    padding: 0 0 10px 0;
+    line-height: 35px;
+    width: 228px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-composer{
+    margin: 0 auto;
+    padding-top: 0px;
+    width: 200px;
+    margin-bottom: 14px;
+    height: 40px;
+
+}
+
+#saisie, #back{
+    display: inline-block;
+}
+#back {
+    width: 27px;
+    cursor: pointer;
+    padding-left: -5px;
+}
+#saisie {
+    text-align: center; 
+		width: 150px;
+    font-weight: 300;
+    font-size: 22px;
+}
+.span4
+{
+    width: 80px;
+    float: left;
+    margin: 0 8px 10px 8px;
+}
+
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.tel
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid #9e9e9e;
+    border-radius: 0px;
+}
+
+.num-pad
+{
+    padding-top: 20px;
+}
+
+.num
+{
+    border: 1px solid #9e9e9e;
+    -webkit-border-radius: 999px;
+    border-radius: 999px;
+    -moz-border-radius: 999px;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+.num:hover
+{
+    background-color: #C8C8C8;
+    color: #fff;
+    transition-property: background-color .2s linear 0s;
+    -moz-transition: background-color .2s linear 0s;
+    -webkit-transition: background-color .2s linear 0s;
+    -o-transition: background-color .2s linear 0s;
+}
+.txt
+{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 15px;
+    color: #333;
+}
+.txt .small
+{
+    font-size: 15px;
+}
+
+.btn
+{
+    font-weight: bold;
+    -webkit-transition: .1s ease-in background-color;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
+}
+.btn:hover
+{
+    transition-property: background-color .2s linear 0s;
+    -moz-transition: background-color .2s linear 0s;
+    -webkit-transition: background-color .2s linear 0s;
+    -o-transition: background-color .2s linear 0s;
+}
+.spanicons
+{
+    width: 72px;
+    float: left;
+    text-align: center;
+    margin-top: 40px;
+    color: #9e9e9e;
+    font-size: 30px;
+    cursor: pointer;
+}
+.spanicons:hover
+{
+    color: #3498db;
+    transition-property: color .2s linear 0s;
+    -moz-transition: color .2s linear 0s;
+    -webkit-transition: color .2s linear 0s;
+    -o-transition: color .2s linear 0s;
+}
+.active
+{
+    color: #3498db;
+}
+
+#call{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.oneline{
+    padding: 10px;
+}

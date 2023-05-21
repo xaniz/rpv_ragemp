@@ -1,0 +1,16 @@
+@media (max-width:1199.98px){
+  body.second .cars .car{margin-bottom:40px;padding:0 10px}
+}
+@media (max-width:991.98px){
+  body.second .cars .car{margin-bottom:20px;padding:0}
+}
+@media (max-width:767.98px){
+  body.second .cars .car{margin-bottom:40px}
+}
+@media (max-width:575.98px){
+  body.second .cars .cars-inner{padding:40px}
+  body.first .car-titles{display:none}
+  body.first .price{margin:10px 0}
+  body.first .cars .car .available{margin-bottom:10px}
+  body.first .cars .car .available .amount{display:inline}
+}

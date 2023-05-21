@@ -1,0 +1,67 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="ls_castoms.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="../fonts/PFDinDisplayPro/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="win-select">
+       <div class="glname-txt"><p>Izaberite tip</p></div>
+       <div class="wrap-whells">
+           <div class="whells-colums-three">
+                <div onclick="mp.trigger('tunning_onindexchange',false,'wheels_tuning',0)" class="whell-card">
+                    <div class="image-whell-colum"><div class="lowrider"></div><p>Lowrider</p></div>
+                </div>
+                <div onclick="mp.trigger('tunning_onindexchange',false,'wheels_tuning',1)" class="whell-card">
+                    <div class="image-whell-colum"><div class="maslcar"></div><p>Muscle</p></div>
+                </div>
+                <div onclick="mp.trigger('tunning_onindexchange',false,'wheels_tuning',2)" class="whell-card">
+                    <div class="image-whell-colum"><div class="allroads"></div><p>Offroad</p></div>
+                </div>
+           </div>
+           <div class="whells-colums-three">
+                <div onclick="mp.trigger('tunning_onindexchange',false,'wheels_tuning',3)" class="whell-card">
+                    <div class="image-whell-colum"><div class="sport"></div><p>Sports</p></div>
+                 </div>
+                 <div onclick="mp.trigger('tunning_onindexchange',false,'wheels_tuning',4)" class="whell-card">
+                    <div class="image-whell-colum"><div class="offroad"></div><p>SUV</p></div>
+                    </div>
+                <div onclick="mp.trigger('tunning_onindexchange',false,'wheels_tuning',5)" class="whell-card">
+                    <div class="image-whell-colum"><div class="tonner"></div><p>Tunner</p></div>
+                 </div>
+           </div>
+		   
+           <div class="whells-colums-one">
+            <div onclick="mp.trigger('tunning_onindexchange',false,'wheels_tuning',6)" class="whell-card-one">
+                <div class="image-whell-colum-exclusive"><div class="exclusive"></div><p>HighEnd <br>Disk</p></div>
+            </div>
+           </div>
+       </div>
+    </div>
+      
+
+    <script src="../../css/jquery.js"></script>
+<script >
+
+
+$('#right-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=160px"
+  }, "slow");
+});
+
+ $('#left-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=160px"
+  }, "slow");
+});</script>
+    
+    <script src="tuning.js"></script>
+</body>
+</html>

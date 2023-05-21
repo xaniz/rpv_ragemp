@@ -1,0 +1,289 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background-image: url(icons/background.png);
+    background-size: cover;
+  }
+
+  
+  .level, .experience, .job, .job-skill, .rpv-points, .referal, .carlic, .motolic, .flylic, .gunlic, .fishlic {
+    flex-basis: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .level {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: rgb(49, 49, 49);
+  }
+  .experience {
+    position: absolute;
+    top: 29%;
+    left: 15%;
+    color: rgb(49, 49, 49);
+  }
+
+  .job {
+    position:absolute;
+    bottom: 68%;
+    left: 45%;
+    color: rgb(255, 255, 255);
+  }
+
+  .job-skill {
+    position: absolute;
+    bottom: 48%;
+    left: 45%;
+    color: rgb(255, 255, 255);
+  }
+
+  .rpv-points {
+    position: absolute;
+    bottom: 28%;
+    left: 45%;
+    color: rgb(255, 255, 255);
+  }
+
+  .referal {
+    position: absolute;
+    bottom: 8%;
+    left: 45%;
+    color: rgb(255, 255, 255);
+  }
+
+  .organisation {
+    position: absolute;
+    bottom: 36%;
+    text-align: center;
+    left: 69.5%;
+    color: rgb(233, 233, 233);
+    transform: translateX(-50%); /* this adjusts the position based on the text width */
+  }
+
+  .orgrank {
+    position: absolute;
+    bottom: 36%;
+    color: rgb(233, 233, 233);
+    left: 87.8%; /* this centers the text horizontally */
+    text-align: center;
+    transform: translateX(-50%); /* this adjusts the position based on the text width */
+  }
+
+  .carlic {
+    position: absolute;
+    bottom: 7%;
+    left: 64.4%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transform: translateX(-50%); /* this adjusts the position based on the text width */
+  }
+
+  .motolic {
+    position: absolute;
+    bottom: 7%;
+    left: 71.7%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transform: translateX(-50%); /* this adjusts the position based on the text width */
+  }
+
+  .flylic {
+    position: absolute;
+    bottom: 7%;
+    left: 78.6%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transform: translateX(-50%); /* this adjusts the position based on the text width */
+  }
+
+  .gunlic {
+    position: absolute;
+    bottom: 7%;
+    left: 85.8%;
+    color: rgb(233, 233, 233);
+    text-align: center;
+    transform: translateX(-50%); /* this adjusts the position based on the text width */
+  }
+
+  .fishlic {
+    position: absolute;
+    bottom: 7%;
+    left: 92.9%;
+    color: rgb(233, 233, 233);
+    text-align: center;
+    transform: translateX(-50%); /* this adjusts the position based on the text width */
+  }
+  
+  
+  .value {
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 3px;
+    left: auto;
+  }
+
+  #quest-button {
+    background-color: rgba(5, 132, 244, 0);
+    background-image: url('icons/quest.png'); /* set the image */
+    background-size: cover; /* make the image fill the entire button area */
+    border: none; /* remove the border */
+    color: white; /* set the font color */
+    padding: 0; /* remove padding */
+    text-align: center; /* center the text */
+    text-decoration: none; /* remove underline */
+    display: inline-block; /* display as inline-block */
+    width: 671px; /* set the width to the width of the image */
+    height: 223px; /* set the height to the height of the image */
+    margin-top: 9.5%; /* add some margin to top */
+    margin-left: 62%; /* add some margin to top */
+    cursor: pointer; /* set the cursor to pointer */
+    
+  }
+  
+  #quest-button:hover {
+    background-image: url('icons/quest2.png');
+    transition: background-image 1s;
+  }
+
+  @media only screen and  (min-height:768px) and (max-width:1366px) {
+    #quest-button {
+      width: 475px;
+      height: 161px;
+      margin-top: 10%;
+      margin-left: 61.7%;
+    }
+  }
+
+  @media only screen and  (min-height:720px) and (max-width:1280px) {
+
+    #quest-button {
+      width: 440px;
+      height: 149px;
+      margin-top: 10%;
+      margin-left: 61.7%;
+    }
+
+    #quest-button:hover {
+      background-image: url('icons/quest2.png');
+      background-size: cover;
+    }
+
+    .value {
+      font-size: 26px;
+      font-weight: normal;
+      margin-top: 13px;
+      left: auto;
+    }
+
+    .level {
+      position: absolute;
+      top: 19%;
+      left: 15%;
+      color: rgb(49, 49, 49);
+    }
+    .experience {
+      position: absolute;
+      top: 27%;
+      left: 15%;
+      color: rgb(49, 49, 49);
+    }
+  
+    .job {
+      position:absolute;
+      bottom: 68%;
+      left: 45%;
+      color: rgb(255, 255, 255);
+    }
+  
+    .job-skill {
+      position: absolute;
+      bottom: 48%;
+      left: 45%;
+      color: rgb(255, 255, 255);
+    }
+  
+    .rpv-points {
+      position: absolute;
+      bottom: 28%;
+      left: 45%;
+      color: rgb(255, 255, 255);
+    }
+  
+    .referal {
+      position: absolute;
+      bottom: 8%;
+      left: 45%;
+      color: rgb(255, 255, 255);
+    }
+  
+    .organisation {
+      position: absolute;
+      bottom: 37%;
+      text-align: center;
+      left: 69.5%;
+      color: rgb(233, 233, 233);
+      transform: translateX(-50%); /* this adjusts the position based on the text width */
+    }
+  
+    .orgrank {
+      position: absolute;
+      bottom: 37%;
+      color: rgb(233, 233, 233);
+      left: 87.8%; /* this centers the text horizontally */
+      text-align: center;
+      transform: translateX(-50%); /* this adjusts the position based on the text width */
+    }
+  
+    .carlic {
+      position: absolute;
+      bottom: 8%;
+      left: 64.4%;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      transform: translateX(-50%); /* this adjusts the position based on the text width */
+    }
+  
+    .motolic {
+      position: absolute;
+      bottom: 8%;
+      left: 71.7%;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      transform: translateX(-50%); /* this adjusts the position based on the text width */
+    }
+  
+    .flylic {
+      position: absolute;
+      bottom: 8%;
+      left: 78.6%;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      transform: translateX(-50%); /* this adjusts the position based on the text width */
+    }
+  
+    .gunlic {
+      position: absolute;
+      bottom: 8%;
+      left: 85.8%;
+      color: rgb(233, 233, 233);
+      text-align: center;
+      transform: translateX(-50%); /* this adjusts the position based on the text width */
+    }
+  
+    .fishlic {
+      position: absolute;
+      bottom: 8%;
+      left: 92.9%;
+      color: rgb(233, 233, 233);
+      text-align: center;
+      transform: translateX(-50%); /* this adjusts the position based on the text width */
+    }
+  }

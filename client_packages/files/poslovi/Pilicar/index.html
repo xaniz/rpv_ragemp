@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="fonts/font/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+	<script src="./js/library/vue.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		
+		<div v-if="style == 0" class="style0">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="nameblock">
+				<div class="desc">Dobrodosli kod Pilicara</div>
+				<div class="desc2">Benefit posla sa maksimalnim XP: na svaku preradu + $25</div>
+			</div>
+			<div class="center">
+				<div class="block active">
+					<img src="img/weaponc.png" class="ico">
+				</div>
+			</div>
+
+			<div class="center2">
+				<div class="block active">
+					<img src="img/tutorial.png" class="ico">
+				</div>
+			</div>
+
+			<div class="allitems2">
+				<div  @click="buy(0)" class="bbg2">
+					<img src="img/jobaccept.png" class="ico">
+					<a>Zapocni Posao</a>
+				</div>
+				<div @click="buy(1)" class="bbg2">
+					<img src="img/reject.png" class="ico">
+					<a>Zavrsi posao</a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+    <script src="./js/index.js"></script>
+	<script src="./js/library/jquery-3.2.1.min.js"></script>
+</body>
+</html>

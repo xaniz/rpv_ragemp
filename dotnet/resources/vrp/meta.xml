@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<meta>
+	<info name="V-RP" author="SA-Team" type="gamemode" shadowcopy="true"/>
+	<script src="bin/Debug/netcoreapp3.1/Infinity.dll"/>
+	<assembly ref="Newtonsoft.Json.dll"/>
+	
+	<!-- Configurações do Servidor-->
+	<settings>
+    	<settings name="XP_RATE" value="20" description="" />
+    	<settings name="XP_RATE_HOURLY" value="1" description="" />
+		
+    	<settings name="PRECO_MUNICAO_SNIPER" value="1000" description="" />
+    	<settings name="PRECO_MUNICAO_ASSAULT" value="850" description="" />
+    	<settings name="PRECO_MUNICAO_SHOTGUN" value="600" description="" />
+    	<settings name="PRECO_MUNICAO_pistol" value="300" description="" />
+    	<settings name="PRECO_MUNICAO_SMG" value="500" description="" />
+		
+    	<settings name="
+                
+_REESTOCK" value="4500" description="" />
+		
+    	<settings name="HAMBURGUER" value="400" description="" />
+    	<settings name="ENERGY_DRINK" value="250" description="" />
+		
+    	<settings name="TURF_WAR_VULNERABLE" value="3600" description="" />
+    	<settings name="PLAYER_TO_START_WAR" value="1" description="" />
+		
+    	<settings name="VEHICLE_RENT_FAGGIO" value="500" description="" />
+    	<settings name="VEHICLE_RENT_ASEA" value="2500" description="" />
+		
+    </settings>
+	
+</meta>

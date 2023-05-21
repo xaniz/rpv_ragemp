@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'Futura Demi';
+  src: url('../fonts/FuturaDemiC.eot');
+  src: url('../fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FuturaDemiC.woff') format('woff'),
+  url('../fonts/FuturaDemiC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family:AAFuture;
+	src:url(aafuture.ttf) format("truetype");
+}
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #333333;
+  font-family: 'AAFuture', sans-serif!important;
+  font-size: 18px!important;
+}
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
+  font-family: 'AAFuture', sans-serif!important;
+}
+.ui.menu {
+  font-family: 'AAFuture', sans-serif!important;
+  font-size: 1.2rem!important;
+}
+
+.ui.column.grid>[class*="four wide"].column, .ui.grid>.column.row>[class*="four wide"].column, .ui.grid>.row>[class*="four wide"].column, .ui.grid>[class*="four wide"].column {
+  width: 27%!important;
+}
+
+.ui.column.grid>[class*="two wide"].column, .ui.grid>.column.row>[class*="two wide"].column, .ui.grid>.row>[class*="two wide"].column, .ui.grid>[class*="two wide"].column {
+  width: 15%!important;
+}
+
+.setup-label {
+  float: right;
+}
+
+.teal.label {
+  border-radius: 50%!important;
+  font-size: 1rem!important;
+}
+
+.create-char {
+  background-color: rgba(0,0,0,0.5);
+  color: #ffffff;
+  clip-path: polygon(0 0, 97% 4%, 100% 94%, 3% 100%);
+  padding: 10px 0 60px;
+}
+.step-2 {
+  padding-top: 0!important;
+}
+
+.segments {
+  border: none!important;
+}
+.segment {
+  background: none!important;
+  color: #ffffff!important;
+}
+.camera-segment h3 {
+  color: #ffffff!important;
+}
+
+
+.ui.green-custom.label, .ui.green-custom.labels .label {
+  background-color: #00d05c!important;
+  border-color: #00d05c!important;
+  color: #fff!important;
+}
+
+.ui.green-custom.button, .ui.green-custom.buttons .button {
+  background-color: #00d05c!important;
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+}
+
+.segment {
+  border: none!important;
+  margin: 0!important;
+}
+
+.ui.teal.segment:not(.inverted) {
+  border: none!important;
+}
+
+.ui.segment {
+  padding: 16px 30px;
+}
+
+.buttons {
+  justify-content: space-around;
+  padding: 0 16px!important;
+}
+
+.buttons::after {
+  display: none!important;
+}
+
+.ui.buttons .button {
+  flex: none;
+  width: auto!important;
+}
+
+.signout {
+  transform: rotate(180deg);
+  font-size: 1.5rem;
+  margin-right: 7px;
+}
+
+.ui.green-custom.label, .ui.green-custom.labels .label {
+  border-radius: 20px;
+}
+
+.button-custom {
+  box-shadow: none!important;
+  padding: 13px 30px!important;
+  font-size: 1.2rem!important;
+  border-radius: 20px!important;
+}
+
+.button-red {
+  background: none!important;
+  color: #af0101!important;
+  padding: 13px 30px!important;
+  font-size: 1.2rem!important;
+}
+
+.gender-container {
+  margin-bottom: 0!important;
+}
+
+.gender {
+  background-color: #ffffff!important;
+  width: 45%!important;
+  font-weight: bold!important;
+}
+
+.gender::after, .gender::before {
+  display: none!important;
+}
+
+.create-char .menu::after {
+  display: none!important;
+}
+
+.create-char .menu {
+  background: none;
+  justify-content: space-between!important;
+}
+
+.camera .buttons {
+  justify-content: space-between!important;
+  padding: 0 10px!important;
+}
+
+.camera-buttons {
+  padding: 16px!important;
+  width: 100%!important;
+}
+
+.camera-buttons .ui.two.buttons>.button {
+  width: 45%!important;
+}
+
+.camera-segment {
+  background-color: rgba(0,0,0,0.5)!important;
+  clip-path: polygon(6% 0, 90% 0, 100% 92%, 0% 100%);
+  padding: 10px;
+}
+
+.camera-segment .segment {
+  padding: 10px 0!important;
+}
+
+.camera .button-custom {
+
+}
+
+#creation_forename, #creation_surname {
+  padding-left: 20px;
+}
+
+#creation_forename {
+  clip-path: polygon(6% 0, 100% 0, 95% 100%, 0 89%);
+}
+#creation_surname {
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 7% 100%);
+}
+
+.gender-male {
+  clip-path: polygon(11% 0, 100% 6%, 100% 100%, 0% 100%);
+}
+
+.gender-female {
+  clip-path: polygon(0 6%, 100% 5%, 92% 100%, 0 100%);
+}
+
+input::placeholder {
+  color: #333333!important;
+}

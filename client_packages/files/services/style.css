@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'FRACTAL';
+  src: url('fonts/FuturaDemiC.eot');
+  src: url('fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+  url('fonts/FuturaDemiC.woff') format('woff'),
+  url('fonts/FRACTAL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FRACTAL';
+  src: url('fonts/FuturaBookC.eot');
+  src: url('fonts/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+  url('fonts/FuturaBookC.woff') format('woff'),
+  url('fonts/FRACTAL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  @font-face{
+	font-family:AAFuture;
+	src:url(fonts/aafuture.ttf) format("truetype");
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: auto !important;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .container {
+    width: 723px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .container {
+    width: 933px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1127px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.container {
+  display: block;
+  max-width: 101%;
+}
+p {
+  margin: 0;
+}
+body {
+  font-family: 'FRACTAL', FRACTAL;
+  font-size: 1.2rem;
+}
+
+.button {
+	margin:0 auto;
+	margin-top:6.5em;
+	width:30%;
+  background:#303030;
+  color: #c4f000;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 6px 10px;
+  display: inline-block;
+  transition: all .25s ease;
+  background-size: 100% 100%;
+  border:1px solid #c4f000;
+  border-radius:25px;
+}
+.button:hover {
+  background:#c4f000;
+  color:black;
+}
+.button-red {
+  background: linear-gradient(to right, #bbff00, #9dff01);
+}
+.d-block {
+  display: block;
+}
+h1, h2, h3, strong, .button {
+  font-family: AAFuture, FRACTAL;
+}
+h1 {
+  margin: 0;
+}
+
+.header {
+  background-color: #c4f000;
+  width:calc(100% + 20px);
+  margin-left:-20px;
+  padding: 10px;
+}
+
+
+.services {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius:12px;
+  background-color: #303030;
+  color: #dedede;
+  z-index:2;
+}
+.content {
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.content-header {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.content-header i {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+.content-header h2 {
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+
+.subheader {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+  padding: 5px 8px;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+}
+.item-content .icon {
+  margin-right: 10px;
+  font-size: 1.7rem;
+}
+
+.item-buttons {
+  align-self: auto;
+}
+
+.footer {
+  padding: 10px 10px 0 10px;
+}
+.footer .button {
+  text-align: center;
+}
+.ipad{
+	
+	
+	}
+	.ipad img{
+		z-index:-1;
+	position:absolute;
+	left:0%;
+	right:0%;
+	margin:0 auto;
+	top:0%;
+		width:74em;
+		height:35em !important;
+	}

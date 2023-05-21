@@ -1,0 +1,4 @@
+*.csproj.FileListAbsolute.txt
+*.csproj.CoreCompileInputs.cache
+/Client-side.assets.cache
+/Client-side.csprojAssemblyReference.cache

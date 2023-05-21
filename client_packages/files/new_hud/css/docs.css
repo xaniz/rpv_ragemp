@@ -1,0 +1,94 @@
+.license{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    margin: -250px 0 0 -350px;
+    background-image: url('../res/lic.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 20px;
+    font-weight: 400;
+}
+.passport{
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    left: 50%;
+    top: 50%;
+	color:black;
+    margin: -450px 0 0 -250px;
+    background-image: url('../passport.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 20px;
+    font-weight: bold;
+}
+.passport p{
+    margin: 0;
+    font-size: 12pt;
+}
+.license #firstname{
+    margin-left: 300px;
+    margin-top: 95px;
+}
+.license #lastname{
+    margin-left: 344px;
+    margin-bottom: 22px;
+}
+.license #date{
+    margin-left: 415px;
+    margin-bottom: 22px;
+}
+.license #gender{
+    margin-left: 300px;
+    margin-bottom: 74px;
+}
+.license #lics{
+    margin-left: 9%;
+    font-size: 14pt;
+}
+.passport #firstname{
+    margin-left: 240px;
+    margin-top: -8px;
+}
+.passport #lastname{
+    margin-left: 240px;
+    margin-top: 11px;
+}
+.passport #date{
+    margin-left: 253px;
+    margin-top: 10px;
+}
+.passport #gender{
+    margin-left: 217px;
+    margin-top: 10px;
+}
+.passport #member{
+    margin-left: 230px;
+    margin-top: 11px;
+}
+.passport #work{
+    margin-left: 220px;
+}
+.passport #number{
+    font-size: 24pt;
+    margin-top: 270px;
+    margin-bottom: 138px;
+    margin-left: 50px;
+}
+.passport #exit,
+.license #exit {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: #EF3B3A;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: url('../res/exit.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+.passport #exit{margin-top: 33px}

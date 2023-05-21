@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("./notify.eot");
+  src: url("./notify.eot?#iefix") format("embedded-opentype"),
+       url("./notify.woff") format("woff"),
+       url("./notify.ttf") format("truetype"),
+       url("./notify.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./notify.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-close:before { content: "\f100"; }
+.flaticon-signs:before { content: "\f101"; }
+.flaticon-interface:before { content: "\f102"; }
+.flaticon-danger:before { content: "\f103"; }

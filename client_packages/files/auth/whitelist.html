@@ -1,0 +1,158 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta content="width=1300, initial-scale=1 user-scalable=yes" name="viewport" />
+		<!-- Stylesheets (Semantic, Font Awesome, and Fonts -->
+		<link rel="stylesheet" href="../css/semantic.min.css"  />
+		<link rel="stylesheet" href="../css/all.css" >
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		  <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+			@keyframes animationBeat {
+    0%   {transform: scale(1); filter:brightness(1);}
+    50%  {transform: scale(1.03); filter:brightness(1.2);}
+    100%   {transform: scale(1); filter:brightness(1);}
+}
+
+			body {
+				background-color: rgba(0,0,0,0);
+				overflow: hidden;
+			}
+			#login, #changelog, #password-recovery, #register {
+				box-shadow: 0px 0px 12px 0px;
+				background-image: url("img/bg.jpg") !important;
+			}
+			.login {
+				margin-top: 25px;
+			}
+			#logo {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+			#logo img {
+			  width: 545px;
+			  height: 202px;
+			  animation-name: animationBeat;
+			  animation-duration: 0.60s;
+			  animation-iteration-count: infinite;
+			}
+			body > .grid {
+				height: 100%;
+			}
+			.ui.old.button {
+				background-color: rgb(57, 171, 34);
+				color: white;
+			}
+			.changelog {
+				display: none;
+			}
+			.forgot-password {
+				display: none;
+			}
+			.register {
+				display: none;
+			}
+			.changelog-main {
+				height: 400px;
+				overflow: scroll;
+				overflow-y: display;
+				overflow-x: hidden;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+
+<br>
+<br>
+<br>
+
+<br>
+	<div class="ui grid">
+  <div class="sixteen wide column"><div class="ui segment">
+  <center>
+  
+  <h1 class="ui header teal">Whitelist</h1>
+  <hr class="ui teal"></hr>
+  
+  <h4 class="ui header black">Nemate pristup serveru</h4>
+  <br>
+  <h4 class="ui header black">Ako zelite da igrate na nasem serveru morate popuniti whitelistu</h4><br><br>
+  <a href="https://discord.com/invite/vPuxUm8">
+
+  <h4 style="color:blue;" class="ui header black">www.discord.gg/discord</h4></a>
+  </center></div></div>
+
+</div>
+
+		<audio id="introSong" volume="0.6" autoplay>
+			<source type="audio/ogg" src="https://cdn.discordapp.com/attachments/814767436133957642/814775102083301406/logon.ogg"/>
+		</audio>
+
+		<!-- Javascript (jQuery, Semantic) -->
+		<script src="../css/jquery.js"></script>
+		<script src="../css/semantic.min.js" ></script>
+		<script>
+		$(document).ready(function() {
+			$('.pointing.menu .item').tab();
+			$('.ui.checkbox').checkbox();
+			$('.ui.accordion').accordion();
+			$('.ui.form').form({
+				fields: {
+					user: {
+					  identifier: 'email',
+					  rules: [{
+						  type: 'empty',
+						  prompt: 'Unesite svoj email.'
+						},
+						{
+						  type: 'email',
+						  prompt: 'Molimo Vas da unesete validnu email adresu.'
+						}
+					  ]
+					},
+					password: {
+					  identifier: 'password',
+					  rules: [{
+						type: 'empty',
+						prompt: 'Unesite lozinku.'
+					  }]
+					}
+				},
+				onSuccess: SubmitForm
+			});
+		});
+		
+		function SetStatusMessage(msg) {
+			$("#status_msg").text(msg);
+		}
+		
+		function SubmitForm() {
+			SetStatusMessage("Logining..");
+			mp.trigger("loginUser", $("#login_email").val(), $("#login_password").val(), $('.ui.checkbox').checkbox('is checked'));
+			return true;
+		}
+		
+		function SubmitRegister() {
+			SetStatusMessage("Registering..");
+			mp.trigger("registerUser", $("#register_user").val(), $("#register_password").val(), $("#register_email").val());
+			return true;
+		}
+		
+		$('#introSong').prop("volume", 0.4);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Kuca</title>
+</head>
+<body>
+    <div class="house-wrapper">
+        <div class="house-control" id="house">
+            <div class="container">
+                <div class="header-row">
+                    
+                    <div class="address"></div>
+                </div>
+                <ul class="controls">
+                    <li id="lock" class="control">
+                        <div class="icon">
+                            <img src="assets/controls/ps.png" alt="">
+                        </div>
+                        <div class="name">Vrata</div>
+                    </li>      
+                    <li id="fastsale" class="control">
+                        <div class="icon">
+                            <img src="assets/controls/auction.png" alt="">
+                        </div>
+                        <div class="name">Prodaj drzavi</div>
+                    </li>
+                    <li id="selltoplayer" class="control">
+                        <div class="icon">
+                            <img src="assets/controls/sell.png" alt="">
+                        </div>
+                        <div class="name">Prodaj igracu</div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script> 
+    <script src="../css/jquery.js"></script>
+    
+</body>
+    <script>
+        function loaddata(index) {
+            $("#lock").click(
+                function() {
+                mp.trigger("lockhouse",index);
+            });
+
+            $("#fastsale").click(
+                function() {
+                mp.trigger("fastsale",index);
+            });
+
+            $("#selltoplayer").click(
+                function() {
+                mp.trigger("selltoplayer",index);
+            });
+
+            $("#furniture").click(
+                function() {
+                mp.trigger("furniture",index);
+            });
+        }
+		
+		$(document).keydown(function(e) {
+	
+		switch (e.which) {
+			// Show input.
+			case 27: {
+				mp.trigger("hidePoliceCivilMenu");
+				break;
+			}
+			case 77: {
+				mp.trigger("hidePoliceCivilMenu");
+				break;
+			}
+		}
+	});
+    </script>
+</html>

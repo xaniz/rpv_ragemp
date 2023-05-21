@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="ls_castoms.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="../fonts/PFDinDisplayPro/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="right-name-paint"><p>Primarna boja</p></div>
+    <div id="home" class="go-main-menu"></div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="text"><div class="icon paint"></div><p>Ofarbajte auto u boju koju vi zelite</p></div>
+            <div class="price"><p>*price* $</p></div>
+            <div class="buy-button"><div class="img"></div><p>Kupi</p></div>
+        </div>
+    </div>
+      
+
+    <script src="../../css/jquery.js"></script>
+<script >$('#right-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=160px"
+  }, "slow");
+});
+
+ $('#left-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=160px"
+  }, "slow");
+});</script>
+    
+    <script src="tuning.js"></script>
+</body>
+</html>

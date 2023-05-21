@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta content="width=1300, initial-scale=1 user-scalable=yes" name="viewport" />
+		<!-- Stylesheets (Semantic, Font Awesome, and Fonts -->
+		<link rel="stylesheet" href="../css/semantic.min.css"/>
+		<link rel="stylesheet" href="../css/all.css">
+
+
+
+		<style type="text/css">
+			body {
+				background-color: rgba(0,0,0,0);
+			}
+			body > .grid {
+				height: 100%;
+			}
+			.column {
+				max-width: 450px;
+			}
+			.ui.rage.button {
+				background-color: rgb(57, 171, 34);
+				color: white;
+			}
+			.ui.hiddden.divider {
+				content: "\A";
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="ui main container">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="ui four cards" id="container">
+				
+			</div>
+		</div>
+
+		<!-- Javascript (jQuery, Semantic) -->
+			<script src="../css/jquery.js"></script>
+
+	<script src="../css/semantic.min.js"></script>
+	<script id="character_card" type="text/character_card">
+				<div class="content">
+					<div class="header">
+						
+					</div>
+					<div class="description">
+						<div class="ui list">
+							<div class="item">
+								<i class="dollar sign icon"></i>
+								<div class="content char_money" data-inverted="" data-tooltip="Cash" data-position="bottom center">
+									$15,000
+								</div>
+							</div>
+							<div class="item">
+								<i class="dollar sign icon"></i>
+								<div class="content char_bank" data-inverted="" data-tooltip="Bank" data-position="bottom center">
+									$100,000
+								</div>
+							</div>
+							<div class="item">
+								<div class="content statuswound" data-inverted="" data-position="bottom center" style="color: orange">
+								</div>
+							</div>
+							<div class="item">
+								<div class="content statushealthy" data-inverted="" data-position="bottom center" style="color: green">
+								</div>
+							</div>
+							<div class="item">
+								<div class="content statusdead" data-inverted="" data-position="bottom center" style="color: red">
+								</div>
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="extra content">
+						<span class="left floated">
+							<div class="ui negative basic button char_preview">Visualizar</div>
+						</span>
+						<span class="right floated">
+							<button class="ui rage button char_select">Selecionar</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script>
+			var characters;
+			var template_char_card = $("#character_card").html();
+
+			$(document).ready(function() {
+				
+			});
+			
+			function LoadCharacters(chars) {
+				let i = 0;
+				characters = JSON.parse(chars);
+				characters.forEach(function(character, idx, arr) {
+				
+					if(i == 0) {
+						AddCharacter(character, true);
+					} else {
+						AddCharacter(character, false);
+					}
+					i++;
+				});
+				let txt = '<div class = "card" id="newchar"><div class="content"><div class="header">Novi lik</div><div class="description">Mozete stvoriti novog lika u bilo kojem trenutku.</div><br /><div class="extra content"><span class="right floated"><div class="ui negative basic button" id="btn_newchar">Criar</div></span></div></div></div>';
+				$('#container').append(txt);
+				$('#btn_newchar').click(function() {
+					mp.trigger("CreateCharacter");
+				});
+			}
+			function AddCharacter(character, focus) {
+
+					let txt = '<div class="card" id="' + character.ID + '">';
+					if(focus === true) {
+						txt = '<div class="red card" id="' + character.ID + '">';
+					} else {
+						txt = '<div class="card" id="' + character.ID + '">';
+					}
+					txt = txt + template_char_card + "</div>";
+					$('#container').append(txt);
+					$("#" + character.ID).find(".header").text(character.Name);
+					$("#" + character.ID).find(".char_money").text("$" + character.Money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+					$("#" + character.ID).find(".char_bank").text("$" + character.Bank.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+					/*if(character.CharacterKilled == 1){
+						$("#" + character.ID).find(".statusdead").text("Falecido");
+						$("#" + character.ID).find(".char_select").hide();
+					} else if(character.LeftDead == 1){
+						$("#" + character.ID).find(".statuswound").text("Ferido");
+					} else {
+						$("#" + character.ID).find(".statushealthy").text("Saudável");
+					}*/
+					
+					if(character.Name == "RenameMe") {
+						$("#" + character.ID).find(".char_select").text("Redesenhar");
+					}
+					
+					$(".char_select").click(function() {
+						console.log("charselect: " + $(this).parent().parent().parent().parent().attr('id'));
+						mp.trigger("SelectCharacter", $(this).parent().parent().parent().parent().attr('id'));
+					});
+					$(".char_preview").click(function() {
+						$(this).parent().parent().parent().parent().addClass("red");
+						$(".card").removeClass("red");
+						mp.trigger("ClientPreviewCharacterID", $(this).parent().parent().parent().parent().attr('id'));
+					});
+	
+			}
+		</script>
+	</body>
+</html>

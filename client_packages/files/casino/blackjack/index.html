@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<div id="app">
+  <div class="control">
+    <button class="btn" @click="startGame">Deli</button>
+    <transition>
+      <button class="btn" @click="getCard" v-show="displayGet">Hit</button>
+    </transition>
+    <transition>
+      <button class="btn" @click="stopGetCard" v-show="displayStop">Stand</button>
+    </transition>
+    <transition>
+      <div class="winner" v-if="winner">Pobednik: {{winner}}  </div>
+    </transition>
+  </div>
+  <button class="btn2" @click="izlaz">X</button>
+  <div class="cards">
+    <div class="card" v-for="card in cards" :class="{open: card.open, player: card.distribute=='player', computer: card.distribute=='computer', count1 : card.distributeCount==1,count2 : card.distributeCount==2,count3 : card.distributeCount==3 ,count4 : card.distributeCount==4 ,count5 : card.distributeCount==5 ,count6 : card.distributeCount==6}">
+      <div class="face back"> </div>
+      <div class="face front">{{card.label}} {{card.number}}</div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
