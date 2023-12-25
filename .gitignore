@@ -1,0 +1,8 @@
+bin/
+maps/
+plugins/
+runtime/
+/dotnet/resources/vrp/obj/
+/dotnet/resources/vrp/bin/
+/dotnet/resources/vrp/.vs/
+dotnet/resources/vrp/obj/Debug/netcoreapp3.1/pvrp.GeneratedMSBuildEditorConfig.editorconfig
