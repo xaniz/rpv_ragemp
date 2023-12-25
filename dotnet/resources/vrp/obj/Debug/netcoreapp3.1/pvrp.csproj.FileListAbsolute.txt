@@ -1,0 +1,627 @@
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfoInputs.cache
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfo.cs
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CoreCompileInputs.cache
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CopyComplete
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csprojAssemblyReference.cache
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\RAGEMP_BETA\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\RAGEMP\server-files\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CopyComplete
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\ragemp\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CopyComplete
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\moj server\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.AssemblyReference.cache
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CopyComplete
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\server\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.AssemblyReference.cache
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CopyComplete
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.AssemblyReference.cache
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.csproj.CopyComplete
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\rage server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.CopyComplete
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\Nikola\Desktop\rage_server\VRP\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.AssemblyReference.cache
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.AssemblyReference.cache
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.AssemblyInfoInputs.cache
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.AssemblyInfo.cs
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.CoreCompileInputs.cache
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.deps.json
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Infinity.pdb
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\xxHash.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ben.Demystifier.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.pdb
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\MySql.Data.xml
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.pdb
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\Qiwi.BillPayments.xml
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\System.Security.Permissions.xml
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\redza\OneDrive\Radna površina\vrpsf\VRP-ragemp-\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.CopyComplete
+C:\RAGEMP\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.AssemblyReference.cache
+C:\RAGEMP\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.GeneratedMSBuildEditorConfig.editorconfig
+C:\RAGEMP\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.AssemblyInfoInputs.cache
+C:\RAGEMP\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.AssemblyInfo.cs
+C:\RAGEMP\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.CoreCompileInputs.cache
+C:\RAGEMP\server-files\dotnet\resources\vrp\obj\Debug\netcoreapp3.1\pvrp.csproj.CopyComplete
