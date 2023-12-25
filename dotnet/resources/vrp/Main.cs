@@ -4362,7 +4362,6 @@ public class Main : Script
 
     public static bool g_mysql_get_VIP_status(Player Client)
     {
-        DateTime i = new DateTime();
         using (MySqlConnection Mainpipeline = new MySqlConnection(myConnectionString))
         {
 
