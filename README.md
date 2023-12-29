@@ -1,3 +1,5 @@
+## GAMEMODE IS ABANDONED, FOR NEW GAMEMODE TAKE A LOOK AT [BasicRP](https://github.com/xaniz/BasicRP)
+
 # About
 
 RPV is a custom Grand Theft Auto V: RageMP server, built from the base of Skazi GM, that introduces an immersive and feature-rich roleplaying experience for players. 
