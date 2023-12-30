@@ -12,7 +12,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cstyle.css">
 
 </head>
 
@@ -70,7 +70,7 @@
 				for(let i = 0; i < character.length; i++) 
 				{
 
-					$('#characters').append('<div class="character"><div class="character-info"><div class="row"><div class="col-12"><div class="character-info-item"><span>Ime:</span><strong>'+character[i].Name+'</strong></div><div class="character-info-item"><span>Level:</span><strong>'+character[i].Level+'</strong></div><div class="character-info-item"><span>Novac:</span><strong>$'+character[i].Money+'</strong></div><div class="character-info-item"><span>Banka:</span><strong>$'+character[i].Bank+'</strong></div><div class="character-info-item"><span>XP:</span><strong>'+character[i].Exp+' / '+character[i].Exp_Max+'</strong></div></div></div></div><div class="character-buttons"><button class="button button-dark" id="preview_'+character[i].ID+'">Izbor</button><button class="button" id="select_'+character[i].ID+'">Ulaz</button></div></div>');
+					$('#characters').append('<div class="character"><div class="character-info"><div class="row"><div class="col-12"><div class="character-info-item"><span>👤</span><strong>'+character[i].Name+'</strong></div><div class="character-info-item"><span>🌟</span><strong>'+character[i].Level+'</strong></div><div class="character-info-item"><span>💲</span><strong>$'+character[i].Money+'</strong></div><div class="character-info-item"><span>💳</span><strong>$'+character[i].Bank+'</strong></div><div class="character-info-item"><span>✨</span><strong>'+character[i].Exp+' / '+character[i].Exp_Max+'</strong></div></div></div></div><div class="character-buttons"><button class="button button-dark" id="preview_'+character[i].ID+'">Izbor</button><button class="button" id="select_'+character[i].ID+'">Ulaz</button></div></div>');
 
 					$('#preview_'+character[i].ID).click(function() {
 						mp.trigger("ClientPreviewCharacterID", character[i].ID);
