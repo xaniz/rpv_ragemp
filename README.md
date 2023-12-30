@@ -37,6 +37,5 @@ RPV is designed to offer players a vast array of features and activities, making
 **Vehicle shop and Tunning:** Buy your dream cars and fine tune them as you wish!  
 
 ##  Maintenance
-Currently gamemode development is on a pause, but feel free to push any fixes that you do.  
-Gamemode will recieve only critical updates. In the future gamemode may be updated with new features.  
->For any questions about the gamemode feel free to add me on **#nikolahd**  
+Gamemode is currently being activly developed.  
+>For any questions or request about the gamemode feel free to join on [DISCORD](https://discord.gg/WANz5A6Ahm)  
