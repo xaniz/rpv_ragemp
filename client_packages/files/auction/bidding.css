@@ -1,44 +1,87 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffffff00;
+    margin: 0;
+    padding: 20px;
+    color: #333;
 }
+
 img {
     display: block;
-    margin: 10% auto 0;
-    max-width: 100%;
-    height: auto;
-}
-table {
     margin: 0 auto;
-    border-collapse: collapse;
-    background-image: url(background.png);
-    color: #2d2d2d;
+    max-width: 100%;
 }
-th, td {
-    border: 1px solid #464646;
-    padding: 8px;
-}
-th {
-    background-image: url(background.png);
-    color: #2d2d2d;
-}
-td {
-    text-align: center;
-    color: #362006;
-    font-weight: bold;
-}
-input[type=number] {
+
+table {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid #2d2d2d;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-input[type=submit] {
-    background-color: #362006;
-    color: #ffb700;
-    padding: 12px 20px;
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+thead {
+    background: linear-gradient(135deg, #8daa48, #a7bb50);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+input[type=number], input[type=submit] {
+    padding: 10px;
+    margin: 5px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background: linear-gradient(135deg, #e2ff5e, #d8ff2b);
+    color: rgb(43, 43, 43);
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(135deg, #e2ff5e, #d8ff2b);
+}
+
+input[type=number] {
+    width: 100px;
+}
+
+#bid-amount {
+    border: 2px solid #ddd;
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th, td {
+        text-align: left;
+    }
+
+    td {
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+    }
 }
