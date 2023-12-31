@@ -60,7 +60,7 @@ input[type=number] {
     border: 2px solid #ddd;
 }
 
-/* Adjustments for mobile screens */
+/* Adjustments for small screens */
 @media screen and (max-width: 600px) {
     table, thead, tbody, th, td, tr {
         display: block;

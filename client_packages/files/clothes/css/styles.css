@@ -189,6 +189,8 @@ box-shadow:inset 0 0 678px 586px rgba(53, 53, 53, 0.6);
     flex-wrap: nowrap;
     flex-direction: column;
     padding: 30px 50px;
+
+    
 	
 }
 
@@ -327,53 +329,17 @@ box-shadow:inset 0 0 678px 586px rgba(53, 53, 53, 0.6);
     transition: 0.15s ease-in-out;
 }
 
-.menu-wrapper .menu .container .list .select-item .row .price {
-    margin-left: 10px;
-    transition: 0.15s ease-in-out;
-}
+.menu-wrapper .menu .container .list .select-item .row 
 
-.menu-wrapper .menu .container .list .select-item .row .switcher {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: fit-content;
-    min-width: 100%;
-    width: calc(100% + 20px * 2);
-    margin: 0 -20px;
-}
+.menu-wrapper .menu .container .list .select-item .row 
 
-.menu-wrapper .menu .container .list .select-item .row .switcher .types {
-    flex: 1 1 auto;
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin: 0 2.5px;
-}
+.menu-wrapper .menu .container .list .select-item .row .switcher 
 
-.menu-wrapper .menu .container .list .select-item .row .switcher .types .type {
-    min-height: 5px;
-    height: 5px;
-    max-height: 5px;
-    width: 100%;
-    background-color: #ffffff;
-    margin: 0 0.5px;
-}
+.menu-wrapper .menu .container .list .select-item .row .switcher .types 
 
-.menu-wrapper .menu .container .list .select-item .row .switcher .types .type.active {
-    background-color: #FEB333;
-}
+.menu-wrapper .menu .container .list .select-item .row .switcher .types .type
 
-.menu-wrapper .menu .container .list .select-item .row .switcher .arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    width: 20px;
-    cursor: pointer;
-}
+.menu-wrapper .menu .container .list .select-item .row .switcher 
 
 .menu-wrapper .menu .container .list .select-item .row .switcher .arrow::after {
     content: '';
@@ -392,29 +358,19 @@ box-shadow:inset 0 0 678px 586px rgba(53, 53, 53, 0.6);
     fill: #F98427;
 }
 
-.menu-wrapper .menu .container .list .select-item .row .switcher .arrow.left {
-    left: -10px;
-}
+.menu-wrapper .menu .container .list .select-item .row .switcher .arrow
 
 .menu-wrapper .menu .container .list .select-item .row .switcher .arrow.left::after {
     left: 0;
 }
 
-.menu-wrapper .menu .container .list .select-item .row .switcher .arrow.right {
-    right: -10px;
-}
+.menu-wrapper .menu .container .list .select-item .row .switcher .arrow
 
 .menu-wrapper .menu .container .list .select-item .row .switcher .arrow.right::after {
     right: 0;
 }
 
-.menu-wrapper .menu .container .list .select-item .row .switcher .arrow .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    width: 11.5px;
-}
+.menu-wrapper .menu .container .list .select-item .row .switcher .arrow 
 
 .menu-wrapper .menu .container .list .select-item .row .switcher .arrow .icon svg {
     height: 100%;
@@ -426,9 +382,7 @@ box-shadow:inset 0 0 678px 586px rgba(53, 53, 53, 0.6);
     transition: 0.15s ease-in-out;
 }
 
-.menu-wrapper .menu .container .list .select-item.active {
-    color: #FEB333;
-}
+.menu-wrapper .menu .container .list .select-item
 
 .menu-wrapper .menu .container .list .select-item.active .row:first-child::before, .menu-wrapper .menu .container .list .select-item.active .row:first-child::after {
     background-color: #FEB333;
@@ -512,4 +466,27 @@ box-shadow:inset 0 0 678px 586px rgba(53, 53, 53, 0.6);
 .menu-wrapper .menu .container .buttons .row .button.decline:hover {
     color: black;
     background-color: gray;
+}
+
+/* Neon Light Effect for Buttons */
+.neon-button {
+  border: 3px solid #fff;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255, 255, 255, 0.7), 0 0 60px rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6), 0 0 80px rgba(255, 255, 255, 1), 0 0 100px rgba(255, 255, 255, 1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }
