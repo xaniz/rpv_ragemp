@@ -1,27 +1,46 @@
-.dugme {
-  position: fixed;
-  left: 49%;
-  top: 25%;
-  width: 10vh;
-  height: 5vh;
-  color:rgb(176, 252, 0);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #33333300; /* Example background color */
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: rgb(176, 252, 0);
   background-color: rgb(49, 49, 49);
-  border-color: rgb(236, 253, 0);
+  border: 2px solid rgb(236, 253, 0);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
 }
 
-.dugme2 {
-  position: fixed;
-  left: 39%;
-  top: 25%;
-  width: 10vh;
-  height: 5vh;
-  color:rgb(176, 252, 0);
-  background-color: rgba(49, 49, 49, 0);
-  border-color: rgba(236, 253, 0, 0);
+.button:hover {
+  transform: scale(1.05);
 }
 
-.krug {
-  position: fixed;
-  left: 38.5%;
-  top: 29%;
+.button:active {
+  transform: scale(0.95);
+}
+
+.wheel {
+  margin-top: 20px;
+}
+
+.bet-container {
+  margin-bottom: 10px;
+}
+
+.bet-input {
+  padding: 5px;
+  margin-left: 5px;
+  width: 150px; /* Adjust as needed */
 }

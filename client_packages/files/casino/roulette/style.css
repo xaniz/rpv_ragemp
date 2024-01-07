@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 html, body{
-	font-family: arial;
+	font-family: 'Roboto', sans-serif;
 	cursor: default;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -797,3 +798,16 @@ html, body{
 	margin-top: -25px;
 }
 /*chip end*/
+
+#container{
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #026f2c, #034d1a);
+}
+
+
+#notification{
+    background-color: rgba(173, 2, 5, 0.8);
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
