@@ -16,15 +16,17 @@ body {
   margin: 5px;
   padding: 10px 20px;
   font-size: 1rem;
-  color: rgb(176, 252, 0);
-  background-color: rgb(49, 49, 49);
-  border: 2px solid rgb(236, 253, 0);
+  color: #FFF; /* Changed to white for better contrast */
+  background-color: #1A1A1A; /* Darker background for buttons */
+  border: none; /* Removed border */
+  border-radius: 5px; /* Added rounded corners */
   cursor: pointer;
-  transition: transform 0.1s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button:hover {
   transform: scale(1.05);
+  color: chartreuse;
 }
 
 .button:active {
