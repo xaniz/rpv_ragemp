@@ -1282,9 +1282,10 @@ mp.events.add({
     },
 	
     "Exit_Tuning": () => {
+        Tuning_Browsers.destroy();
+        Tuning_Browsers = undefined;
         mp.gui.cursor.visible = false;
-        mp.events.call("hidePoliceCivilMenu");
-        mp.events.callRemote("Hide_LSCustom");
+        mp.events.callRemote("Hide_LSCustom")
 
     },
     "Display_Tunning_home": () => {
@@ -1315,7 +1316,7 @@ mp.events.add({
         mp.events.callRemote("MainMenuRespone", name);
     },
     "Display_Tunning_with_data": (data, name) => {
-        mp.events.call("hidePoliceCivilMenu");
+        mp.events.call("Exit_Tuning");
         if (Tuning_Browsers === undefined) {
         //    mp.console.logInfo(JSON.parse(data)[1].modValue + " " + JSON.parse(data)[1].price + " " + JSON.parse(data)[1].Label, false, false);
 
