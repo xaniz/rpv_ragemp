@@ -1288,8 +1288,14 @@ mp.events.add({
         mp.events.callRemote("Hide_LSCustom")
 
     },
+    "tunerexit": () => {
+        if (Tuning_Browsers !== undefined) {
+            Tuning_Browsers.destroy();
+            Tuning_Browsers = undefined;
+        }
+    },
     "Display_Tunning_home": () => {
-        mp.events.call("hidePoliceCivilMenu");
+        mp.events.call("tunerexit");
         if (Tuning_Browsers === undefined) {
             Tuning_Browsers = mp.browsers.new("package://files/Tuning/lscustoms/home.html");
             mp.events.callRemote("ResetVehicleMod");
@@ -1297,7 +1303,7 @@ mp.events.add({
         }
     },
     "Display_Tunning_pages": (name) => {
-        mp.events.call("hidePoliceCivilMenu");
+        mp.events.call("tunerexit");
         if (Tuning_Browsers === undefined) {
             mp.gui.chat.push(name);
             Tuning_Browsers = mp.browsers.new("package://files/Tuning/lscustoms/"+name+".html");
@@ -1316,7 +1322,7 @@ mp.events.add({
         mp.events.callRemote("MainMenuRespone", name);
     },
     "Display_Tunning_with_data": (data, name) => {
-        mp.events.call("Exit_Tuning");
+        mp.events.call("tunerexit");
         if (Tuning_Browsers === undefined) {
         //    mp.console.logInfo(JSON.parse(data)[1].modValue + " " + JSON.parse(data)[1].price + " " + JSON.parse(data)[1].Label, false, false);
 
